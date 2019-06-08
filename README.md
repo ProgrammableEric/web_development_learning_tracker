@@ -3,7 +3,7 @@ The complete log that tracks my self-studying process of web development related
 
 
 ## Learning 
-| Course        | Tutor/Platform|    Status     | Time | Code |
+| Course        | Tutor/Platform|    Status     | Time | Exercise Code |
 | ------------- | --------------| ------------- | ---- | ---- |
 | [Intro to HTML5](https://www.codecademy.com/learn/learn-html) | [CodeAcademy](https://www.codecademy.com/learn) | ongoing | June, 2019 | [html5](./html5) |
 | [Code Foundation](https://www.codecademy.com/learn/paths/code-foundations) | [CodeAcademy](https://www.codecademy.com/learn)  | complete | May, 2019 |    |
