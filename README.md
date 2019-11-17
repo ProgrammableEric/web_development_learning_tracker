@@ -5,7 +5,7 @@ The complete log that tracks my self-studying process of web development related
 ## Learning 
 | Course        | Tutor/Platform|    Status     | Time | Exercise Code |
 | ------------- | --------------| ------------- | ---- | ---- |
-| [CSS intro](https://www.codecademy.com/learn/learn-css) |[CodeAcademy](https://www.codecademy.com/learn)| ongoing |Nov, 2019  | None|
+| [Web-development Career Path (basic HTML, CSS, Javascript, React etc.)](https://www.codecademy.com/learn/paths/web-development) |[CodeAcademy](https://www.codecademy.com/learn)| ongoing |Nov, 2019  | None|
 | [Computer Organisation & Program Execution](https://cs.anu.edu.au/courses/comp2300/) |[ANU](https://www.anu.edu.au)| ongoing |Nov, 2019  | None|
 | [Software Engineering](https://programsandcourses.anu.edu.au/2020/course/COMP2120) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  | None|
 | [Algorithms](https://cs.anu.edu.au/courses/comp3600/) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  |None|
