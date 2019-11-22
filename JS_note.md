@@ -11,5 +11,15 @@ and Objects are passed <i>By Reference</i>.
 <br> <em>let: </em> variable can be reassigned a different value. </p> 
 
 <h3> Function as data</h3>
-<p> <b>Two major usages: </b> 1. It enables passing functions as parameter to other functions. 
-<br> 2. There are cases where we write something like function1 = function2 to use the name function1 as a synonym for function2 when the name function1 is for some reason easier to type/remember than function2.</p>
+<p> <b>Two major usages: </b> 1. It enables passing functions as parameter to other functions. -> higher order function (function that either accepts a function as parameter or returns functions as output, or both.)
+<br> <b>Anonymous function invoking: </b>
+<pre>
+<code>
+timeFuncRuntime(() => {
+  for (let i = 10; i>0; i--){
+    console.log(i);
+  }
+});
+</code>
+</pre>
+2. There are cases where we write something like function1 = function2 to use the name function1 as a synonym for function2 when the name function1 is for some reason easier to type/remember than function2.</p>
