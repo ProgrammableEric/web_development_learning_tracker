@@ -55,7 +55,7 @@ for (let crewMember in spaceship.crew) {
 };
   </code>
   </pre>
-  <br> <b>Arrow function and <em>this</em> keyword: </b> Arrow function within objects does not recognise <code>this</code> keyword as referring to the object itself. Should avoid such use. If we must use arrow function, we do it by referring directly to the object name: instead of using <code>this</code>. 
+  <b>Arrow function and <em>this</em> keyword: </b> Arrow function within objects does not recognise <code>this</code> keyword as referring to the object itself. Should avoid such use. If we must use arrow function, we do it by referring directly to the object name: instead of using <code>this</code>. 
   <pre>
   <code>
 const robot = {
@@ -66,4 +66,8 @@ const robot = {
 }
   </code>
   </pre>
+  <b><em>getter</em> and <em>setter</em> : </b> 1. Perform an action on the data when getting a property & return different values. 
+  <br> 2. <code>this</code> keyword can be used. Retrieve properties that are private. 
+  <br> 3. Invoke the method as accessing object's property. <code>object.getter_method </code>
+  <br> 4. Checking if input/property is valid to use. 
 </p>
