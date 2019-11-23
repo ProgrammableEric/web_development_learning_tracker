@@ -41,4 +41,18 @@ console.log(summedNums); // Output: 117
    </pre>
     <br> <b>.some(), .every(): </b> Check if there are elements/ all elements that meet the requirement. Returns boolean. 
 </p>
-   </code>
+
+<h3> Js Objects </h3>
+<p>
+  <b>{}: </b> This is the representatio of object. Array of object can be <code>[{}, {}, {}] </code>. 
+  <br><b>accessing a key' value: </b> <br>1. dot operator - same as other OOP languages. <br> 2. '[ ]' -> We *must* use bracket notation when accessing keys that have numbers, spaces, or special characters in them. <code> spaceship['Fuel Type'];   // Returns  'Turbo Fuel'</code>
+  <br> <b>Const key word: </b> Object cannot be reassigned entirely, but still remain mutable. Use <code>delete objectName.propertyName </code> to delete a property. 
+  <br> <b>for...in: </b> Each time the variable is set to objects key.  
+  <pre>
+  <code>
+for (let crewMember in spaceship.crew) {
+  console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
+};
+  </code>
+  </pre>
+</p>
