@@ -70,4 +70,5 @@ const robot = {
   <br> 2. <code>this</code> keyword can be used. Retrieve properties that are private. 
   <br> 3. Invoke the method as accessing object's property. <code>object.getter_method </code>
   <br> 4. Checking if input/property is valid to use. 
+  <br><b>Deconstructing assignment: </b> Save time from tedious keystrokes. USE A <code>{ }</code>e,g., <code>const residence = vampire.residence;  </code> ===> <code>const { residence } = vampire;  </code>. Also can be used to grad nested properties, such as <code>const { day } = vampire.preferences;  </code>
 </p>
