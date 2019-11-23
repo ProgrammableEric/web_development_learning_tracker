@@ -23,3 +23,22 @@ timeFuncRuntime(() => {
 </code>
 </pre>
 2. There are cases where we write something like function1 = function2 to use the name function1 as a synonym for function2 when the name function1 is for some reason easier to type/remember than function2.</p>
+
+<h3> Iterators</h3>
+<p> <b>.forEach(): </b> in-place modification. 
+  <br> <b>.map(): </b> return an array. 
+  <br> <b>.filter(): </b> filtering out certain elements from the original array. Boolean callback function return. 
+  <br> <b>.findIndex(): </b> returns a single value, either the first in the array that satisfies the condition, or -1 if there' none. 
+  <br> <b>.reduce(): </b> Returns a single value after iterating through the array. Essentially, every iteration has the access to the <em>accumulator</em>, which will finally be returned. <a href="https://medium.com/@trekinbami/explanation-of-javascripts-reduce-with-a-real-world-use-case-f3f5014951e2"> example </a>
+  <pre>
+    <code>
+const numbers = [1, 2, 4, 10];
+const summedNums = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue
+}, 100)  // <- Second argument for .reduce()
+console.log(summedNums); // Output: 117
+   </code>
+   </pre>
+    <br> <b>.some(), .every(): </b> Check if there are elements/ all elements that meet the requirement. Returns boolean. 
+</p>
+   </code>
