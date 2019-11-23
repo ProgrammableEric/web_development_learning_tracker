@@ -55,4 +55,15 @@ for (let crewMember in spaceship.crew) {
 };
   </code>
   </pre>
+  <br> <b>Arrow function and <em>this</em> keyword: </b> Arrow function within objects does not recognise <code>this</code> keyword as referring to the object itself. Should avoid such use. If we must use arrow function, we do it by referring directly to the object name: instead of using <code>this</code>. 
+  <pre>
+  <code>
+const robot = {
+  energyLevel: 100,
+  checkEnergy: () => {
+    console.log(`Energy is currently at ${robot.energyLevel}%.`)
+  }
+}
+  </code>
+  </pre>
 </p>
