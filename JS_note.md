@@ -71,4 +71,6 @@ const robot = {
   <br> 3. Invoke the method as accessing object's property. <code>object.getter_method </code>
   <br> 4. Checking if input/property is valid to use. 
   <br><b>Deconstructing assignment: </b> Save time from tedious keystrokes. USE A <code>{ }</code>e,g., <code>const residence = vampire.residence;  </code> ===> <code>const { residence } = vampire;  </code>. Also can be used to grad nested properties, such as <code>const { day } = vampire.preferences;  </code>
+  <br><b><em>Object.assign(source, target)</em>: </b> important to know that the method modifies the source object by assigning the content of target object and returns the new object. 
+  <br><b><em>Object.keys(), Object.entries()</em></b>: All property names, all key-value pairs.
 </p>
