@@ -7,3 +7,8 @@ Browser parses the HTML elements in their apperance order in HTML file. Same for
 <h3> defer, async </h3>
 <p> <em>defer: </em> Browser loads the script but defers the actual execution of the JavaScript until after it finishes parsing the rest of the elements in the HTML file. --> When a script contains functionality that requires interaction with the DOM. 
 <br><em>async: </em> The HTML parser will continue parsing the rest of the HTML as the script is downloaded in the background. However, the script will not wait until the entire page is parsed: it will execute immediately after it has been downloaded.
+
+<h3>Document Object Model: </h3> The DOM is a structural model of a web page that allows for scripting languages to access that page.
+<img src="./notes_material/DOM3.png">
+<img src="./notes_material/DOM.png"> 
+<img src="./notes_material/DOM2.png">
