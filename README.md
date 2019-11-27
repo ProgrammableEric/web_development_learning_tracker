@@ -5,7 +5,7 @@ The complete log that tracks my self-studying process of web development related
 ## Learning 
 | Course        | Tutor/Platform|    Status     | Time | Exercise Code |
 | ------------- | --------------| ------------- | ---- | ---- |
-| [Web-development Career Path](https://www.codecademy.com/learn/paths/web-development) <ul><li> - [x] Learn HTML </li><li> - [x] Styling a website</li><li> - [x] Getting started with JavaScript </li><li> - [x] Getting more advanced with Design</li><li> - [x] JavaScript: Arrays, Loops and Objects</li><li> - [ ] Building Interactive JavaScript Websites</li><li> - [ ] Intermediate JavaScript</li><li> - [ ] Learn the Command Line</li> </ul>|[CodeAcademy](https://www.codecademy.com/learn)| ongoing |Nov, 2019  | None|
+| [Web-development Career Path](https://www.codecademy.com/learn/paths/web-development) <ul><li> - [x] Learn HTML </li><li> - [x] Styling a website</li><li> - [x] Getting started with JavaScript </li><li> - [x] Getting more advanced with Design</li><li> - [x] JavaScript: Arrays, Loops and Objects</li><li> - [x] Building Interactive JavaScript Websites</li><li> - [ ] Intermediate JavaScript</li><li> - [ ] Learn the Command Line</li> </ul>|[CodeAcademy](https://www.codecademy.com/learn)| ongoing |Nov, 2019  | None|
 | [Computer Organisation & Program Execution](https://cs.anu.edu.au/courses/comp2300/) |[ANU](https://www.anu.edu.au)| ongoing |Nov, 2019  | None|
 | [Software Engineering](https://programsandcourses.anu.edu.au/2020/course/COMP2120) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  | None|
 | [Algorithms](https://cs.anu.edu.au/courses/comp3600/) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  |None|
