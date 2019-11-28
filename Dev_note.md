@@ -26,18 +26,15 @@ the <code>.target</code> property to access the element that triggered the event
 <pre> 
 <code>
 let keyPlay = (key) => {
-  key.target.style.backgroundColor = 'red';
+    key.target.style.backgroundColor = 'red';
 }
-
 let keyReturn = (key) => {
-  key.target.style.backgroundColor = '';
+    key.target.style.backgroundColor = '';
 }
-
 let setKey = (note) => {
-  note.onmousedown = keyPlay;
-  note.onmouseup = keyReturn;
+    note.onmousedown = keyPlay;
+    note.onmouseup = keyReturn;
 }
-
 notes.forEach( setKey );
 </code> 
 <pre>
