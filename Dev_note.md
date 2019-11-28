@@ -12,3 +12,10 @@ Browser parses the HTML elements in their apperance order in HTML file. Same for
 <img src="./notes_material/DOM3.png">
 <img src="./notes_material/DOM.png"> 
 <img src="./notes_material/DOM2.png">
+
+<h3> Style property in css and js </h3>
+To change the value of hyphenated style properties in JavaScript you must use camel case. For example, the <code>font-size</code> property will become <code>fontSize</code>.
+
+<h3> On event objects and event handlers </h3>
+JavaScript engines register events as objects with properties and methods associated with them.
+<br>Event handlers are registered as properties of their event object.
