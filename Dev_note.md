@@ -19,3 +19,25 @@ To change the value of hyphenated style properties in JavaScript you must use ca
 <h3> On event objects and event handlers </h3>
 JavaScript engines register events as objects with properties and methods associated with them.
 <br>Event handlers are registered as properties of their event object.
+
+<h3>.target property </h3>
+the <code>.target</code> property to access the element that triggered the event.
+<br>
+<pre> 
+<code>
+let keyPlay = (key) => {
+  key.target.style.backgroundColor = 'red';
+}
+
+let keyReturn = (key) => {
+  key.target.style.backgroundColor = '';
+}
+
+let setKey = (note) => {
+  note.onmousedown = keyPlay;
+  note.onmouseup = keyReturn;
+}
+
+notes.forEach( setKey );
+</code> 
+<pre>
