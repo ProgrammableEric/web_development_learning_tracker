@@ -42,3 +42,13 @@ notes.forEach( setKey );
 <h3>HandleBar</h3>
 Include Handlebars: <code><script src="handlebars.min.js"></script> </code> 
 <br> deliver a template to the browser: <code> <script id="templateB" type="text/x-handlebars-template">{{title}}</script> </code> 
+<pre>
+<code>
+// use of HandleBar as template. 
+const templateElement = document.getElementById("templateHB");
+const templateSource = templateElement.innerHTML;
+const template = Handlebars.compile(templateSource);
+const compiledHtml = template(context); 
+document.getElementById("information").innerHTML = compiledHtml; 
+</code>
+</pre>
