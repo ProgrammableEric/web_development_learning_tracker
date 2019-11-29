@@ -37,4 +37,8 @@ let setKey = (note) => {
 }
 notes.forEach( setKey );
 </code> 
-<pre>
+</pre>
+
+<h3>HandleBar</h3>
+Include Handlebars: <code><script src="handlebars.min.js"></script> </code> 
+<br> deliver a template to the browser: <code> <script id="templateB" type="text/x-handlebars-template">{{title}}</script> </code> 
