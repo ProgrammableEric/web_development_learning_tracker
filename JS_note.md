@@ -74,3 +74,7 @@ const robot = {
   <br><b><em>Object.assign(source, target)</em>: </b> important to know that the method modifies the source object by assigning the content of target object and returns the new object. 
   <br><b><em>Object.keys(), Object.entries()</em></b>: All property names, all key-value pairs.
 </p>
+
+<h3> JS Module</h3>
+<p><b><em>Create a module: </em></b> Create an object to represent the module. -> Add properties or methods to the module object. -> Export the module with module.exports. <code>module.exports = Class_name </code></p>
+<br><b><em>Node.js vs ES6 </em></b> Node.js: <code>module.exports </code> ES6: <code>export default</code> 
