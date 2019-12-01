@@ -78,3 +78,6 @@ const robot = {
 <h3> JS Module</h3>
 <p><b><em>Create a module: </em></b> Create an object to represent the module. -> Add properties or methods to the module object. -> Export the module with module.exports. <code>module.exports = Class_name </code></p>
 <br><b><em>Node.js vs ES6 </em></b> Node.js: <code>module.exports </code> ES6: <code>export default</code> 
+
+<h3>Promises</h3>
+<img src="./notes_material/promises1.png">
