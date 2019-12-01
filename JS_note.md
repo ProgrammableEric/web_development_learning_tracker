@@ -82,3 +82,12 @@ const robot = {
 <h3>Promises</h3>
 <img src="./notes_material/promises1.png">
 promise 处理一个asynchronise 事件，本身存在三个状态，返回一个状态resolved 或 rejected. .then()作为后续的操作可以同时被定义。
+<ul>
+  <li>Promises are JavaScript objects that represent the eventual result of an asynchronous operation.</li>
+  <li>Promises can be in one of three states: pending, resolved, or rejected.</li>
+  <li>A promise is settled if it is either resolved or rejected.</li>
+  <li>We construct a promise by using the <code>new</code> keyword and passing an executor function to the <code>Promise</code> constructor method.</li>
+  <li><code>setTimeout()</code> is a Node function which delays the execution of a callback function using the event-loop.</li>
+  <li>We use <code>.then()</code> with a success handler callback containing the logic for what should happen if a promise resolves. We use <code>.catch()</code> with a failure handler callback containing the logic for what should happen if a promise rejects</li>
+  <li>Promise composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple <code>.then()</code>‘s and <code>.catch()</code>‘s.</li>
+</ul>
