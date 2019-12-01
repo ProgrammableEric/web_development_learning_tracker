@@ -81,3 +81,4 @@ const robot = {
 
 <h3>Promises</h3>
 <img src="./notes_material/promises1.png">
+promise 处理一个asynchronise 事件，本身存在三个状态，返回一个状态resolved 或 rejected. .then()作为后续的操作可以同时被定义。
