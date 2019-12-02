@@ -110,3 +110,8 @@ getNumber()
 
 <b><code>async ... await: </code></b> Write native JS code into resembling synchronized/imperative code. 
 
+<h3>HTTP and HTTPS</h3>
+<b>event loop: </b> JavaScript uses an event loop to handle asynchronous function calls. When a program is run, function calls are made and added to a stack. The functions that make requests that need to wait for servers to respond then get sent to a separate queue. Once the stack has cleared, then the functions in the queue are executed. Web developers use the event loop to create a smoother browsing experience by deciding when to call functions and how to handle asynchronous events. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"> JS Concurrency Model </a> 
+<img src="./notes_material/c_model1.png">
+<b> XHR(XMLHttpRequest) GET diagram </b>
+<img src="./notes_material/c_model2.png">
