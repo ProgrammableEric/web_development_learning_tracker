@@ -56,3 +56,5 @@ document.getElementById("information").innerHTML = compiledHtml;
 <h3>File system and Command Line </h3>
 <b>Navigation Map</b>
 <img src="./notes_material/f_model1.png">
+<b>ls -l</b>
+<img src="./notes_material/f_model2.png">
