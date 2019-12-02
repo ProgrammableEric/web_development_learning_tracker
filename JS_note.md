@@ -91,3 +91,22 @@ promise 处理一个asynchronise 事件，本身存在三个状态，返回一�
   <li>We use <code>.then()</code> with a success handler callback containing the logic for what should happen if a promise resolves. We use <code>.catch()</code> with a failure handler callback containing the logic for what should happen if a promise rejects</li>
   <li>Promise composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple <code>.then()</code>‘s and <code>.catch()</code>‘s.</li>
 </ul>
+
+<br><b><code>.catch()</code> and <code>.then() with reject</code></b> 在执行resolve的callback 时，如果抛出异常，<code>.catch()</code> 可以避免代码卡死，即运行逻辑进入catch这个方法中。例如下：<code>console.log(somedata)</code> 并不会报错。
+<pre>
+  <code>
+getNumber()
+.then(function(data){
+    console.log('resolved');
+    console.log(data);
+    console.log(somedata); //此处的somedata未定义
+})
+.catch(function(reason){
+    console.log('rejected');
+    console.log(reason);
+});
+  </code>
+</pre>
+
+
+
