@@ -115,3 +115,5 @@ getNumber()
 <img src="./notes_material/c_model1.png">
 <b> XHR(XMLHttpRequest) GET diagram </b>
 <img src="./notes_material/c_model2.png">
+<b> XHR(XMLHttpRequest) POST diagram </b>
+<img src="./notes_material/c_model3.png">
