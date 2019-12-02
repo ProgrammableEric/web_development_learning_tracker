@@ -123,4 +123,5 @@ getNumber()
 <img src="./notes_material/c_model5.png">
 <b> async GET diagram </b>
 <img src="./notes_material/c_model6.png">
-
+<b> async POST diagram </b>
+<img src="./notes_material/c_model7.png">
