@@ -121,3 +121,6 @@ getNumber()
 <img src="./notes_material/c_model4.png">
 <b> XHR(XMLHttpRequest) fetch POST diagram </b>
 <img src="./notes_material/c_model5.png">
+<b> async GET diagram </b>
+<img src="./notes_material/c_model6.png">
+
