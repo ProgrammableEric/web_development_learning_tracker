@@ -108,5 +108,5 @@ getNumber()
   </code>
 </pre>
 
-
+<b><code>async ... await: </code></b> Write native JS code into resembling synchronized/imperative code. 
 
