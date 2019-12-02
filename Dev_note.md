@@ -52,3 +52,7 @@ const compiledHtml = template(context);
 document.getElementById("information").innerHTML = compiledHtml; 
 </code>
 </pre>
+
+<h3>File system and Command Line </h3>
+<b>Navigation Map</b>
+<img src="./notes_material/f_model.png">
