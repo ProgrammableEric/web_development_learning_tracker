@@ -60,3 +60,5 @@ document.getElementById("information").innerHTML = compiledHtml;
 <img src="./notes_material/f_model2.png">
 <b>Redirection</b>
 <img src="./notes_material/f_model3.png">
+<b>Environment</b>
+<img src="./notes_material/f_model4.png">
