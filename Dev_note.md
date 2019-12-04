@@ -64,3 +64,6 @@ document.getElementById("information").innerHTML = compiledHtml;
 <img src="./notes_material/f_model4.png">
 <b>Bash Script</b>
 <img src="./notes_material/f_model5.png">
+
+<h3>Git Revision </h3>
+<img src="./notes_material/git_1.png">
