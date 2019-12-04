@@ -62,3 +62,5 @@ document.getElementById("information").innerHTML = compiledHtml;
 <img src="./notes_material/f_model3.png">
 <b>Environment</b>
 <img src="./notes_material/f_model4.png">
+<b>Bash Script</b>
+<img src="./notes_material/f_model5.png">
