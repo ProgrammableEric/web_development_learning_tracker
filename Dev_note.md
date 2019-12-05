@@ -67,3 +67,8 @@ document.getElementById("information").innerHTML = compiledHtml;
 
 <h3>Git Revision </h3>
 <img src="./notes_material/git_1.png">
+
+<h3>BROWSER COMPATIBILITY AND TRANSPILATION </h3>
+<b>ES6 and ES5: </b> ES6 is predictably backwards compatible, meaning all ES6 new features can be translated back to ES5 syntax for avioding compatability issues. Look up: <a href="https://caniuse.com/#home"> CanIUse.com </a>
+<br><b>Transpilation: </b> Transpilation is the process of converting one programming language to another. In here specifically, ES6 -> ES5. 
+<br><b></b>
