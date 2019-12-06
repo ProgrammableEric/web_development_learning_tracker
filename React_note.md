@@ -16,4 +16,8 @@ JSX is a syntax extension for JavaScript. It was written to be used with React. 
   <li>a JSX expression must have exactly one outermost element.</li>
   <li><code>ReactDOM.render(JSX element, document.getElementById('app'));</code> </li> 
   <li><b>Virtual DOM: </b> React has Virtual DOM as a blueprint of the real DOM. Manipulating Virtual DOM is much faster than real DOM. <a href="https://www.codecademy.com/articles/react-virtual-dom">example1 </a>, <a href="https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/">example2 </a></li>.  
+  <li><code>className</code> instead of <code>class</code></li>
+  <li>JSX must include self-closing tag. <code>br, img ...</code></li>
+  <li>Use <code>{ }</code> to include JS code in JSX element. Everything inside of the curly braces will be treated as regular JavaScript.</li>
+  <li><b>Conditionals & If statement</b></li> 
 </ul>
