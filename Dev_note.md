@@ -54,6 +54,7 @@ document.getElementById("information").innerHTML = compiledHtml;
 </pre>
 
 <h3>File system and Command Line </h3>
+<b>cat and echo: </b> Cat is for listing content of any files of any kind. Echo is for listing value of some variable. Besides, cho without any value is used to insert a new line in many shell scripts.
 <b>Navigation Map</b>
 <img src="./notes_material/f_model1.png">
 <b>ls -l</b>
