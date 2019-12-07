@@ -19,5 +19,20 @@ JSX is a syntax extension for JavaScript. It was written to be used with React. 
   <li><code>className</code> instead of <code>class</code></li>
   <li>JSX must include self-closing tag. <code>br, img ...</code></li>
   <li>Use <code>{ }</code> to include JS code in JSX element. Everything inside of the curly braces will be treated as regular JavaScript.</li>
-  <li><b>Conditionals & If statement</b></li> 
+  <li><b>Conditionals & If statement:</b> Use if statement outside the React element / use <code>... ? ... : ...</code> / <code>&& </code> operator.</li> 
+</ul>
+
+<h3>React Component</h3>
+<ul>
+  <li>Create a component class by subclassing <code>React.Component</code>. e.g. <code>class YourComponentNameGoesHere extends React.Component {} </code> </li>
+  <li>JSX elements can be either HTML-like, or component instances. JSX uses capitalization to distinguish between the two.That is the React-specific reason why component class names must begin with capital letters. </li>
+  <li>Differentiate between <b>JSX component</b> and <b>React Component</b>: 
+    <ul>
+      <li>small letters vs. capital letter class name </li>
+      <li>wrapped around <code>( )</code> vs. instantiated from a component class</li>
+      <li>In rendering the component, use variable name vs. use <code>< ></code> with class name. </li>
+      <li>In React component, everything inside <code>render(){}</code>.</li>
+      <li><code>this</code> keyword in defining React component class. It refers to the object on which <code>this</code>‘s enclosing method, in this case <code>.render()</code>, is called. It is almost always th instance of the class.</li>
+    </ul>
+  </li>
 </ul>
