@@ -62,7 +62,7 @@ That's it I guess.
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 #### `state`
 - `state` is not passed from outside. A component decides its own state.
-~~~
+~~~javascript
 class  Example  extends  React.Component  {  
 	constructor(props)  {  		
 		super(props);  
@@ -77,7 +77,7 @@ makeSomeFog()  {
 ~~~
 - `this.setState()`automatically calls render
 - `this.setState()` can't be used directly in `render()`method. It causes the two method calling each other indefinitely. 
-~~~
+```javascript
 class Mood extends React.Component {
   constructor(props) {
     super(props);
@@ -101,16 +101,26 @@ class Mood extends React.Component {
     );
   }
 }
-~~~
+```
 
 #### `const {}` 
 ```javascript
 const {BrowserWindow} = require('electron')
 ```
-Above works for ES6. it
+Above works for ES6. If the object if defined as: 
+```javascript
+const obj = {
+    email: "hello@gmail.com",
+    title: "Hello world"
+}
+```
+We can use the curly braces to grab field of object directly by: 
+```javascript
+const { email,title } = obj;
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODUyMjYzNSwtMTcxMDA0MjYyMCwxMz
+eyJoaXN0b3J5IjpbMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwxMz
 k3ODg3NjgsNjkwNjYyMDQxXX0=
 -->
