@@ -5,7 +5,7 @@ something that allow you to fill the important content to make the application c
 framework means you are called by the framework' code. 
 <a href="https://www.youtube.com/watch?v=LimOOe6I4eo">See this video </a>. 
 
-<h1>First Look on React </h1>
+<h2>First Look on React </h2>
 <a href="https://www.youtube.com/watch?v=CKSBlLFdtlI">An intro video </a>.
 <h2>JSX</h2>
 JSX is a syntax extension for JavaScript. It was written to be used with React. JSX code looks a lot like HTML. If a JavaScript file contains JSX code, then that file will have to be compiled. That means that before the file reaches a web browser, a JSX compiler will translate any JSX into regular JavaScript.
@@ -62,5 +62,5 @@ That's it I guess.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTM2OTE1OCwxOTE2NzA5ODM2XX0=
+eyJoaXN0b3J5IjpbLTE0MTU3ODAxOTgsMTkxNjcwOTgzNl19
 -->
