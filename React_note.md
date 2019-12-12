@@ -61,10 +61,12 @@ That's it I guess.
 -   `this.props.children` returns everything in between the open and close component tag. If count more than 1, the return is in array type. 
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 #### `state`
-
+- `state` is not passed from outside. A component decides its own state.
+- 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODU1MDA4NCwxOTE2NzA5ODM2XX0=
+eyJoaXN0b3J5IjpbMTE4NzUyMTU5LC05Mjg1NTAwODQsMTkxNj
+cwOTgzNl19
 -->
