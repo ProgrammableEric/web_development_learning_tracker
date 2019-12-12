@@ -77,9 +77,33 @@ makeSomeFog()  {
 ~~~
 - `this.setState()`automatically calls render
 - `this.setState()` can't be used directly in `render()`method. It causes the two method calling each other indefinitely. 
+~~~
+class Mood extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { mood: 'good' };
+    this.toggleMood = this.toggleMood.bind(this);
+  }
 
+  toggleMood() {
+    const newMood = this.state.mood == 'good' ? 'bad' : 'good';
+    this.setState({ mood: newMood });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>I'm feeling {this.state.mood}!</h1>
+        <button onClick={this.toggleMood}>
+          Click Me
+        </button>
+      </div>
+    );
+  }
+}
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbLTEzMjA0MDQ5NDIsNjkwNjYyMDQxXX0=
 -->
