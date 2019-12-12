@@ -48,6 +48,8 @@ As I need to make some good notes at the stage of learning. Here are [Some refer
 I think that is enough for now. End note ...  
 Hang on, btw, hit two `blanks` at the end of the last line, if you wanna make a  `<br>`.   
 That's it I guess. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjcwOTgzNl19
+eyJoaXN0b3J5IjpbMzU3Mzc5NzUyLDE5MTY3MDk4MzZdfQ==
 -->
