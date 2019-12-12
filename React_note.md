@@ -56,11 +56,11 @@ That's it I guess.
 -   Displaying a prop
 -   Using a prop to make decisions about what to display
 -   Defining an event handler in a component class
--   Passing an event handler as a prop
+-   Passing an event handler as a prop, notice the naming convention 
 -   Receiving a prop event handler and attaching it to an event listener
 -   Naming event handlers and event handler attributes according to convention
--   `this.props.children`
--   `getDefaultProps`
+-   `this.props.children` returns everything in between the open and close component tag. If count more than 1, the return is in array type. 
+-   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODYxNTYwNCwxOTE2NzA5ODM2XX0=
+eyJoaXN0b3J5IjpbLTUwMDAyNjg2NywxOTE2NzA5ODM2XX0=
 -->
