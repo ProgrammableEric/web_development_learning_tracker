@@ -42,4 +42,5 @@ An HTML-like JSX element is an element with a lower case tag name. In JSX, lower
 As a consequence of this, React components must always start with a capital letter, or will otherwise be treated as an HTML element. 
 <br>Attributes are interpreted differently as well. <code> button onClick={this.props.onClick} </code> - event handler for the HTML button element. <code> Button onClick={this.handleClick} </code> - attribute "onClick" for component "Button", which gets passed a attribute value "this.handleClick". 
 
-### I'm a quick note to Markdown
+### I'm a quick note to Markdown ... 
+As I need to make some good notes at the stage of learning.
