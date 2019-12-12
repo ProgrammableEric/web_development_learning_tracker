@@ -103,9 +103,14 @@ class Mood extends React.Component {
 }
 ~~~
 
+#### `const {}` 
+```javascript
+const {BrowserWindow} = require('electron')
+```
+Above works for ES6. it
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MD
-Y2MjA0MV19
+eyJoaXN0b3J5IjpbMTQ0ODUyMjYzNSwtMTcxMDA0MjYyMCwxMz
+k3ODg3NjgsNjkwNjYyMDQxXX0=
 -->
