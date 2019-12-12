@@ -1,4 +1,4 @@
-<h1>Library and Framework </h1>
+<h2>Library and Framework </h2>
 
 A Library is a bunch of reusable code. With a library, you are calling the library's code. However, a frame work is the sturcture of 
 something that allow you to fill the important content to make the application complete based on the structure given. Using a 
@@ -59,6 +59,8 @@ That's it I guess.
 -   Receiving a prop event handler and attaching it to an event listener
 -   `this.props.children` returns everything in between the open and close component tag. If count more than 1, the return is in array type. 
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjQxNDI3NCwxOTE2NzA5ODM2XX0=
+eyJoaXN0b3J5IjpbLTg0OTM2OTE1OCwxOTE2NzA5ODM2XX0=
 -->
