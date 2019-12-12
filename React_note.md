@@ -39,7 +39,7 @@ JSX is a syntax extension for JavaScript. It was written to be used with React. 
 </ul>
     
 <h3>HTML-like JSX element</h3>
-An HTML-like JSX element is an element with a lower case tag name. In JSX, lower case tag names will be treated as HTML tags, while upper case tag names will be treated as a component instance. For instance, lower case <code> button </code> is treated as an HTML element, while upper case <code> Button </code> would be treated as a component instance of the Button class.
+An HTML-like JSX element is an element with a lower case tag name. In JSX, lower case tag names will be treated as HTML tags, while upper case tag names will be treated as a component instance. For instance, lower case <code>button</code>  is treated as an HTML element, while upper case <code> Button </code> would be treated as a component instance of the Button class.
 As a consequence of this, React components must always start with a capital letter, or will otherwise be treated as an HTML element. 
 <br>Attributes are interpreted differently as well. <code> button onClick={this.props.onClick} </code> - event handler for the HTML button element. <code> Button onClick={this.handleClick} </code> - attribute "onClick" for component "Button", which gets passed a attribute value "this.handleClick". 
 
@@ -106,5 +106,6 @@ class Mood extends React.Component {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Nzg4NzY4LDY5MDY2MjA0MV19
+eyJoaXN0b3J5IjpbLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MD
+Y2MjA0MV19
 -->
