@@ -72,13 +72,14 @@ class  Example  extends  React.Component  {
 }  
 
 makeSomeFog()  {  
-	this.setState({  weather:  'foggy'  });  } 
+	this.setState({ weather: 'foggy' }); } 
  } 
 ~~~
-- `setState` can't be used directly in `render()`method. It causes the two method calling each other indefinitely. 
+- `this.setState()`automatically calls render
+- `this.setState()` can't be used directly in `render()`method. It causes the two method calling each other indefinitely. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI5NTc0ODFdfQ==
+eyJoaXN0b3J5IjpbNjkwNjYyMDQxXX0=
 -->
