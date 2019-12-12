@@ -22,6 +22,7 @@ JSX is a syntax extension for JavaScript. It was written to be used with React. 
   <li><b>Conditionals & If statement:</b> Use if statement outside the React element / use <code>... ? ... : ...</code> / <code>&& </code> operator.</li> 
 </ul>
 
+## React
 <h3>React Component</h3>
 <ul>
   <li>Create a component class by subclassing <code>React.Component</code>. e.g. <code>class YourComponentNameGoesHere extends React.Component {} </code> </li>
