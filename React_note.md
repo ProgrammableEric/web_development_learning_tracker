@@ -67,6 +67,7 @@ class  Example  extends  React.Component  {
 	constructor(props)  {  		
 		super(props);  
 		this.state  =  {  weather:  'sunny'  };
+		// Bind "this" to the setState function. 
 		this.makeSomeFog  =  this.makeSomeFog.bind(this);  
 }  
 
@@ -74,10 +75,10 @@ makeSomeFog()  {
 	this.setState({  weather:  'foggy'  });  } 
  } 
 ~~~
-
+- `setState` can't be used directly in `render()`method. It causes the two method calling each other indefinitely. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4MTA4NDQxXX0=
+eyJoaXN0b3J5IjpbLTE4MTI5NTc0ODFdfQ==
 -->
