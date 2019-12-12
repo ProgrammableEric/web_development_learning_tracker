@@ -43,4 +43,7 @@ As a consequence of this, React components must always start with a capital lett
 <br>Attributes are interpreted differently as well. <code> button onClick={this.props.onClick} </code> - event handler for the HTML button element. <code> Button onClick={this.handleClick} </code> - attribute "onClick" for component "Button", which gets passed a attribute value "this.handleClick". 
 
 ### I'm a quick note to Markdown ... 
-As I need to make some good notes at the stage of learning.
+As I need to make some good notes at the stage of learning. Here are [Some reference](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown) and [A good editor](https://pandao.github.io/editor.md/en.html).  
+I think that is enough for now. End note ...  
+Hang on, btw, hit two `blanks` at the end of the last line, if you wanna make a  `<br>`.   
+That's it I guess. 
