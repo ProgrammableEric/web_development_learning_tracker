@@ -60,10 +60,11 @@ That's it I guess.
 -   Receiving a prop event handler and attaching it to an event listener
 -   `this.props.children` returns everything in between the open and close component tag. If count more than 1, the return is in array type. 
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
-- 
+#### `state`
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5ODE3NTE0LDE5MTY3MDk4MzZdfQ==
+eyJoaXN0b3J5IjpbLTkyODU1MDA4NCwxOTE2NzA5ODM2XX0=
 -->
