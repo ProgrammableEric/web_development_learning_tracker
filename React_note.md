@@ -49,7 +49,18 @@ I think that is enough for now. End note ...
 Hang on, btw, hit two `blanks` at the end of the last line, if you wanna make a  `<br>`.   
 That's it I guess. 
 
-
+### React Component Properties 
+#### `this.props`    
+-   Passing a prop by giving an  _attribute_  to a component instance
+-   Accessing a passed-in prop via  `this.props.prop-name`
+-   Displaying a prop
+-   Using a prop to make decisions about what to display
+-   Defining an event handler in a component class
+-   Passing an event handler as a prop
+-   Receiving a prop event handler and attaching it to an event listener
+-   Naming event handlers and event handler attributes according to convention
+-   `this.props.children`
+-   `getDefaultProps`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3Mzc5NzUyLDE5MTY3MDk4MzZdfQ==
+eyJoaXN0b3J5IjpbLTY2ODYxNTYwNCwxOTE2NzA5ODM2XX0=
 -->
