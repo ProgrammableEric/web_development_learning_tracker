@@ -119,8 +119,13 @@ We can use the curly braces to grab field of object directly by:
 const { email,title } = obj;
 ```
 
+#### Design pattern
+- A component should never update its own `this.props`.
+- **A React component should use  `props`  to store information that can be changed, but can only be changed by a  _different_  component.**
+- **A React component should use  `state`  to store information that the component itself can change.**
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwxMz
-k3ODg3NjgsNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbMTIzMDI4OTcxMCwxNDQ0MTQ1NDA2LC0xNz
+EwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFdfQ==
 -->
