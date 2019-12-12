@@ -49,7 +49,8 @@ I think that is enough for now. End note ...
 Hang on, btw, hit two `blanks` at the end of the last line, if you wanna make a  `<br>`.   
 That's it I guess. 
 
-### React Component `p` 
+### React Component `Props` and `state`	
+`Props` and `state` are the only two ways to represent dynamic information in react components. Besides them, every value used in a component should always stay exactly the same. 
 #### `this.props`    
 -   Passing a prop by giving an  _attribute_  to a component instance
 -   Accessing a passed-in prop via  `this.props.prop-name`
@@ -59,9 +60,10 @@ That's it I guess.
 -   Receiving a prop event handler and attaching it to an event listener
 -   `this.props.children` returns everything in between the open and close component tag. If count more than 1, the return is in array type. 
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
+- 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjE0MjI1NSwxOTE2NzA5ODM2XX0=
+eyJoaXN0b3J5IjpbNDI5ODE3NTE0LDE5MTY3MDk4MzZdfQ==
 -->
