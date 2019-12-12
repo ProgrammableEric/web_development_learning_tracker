@@ -62,3 +62,11 @@ That's it I guess.
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 #### `state`
 - `state` is not passed from outside. A component decides its own state.
+
+
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTU5ODIwNDgwXX0=
+-->
