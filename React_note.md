@@ -62,11 +62,22 @@ That's it I guess.
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 #### `state`
 - `state` is not passed from outside. A component decides its own state.
+~~~
+class  Example  extends  React.Component  {  
+	constructor(props)  {  		
+		super(props);  
+		this.state  =  {  weather:  'sunny'  };
+		this.makeSomeFog  =  this.makeSomeFog.bind(this);  
+}  
 
+makeSomeFog()  {  
+	this.setState({  weather:  'foggy'  });  } 
+ } 
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5ODIwNDgwXX0=
+eyJoaXN0b3J5IjpbNDU4MTA4NDQxXX0=
 -->
