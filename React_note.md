@@ -49,7 +49,7 @@ I think that is enough for now. End note ...
 Hang on, btw, hit two `blanks` at the end of the last line, if you wanna make a  `<br>`.   
 That's it I guess. 
 
-### React Component Properties 
+### React Component `p` 
 #### `this.props`    
 -   Passing a prop by giving an  _attribute_  to a component instance
 -   Accessing a passed-in prop via  `this.props.prop-name`
@@ -61,6 +61,7 @@ That's it I guess.
 -   `getDefaultProps` set up default behaviour if no properties are given when rendering the component. 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTU3ODAxOTgsMTkxNjcwOTgzNl19
+eyJoaXN0b3J5IjpbLTQ1MjE0MjI1NSwxOTE2NzA5ODM2XX0=
 -->
