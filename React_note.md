@@ -165,10 +165,11 @@ export class Child extends React.Component {
   ......
   }
 ~~~
-
+- A component should only have one job 
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1ND
-Y3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODcz
-NDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4Nz
-Y4LDY5MDY2MjA0MV19
+eyJoaXN0b3J5IjpbLTIxMzE5MTU2MCw4NDM5NjM4MiwtMzM5OT
+I3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3
+MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0Mj
+YyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
 -->
