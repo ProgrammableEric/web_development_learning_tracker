@@ -125,10 +125,46 @@ const { email,title } = obj;
 - **A React component should use  `state`  to store information that the component itself can change.**
 - **Two design patterns:** Stateful parent passing information to a stateless, child component. / Stateless child component update the state of the parent component. ( by passing and calling the event handler )
 - Passing handler methods: Do it without `()`. Passing method with `()` means to actually **calling** it. However, in dealing with handler methods we only need to pass the method as a parameter/object. 
+~~~javascript
+// Parent.js
+class Parent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: 'Frarthur' };
+    this.changeName = this.changeName.bind(this); // binding "this" with the component itself. 
+  }
+  
+  changeName(newName) {
+    this.setState({
+      name: newName
+    });
+  }
+
+  render() {
+    return <Child name={this.state.name} onChange={this.changeName} />
+  }
+}
+
+// Child.js
+export class Child extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    const name = e.target.value;
+    this.props.onChange(name);
+  }
+  
+  render() {
+  ......
+	}
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTM3OTEyNyw3Njg1NDY3LC0xNjc4Nz
+eyJoaXN0b3J5IjpbLTEzMDMyNjk5Niw3Njg1NDY3LC0xNjc4Nz
 U2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0
 NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2Mj
 A0MV19
