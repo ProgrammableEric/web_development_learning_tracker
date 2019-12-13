@@ -166,10 +166,10 @@ export class Child extends React.Component {
   }
 ~~~
 - A component should only have one job 
-- 
+- Seperate multi-tasking components - one stateless component _display_ information, and a different stateless component offer the ability to _change_ that information.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzE5MTU2MCw4NDM5NjM4MiwtMzM5OT
-I3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3
-MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0Mj
-YyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOT
+kyNzUzOSw3Njg1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4
+NzM0MjAzMjksODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwND
+I2MjAsMTM5Nzg4NzY4LDY5MDY2MjA0MV19
 -->
