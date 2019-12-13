@@ -149,23 +149,22 @@ class Parent extends React.Component {
 export class Child extends React.Component {
   constructor(props) {
     super(props);
-    
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(e) {
+  handleChange(e) {  // new method to handle parameter passing into `.onChange()` 
     const name = e.target.value;
     this.props.onChange(name);
   }
   
   render() {
   ......
-	}
+  }
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDMyNjk5Niw3Njg1NDY3LC0xNjc4Nz
-U2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0
-NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2Mj
-A0MV19
+eyJoaXN0b3J5IjpbLTEyMzkzMTc0MTgsNzY4NTQ2NywtMTY3OD
+c1NjM3MiwtNTk3ODA5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwx
+NDQ0MTQ1NDA2LC0xNzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2Nj
+IwNDFdfQ==
 -->
