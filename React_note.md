@@ -125,10 +125,11 @@ const { email,title } = obj;
 - **A React component should use  `state`  to store information that the component itself can change.**
 - **Two design patterns:** Stateful parent passing information to a stateless, child component. / Stateless child component update the state of the parent component. ( by passing and calling the event handler )
 - Passing handler methods: Do it without `()`. Passing method with `()` means to actually **calling** it. However, in dealing with handler methods we only need to pass the method as a parameter/object. 
-
+~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3OD
-A5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0x
-NzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFdfQ==
+eyJoaXN0b3J5IjpbMTI4NTM3OTEyNyw3Njg1NDY3LC0xNjc4Nz
+U2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0
+NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2Mj
+A0MV19
 -->
