@@ -124,11 +124,11 @@ const { email,title } = obj;
 - **A React component should use  `props`  to store information that can be changed, but can only be changed by a  _different_  component.**
 - **A React component should use  `state`  to store information that the component itself can change.**
 - **Two design patterns:** Stateful parent passing information to a stateless, child component. / Stateless child component update the state of the parent component. ( by passing and calling the event handler )
-- Passi
+- Passing handler methods: Do it without `()`. Passing method with `()` means to actually call it. However, in dealing with handler methods we only need to pass the method as a parameter/object. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDM1NzYsLTE2Nzg3NTYzNzIsLTU5Nz
-gwOTg3LDg3MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwt
-MTcxMDA0MjYyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbLTE1MjA2ODQyNTMsLTE2Nzg3NTYzNzIsLT
+U5NzgwOTg3LDg3MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQw
+NiwtMTcxMDA0MjYyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
 -->
