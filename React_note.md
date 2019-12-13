@@ -123,10 +123,11 @@ const { email,title } = obj;
 - A component should never update its own `this.props`.
 - **A React component should use  `props`  to store information that can be changed, but can only be changed by a  _different_  component.**
 - **A React component should use  `state`  to store information that the component itself can change.**
-- 
+- d
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MT
-AwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2MjA0MV19
+eyJoaXN0b3J5IjpbNTI2NzQzOTY3LDg3MzQyMDMyOSwxNDQ0MT
+Q1NDA2LC0xNzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFd
+fQ==
 -->
