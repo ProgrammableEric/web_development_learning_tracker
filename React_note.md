@@ -123,7 +123,7 @@ const { email,title } = obj;
 -  **Three design patterns:** 
     - Stateful parent passing information to a stateless, child component. 
    -  Stateless child component update the state of the parent component. ( by passing and calling the event handler )
-   - Child components update sibling components 
+   - Child components update sibling components (thru parent passing)
    
 - A component should never update its own `this.props`.
 - **A React component should use  `props`  to store information that can be changed, but can only be changed by a  _different_  component.**
@@ -167,8 +167,8 @@ export class Child extends React.Component {
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUyNjU3MTUsLTMzOTkyNzUzOSw3Nj
-g1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjks
-ODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nz
-g4NzY4LDY5MDY2MjA0MV19
+eyJoaXN0b3J5IjpbODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1ND
+Y3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODcz
+NDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4Nz
+Y4LDY5MDY2MjA0MV19
 -->
