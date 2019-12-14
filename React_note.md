@@ -169,11 +169,11 @@ export class Child extends React.Component {
 - Seperate multi-tasking components - one stateless component _display_ information, and a different stateless component offer the ability to _change_ that information.
 
 ### ES6 JS Class 
-- 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDkwNjIyOCwtMTA5NTk5Nzk5NSw4ND
-M5NjM4MiwtMzM5OTI3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIs
-LTU5NzgwOTg3LDg3MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NT
-QwNiwtMTcxMDA0MjYyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTQ3MDUzMTU5LDExNTA5MDYyMjgsLTEwOT
+U5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0x
+Njc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMz
+I5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5
+MDY2MjA0MV19
 -->
