@@ -203,7 +203,7 @@ function bar() {
 }
 
 bar.call(foo); 
-//输出： 1
+// 输出： 1
 // 1.call 改变了 this 的指向，指向到 foo 
 // 2.bar 函数执行了
 // 相当于： 
@@ -214,8 +214,12 @@ Function.prototype.call2 = function(context) {
     delete context.fn;
 }
 ~~~
+~~~javascript
+// call 给定指定参数
+
+~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDE5NTY2MywxNjcyMzU1NTEwLDE3MD
+eyJoaXN0b3J5IjpbMTQwODcyNDc4NCwxNjcyMzU1NTEwLDE3MD
 QzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3NjExOTk4
 NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMz
 k5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3ODA5ODcs
