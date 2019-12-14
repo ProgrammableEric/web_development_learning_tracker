@@ -170,11 +170,12 @@ export class Child extends React.Component {
 
 ### Event Handling 
 `.bind()`   
-- keeps the context of `this` within another function
+- keeps the context of `this` within another function. 
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAyMTQwMzksMTE1MDkwNjIyOCwtMT
-A5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5LDc2ODU0Njcs
-LTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMDMyOSw4NzM0Mj
-AzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwxMzk3ODg3Njgs
-NjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOT
+U5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0x
+Njc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMz
+I5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5
+MDY2MjA0MV19
 -->
