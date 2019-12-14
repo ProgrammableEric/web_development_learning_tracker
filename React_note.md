@@ -169,15 +169,15 @@ export class Child extends React.Component {
 - Seperate multi-tasking components - one stateless component _display_ information, and a different stateless component offer the ability to _change_ that information.
 
 ### Event Handling 
-`.bind()`   
+`.bind()`    [link](https://juejin.im/post/59093b1fa0bb9f006517b906)
 - keeps the context of `this` within another function. 
 - bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。(来自于 MDN )
 - 
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQ0NTc3NjksMTY5NjgyMzE0Miw1Nz
-YxMTk5ODYsMTE1MDkwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4
-MiwtMzM5OTI3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5Nz
-gwOTg3LDg3MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwt
-MTcxMDA0MjYyMCwxMzk3ODg3NjgsNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbMTY3NTAwMDE5NSwxNjk2ODIzMTQyLDU3Nj
+ExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2Mzgy
+LC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3OD
+A5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0x
+NzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFdfQ==
 -->
