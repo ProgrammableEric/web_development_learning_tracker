@@ -216,13 +216,27 @@ Function.prototype.call2 = function(context) {
 ~~~
 ~~~javascript
 // call 给定指定参数
+var foo = {
+    value: 1
+};
 
+function bar(name, age) {
+    console.log(name)
+    console.log(age)
+    console.log(this.value);
+}
+
+bar.call(foo, 'kevin', 18);
+// kevin
+// 18
+// 1
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwODcyNDc4NCwxNjcyMzU1NTEwLDE3MD
-QzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3NjExOTk4
-NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMz
-k5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3ODA5ODcs
-ODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0xNzEwMD
-QyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFdfQ==
+eyJoaXN0b3J5IjpbMTczMjMyMTk5MywxNDA4NzI0Nzg0LDE2Nz
+IzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OTY4MjMx
+NDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOTU5OTc5OTUsOD
+QzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0xNjc4NzU2Mzcy
+LC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0NDQxND
+U0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2MjA0MV19
+
 -->
