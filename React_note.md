@@ -172,10 +172,24 @@ export class Child extends React.Component {
 `.bind()`    [link](https://juejin.im/post/59093b1fa0bb9f006517b906)
 - keeps the context of `this` within another function. 
 - bind() 方法会创建一个新函数。当这个新函数被调用时，bind() 的第一个参数将作为它运行时的 this，之后的一序列参数将会在传递的实参前传入作为它的参数。(来自于 MDN )
-- 
+~~~javascript
+// 指定this 的指向
+var foo = {
+    value: 1
+};
+
+function bar() {
+    console.log(this.value);
+}
+
+// 返回了一个函数
+var bindFoo = bar.bind(foo); 
+
+bindFoo(); // 1
+~~~
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTAwMDE5NSwxNjk2ODIzMTQyLDU3Nj
+eyJoaXN0b3J5IjpbLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3Nj
 ExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2Mzgy
 LC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3OD
 A5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0x
