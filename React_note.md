@@ -189,14 +189,28 @@ bindFoo(); // 1
 ~~~
 - 
 
-`call() and apply()`
+`call()`
 
-- 
+- call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。
+~~~javascript
+var foo = {
+    value: 1
+};
+
+function bar() {
+    console.log(this.value);
+}
+
+bar.call(foo); 
+//输出： 1
+// 1.call 改变了 this 的指向，指向到 foo 
+// 2.bar 函数执行了
+~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OT
-Y4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOTU5OTc5
-OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0xNjc4Nz
-U2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0
-NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2Mj
-A0MV19
+eyJoaXN0b3J5IjpbLTE0MDE2OTM1ODQsMTcwNDM1MTAxOSwtNT
+c5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYy
+MjgsLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Nj
+g1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjks
+ODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nz
+g4NzY4LDY5MDY2MjA0MV19
 -->
