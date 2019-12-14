@@ -171,11 +171,12 @@ export class Child extends React.Component {
 ### Event Handling 
 `.bind()`   
 - keeps the context of `this` within another function. 
+- 可以传入若干参数，并返回一个函数
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOT
-U5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0x
-Njc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMz
-I5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5
-MDY2MjA0MV19
+eyJoaXN0b3J5IjpbMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MD
+kwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5
+LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMD
+MyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwx
+Mzk3ODg3NjgsNjkwNjYyMDQxXX0=
 -->
