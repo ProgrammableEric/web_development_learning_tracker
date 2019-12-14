@@ -193,6 +193,7 @@ bindFoo(); // 1
 
 - call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。
 ~~~javascript
+// 指定 this 的指向
 var foo = {
     value: 1
 };
@@ -205,12 +206,19 @@ bar.call(foo);
 //输出： 1
 // 1.call 改变了 this 的指向，指向到 foo 
 // 2.bar 函数执行了
+// 相当于： 
+Function.prototype.call2 = function(context) {
+    // 首先要获取调用call的函数，用this可以获取
+    context.fn = this;
+    context.fn();
+    delete context.fn;
+}
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjM1NTUxMCwxNzA0MzUxMDE5LC01Nz
-k5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MDkwNjIy
-OCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5LDc2OD
-U0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMDMyOSw4
-NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwxMzk3OD
-g3NjgsNjkwNjYyMDQxXX0=
+eyJoaXN0b3J5IjpbMTQyMDE5NTY2MywxNjcyMzU1NTEwLDE3MD
+QzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3NjExOTk4
+NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMz
+k5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3ODA5ODcs
+ODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0xNzEwMD
+QyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFdfQ==
 -->
