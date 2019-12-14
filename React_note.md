@@ -215,7 +215,7 @@ Function.prototype.call2 = function(context) {
 }
 ~~~
 ~~~javascript
-// call 给定指定参数
+// call 给定指定参数，参数个数可以不定
 var foo = {
     value: 1
 };
@@ -227,16 +227,14 @@ function bar(name, age) {
 }
 
 bar.call(foo, 'kevin', 18);
-// kevin
-// 18
-// 1
+// 输出：kevin 18 1
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMjMyMTk5MywxNDA4NzI0Nzg0LDE2Nz
-IzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OTY4MjMx
-NDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOTU5OTc5OTUsOD
-QzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0xNjc4NzU2Mzcy
-LC01OTc4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0NDQxND
-U0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4LDY5MDY2MjA0MV19
-
+eyJoaXN0b3J5IjpbLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNj
+cyMzU1NTEwLDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIz
+MTQyLDU3NjExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LD
+g0Mzk2MzgyLC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3
+MiwtNTk3ODA5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MT
+Q1NDA2LC0xNzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFd
+fQ==
 -->
