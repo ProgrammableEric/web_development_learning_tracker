@@ -189,7 +189,7 @@ bindFoo(); // 1
 ~~~
 - 
 
-`call()`
+`call()` [link](https://github.com/mqyqingfeng/Blog/issues/11)
 
 - call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。
 ~~~javascript
@@ -207,10 +207,10 @@ bar.call(foo);
 // 2.bar 函数执行了
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDE2OTM1ODQsMTcwNDM1MTAxOSwtNT
-c5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYy
-MjgsLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Nj
-g1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjks
-ODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nz
-g4NzY4LDY5MDY2MjA0MV19
+eyJoaXN0b3J5IjpbMTY3MjM1NTUxMCwxNzA0MzUxMDE5LC01Nz
+k5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MDkwNjIy
+OCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5LDc2OD
+U0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMDMyOSw4
+NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMCwxMzk3OD
+g3NjgsNjkwNjYyMDQxXX0=
 -->
