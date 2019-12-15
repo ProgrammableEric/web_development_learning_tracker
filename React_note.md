@@ -189,7 +189,7 @@ bindFoo(); // 1
 ~~~
 - 
 
-`call()` [link](https://github.com/mqyqingfeng/Blog/issues/11)
+`call()` 参考笔记 [link](https://github.com/mqyqingfeng/Blog/issues/11)
 
 - call() 方法在使用一个指定的 this 值和若干个指定的参数值的前提下调用某个函数或方法。
 ~~~javascript
@@ -257,12 +257,31 @@ Function.prototype.call2 = function (context) {
 }
 ~~~
 
-`apply()`
+`apply()` 参考笔记 [link](https://github.com/mqyqingfeng/Blog/issues/11)
 ~~~javascript
-// 与 call() 相似，直接给代码
+// 与 call() 相似，直接给模拟实现代码：
+Function.prototype.apply = function (context, arr) {
+    var context = Object(context) || window;
+    context.fn = this;
+
+    var result;
+    if (!arr) {
+        result = context.fn();
+    }
+    else {
+        var args = [];
+        for (var i = 0, len = arr.length; i < len; i++) {
+            args.push('arr[' + i + ']');
+        }
+        result = eval('context.fn(' + args + ')')
+    }
+
+    delete context.fn
+    return result;
+}
 ~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzODMxNDYsLTEyMDAwMzQ1MTEsMT
+eyJoaXN0b3J5IjpbLTE1NDc3NzkxNjMsLTEyMDAwMzQ1MTEsMT
 QwODcyNDc4NCwxNjcyMzU1NTEwLDE3MDQzNTEwMTksLTU3OTkw
 NTAyMywxNjk2ODIzMTQyLDU3NjExOTk4NiwxMTUwOTA2MjI4LC
 0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMzk5Mjc1MzksNzY4NTQ2
