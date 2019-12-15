@@ -239,13 +239,34 @@ function bar() {
 
 bar.call(null); // 1
 ~~~
+~~~javascript
+// 最终模拟实现
+Function.prototype.call2 = function (context) {
+    var context = context || window;
+    context.fn = this;
 
+    var args = [];
+    for(var i = 1, len = arguments.length; i < len; i++) {
+        args.push('arguments[' + i + ']');
+    }
+
+    var result = eval('context.fn(' + args +')');
+
+    delete context.fn
+    return result;
+}
+~~~
+
+`apply()`
+~~~javascript
+// 与 call() 相似，直接给代码
+~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjQyMTgwNiwtMTIwMDAzNDUxMSwxND
-A4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1
-MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLT
-EwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3
-LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczND
-IwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4
-XX0=
+eyJoaXN0b3J5IjpbLTE0MzIzODMxNDYsLTEyMDAwMzQ1MTEsMT
+QwODcyNDc4NCwxNjcyMzU1NTEwLDE3MDQzNTEwMTksLTU3OTkw
+NTAyMywxNjk2ODIzMTQyLDU3NjExOTk4NiwxMTUwOTA2MjI4LC
+0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMzk5Mjc1MzksNzY4NTQ2
+NywtMTY3ODc1NjM3MiwtNTk3ODA5ODcsODczNDIwMzI5LDg3Mz
+QyMDMyOSwxNDQ0MTQ1NDA2LC0xNzEwMDQyNjIwLDEzOTc4ODc2
+OF19
 -->
