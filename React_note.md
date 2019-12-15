@@ -229,12 +229,23 @@ function bar(name, age) {
 bar.call(foo, 'kevin', 18);
 // 输出：kevin 18 1
 ~~~
+~~~javascript
+// this 参数可以传 null，当为 null 的时候，视为指向 window
+var value = 1;
+
+function bar() {
+    console.log(this.value);
+}
+
+bar.call(null); // 1
+~~~
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNj
-cyMzU1NTEwLDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIz
-MTQyLDU3NjExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LD
-g0Mzk2MzgyLC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3
-MiwtNTk3ODA5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MT
-Q1NDA2LC0xNzEwMDQyNjIwLDEzOTc4ODc2OCw2OTA2NjIwNDFd
-fQ==
+eyJoaXN0b3J5IjpbLTczMjQyMTgwNiwtMTIwMDAzNDUxMSwxND
+A4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1
+MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLT
+EwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Njg1NDY3
+LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjksODczND
+IwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjAsMTM5Nzg4NzY4
+XX0=
 -->
