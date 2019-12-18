@@ -82,10 +82,14 @@ const robot = {
 <h3>Promises</h3>
 <img src="./notes_material/promises1.png">
 promise 处理一个asynchronise 事件，本身存在三个状态，返回一个状态resolved 或 rejected. .then()作为后续的操作可以同时被定义。
-<br>
+<pre>
 <code>
-const  executorFunction  =  (resolve,  reject)  =>  {  };  const  myFirstPromise  =  new  Promise(executorFunction);
+const  executorFunction  =  (resolve,  reject)  =>  { 
+	 if  (someCondition)  {  resolve('I resolved!');  }  
+	 else  {  reject('I rejected!');  }  } 
+const  myFirstPromise  =  new  Promise(executorFunction);
 </code>
+</pre>
 <ul>
   <li>Promises are JavaScript objects that represent the eventual result of an asynchronous operation.</li>
   <li>Promises can be in one of three states: pending, resolved, or rejected.</li>
@@ -130,5 +134,5 @@ getNumber()
 <b> async POST diagram </b>
 <img src="./notes_material/c_model7.png">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTYxMjc4NjNdfQ==
+eyJoaXN0b3J5IjpbNjk3NTUyNDgwXX0=
 -->
