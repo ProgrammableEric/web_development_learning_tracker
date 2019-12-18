@@ -290,13 +290,15 @@ Ask user for servie selection
 -> redirected back to the original site along with the _access token_ 
 -> access token be included in the following app requests. 
 
-
+#### CORS and CORS Anywhere
+**CORS** 考虑到安全问题，在跨域标准化之前，如果你想调用一个节点在不同域的API, 是不存在的。这种调用，会因为 Same-Origin 政策被阻止。
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwOD
-A4MDg0NzEsNDg3NDg1ODY3LDY4MzM3MzUwNiwtMTIwMDAzNDUx
-MSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNT
-c5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYy
-MjgsLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUzOSw3Nj
-g1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0MjAzMjld
-fQ==
+eyJoaXN0b3J5IjpbLTc0MzMwNzU3NywxMzMzMDM5OTg5LDIwMz
+M4MzU5NjcsMTA4MDgwODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2
+LC0xMjAwMDM0NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNz
+A0MzUxMDE5LC01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5
+ODYsMTE1MDkwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMz
+M5OTI3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3
+XX0=
 -->
