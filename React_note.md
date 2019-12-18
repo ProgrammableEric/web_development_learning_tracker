@@ -187,7 +187,7 @@ var bindFoo = bar.bind(foo);
 
 bindFoo(); // 1
 ~~~
-- 
+
 
 `call()` 参考笔记 [link](https://github.com/mqyqingfeng/Blog/issues/11)
 
@@ -285,13 +285,13 @@ Function.prototype.apply = function (context, arr) {
 #### types of authentication 
 - **Password** Application's server checks the supplied credentials to determine user's right to access certain part of the information. _typical use:_ _authentication token_, which prevents continuouly logging in. The token expires after a certain amount of time. 
 - **API Keys** Generate API key when the developer registers their application. Here the developer's app is the application that asks for authentication from the public API. It is used by the API to block that application’s API key and prevent further malicious use of the API by that application if needed. 
-- **OAuth** 
+- **OAuth** OAuth is an **open standard** and is commonly used to grant permission for applications to access user information without forcing users to give away their passwords. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcxNTE3NTk3LDQ4NzQ4NTg2Nyw2ODMzNz
-M1MDYsLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEw
-LDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3Nj
-ExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2Mzgy
-LC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3OD
-A5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2XX0=
+eyJoaXN0b3J5IjpbMTA4MDgwODQ3MSw0ODc0ODU4NjcsNjgzMz
+czNTA2LC0xMjAwMDM0NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUx
+MCwxNzA0MzUxMDE5LC01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1Nz
+YxMTk5ODYsMTE1MDkwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4
+MiwtMzM5OTI3NTM5LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5Nz
+gwOTg3LDg3MzQyMDMyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNl19
 
 -->
