@@ -283,15 +283,15 @@ Function.prototype.apply = function (context, arr) {
 
 ## Authentication and OAuth
 #### types of authentication 
-- **Password** Application's server checks the supplied credentials to determine user's right to access certa
-- 
+- **Password** Application's server checks the supplied credentials to determine user's right to access certain part of the information. _typical use:_ _authentication token_, which prevents continuouly logging in. The token expires after a certain amount of time. 
+- **API Keys** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzgyNzUsNjgzMzczNTA2LC0xMjAwMD
-M0NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNzA0MzUxMDE5
-LC01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MD
-kwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5
-LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMD
-MyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMF19
-
+eyJoaXN0b3J5IjpbNDg3NDg1ODY3LDY4MzM3MzUwNiwtMTIwMD
+AzNDUxMSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAx
+OSwtNTc5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNT
+A5MDYyMjgsLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOTkyNzUz
+OSw3Njg1NDY3LC0xNjc4NzU2MzcyLC01OTc4MDk4Nyw4NzM0Mj
+AzMjksODczNDIwMzI5LDE0NDQxNDU0MDYsLTE3MTAwNDI2MjBd
+fQ==
 -->
