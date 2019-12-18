@@ -306,19 +306,20 @@ Ask user for servie selection
 通过这种机制，我们能够阻止黑客的脚本攻击，以防当你登陆，比如银行网站，的时候替换你的验证信息。
 
 #### User Agent [source]([https://en.wikipedia.org/wiki/User_agent](https://en.wikipedia.org/wiki/User_agent))
-In [computing](https://en.wikipedia.org/wiki/Computing "Computing"), a **user agent** is software (a [software agent](https://en.wikipedia.org/wiki/Software_agent "Software agent")) that is acting on behalf of a [user](https://en.wikipedia.org/wiki/User_(computing) "User (computing)"), such as a [web browser](https://en.wikipedia.org/wiki/Web_browser "Web browser") that "retrieves, renders and facilitates end user interaction with Web content".[[1]](https://en.wikipedia.org/wiki/User_agent#cite_note-1) An email reader is a [mail user agent](https://en.wikipedia.org/wiki/Mail_user_agent "Mail user agent").
-the [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") (HTTP) identifies the client software originating the request, using a user-agent header, even when the client is not operated by a user.
-
+In computing, a **user agent** is software (a [software agent](https://en.wikipedia.org/wiki/Software_agent "Software agent")) that is acting on behalf of a [user](https://en.wikipedia.org/wiki/User_(computing) "User (computing)"), such as a [web browser](https://en.wikipedia.org/wiki/Web_browser "Web browser") that "retrieves, renders and facilitates end user interaction with Web content".[[1]](https://en.wikipedia.org/wiki/User_agent#cite_note-1) An email reader is a [mail user agent](https://en.wikipedia.org/wiki/Mail_user_agent "Mail user agent").
+The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") (HTTP) identifies the client software originating the request, using a user-agent header, even when the client is not operated by a user.
+**User agent identification** When a software agent operates in a network protocol, it often identifies itself, its application type, [operating system](https://en.wikipedia.org/wiki/Operating_system "Operating system"), software vendor, or software revision, by submitting a characteristic identification [string](https://en.wikipedia.org/wiki/String_(computer_science) "String (computer science)") to its operating peer. In [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol"),[[3]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc7231-3) SIP,[[2]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc3261-2) and NNTP[[4]](https://en.wikipedia.org/wiki/User_agent#cite_note-4) protocols, this identification is transmitted in a header field _User-Agent_. [Bots](https://en.wikipedia.org/wiki/Internet_bot "Internet bot"), such as Web crawlers, often also include a [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") and/or [e-mail address](https://en.wikipedia.org/wiki/E-mail_address "E-mail address") so that the [Webmaster](https://en.wikipedia.org/wiki/Webmaster "Webmaster") can contact the operator of the bot.
+ 
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc1NDk3OTUsMjA0OTk2MDA0OSwxMz
-MzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgwODQ3MSw0ODc0ODU4
-NjcsNjgzMzczNTA2LC0xMjAwMDM0NTExLDE0MDg3MjQ3ODQsMT
-Y3MjM1NTUxMCwxNzA0MzUxMDE5LC01Nzk5MDUwMjMsMTY5Njgy
-MzE0Miw1NzYxMTk5ODYsMTE1MDkwNjIyOCwtMTA5NTk5Nzk5NS
-w4NDM5NjM4MiwtMzM5OTI3NTM5LDc2ODU0NjcsLTE2Nzg3NTYz
-NzJdfQ==
+eyJoaXN0b3J5IjpbMTk5ODQ0NTY0MSwyMDQ5OTYwMDQ5LDEzMz
+MwMzk5ODksMjAzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2
+Nyw2ODMzNzM1MDYsLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNj
+cyMzU1NTEwLDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIz
+MTQyLDU3NjExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LD
+g0Mzk2MzgyLC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3
+Ml19
 -->
