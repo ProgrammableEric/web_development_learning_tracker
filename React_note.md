@@ -290,11 +290,25 @@ Ask user for servie selection
 -> redirected back to the original site along with the _access token_ 
 -> access token be included in the following app requests. 
 
-#### CORS and CORS Anywhere
-**CORS** 考虑到安全问题，在跨域标准化之前，如果你想调用一个节点在不同域的API, 是不存在的。这种调用，会因为 Same-Origin 政策被阻止。
+#### CORS and CORS Anywhere [link](https://juejin.im/post/5a7359876fb9a0634a38e389)
+**CORS** 
+考虑到安全问题，在跨域标准化之前，如果你想调用一个节点在不同域的API, 是不存在的。这种调用，会因为 Same-Origin 政策被阻止。
+**目的：** 第一，使你所发出的请求能代表你自身； 第二， 阻止那些流氓JS发出的请求； 第三，这种机制会被激活，无论何时你发送请求到:     
+
+1). 不同的域名。(eg. 应用在 [example.com](http://www.example.com/) 调用 [api.com)](http://www.api.com)/)
+
+2). 不同的子域名。(eg. 应用在 [example.com](http://www.example.com/)  调用  [api.com)](http://www.api.com)/)  
+
+3). 不同的端口。(eg. 应用在  [example.com](http://www.example.com/)  调用  example.com:3001)  
+
+4). 不同的协议。(eg. 应用在  [example.com](https://example.com/)  调用  [example.com)](http://example.com)/)
+
+通过这种机制，我们能够阻止黑客的脚本攻击，以防当你登陆，比如银行网站，的时候替换你的验证信息。
+
  
+  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzMwNzU3NywxMzMzMDM5OTg5LDIwMz
+eyJoaXN0b3J5IjpbMjA0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMz
 M4MzU5NjcsMTA4MDgwODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2
 LC0xMjAwMDM0NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNz
 A0MzUxMDE5LC01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5
