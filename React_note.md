@@ -287,10 +287,10 @@ Function.prototype.apply = function (context, arr) {
 - **API Keys** Generate API key when the developer registers their application. Here the developer's app is the application that asks for authentication from the public API. It is used by the API to block that application’s API key and prevent further malicious use of the API by that application if needed. 
 - **OAuth** OAuth is an **open standard** and is commonly used to grant permission for applications to access user information without forcing users to give away their passwords.   Each API is required to implement their own version of OAuth and therefore may have a slightly different implementation or flow
 #### Generic OAuth workflow 
-Ask user for servie selection -> user redirected to service log
+Ask user for servie selection -> user redirected to service login -> redirected back to the original site along with the _access token_ -> access token be included in the following app requests. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQ3NDc1NywyMDMzODM1OTY3LDEwOD
+eyJoaXN0b3J5IjpbMTAzNDQ1MDU0OSwyMDMzODM1OTY3LDEwOD
 A4MDg0NzEsNDg3NDg1ODY3LDY4MzM3MzUwNiwtMTIwMDAzNDUx
 MSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNT
 c5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYy
