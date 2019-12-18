@@ -285,14 +285,13 @@ Function.prototype.apply = function (context, arr) {
 #### types of authentication 
 - **Password** Application's server checks the supplied credentials to determine user's right to access certain part of the information. _typical use:_ _authentication token_, which prevents continuouly logging in. The token expires after a certain amount of time. 
 - **API Keys** Generate API key when the developer registers their application. Here the developer's app is the application that asks for authentication from the public API. It is used by the API to block that application’s API key and prevent further malicious use of the API by that application if needed. 
-
-- 
+- **OAuth** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTkxNDgzOTYsNDg3NDg1ODY3LDY4Mz
-M3MzUwNiwtMTIwMDAzNDUxMSwxNDA4NzI0Nzg0LDE2NzIzNTU1
-MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OTY4MjMxNDIsNT
-c2MTE5OTg2LDExNTA5MDYyMjgsLTEwOTU5OTc5OTUsODQzOTYz
-ODIsLTMzOTkyNzUzOSw3Njg1NDY3LC0xNjc4NzU2MzcyLC01OT
-c4MDk4Nyw4NzM0MjAzMjksODczNDIwMzI5LDE0NDQxNDU0MDZd
-fQ==
+eyJoaXN0b3J5IjpbMjcxNTE3NTk3LDQ4NzQ4NTg2Nyw2ODMzNz
+M1MDYsLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEw
+LDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3Nj
+ExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2Mzgy
+LC0zMzk5Mjc1MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3OD
+A5ODcsODczNDIwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2XX0=
+
 -->
