@@ -110,6 +110,7 @@ prom.then(handleSuccess,  handleFailure);
   <li>Promise composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple <code>.then()</code>‘s and <code>.catch()</code>‘s.</li>
 </ul>
 
+<br><b>.then() </b>returns a promise with the same settled value as the promise it was called on if no appropriate handler was provided. Therefore, we can chain a bunch of thens with <code>catch(</code>
 <br><b><code>.catch()</code> and <code>.then() with reject</code></b> 在执行resolve的callback 时，如果抛出异常，<code>.catch()</code> 可以避免代码卡死，即运行逻辑进入catch这个方法中。例如下：<code>console.log(somedata)</code> 并不会报错。
 <pre>
   <code>
@@ -144,5 +145,5 @@ getNumber()
 <b> async POST diagram </b>
 <img src="./notes_material/c_model7.png">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTgwMzMyMF19
+eyJoaXN0b3J5IjpbLTczOTY1OTQ3NywyMTAxODAzMzIwXX0=
 -->
