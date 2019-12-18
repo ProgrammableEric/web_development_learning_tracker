@@ -283,15 +283,15 @@ Function.prototype.apply = function (context, arr) {
 
 ## Authentication and OAuth
 #### types of authentication 
-- **Password**  
+- **Password** Application's server checks the supplied credentials to determine user's right to access certa
 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNjQ0ODgzOSw2ODMzNzM1MDYsLTEyMD
-AwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEwLDE3MDQzNTEw
-MTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3NjExOTk4NiwxMT
-UwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2MzgyLC0zMzk5Mjc1
-MzksNzY4NTQ2NywtMTY3ODc1NjM3MiwtNTk3ODA5ODcsODczND
-IwMzI5LDg3MzQyMDMyOSwxNDQ0MTQ1NDA2LC0xNzEwMDQyNjIw
-XX0=
+eyJoaXN0b3J5IjpbLTM0NzgyNzUsNjgzMzczNTA2LC0xMjAwMD
+M0NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNzA0MzUxMDE5
+LC01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MD
+kwNjIyOCwtMTA5NTk5Nzk5NSw4NDM5NjM4MiwtMzM5OTI3NTM5
+LDc2ODU0NjcsLTE2Nzg3NTYzNzIsLTU5NzgwOTg3LDg3MzQyMD
+MyOSw4NzM0MjAzMjksMTQ0NDE0NTQwNiwtMTcxMDA0MjYyMF19
+
 -->
