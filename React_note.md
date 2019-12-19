@@ -348,16 +348,19 @@ If a component has to have `state`, make calculations based on `props`, or manag
 It essentially separates your _business logic_ from your _presentational logic_, which is a [Good Thing](http://www.dictionary.com/browse/good-thing).
 
 ### Stateless functional components 
-w
+Write presentational classes as Javascript function instead of React component class: 
+~~~javascript
+
+~~~
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDEyOTM3NywxMjY2Njc1MzQyLDE1MT
-U3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4
-MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC
-04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMjAzMzgz
-NTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1MDYsLT
-EyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEwLDE3MDQz
-NTEwMTldfQ==
+eyJoaXN0b3J5IjpbMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNT
+c5ODUwNiwtODQxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgw
+MCw4NDg1MTU3NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLT
+gzMDg1ODQxLDIwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1
+OTY3LDEwODA4MDg0NzEsNDg3NDg1ODY3LDY4MzM3MzUwNiwtMT
+IwMDAzNDUxMSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1
+MTAxOV19
 -->
