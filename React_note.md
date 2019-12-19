@@ -375,18 +375,20 @@ export const GuineaPigs = (props) => {
 }
 ~~~
 
-### propTypes
+### propTypes (refer to [this document](https://www.npmjs.com/package/prop-types))
+
 Use for two reasons: 1. prop validation 2. documentation 
+
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1Nj
-U0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYs
-LTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NT
-E1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04MzA4NTg0
-MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMjAzMzgzNTk2NywxMD
-gwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1MDYsLTEyMDAwMzQ1
-MTFdfQ==
+eyJoaXN0b3J5IjpbLTE1NTU2NjgyOTAsNjE5MjM4NTk4LDk4Nj
+E3NzUyMSwtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQy
+LDE1MTU3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mj
+k0ODg4MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTcz
+MzUyLC04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMj
+AzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1
+MDZdfQ==
 -->
