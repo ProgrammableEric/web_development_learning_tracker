@@ -443,7 +443,11 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
 - `componentDidMount` called lastly 
 
 **updating** A component updates every time that it renders, _**starting with the second render**_. 
-- 
+- `componentWillReceiveProps` 
+- `shouldComponentUpdate`
+- `componentWillUpdate`
+- `render`
+- `componentDidUpdate`
 
 **unmounting**
 
@@ -455,7 +459,7 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUyOTE2NzksMTc2MDMwNjY0MiwtMT
+eyJoaXN0b3J5IjpbLTE4NjY2NDc5MzUsMTc2MDMwNjY0MiwtMT
 MzNjMzMDk5NywxNDk5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1
 NzUyMjksLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMS
 wtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3
