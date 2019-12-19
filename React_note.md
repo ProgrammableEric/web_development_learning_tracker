@@ -442,7 +442,9 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
 - `render` called afterwards 
 - `componentDidMount` called lastly 
 
-**updating**
+**updating** A component updates every time that it renders, _**starting with the second render**_. 
+- 
+
 **unmounting**
 
 
@@ -453,11 +455,11 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MDMwNjY0MiwtMTMzNjMzMDk5NywxND
-k5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1NzUyMjksLTIwMzAw
-OTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1NjU0MTEzLD
-EyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYsLTg0MTU2
-OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NTE1NzY4LC
-0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04MzA4NTg0MSwyMDQ5
-OTYwMDQ5XX0=
+eyJoaXN0b3J5IjpbLTEyMzUyOTE2NzksMTc2MDMwNjY0MiwtMT
+MzNjMzMDk5NywxNDk5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1
+NzUyMjksLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMS
+wtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3
+OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MD
+AsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04
+MzA4NTg0MV19
 -->
