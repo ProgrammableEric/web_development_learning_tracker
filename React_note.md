@@ -348,16 +348,16 @@ If a component has to have `state`, make calculations based on `props`, or manag
 It essentially separates your _business logic_ from your _presentational logic_, which is a [Good Thing](http://www.dictionary.com/browse/good-thing).
 
 ### Stateless functional components 
-
+w
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04ND
-E1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2
-OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMj
-A0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgw
-ODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2LC0xMjAwMDM0NTExLD
-E0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNzA0MzUxMDE5LC01Nzk5
-MDUwMjNdfQ==
+eyJoaXN0b3J5IjpbMTUzNDEyOTM3NywxMjY2Njc1MzQyLDE1MT
+U3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4
+MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC
+04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMjAzMzgz
+NTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1MDYsLT
+EyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEwLDE3MDQz
+NTEwMTldfQ==
 -->
