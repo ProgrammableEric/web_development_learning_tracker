@@ -310,6 +310,7 @@ In computing, a **user agent** is software (a [software agent](https://en.wikipe
 The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") (HTTP) identifies the client software originating the request, using a user-agent header, even when the client is not operated by a user.
 **User agent identification** When a software agent operates in a network protocol, it often identifies itself, its application type, [operating system](https://en.wikipedia.org/wiki/Operating_system "Operating system"), software vendor, or software revision, by submitting a characteristic identification [string](https://en.wikipedia.org/wiki/String_(computer_science) "String (computer science)") to its operating peer. In [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol"),[[3]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc7231-3) SIP,[[2]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc3261-2) and NNTP[[4]](https://en.wikipedia.org/wiki/User_agent#cite_note-4) protocols, this identification is transmitted in a header field _User-Agent_. [Bots](https://en.wikipedia.org/wiki/Internet_bot "Internet bot"), such as Web crawlers, often also include a [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") and/or [e-mail address](https://en.wikipedia.org/wiki/E-mail_address "E-mail address") so that the [Webmaster](https://en.wikipedia.org/wiki/Webmaster "Webmaster") can contact the operator of the bot. 
 
+## Advanced React and More 
 
  
 
@@ -317,11 +318,11 @@ The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transf
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLT
-gzMDg1ODQxLDIwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1
-OTY3LDEwODA4MDg0NzEsNDg3NDg1ODY3LDY4MzM3MzUwNiwtMT
-IwMDAzNDUxMSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1
-MTAxOSwtNTc5OTA1MDIzLDE2OTY4MjMxNDIsNTc2MTE5OTg2LD
-ExNTA5MDYyMjgsLTEwOTU5OTc5OTUsODQzOTYzODIsLTMzOTky
-NzUzOV19
+eyJoaXN0b3J5IjpbODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xND
+U1MTczMzUyLC04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5
+ODksMjAzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2OD
+MzNzM1MDYsLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1
+NTEwLDE3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLD
+U3NjExOTk4NiwxMTUwOTA2MjI4LC0xMDk1OTk3OTk1LDg0Mzk2
+MzgyXX0=
 -->
