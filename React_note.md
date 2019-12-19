@@ -437,12 +437,12 @@ A _controlled component_ is a component that does not maintain any internal stat
 
 ### Lifecycle Method
 _Lifecycle methods_ are methods that get called at certain moments in a component’s life. 
-**mounting** A component renders **for the first time.** This is when mounting lifecycle methods get called. 
+**1. mounting** A component renders **for the first time.** This is when mounting lifecycle methods get called. 
 - `componentWillMount` called first
 - `render` called afterwards 
 - `componentDidMount` called lastly 
 
-**updating** A component updates every time that it renders, _**starting with the second render**_. 
+**2updating** A component updates every time that it renders, _**starting with the second render**_. 
 - `componentWillReceiveProps` called before `render()` 
 - `shouldComponentUpdate` get called afterwards. It receives 2 arguments as `nextProps` and `nextState`. Typically used to **compare next to the previous and controls if the component will update**: 
 ~~~javascript
@@ -462,7 +462,9 @@ The main purpose of `componentWillUpdate` is to **interact with things _outside_
 - `render` 
 - `componentDidUpdate` When a component instance updates, `componentDidUpdate` gets called **_after_ any rendered HTML has finished loading**. It takes `prevProps` and `prevState` as arguments. Typically used for interacting with outside environment. 
 
-**unmounting**
+**unmounting** 
+A component’s _unmounting_ period occurs when the component is **_removed_ from the DOM**. This could happen if the DOM is rerendered without the component, or if the user navigates to a different website or closes their web browser.
+- `componentWillUnmount`  
 
 
 
@@ -472,11 +474,11 @@ The main purpose of `componentWillUpdate` is to **interact with things _outside_
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk2ODAzMTksNTEwMTA2MTI2LC0xOD
-I4NDk0NDIsLTE4NjY2NDc5MzUsMTc2MDMwNjY0MiwtMTMzNjMz
-MDk5NywxNDk5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1NzUyMj
-ksLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1
-NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MD
-YsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4
-NTE1NzY4XX0=
+eyJoaXN0b3J5IjpbLTE0NTI0OTg3MTQsLTEyNzk2ODAzMTksNT
+EwMTA2MTI2LC0xODI4NDk0NDIsLTE4NjY2NDc5MzUsMTc2MDMw
+NjY0MiwtMTMzNjMzMDk5NywxNDk5MzM3NDY5LC05NjQyMjE5Nz
+MsLTE4MTk1NzUyMjksLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4
+NjE3NzUyMSwtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1Mz
+QyLDE1MTU3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01
+Mjk0ODg4MDBdfQ==
 -->
