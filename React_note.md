@@ -310,7 +310,7 @@ In computing, a **user agent** is software (a [software agent](https://en.wikipe
 The [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") (HTTP) identifies the client software originating the request, using a user-agent header, even when the client is not operated by a user.
 **User agent identification** When a software agent operates in a network protocol, it often identifies itself, its application type, [operating system](https://en.wikipedia.org/wiki/Operating_system "Operating system"), software vendor, or software revision, by submitting a characteristic identification [string](https://en.wikipedia.org/wiki/String_(computer_science) "String (computer science)") to its operating peer. In [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol"),[[3]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc7231-3) SIP,[[2]](https://en.wikipedia.org/wiki/User_agent#cite_note-rfc3261-2) and NNTP[[4]](https://en.wikipedia.org/wiki/User_agent#cite_note-4) protocols, this identification is transmitted in a header field _User-Agent_. [Bots](https://en.wikipedia.org/wiki/Internet_bot "Internet bot"), such as Web crawlers, often also include a [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") and/or [e-mail address](https://en.wikipedia.org/wiki/E-mail_address "E-mail address") so that the [Webmaster](https://en.wikipedia.org/wiki/Webmaster "Webmaster") can contact the operator of the bot. 
 
-## Advanced React and More 
+## Advanced React and More Programming Patterns 
 ### In-line Style
 - In regular JavaScript, style _names_ are written in hyphenated-lowercase, In React, those same names are instead written in camelCase: 
 ~~~javascript
@@ -343,20 +343,21 @@ export const styles = {
 }
 ~~~
 
-### separating _presentational components_ from _display components._
+### Separating _presentational components_ from _display components._
 If a component has to have `state`, make calculations based on `props`, or manage any other complex logic, then that component shouldn’t _also_ have to render HTML-like JSX. Instead of rendering HTML-like JSX, the component should render another component. It should be _that_ component’s job to render HTML-like JSX. 
 It essentially separates your _business logic_ from your _presentational logic_, which is a [Good Thing](http://www.dictionary.com/browse/good-thing).
 
+### Stateless functional components 
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1Mz
-EwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIz
-NDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAwNDksMT
-MzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsNDg3NDg1
-ODY3LDY4MzM3MzUwNiwtMTIwMDAzNDUxMSwxNDA4NzI0Nzg0LD
-E2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OTY4
-MjMxNDJdfQ==
+eyJoaXN0b3J5IjpbMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04ND
+E1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2
+OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMj
+A0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgw
+ODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2LC0xMjAwMDM0NTExLD
+E0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNzA0MzUxMDE5LC01Nzk5
+MDUwMjNdfQ==
 -->
