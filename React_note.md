@@ -450,7 +450,7 @@ shouldComponentUpdate(nextProps, nextState) {
     if ((this.props.text == nextProps.text) && 
       (this.state.subtext == nextState.subtext)) {
       alert("Props and state haven't changed, so I'm not gonna update!");
-      return false;
+      return false; // component cancels its up
     } else {
       alert("Okay fine I will update.")
       return true;
@@ -471,11 +471,11 @@ shouldComponentUpdate(nextProps, nextState) {
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjg0OTQ0MiwtMTg2NjY0NzkzNSwxNz
-YwMzA2NjQyLC0xMzM2MzMwOTk3LDE0OTkzMzc0NjksLTk2NDIy
-MTk3MywtMTgxOTU3NTIyOSwtMjAzMDA5NTE3Nyw2MTkyMzg1OT
-gsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIxNjUzMDY5LDEyNjY2
-NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1MzEwMTI1Mj
-QsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIzNDEsLTE0
-NTUxNzMzNTJdfQ==
+eyJoaXN0b3J5IjpbLTE1MDg5Mzg1OTcsLTE4Mjg0OTQ0MiwtMT
+g2NjY0NzkzNSwxNzYwMzA2NjQyLC0xMzM2MzMwOTk3LDE0OTkz
+Mzc0NjksLTk2NDIyMTk3MywtMTgxOTU3NTIyOSwtMjAzMDA5NT
+E3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIx
+NjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5ND
+g4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEw
+MjQwOTIzNDFdfQ==
 -->
