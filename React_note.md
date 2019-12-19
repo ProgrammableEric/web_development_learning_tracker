@@ -345,12 +345,14 @@ export const styles = {
 
 ### separating _presentational components_ from _display components._
 If a component has to have `state`, make calculations based on `props`, or manage any other complex logic, then that component shouldn’t _also_ have to render HTML-like JSX. Instead of rendering HTML-like JSX, the component should render another component. It should be _that_ component’s job to render HTML-like JSX. 
+It essentially separates your _business logic_ from your _presentational logic_, which is a [Good Thing](http://www.dictionary.com/browse/good-thing).
+
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTQ1MzIxOSwtODQxNTY5NDg4LDE1Mz
+eyJoaXN0b3J5IjpbMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1Mz
 EwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIz
 NDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAwNDksMT
 MzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsNDg3NDg1
