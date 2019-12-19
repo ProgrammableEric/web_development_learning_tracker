@@ -444,7 +444,19 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
 
 **updating** A component updates every time that it renders, _**starting with the second render**_. 
 - `componentWillReceiveProps` called before `render()` 
-- `shouldComponentUpdate` get called afterwards 
+- `shouldComponentUpdate` get called afterwards. It receives 2 arguments as `nextProps` and `nextState`. Typically used to compare next to the previous : 
+~~~javascript
+shouldComponentUpdate(nextProps, nextState) {
+    if ((this.props.text == nextProps.text) && 
+      (this.state.subtext == nextState.subtext)) {
+      alert("Props and state haven't changed, so I'm not gonna update!");
+      return false;
+    } else {
+      alert("Okay fine I will update.")
+      return true;
+    }
+  }
+~~~
 - `componentWillUpdate` 
 - `render`
 - `componentDidUpdate`
@@ -459,7 +471,7 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTM5NjU3OCwtMTg2NjY0NzkzNSwxNz
+eyJoaXN0b3J5IjpbLTE4Mjg0OTQ0MiwtMTg2NjY0NzkzNSwxNz
 YwMzA2NjQyLC0xMzM2MzMwOTk3LDE0OTkzMzc0NjksLTk2NDIy
 MTk3MywtMTgxOTU3NTIyOSwtMjAzMDA5NTE3Nyw2MTkyMzg1OT
 gsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIxNjUzMDY5LDEyNjY2
