@@ -378,13 +378,13 @@ export const GuineaPigs = (props) => {
 ### propTypes (refer to [this document](https://www.npmjs.com/package/prop-types))
 
 Use for two reasons: 1. prop validation 2. documentation 
-
+~~
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTU2NjgyOTAsNjE5MjM4NTk4LDk4Nj
+eyJoaXN0b3J5IjpbLTE0MDg3MDI4NTAsNjE5MjM4NTk4LDk4Nj
 E3NzUyMSwtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQy
 LDE1MTU3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mj
 k0ODg4MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTcz
