@@ -458,7 +458,7 @@ shouldComponentUpdate(nextProps, nextState) {
   }
 ~~~
 - `componentWillUpdate` get called afterwards. It receives two arguments: `nextProps` and `nextState`. 
-The main purpose of `componentWillUpdate` is to interact with things _outside_ of the React architecture. If you need to do non-React setup before a component renders, such as checking the `window` size or interacting with an API, then `componentWillUpdate` is a good place to do that.
+The main purpose of `componentWillUpdate` is to **interact with things _outside_ of the React architecture**. If you need to do non-React setup before a component renders, such as checking the `window` size or interacting with an API, then `componentWillUpdate` is a good place to do that.
 - `render` 
 - `componentDidUpdate`
 
@@ -472,11 +472,11 @@ The main purpose of `componentWillUpdate` is to interact with things _outside_ o
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwMTA2MTI2LC0xODI4NDk0NDIsLTE4Nj
-Y2NDc5MzUsMTc2MDMwNjY0MiwtMTMzNjMzMDk5NywxNDk5MzM3
-NDY5LC05NjQyMjE5NzMsLTE4MTk1NzUyMjksLTIwMzAwOTUxNz
-csNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1NjU0MTEzLDEyMTY1
-MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYsLTg0MTU2OTQ4OC
-wxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NTE1NzY4LC0xMDI0
-MDkyMzQxXX0=
+eyJoaXN0b3J5IjpbMjAwMDI4OTkzNCw1MTAxMDYxMjYsLTE4Mj
+g0OTQ0MiwtMTg2NjY0NzkzNSwxNzYwMzA2NjQyLC0xMzM2MzMw
+OTk3LDE0OTkzMzc0NjksLTk2NDIyMTk3MywtMTgxOTU3NTIyOS
+wtMjAzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2
+NTQxMTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNi
+wtODQxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1
+MTU3NjhdfQ==
 -->
