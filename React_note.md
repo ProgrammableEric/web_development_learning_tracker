@@ -436,8 +436,8 @@ An _uncontrolled component_ is a component that maintains its own internal state
 A _controlled component_ is a component that does not maintain any internal state. (no memory on its own, most of React components are like this )
 
 ### Lifecycle Method
-_Lifecycle methods_ are methods that get called at certain moments in a component’s life.
-**mounting** A component renders for the first time. 
+_Lifecycle methods_ are methods that get called at certain moments in a component’s life. 
+**mounting** A component renders for the first time. This is when mounting lifecycle methods get called. 
 - `componentWillMount` 
 - `render`
 - `componentDidMount`
@@ -453,11 +453,11 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTMzNzQ2OSwtOTY0MjIxOTczLC0xOD
-E5NTc1MjI5LC0yMDMwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1
-MjEsLTk4NTY1NDExMywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNT
-E1Nzk4NTA2LC04NDE1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4
-ODAwLDg0ODUxNTc2OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1Mi
-wtODMwODU4NDEsMjA0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4
-MzU5NjddfQ==
+eyJoaXN0b3J5IjpbLTEzMzYzMzA5OTcsMTQ5OTMzNzQ2OSwtOT
+Y0MjIxOTczLC0xODE5NTc1MjI5LC0yMDMwMDk1MTc3LDYxOTIz
+ODU5OCw5ODYxNzc1MjEsLTk4NTY1NDExMywxMjE2NTMwNjksMT
+I2NjY3NTM0MiwxNTE1Nzk4NTA2LC04NDE1Njk0ODgsMTUzMTAx
+MjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2OCwtMTAyNDA5MjM0MS
+wtMTQ1NTE3MzM1MiwtODMwODU4NDEsMjA0OTk2MDA0OSwxMzMz
+MDM5OTg5XX0=
 -->
