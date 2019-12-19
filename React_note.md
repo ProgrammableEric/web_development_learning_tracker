@@ -431,6 +431,8 @@ ReactDOM.render(
 );
 ~~~
 **controlled and uncontrolled components**
+An _uncontrolled component_ is a component that maintains its own internal state. A _controlled component_ is a component that does not maintain any internal state. (no memory on its own)
+
 
 
 
@@ -438,11 +440,11 @@ ReactDOM.render(
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3MTgyMzAsLTE4MTk1NzUyMjksLTIwMz
-AwOTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1NjU0MTEz
-LDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYsLTg0MT
-U2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NTE1NzY4
-LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04MzA4NTg0MSwyMD
-Q5OTYwMDQ5LDEzMzMwMzk5ODksMjAzMzgzNTk2NywxMDgwODA4
-NDcxXX0=
+eyJoaXN0b3J5IjpbMjg0MTU2NTg0LC0xODE5NTc1MjI5LC0yMD
+MwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1NDEx
+MywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04ND
+E1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2
+OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMj
+A0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgw
+ODQ3MV19
 -->
