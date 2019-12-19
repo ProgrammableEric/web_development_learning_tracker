@@ -430,12 +430,13 @@ ReactDOM.render(
 	document.getElementById('app')
 );
 ~~~
-### controlled and uncontrolled components
+### Controlled and Uncontrolled Components
 An _uncontrolled component_ is a component that maintains its own internal state. (e.g. React form has its own record of the input value) 
 
 A _controlled component_ is a component that does not maintain any internal state. (no memory on its own, most of React components are like this )
 
-#
+### Lifecycle Method
+_Lifecycle methods_ are methods that get called at certain moments in a component’s life.
 
 
 
@@ -446,7 +447,7 @@ A _controlled component_ is a component that does not maintain any internal stat
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMTkyNDM5MiwtOTY0MjIxOTczLC0xOD
+eyJoaXN0b3J5IjpbMjA5MDc2NTAzOCwtOTY0MjIxOTczLC0xOD
 E5NTc1MjI5LC0yMDMwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1
 MjEsLTk4NTY1NDExMywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNT
 E1Nzk4NTA2LC04NDE1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4
