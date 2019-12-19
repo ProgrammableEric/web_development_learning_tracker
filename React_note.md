@@ -387,17 +387,27 @@ Runner.propTypes = {
   milesToKM: React.PropTypes.func.isRequired,
   races:     React.PropTypes.array.isRequired
 };
+// for stateless functional components 
+const  Example  =  (props)  =>  {  
+	return  <h1>{props.message}</h1>;  
+}  
+Example.propTypes  =  {  
+message:  React.PropTypes.string.isRequired  
+};
 ~~~
+
+### React Forms 
+
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4Nj
-E3NzUyMSwtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQy
-LDE1MTU3OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mj
-k0ODg4MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTcz
-MzUyLC04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMj
-AzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1
-MDZdfQ==
+eyJoaXN0b3J5IjpbLTE4MTQxODQ5MSwtMjAzMDA5NTE3Nyw2MT
+kyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIxNjUzMDY5
+LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1Mz
+EwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIz
+NDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAwNDksMT
+MzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsNDg3NDg1
+ODY3XX0=
 -->
