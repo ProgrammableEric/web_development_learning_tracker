@@ -430,8 +430,14 @@ ReactDOM.render(
 	document.getElementById('app')
 );
 ~~~
-**controlled and uncontrolled components**
-An _uncontrolled component_ is a component that maintains its own internal state. A _controlled component_ is a component that does not maintain any internal state. (no memory on its own)
+### controlled and uncontrolled components
+An _uncontrolled component_ is a component that maintains its own internal state. (e.g. React form has its own record of the input value) 
+
+A _controlled component_ is a component that does not maintain any internal state. (no memory on its own, most of React components are like this )
+
+
+
+
 
 
 
@@ -440,11 +446,11 @@ An _uncontrolled component_ is a component that maintains its own internal state
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0MTU2NTg0LC0xODE5NTc1MjI5LC0yMD
-MwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1NDEx
-MywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04ND
-E1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2
-OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMj
-A0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgw
-ODQ3MV19
+eyJoaXN0b3J5IjpbLTk2NDIyMTk3MywtMTgxOTU3NTIyOSwtMj
+AzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQx
+MTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtOD
+QxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3
+NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLD
+IwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4
+MDg0NzFdfQ==
 -->
