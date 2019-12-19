@@ -326,16 +326,17 @@ backgroundColor:  "green"
 };
 ~~~
 - In regular JS, style  _values_  are almost always strings. Even if a style value is numeric, you usually have to write it as a string so that you can specify a unit. For example, you have to write  `"450px"`  or  `"20%"`. In React, if you write a style value as a  _number_, then the unit  `"px"`  is assumed.
+- style can be saved exported and reused
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMj
-QwOTIzNDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAw
-NDksMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsND
-g3NDg1ODY3LDY4MzM3MzUwNiwtMTIwMDAzNDUxMSwxNDA4NzI0
-Nzg0LDE2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLD
-E2OTY4MjMxNDIsNTc2MTE5OTg2LDExNTA5MDYyMjgsLTEwOTU5
-OTc5OTVdfQ==
+eyJoaXN0b3J5IjpbMTc4NzczODgwNCwtNTI5NDg4ODAwLDg0OD
+UxNTc2OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4
+NDEsMjA0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMT
+A4MDgwODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2LC0xMjAwMDM0
+NTExLDE0MDg3MjQ3ODQsMTY3MjM1NTUxMCwxNzA0MzUxMDE5LC
+01Nzk5MDUwMjMsMTY5NjgyMzE0Miw1NzYxMTk5ODYsMTE1MDkw
+NjIyOF19
 -->
