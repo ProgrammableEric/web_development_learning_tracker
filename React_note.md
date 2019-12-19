@@ -435,7 +435,7 @@ An _uncontrolled component_ is a component that maintains its own internal state
 
 A _controlled component_ is a component that does not maintain any internal state. (no memory on its own, most of React components are like this )
 
-
+#
 
 
 
@@ -446,11 +446,11 @@ A _controlled component_ is a component that does not maintain any internal stat
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDIyMTk3MywtMTgxOTU3NTIyOSwtMj
-AzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQx
-MTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtOD
-QxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3
-NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLD
-IwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4
-MDg0NzFdfQ==
+eyJoaXN0b3J5IjpbMTgxMTkyNDM5MiwtOTY0MjIxOTczLC0xOD
+E5NTc1MjI5LC0yMDMwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1
+MjEsLTk4NTY1NDExMywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNT
+E1Nzk4NTA2LC04NDE1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4
+ODAwLDg0ODUxNTc2OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1Mi
+wtODMwODU4NDEsMjA0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4
+MzU5NjddfQ==
 -->
