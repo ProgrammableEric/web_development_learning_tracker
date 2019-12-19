@@ -350,17 +350,39 @@ It essentially separates your _business logic_ from your _presentational logic_,
 ### Stateless functional components 
 Write presentational classes as Javascript function instead of React component class: 
 ~~~javascript
+import React from 'react';
 
+export class GuineaPigs extends React.Component {
+  render() {
+    let src = this.props.src;
+    return (
+      <div>
+        <h1>Cute Guinea Pigs</h1>
+        <img src={src} />
+      </div>
+    );
+  }
+}
+
+// substitute way of write the component: 
+export const GuineaPigs = (props) => {
+  return (
+    <div>
+        <h1>Cute Guinea Pigs</h1>
+        <img src={props.src} />
+      </div>
+  ); 
+}
 ~~~
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNT
-c5ODUwNiwtODQxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgw
-MCw4NDg1MTU3NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLT
-gzMDg1ODQxLDIwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1
-OTY3LDEwODA4MDg0NzEsNDg3NDg1ODY3LDY4MzM3MzUwNiwtMT
-IwMDAzNDUxMSwxNDA4NzI0Nzg0LDE2NzIzNTU1MTAsMTcwNDM1
-MTAxOV19
+eyJoaXN0b3J5IjpbLTE0NzAzODY5OTUsMTIxNjUzMDY5LDEyNj
+Y2NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1MzEwMTI1
+MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIzNDEsLT
+E0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAwNDksMTMzMzAz
+OTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsNDg3NDg1ODY3LD
+Y4MzM3MzUwNiwtMTIwMDAzNDUxMSwxNDA4NzI0Nzg0LDE2NzIz
+NTU1MTBdfQ==
 -->
