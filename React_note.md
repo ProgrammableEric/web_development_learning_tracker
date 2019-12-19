@@ -437,10 +437,10 @@ A _controlled component_ is a component that does not maintain any internal stat
 
 ### Lifecycle Method
 _Lifecycle methods_ are methods that get called at certain moments in a component’s life. 
-**mounting** A component renders for the first time. This is when mounting lifecycle methods get called. 
+**mounting** A component renders **for the first time.** This is when mounting lifecycle methods get called. 
 - `componentWillMount` called first
-- `render` called 
-- `componentDidMount`
+- `render` called afterwards 
+- `componentDidMount` called lastly 
 
 **updating**
 **unmounting**
@@ -453,11 +453,11 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzI4Nzc1NDEsLTEzMzYzMzA5OTcsMT
-Q5OTMzNzQ2OSwtOTY0MjIxOTczLC0xODE5NTc1MjI5LC0yMDMw
-MDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1NDExMy
-wxMjE2NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04NDE1
-Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2OC
-wtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMjA0
-OTk2MDA0OV19
+eyJoaXN0b3J5IjpbMTc2MDMwNjY0MiwtMTMzNjMzMDk5NywxND
+k5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1NzUyMjksLTIwMzAw
+OTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMSwtOTg1NjU0MTEzLD
+EyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYsLTg0MTU2
+OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NTE1NzY4LC
+0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04MzA4NTg0MSwyMDQ5
+OTYwMDQ5XX0=
 -->
