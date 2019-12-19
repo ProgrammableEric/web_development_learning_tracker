@@ -344,16 +344,17 @@ export const styles = {
 ~~~
 
 ### separating _presentational components_ from _display components._
+If a component has to have `state`, make calculations based on `props`, or manage any other complex logic, then that component shouldn’t _also_ have to render HTML-like JSX. Instead of rendering HTML-like JSX, the component should render another component. It should be _that_ component’s job to render HTML-like JSX. 
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mj
-k0ODg4MDAsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTcz
-MzUyLC04MzA4NTg0MSwyMDQ5OTYwMDQ5LDEzMzMwMzk5ODksMj
-AzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4NTg2Nyw2ODMzNzM1
-MDYsLTEyMDAwMzQ1MTEsMTQwODcyNDc4NCwxNjcyMzU1NTEwLD
-E3MDQzNTEwMTksLTU3OTkwNTAyMywxNjk2ODIzMTQyLDU3NjEx
-OTk4Nl19
+eyJoaXN0b3J5IjpbLTk0OTQ1MzIxOSwtODQxNTY5NDg4LDE1Mz
+EwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIz
+NDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLDIwNDk5NjAwNDksMT
+MzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4MDg0NzEsNDg3NDg1
+ODY3LDY4MzM3MzUwNiwtMTIwMDAzNDUxMSwxNDA4NzI0Nzg0LD
+E2NzIzNTU1MTAsMTcwNDM1MTAxOSwtNTc5OTA1MDIzLDE2OTY4
+MjMxNDJdfQ==
 -->
