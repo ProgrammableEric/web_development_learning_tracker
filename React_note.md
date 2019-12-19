@@ -457,7 +457,7 @@ shouldComponentUpdate(nextProps, nextState) {
     }
   }
 ~~~
-- `componentWillUpdate` 
+- `componentWillUpdate` get called afterwards. It receives two arguments: `nextProps` and `nextState`. 
 - `render`
 - `componentDidUpdate`
 
@@ -471,11 +471,11 @@ shouldComponentUpdate(nextProps, nextState) {
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Nzk5MDkxOSwtMTgyODQ5NDQyLC0xOD
-Y2NjQ3OTM1LDE3NjAzMDY2NDIsLTEzMzYzMzA5OTcsMTQ5OTMz
-NzQ2OSwtOTY0MjIxOTczLC0xODE5NTc1MjI5LC0yMDMwMDk1MT
-c3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1NDExMywxMjE2
-NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04NDE1Njk0OD
-gsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2OCwtMTAy
-NDA5MjM0MV19
+eyJoaXN0b3J5IjpbLTIxMjE1NzIyMDAsLTE4Mjg0OTQ0MiwtMT
+g2NjY0NzkzNSwxNzYwMzA2NjQyLC0xMzM2MzMwOTk3LDE0OTkz
+Mzc0NjksLTk2NDIyMTk3MywtMTgxOTU3NTIyOSwtMjAzMDA5NT
+E3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIx
+NjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5ND
+g4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEw
+MjQwOTIzNDFdfQ==
 -->
