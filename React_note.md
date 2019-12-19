@@ -443,7 +443,7 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
 - `componentDidMount` called lastly 
 
 **updating** A component updates every time that it renders, _**starting with the second render**_. 
-- `componentWillReceiveProps` 
+- `componentWillReceiveProps` called befor
 - `shouldComponentUpdate`
 - `componentWillUpdate`
 - `render`
@@ -459,11 +459,11 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjY2NDc5MzUsMTc2MDMwNjY0MiwtMT
-MzNjMzMDk5NywxNDk5MzM3NDY5LC05NjQyMjE5NzMsLTE4MTk1
-NzUyMjksLTIwMzAwOTUxNzcsNjE5MjM4NTk4LDk4NjE3NzUyMS
-wtOTg1NjU0MTEzLDEyMTY1MzA2OSwxMjY2Njc1MzQyLDE1MTU3
-OTg1MDYsLTg0MTU2OTQ4OCwxNTMxMDEyNTI0LC01Mjk0ODg4MD
-AsODQ4NTE1NzY4LC0xMDI0MDkyMzQxLC0xNDU1MTczMzUyLC04
-MzA4NTg0MV19
+eyJoaXN0b3J5IjpbMjA5NjY3MzE1NiwtMTg2NjY0NzkzNSwxNz
+YwMzA2NjQyLC0xMzM2MzMwOTk3LDE0OTkzMzc0NjksLTk2NDIy
+MTk3MywtMTgxOTU3NTIyOSwtMjAzMDA5NTE3Nyw2MTkyMzg1OT
+gsOTg2MTc3NTIxLC05ODU2NTQxMTMsMTIxNjUzMDY5LDEyNjY2
+NzUzNDIsMTUxNTc5ODUwNiwtODQxNTY5NDg4LDE1MzEwMTI1Mj
+QsLTUyOTQ4ODgwMCw4NDg1MTU3NjgsLTEwMjQwOTIzNDEsLTE0
+NTUxNzMzNTJdfQ==
 -->
