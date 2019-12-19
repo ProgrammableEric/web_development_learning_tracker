@@ -326,13 +326,28 @@ backgroundColor:  "green"
 };
 ~~~
 - In regular JS, style  _values_  are almost always strings. Even if a style value is numeric, you usually have to write it as a string so that you can specify a unit. For example, you have to write  `"450px"`  or  `"20%"`. In React, if you write a style value as a  _number_, then the unit  `"px"`  is assumed.
-- style can be saved exported and reused
+- style can be saved to a seperate js file, exported and reused: 
+~~~javascript
+const fontFamily = 'Comic Sans MS, Lucida Handwriting, cursive';
+const background = 'pink url("https://codecademy-content.s3.amazonaws.com/programs/react/images/welcome-to-my-homepage.gif") fixed';
+const fontSize = '4em';
+const padding = '45px 0';
+const color = 'green';
+
+export const styles = {
+  fontFamily: fontFamily,
+  background: background,
+  fontSize:   fontSize,
+  padding:    padding,
+  color:      color
+}
+~~~
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzczODgwNCwtNTI5NDg4ODAwLDg0OD
+eyJoaXN0b3J5IjpbMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0OD
 UxNTc2OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4
 NDEsMjA0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMT
 A4MDgwODQ3MSw0ODc0ODU4NjcsNjgzMzczNTA2LC0xMjAwMDM0
