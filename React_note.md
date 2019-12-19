@@ -444,7 +444,7 @@ _Lifecycle methods_ are methods that get called at certain moments in a componen
 
 **updating** A component updates every time that it renders, _**starting with the second render**_. 
 - `componentWillReceiveProps` called before `render()` 
-- `shouldComponentUpdate` get called afterwards. It receives 2 arguments as `nextProps` and `nextState`. Typically used to compare next to the previous : 
+- `shouldComponentUpdate` get called afterwards. It receives 2 arguments as `nextProps` and `nextState`. Typically used to **compare next to the previous and controls if the component will update**: 
 ~~~javascript
 shouldComponentUpdate(nextProps, nextState) {
     if ((this.props.text == nextProps.text) && 
@@ -460,7 +460,7 @@ shouldComponentUpdate(nextProps, nextState) {
 - `componentWillUpdate` get called afterwards. It receives two arguments: `nextProps` and `nextState`. 
 The main purpose of `componentWillUpdate` is to **interact with things _outside_ of the React architecture**. If you need to do non-React setup before a component renders, such as checking the `window` size or interacting with an API, then `componentWillUpdate` is a good place to do that.
 - `render` 
-- `componentDidUpdate`
+- `componentDidUpdate` When a component instance updates, `componentDidUpdate` gets called _after_ any rendered HTML has finished loading.
 
 **unmounting**
 
@@ -472,11 +472,11 @@ The main purpose of `componentWillUpdate` is to **interact with things _outside_
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMDI4OTkzNCw1MTAxMDYxMjYsLTE4Mj
-g0OTQ0MiwtMTg2NjY0NzkzNSwxNzYwMzA2NjQyLC0xMzM2MzMw
-OTk3LDE0OTkzMzc0NjksLTk2NDIyMTk3MywtMTgxOTU3NTIyOS
-wtMjAzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2
-NTQxMTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNi
-wtODQxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1
-MTU3NjhdfQ==
+eyJoaXN0b3J5IjpbMjg3MzAzNDAzLDUxMDEwNjEyNiwtMTgyOD
+Q5NDQyLC0xODY2NjQ3OTM1LDE3NjAzMDY2NDIsLTEzMzYzMzA5
+OTcsMTQ5OTMzNzQ2OSwtOTY0MjIxOTczLC0xODE5NTc1MjI5LC
+0yMDMwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1
+NDExMywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC
+04NDE1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUx
+NTc2OF19
 -->
