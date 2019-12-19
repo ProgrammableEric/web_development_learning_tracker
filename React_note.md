@@ -398,18 +398,18 @@ message:  React.PropTypes.string.isRequired
 
 ### React Forms 
 In a React form, unlike in usual HTML forms, you want the server to know about every new character or deletion, _as soon as it happens_.
-
+~~~~
 
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk1NzUyMjksLTIwMzAwOTUxNzcsNj
-E5MjM4NTk4LDk4NjE3NzUyMSwtOTg1NjU0MTEzLDEyMTY1MzA2
-OSwxMjY2Njc1MzQyLDE1MTU3OTg1MDYsLTg0MTU2OTQ4OCwxNT
-MxMDEyNTI0LC01Mjk0ODg4MDAsODQ4NTE1NzY4LC0xMDI0MDky
-MzQxLC0xNDU1MTczMzUyLC04MzA4NTg0MSwyMDQ5OTYwMDQ5LD
-EzMzMwMzk5ODksMjAzMzgzNTk2NywxMDgwODA4NDcxLDQ4NzQ4
-NTg2N119
+eyJoaXN0b3J5IjpbMTczNDI0Njk3OSwtMTgxOTU3NTIyOSwtMj
+AzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQx
+MTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtOD
+QxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3
+NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLD
+IwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4
+MDg0NzFdfQ==
 -->
