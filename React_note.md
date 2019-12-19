@@ -398,18 +398,50 @@ message:  React.PropTypes.string.isRequired
 
 ### React Forms 
 In a React form, unlike in usual HTML forms, you want the server to know about every new character or deletion, _as soon as it happens_.
-~~~~
+~~~javascript
+// example code 
+export class Input extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      userInput: ''
+    };
+    this.handleUserInput = this.handleUserInput.bind(this);
+  }
+  
+  handleUserInput(e) {
+    this.setState( {userInput: e.target.value} ); 
+  }
+  
+  render() {
+    return (
+      <div>
+        <input type="text" onChange={this.handleUserInput} 
+          value={this.state.userInput} /> // value is used to store test in the input box in real time for other application to use. 
+        <h1>{this.state.userInput}</h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+	<Input />,
+	document.getElementById('app')
+);
+~~~
+
 
 
 
  
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDI0Njk3OSwtMTgxOTU3NTIyOSwtMj
-AzMDA5NTE3Nyw2MTkyMzg1OTgsOTg2MTc3NTIxLC05ODU2NTQx
-MTMsMTIxNjUzMDY5LDEyNjY2NzUzNDIsMTUxNTc5ODUwNiwtOD
-QxNTY5NDg4LDE1MzEwMTI1MjQsLTUyOTQ4ODgwMCw4NDg1MTU3
-NjgsLTEwMjQwOTIzNDEsLTE0NTUxNzMzNTIsLTgzMDg1ODQxLD
-IwNDk5NjAwNDksMTMzMzAzOTk4OSwyMDMzODM1OTY3LDEwODA4
-MDg0NzFdfQ==
+eyJoaXN0b3J5IjpbOTkwMzU1ODg4LC0xODE5NTc1MjI5LC0yMD
+MwMDk1MTc3LDYxOTIzODU5OCw5ODYxNzc1MjEsLTk4NTY1NDEx
+MywxMjE2NTMwNjksMTI2NjY3NTM0MiwxNTE1Nzk4NTA2LC04ND
+E1Njk0ODgsMTUzMTAxMjUyNCwtNTI5NDg4ODAwLDg0ODUxNTc2
+OCwtMTAyNDA5MjM0MSwtMTQ1NTE3MzM1MiwtODMwODU4NDEsMj
+A0OTk2MDA0OSwxMzMzMDM5OTg5LDIwMzM4MzU5NjcsMTA4MDgw
+ODQ3MV19
 -->
