@@ -48,18 +48,25 @@ console.log(process.argv[3]);  // Prints 'several'
 
 [further documentation]([https://www.wolframalpha.com/input/?i=sinx+%3D+0.52](https://www.wolframalpha.com/input/?i=sinx+%3D+0.52))
 
-###
+#### Core module and Local module 
+- `require()` a module 
+- Node has several modules included within the environment to efficiently perform common tasks. These are known as the **_core modules_**.
+```javascript
+// Require in the 'events' core module:  
+let  events  =  require('events');
+```
+- 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1MjMyNTE1LDU2NTI2MDY2NiwxNzk5NT
-g3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgyODgsLTg1MDM0ODkz
-OCwxNjMwNDU0Mzg4LC00OTk4OTMyODgsLTI1ODE3NzU3NiwtMT
-kzMjM1ODE0MCwtNzkxMTMwNjMsLTExNjg2Nzc1ODksLTE0NTMx
-NDU2MDgsLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIsLTEwMzI0OT
-QxMzIsMTE0ODI1MDYwNCwtMTYxNDI0OTEzNywxOTIxNzkxODcs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTU4MTAwNDYzNiw1NjUyNjA2NjYsMTc5OT
+U4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5
+MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLT
+E5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUz
+MTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0xMDMyND
+k0MTMyLDExNDgyNTA2MDQsLTE2MTQyNDkxMzcsMTkyMTc5MTg3
+LC0yMDg4NzQ2NjEyXX0=
 -->
