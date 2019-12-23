@@ -24,7 +24,9 @@ Node.js is a JavaScript _runtime_, or an environment that allows us to execute J
 
 **Use of REPL**  A REPL can be extremely useful for performing calculations, learning a language, and developing code. It’s a place where you can explore language features and try things out while receiving immediate feedback. Figuring out how to do this outside of the browser or a website can be really empowering.
 
-**Global object** The Node environment contains a number of Node-specific global elements in addition to those [built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Every Node-specific global property sits inside the [the Node  `global`  object](https://nodejs.org/api/globals.html). This object contains a number of useful properties and methods that are available anywhere in the Node environment.
+### Node.js in detail 
+**Global object** 
+The Node environment contains a number of Node-specific global elements in addition to those [built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Every Node-specific global property sits inside the [the Node  `global`  object](https://nodejs.org/api/globals.html). This object contains a number of useful properties and methods that are available anywhere in the Node environment.
 
 There's not `Window` object in Node.js since only the broswer holds the DOM. Here we don't. 
 
@@ -32,10 +34,14 @@ There's not `Window` object in Node.js since only the broswer holds the DOM. Her
 
 
 
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzE4OTUzOCwxNjMwNDU0Mzg4LC00OT
-k4OTMyODgsLTI1ODE3NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMw
-NjMsLTExNjg2Nzc1ODksLTE0NTMxNDU2MDgsLTIwODk1OTAxNz
-QsLTE1OTM1NjI1MDIsLTEwMzI0OTQxMzIsMTE0ODI1MDYwNCwt
-MTYxNDI0OTEzNywxOTIxNzkxODcsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTIwNzg5NjYyNDYsMTYzMDQ1NDM4OCwtND
+k5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEz
+MDYzLC0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5NTkwMT
+c0LC0xNTkzNTYyNTAyLC0xMDMyNDk0MTMyLDExNDgyNTA2MDQs
+LTE2MTQyNDkxMzcsMTkyMTc5MTg3LC0yMDg4NzQ2NjEyXX0=
 -->
