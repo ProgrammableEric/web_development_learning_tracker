@@ -55,14 +55,23 @@ console.log(process.argv[3]);  // Prints 'several'
 // Require in the 'events' core module:  
 let  events  =  require('events');
 ```
-- 
+- We can use the same `require()` function to require modules of our own creation.
+ To handle these different tasks, the `require()` function includes some interesting logic “under the hood.” The `require()` function will first check to see if its argument is a core module, if not, it will move on to different attempts to locate it.
+```javascript
+// export your own local module 
+module.exports  =  class  Dog  {  constructor(name)  {  this.name  =  name;  }  praise()  {  return  `Good dog, ${this.name}!`;  }  };
+
+
+// app.js, require a local Dog module 
+let  Dog  =  require('./dog.js');  const  tadpole  =  new  Dog('Tadpole');  console.log(tadpole.praise());
+```
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MTAwNDYzNiw1NjUyNjA2NjYsMTc5OT
+eyJoaXN0b3J5IjpbLTkxMTQ4NzI1MCw1NjUyNjA2NjYsMTc5OT
 U4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5
 MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLT
 E5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUz
