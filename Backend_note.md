@@ -41,7 +41,12 @@ if  (process.env.NODE_ENV  ===  'development'){
 ```
 `process.memoryUsage()` returns information on the CPU demands of the current process. 
 
-`process.argv` property holds an array of command line values provided when the current process was initiated. 
+`process.argv` property holds an array of command line values provided when the current process was initiated. The first element in the array is the absolute path to Node, which ran the process. The second element in the array is the path to the file that’s running. The following elements will be any command line arguments provided when the process was initiated. Command line arguments are separated from one another with spaces.
+```javascript
+console.log(process.argv[3]);  // Prints 'several'
+```
+
+[further documentation]([https://www.wolframalpha.com/input/?i=sinx+%3D+0.52](https://www.wolframalpha.com/input/?i=sinx+%3D+0.52))
 
 
 
@@ -49,10 +54,10 @@ if  (process.env.NODE_ENV  ===  'development'){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1OTM1ODExLC0xMTEwNzE4Mjg4LC04NT
-AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
-NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC
-0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0x
-MDMyNDk0MTMyLDExNDgyNTA2MDQsLTE2MTQyNDkxMzcsMTkyMT
-c5MTg3LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTU4NTk4OTU5MywtMTExMDcxODI4OCwtOD
+UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
+NTc2LC0xOTMyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OS
+wtMTQ1MzE0NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwt
+MTAzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5Mj
+E3OTE4NywtMjA4ODc0NjYxMl19
 -->
