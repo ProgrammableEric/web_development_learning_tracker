@@ -15,8 +15,9 @@ _Authorization_ controls which users have access to which resources and actions.
 
 ![Work flow](https://github.com/ProgrammableEric/web_development_learning_tracker/blob/master/notes_material/back_1.png)
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDM3OTM0MCwtMTU5MzU2MjUwMiwtMT
-AzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5MjE3
-OTE4NywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIsLT
+EwMzI0OTQxMzIsMTE0ODI1MDYwNCwtMTYxNDI0OTEzNywxOTIx
+NzkxODcsLTIwODg3NDY2MTJdfQ==
 -->
