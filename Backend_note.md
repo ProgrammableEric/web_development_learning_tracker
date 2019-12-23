@@ -21,12 +21,12 @@ Node.js is a JavaScript _runtime_, or an environment that allows us to execute J
 
 ### REPL 
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) is an abbreviation for **r**ead–**e**val–**p**rint **l**oop. It’s a program that **l**oops, or repeatedly cycles, through three different states: a **r**ead state where the program **r**eads input from a user, the **e**val state where the program **e**valuates the user’s input, and the **p**rint state where the program **p**rints out its evaluation to a console. Then it **l**oops through these states again. 
-A REPL can be extremely useful for performing calculations, learning a language, and developing code. It’s a place where you can explore language features and try things out while receiving immediate feedback. Figuring out how to do this outside of the browser or a website can be really empowering.
- 
+**Use of REPL**  A REPL can be extremely useful for performing calculations, learning a language, and developing code. It’s a place where you can explore language features and try things out while receiving immediate feedback. Figuring out how to do this outside of the browser or a website can be really empowering.
+**Global object** The Node environment contains a number of Node-specific global elements in addition to those [built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Every Node-specific global property sits inside the [the Node  `global`  object](https://nodejs.org/api/globals.html). This object contains a number of useful properties and methods that are available anywhere in the Node environment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk1ODQ1OTIsLTE5MzIzNTgxNDAsLT
-c5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5
-NTkwMTc0LC0xNTkzNTYyNTAyLC0xMDMyNDk0MTMyLDExNDgyNT
-A2MDQsLTE2MTQyNDkxMzcsMTkyMTc5MTg3LC0yMDg4NzQ2NjEy
-XX0=
+eyJoaXN0b3J5IjpbLTI1ODE3NzU3NiwtMTkzMjM1ODE0MCwtNz
+kxMTMwNjMsLTExNjg2Nzc1ODksLTE0NTMxNDU2MDgsLTIwODk1
+OTAxNzQsLTE1OTM1NjI1MDIsLTEwMzI0OTQxMzIsMTE0ODI1MD
+YwNCwtMTYxNDI0OTEzNywxOTIxNzkxODcsLTIwODg3NDY2MTJd
+fQ==
 -->
