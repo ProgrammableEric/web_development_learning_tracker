@@ -26,11 +26,13 @@ Node.js is a JavaScript _runtime_, or an environment that allows us to execute J
 
 **Global object** The Node environment contains a number of Node-specific global elements in addition to those [built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Every Node-specific global property sits inside the [the Node  `global`  object](https://nodejs.org/api/globals.html). This object contains a number of useful properties and methods that are available anywhere in the Node environment.
 
+There's not `Window` object in Node.js since only the broswer ho
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOT
-MyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0
-NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwtMTAzMjQ5ND
-EzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5MjE3OTE4Nywt
-MjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTIwMDcxMjA3MTIsLTQ5OTg5MzI4OCwtMj
+U4MTc3NTc2LC0xOTMyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3
+NzU4OSwtMTQ1MzE0NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2Mj
+UwMiwtMTAzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3
+LDE5MjE3OTE4NywtMjA4ODc0NjYxMl19
 -->
