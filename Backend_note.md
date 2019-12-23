@@ -31,7 +31,7 @@ The Node environment contains a number of Node-specific global elements in addit
 There's not `Window` object in Node.js since only the broswer holds the DOM. Here we don't. 
 
 #### Process object 
-
+``
 
 
 
@@ -40,10 +40,10 @@ There's not `Window` object in Node.js since only the broswer holds the DOM. Her
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTA3MTgyODgsLTg1MDM0ODkzOCwxNj
-MwNDU0Mzg4LC00OTk4OTMyODgsLTI1ODE3NzU3NiwtMTkzMjM1
-ODE0MCwtNzkxMTMwNjMsLTExNjg2Nzc1ODksLTE0NTMxNDU2MD
-gsLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIsLTEwMzI0OTQxMzIs
-MTE0ODI1MDYwNCwtMTYxNDI0OTEzNywxOTIxNzkxODcsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTQzMDEzNjQwMCwtMTExMDcxODI4OCwtOD
+UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
+NTc2LC0xOTMyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OS
+wtMTQ1MzE0NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwt
+MTAzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5Mj
+E3OTE4NywtMjA4ODc0NjYxMl19
 -->
