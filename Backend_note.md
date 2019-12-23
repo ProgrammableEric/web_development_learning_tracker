@@ -25,10 +25,12 @@ Node.js is a JavaScript _runtime_, or an environment that allows us to execute J
 **Use of REPL**  A REPL can be extremely useful for performing calculations, learning a language, and developing code. It’s a place where you can explore language features and try things out while receiving immediate feedback. Figuring out how to do this outside of the browser or a website can be really empowering.
 
 **Global object** The Node environment contains a number of Node-specific global elements in addition to those [built into the JavaScript language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects). Every Node-specific global property sits inside the [the Node  `global`  object](https://nodejs.org/api/globals.html). This object contains a number of useful properties and methods that are available anywhere in the Node environment.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4MDc3NDM2LC0yNTgxNzc1NzYsLTE5Mz
-IzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUzMTQ1
-NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0xMDMyNDk0MT
-MyLDExNDgyNTA2MDQsLTE2MTQyNDkxMzcsMTkyMTc5MTg3LC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOT
+MyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0
+NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwtMTAzMjQ5ND
+EzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5MjE3OTE4Nywt
+MjA4ODc0NjYxMl19
 -->
