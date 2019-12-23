@@ -13,10 +13,10 @@ A **web API** is a collection of predefined ways of, or rules for, interacting w
 _Authentication_ is the process of validating the identity of a user. One technique for authentication is to use logins with usernames and passwords.
 _Authorization_ controls which users have access to which resources and actions. Certain application views, like the page to edit a social media personal profile, are only accessible to that user. Other activities, like deleting a post, are often similarly restricted.
 
-
+![Work flow](https://github.com/ProgrammableEric/web_development_learning_tracker/blob/master/notes_material/back_1.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM1NjI1MDIsLTEwMzI0OTQxMzIsMT
-E0ODI1MDYwNCwtMTYxNDI0OTEzNywxOTIxNzkxODcsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTUwMDM3OTM0MCwtMTU5MzU2MjUwMiwtMT
+AzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5MjE3
+OTE4NywtMjA4ODc0NjYxMl19
 -->
