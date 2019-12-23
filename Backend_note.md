@@ -31,7 +31,7 @@ The Node environment contains a number of Node-specific global elements in addit
 There's not `Window` object in Node.js since only the broswer holds the DOM. Here we don't. 
 
 #### Process object 
-`process.env` property is an object which stores and controls information about the environment in which the process is currently running. Common usage: 
+环境变量们 `process.env` property is an object which stores and controls information about the environment in which the process is currently running. Common usage: 
 ```javascript
 // set process.env.NODE_ENV to either development 
 // or production 
@@ -41,7 +41,7 @@ if  (process.env.NODE_ENV  ===  'development'){
 ```
 `process.memoryUsage()` returns information on the CPU demands of the current process. 
 
-`process.argv` property holds an array of command line values provided when the current process was initiated. The first element in the array is the absolute path to Node, which ran the process. The second element in the array is the path to the file that’s running. The following elements will be any command line arguments provided when the process was initiated. Command line arguments are separated from one another with spaces.
+可用命令们 `process.argv` property holds an array of command line values provided when the current process was initiated. The first element in the array is the absolute path to Node, which ran the process. The second element in the array is the path to the file that’s running. The following elements will be any command line arguments provided when the process was initiated. Command line arguments are separated from one another with spaces.
 ```javascript
 console.log(process.argv[3]);  // Prints 'several'
 ```
@@ -54,10 +54,10 @@ console.log(process.argv[3]);  // Prints 'several'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTk4OTU5MywtMTExMDcxODI4OCwtOD
-UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
-NTc2LC0xOTMyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OS
-wtMTQ1MzE0NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwt
-MTAzMjQ5NDEzMiwxMTQ4MjUwNjA0LC0xNjE0MjQ5MTM3LDE5Mj
-E3OTE4NywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMT
+EwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkz
+Mjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC
+0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0x
+NTkzNTYyNTAyLC0xMDMyNDk0MTMyLDExNDgyNTA2MDQsLTE2MT
+QyNDkxMzcsMTkyMTc5MTg3LC0yMDg4NzQ2NjEyXX0=
 -->
