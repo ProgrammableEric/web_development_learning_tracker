@@ -39,7 +39,9 @@ if  (process.env.NODE_ENV  ===  'development'){
  console.log('Testing! Testing! Does everything work?');  
 }
 ```
-`process.memoryUsage()` 
+`process.memoryUsage()` returns information on the CPU demands of the current process. 
+
+`process.argv` property holds an array of command line values provided when the current process was initiated. 
 
 
 
@@ -47,7 +49,7 @@ if  (process.env.NODE_ENV  ===  'development'){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1NjI5MDQ2LC0xMTEwNzE4Mjg4LC04NT
+eyJoaXN0b3J5IjpbNTk1OTM1ODExLC0xMTEwNzE4Mjg4LC04NT
 AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
 NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC
 0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0x
