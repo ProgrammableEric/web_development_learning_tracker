@@ -162,6 +162,7 @@ try {
 ```
 Many asynchronous Node APIs use **_error-first callback functions_**: callback functions which have an error as the first expected argument and the data as the second argument. If the asynchronous task results in an error, it will be passed in as the first argument to the callback function. If no error was thrown, the first argument will be `undefined`.
 ```javascript
+// err: 
 const  errorFirstCallback  =  (err,  data)  =>  {  
 	if  (err)  {  
 		console.log(`There WAS an error: ${err}`);  
@@ -193,11 +194,11 @@ fs.readFile('./file.txt',  'utf-8',  readDataCallback);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3OD
-ExOTczLDEwNzkzMTM5NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2
-LDc5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NT
-g4NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQs
-MTU4NTk4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2Mz
-A0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4
-MTQwXX0=
+eyJoaXN0b3J5IjpbLTE3NjE2Nzg4NTcsNDMzMjA3MTMwLDg3Nz
+g3MTg4OCwtNTE3ODExOTczLDEwNzkzMTM5NzksLTIwMjI0MzAx
+NSwtOTUzMzE0NjE2LDc5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NT
+cyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2
+LDE3OTk1ODc0MDQsMTU4NTk4OTU5MywtMTExMDcxODI4OCwtOD
+UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
+NTc2XX0=
 -->
