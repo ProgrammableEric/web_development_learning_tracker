@@ -125,6 +125,14 @@ This while-loop will continue forever! Even though the callback changing the  `k
 For that reason, we could replace the while-loop with an asynchronous function. For example, `promises` or `setInterval()`. 
 
 #### User Input/Output 
+- `console.log()` is a “thin wrapper” on the `.stdout.write()` method of the `process` object. `stdout` stands for standard output.
+- In Node, we can also receive input from a user through the terminal using the `stdin.on()` method on the `process` object:
+```javascript
+process.stdin.on('data', (userInput) => {  
+	let  input  =  userInput.toString()  
+	console.log(input)  
+});
+```
 
 
 
@@ -132,11 +140,11 @@ For that reason, we could replace the while-loop with an asynchronous function. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1Nz
-I0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYs
-MTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NT
-AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
-NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC
-0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0x
-MDMyNDk0MTMyXX0=
+eyJoaXN0b3J5IjpbLTE4NDQwMTU2MTIsNzk2NDIxNDE0LDEwMz
+Q3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3
+MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMT
+EwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkz
+Mjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC
+0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0x
+NTkzNTYyNTAyXX0=
 -->
