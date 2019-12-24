@@ -175,16 +175,29 @@ api.errorProneAsyncApi('problematic input', errorFirstCallback);
 ```
 
 #### Filesystem 
+In the back-end, however, less restricted interaction with the filesystem is essential. The Node `fs` core module is an API for interacting with the **f**ile **s**ystem. It was modeled after the [POSIX](https://en.wikipedia.org/wiki/POSIX) standard for interacting with the filesystem.
 
+Each method available through the `fs` module has a synchronous version and an asynchronous version. One method available on the `fs` core module is the `.readFile()` method which **read**s data from a provided **file**:
+~~~javascript
+const  fs  =  require('fs');  
+let  readDataCallback  =  (err,  data)  =>  {  
+	if  (err)  {  
+		console.log(`Something went wrong: ${err}`);
+  }  else  {  
+	  console.log(`Provided file contained: ${data}`); 
+	   }  
+};  
+fs.readFile('./file.txt',  'utf-8',  readDataCallback);
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3ODcxODg4LC01MTc4MTE5NzMsMTA3OT
-MxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0
-LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwND
-Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
-LC0xMTEwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtND
-k5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEz
-MDYzXX0=
+eyJoaXN0b3J5IjpbLTE5MjE3NDA3NTAsODc3ODcxODg4LC01MT
+c4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2
+MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nz
+c1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQw
+NCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5MzgsMT
+YzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIz
+NTgxNDBdfQ==
 -->
