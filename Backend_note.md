@@ -252,17 +252,29 @@ server.listen(3000);
 
 #### 回调函数 [call back function 讲解](https://juejin.im/post/5dc1474df265da4d1518ee76)
 回调函数是一个函数，将会在另一个函数完成执行后立即执行。回调函数是一个作为参数传给另一个 JavaScript 函数的函数。这个回调函数会在传给的函数内部执行。
+~~~javascript
+// 对比1: getMessage 若涉及等待服务器响应，
+function getMessage() {
+	console.log('Got message');
+}
 
+function displayMessage() {
+	console.log('Displayed message');
+}
+
+getMessage();
+displayMessage();
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTgxNzk3NTIsODYyNjY3NzIwLC0xMT
-IwNTQ5NzYzLC0yODYxMDYzMjgsMjk4Nzc1MTQ1LDkwNzE1MTA2
-NiwtMTQ4NjU2ODcyMywtMTQwMTYxMTQ3MSw0MzMyMDcxMzAsOD
-c3ODcxODg4LC01MTc4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQz
-MDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNT
-g1NzI0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2
-NjZdfQ==
+eyJoaXN0b3J5IjpbLTUxOTI0NTQ2LC0xODE4MTc5NzUyLDg2Mj
+Y2NzcyMCwtMTEyMDU0OTc2MywtMjg2MTA2MzI4LDI5ODc3NTE0
+NSw5MDcxNTEwNjYsLTE0ODY1Njg3MjMsLTE0MDE2MTE0NzEsND
+MzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3ODExOTczLDEwNzkzMTM5
+NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2LDc5NjQyMTQxNCwxMD
+M0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0
+NzFdfQ==
 -->
