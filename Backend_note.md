@@ -140,9 +140,20 @@ Here, we were able to use `.on()` because under the hood `process.stdin` is an i
 #### Errors
 The usual `try...catch` statements do not always work since it is synchronous. e.g., 
 ```javascript
+// the usual callback function 
+naiveErrorProneAsyncFunction: (input, callback) => {
+    console.log(`Running naiveErrorProneAsyncFunction with input: ${input}...\n`)
+    setTimeout(() => {
+      if (input === 'problematic input') {
+        throw new Error('whoops')
+      } else {
+        let responseData = `Received valid input "${input}"`
+        callback(responseData)
+      }
+    }, 0)
+}
 
-
-// 
+// This is not gonna catch the error 
 try {
   api.naiveErrorProneAsyncFunction('problematic input', callbackFunc);
 } catch(err) {
@@ -165,7 +176,7 @@ const  errorFirstCallback  =  (err,  data)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3MDI0MzAyLC01MTc4MTE5NzMsMTA3OT
+eyJoaXN0b3J5IjpbNzkxMDQxNjUyLC01MTc4MTE5NzMsMTA3OT
 MxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0
 LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwND
 Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
