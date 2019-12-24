@@ -31,6 +31,8 @@ The Node environment contains a number of Node-specific global elements in addit
 There's not `Window` object in Node.js since only the broswer holds the DOM. Here we don't. 
 
 #### Process object 
+
+
 环境变量们 `process.env` property is an object which stores and controls information about the environment in which the process is currently running. Common usage: 
 ```javascript
 // set process.env.NODE_ENV to either development 
@@ -140,11 +142,11 @@ Here, we were able to use `.on()` because under the hood `process.stdin` is an i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzND
-c1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcx
-LDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMT
-A3MTgyODgsLTg1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMy
-ODgsLTI1ODE3NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMwNjMsLT
-ExNjg2Nzc1ODksLTE0NTMxNDU2MDgsLTIwODk1OTAxNzQsLTE1
-OTM1NjI1MDJdfQ==
+eyJoaXN0b3J5IjpbMTMxNTMwODk2NCwtOTUzMzE0NjE2LDc5Nj
+QyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4NTAz
+LDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NT
+k4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQz
+ODgsLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4MTQwLC
+03OTExMzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0NTYwOCwtMjA4
+OTU5MDE3NF19
 -->
