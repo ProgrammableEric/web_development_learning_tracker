@@ -138,17 +138,27 @@ process.stdin.on('data', (userInput) => {
 Here, we were able to use `.on()` because under the hood `process.stdin` is an instance of `EventEmitter`. When a user enters text into the terminal and hits enter, a `'data'` event will be fired and our anonymous listener callback will be invoked. The `userInput` we receive is an instance of [the Node  `Buffer`  class](https://nodejs.org/api/buffer.html#buffer_buffer), so we convert it to a string before printing.
 
 #### Errors
-
+Many asynchronous Node APIs use _error-first callback functions_: callback functions which have an error as the first expected argument and the data as the second argument. If the asynchronous task results in an error, it will be passed in as the first argument to the callback function. If no error was thrown, the first argument will be `undefined`.
+```javascript
+const  errorFirstCallback  =  (err,  data)  =>  {  
+	if  (err)  {  
+		console.log(`There WAS an error: ${err}`);  
+	}  else  {  
+	// err was falsy  
+	console.log(`There was NO error. Event data: ${data}`);  
+	}  
+}
+```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI0MzAxNSwtOTUzMzE0NjE2LDc5Nj
-QyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4NTAz
-LDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NT
-k4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQz
-ODgsLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4MTQwLC
-03OTExMzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0NTYwOCwtMjA4
-OTU5MDE3NF19
+eyJoaXN0b3J5IjpbMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NT
+MzMTQ2MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTky
+LC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OT
+U4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5
+MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLT
+E5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUz
+MTQ1NjA4XX0=
 -->
