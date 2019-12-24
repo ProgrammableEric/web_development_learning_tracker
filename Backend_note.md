@@ -233,17 +233,29 @@ myInterface.on('line', transformData);
 ~~~javascript
 const  http  =  require('http');  
 let  requestListener  =  (request,  response)  =>  { 
-	response.writeHead(200,  {'Content-Type':  'text/plain'  });  response.write('Hello World!\n');  response.end();  };  const  server  =  http.createServer(requestListener);  server.listen(3000);
+	response.writeHead(200, {'Content-Type': 'text/plain'});  
+	response.write('Hello World!\n');  
+	response.end();  
+};  
+const  server  =  http.createServer(requestListener);  
+server.listen(3000);
 ~~~
+Let’s walk through the above code:
+
+-   We required in the  `http`  core module.
+-   We created a  `server`  variable assigned to the return value of the  `http.createServer()`  method.
+-   We invoked  `http.createServer()`  with our  `requestListener`  callback. This is similar to running the  `.on()`  of an  `EventEmitter`: the  `requestListener`  will execute whenever an HTTP request is sent to the server on the correct port.
+-   Within the  `requestListener`  callback, we make changes to the response object,  `response`, so that it can send the appropriate information to the client sending the request. The status code 200 means that no errors were encountered. The header communicates that the file type is text, rather than something like audio or compressed data.
+-   The last line starts the server with the port 3000. Every server on a given machine specifies a unique port so that traffic can be correctly routed.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NDExOTU5LC0yODYxMDYzMjgsMjk4Nz
-c1MTQ1LDkwNzE1MTA2NiwtMTQ4NjU2ODcyMywtMTQwMTYxMTQ3
-MSw0MzMyMDcxMzAsODc3ODcxODg4LC01MTc4MTE5NzMsMTA3OT
-MxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0
-LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwND
-Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
-XX0=
+eyJoaXN0b3J5IjpbLTExMjA1NDk3NjMsLTI4NjEwNjMyOCwyOT
+g3NzUxNDUsOTA3MTUxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjEx
+NDcxLDQzMzIwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMD
+c5MzEzOTc5LC0yMDIyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0
+MTQsMTAzNDc1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMD
+A0NjQ2NDcxLDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1
+OTNdfQ==
 -->
