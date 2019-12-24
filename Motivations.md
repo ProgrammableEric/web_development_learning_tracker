@@ -22,7 +22,8 @@
 - 李诞
 - Russel Peters 
 - George Carlin 
-- ### Yumi Nagashima
+- Yumi Nagashima
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY1OTU5LDc0OTg4MDY4MV19
+eyJoaXN0b3J5IjpbOTQ1NDgwNzg1LDc0OTg4MDY4MV19
 -->
