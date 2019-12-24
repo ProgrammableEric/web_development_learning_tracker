@@ -211,15 +211,31 @@ myInterface.on('line', (fileLine)  =>  {
 });
 ~~~
 #### Writable Streams 
+Combine reading and writing file streams: 
+~~~javascript
+const readline = require('readline');
+const fs = require('fs');
 
+const myInterface = readline.createInterface({
+  input: fs.createReadStream('shoppingList.txt')
+});
+
+const fileStream = fs.createWriteStream('shoppingResults.txt');
+
+function transformData(line) {
+  fileStream.write(`They were out of: ${line}\n`);
+}
+
+myInterface.on('line', transformData); 
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4Nzc1MTQ1LDkwNzE1MTA2NiwtMTQ4Nj
-U2ODcyMywtMTQwMTYxMTQ3MSw0MzMyMDcxMzAsODc3ODcxODg4
-LC01MTc4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NT
-MzMTQ2MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTky
-LC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OT
-U4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5
-MzhdfQ==
+eyJoaXN0b3J5IjpbMTAyODI3ODg1NSwyOTg3NzUxNDUsOTA3MT
+UxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjExNDcxLDQzMzIwNzEz
+MCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMDc5MzEzOTc5LC0yMD
+IyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzNDc1ODY1
+Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NT
+I2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgy
+ODhdfQ==
 -->
