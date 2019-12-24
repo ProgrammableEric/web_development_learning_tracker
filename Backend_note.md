@@ -105,17 +105,32 @@ myEmitter.emit('new user',  'Lily Pad')
 
 #### Asynchronous JS with Node.js 
 **How it works ?** Node provides a number of APIs for performing asynchronous tasks which expect callback functions to be passed in as arguments. Under the hood, these APIs trigger the subscription to and emitting of events to signal the completion of the operation. When the operation completes, the callback function is added to a queue, or line, of tasks waiting for their turn to be executed. When the current stack, or list, or synchronous tasks finish executing, the operations on the queue will be performed.
+```javascript
+let keepGoing = true;
 
+let callback = () => {
+  keepGoing = false;
+};
+
+setTimeout(callback, 1000); // Run callback after 1000ms
+
+// The while loop will run forever cuz it comes before the // callback function up on the stack. The callback function will never be called. 
+while(keepGoing === true) {
+  console.log(`This is the song that never ends.`)
+};
+
+This while-loop will continue forever! Even though the callback changing the  `keepGoing`  variable to  `fa`
+```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA0MzMxMzYsMTAzNDc1ODY1Miw1OD
-U3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NTI2MDY2
-NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgyODgsLT
-g1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMyODgsLTI1ODE3
-NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMwNjMsLTExNjg2Nzc1OD
-ksLTE0NTMxNDU2MDgsLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIs
-LTEwMzI0OTQxMzJdfQ==
+eyJoaXN0b3J5IjpbNjQ5Njg3MzA4LDEwMzQ3NTg2NTIsNTg1Nz
+I0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYs
+MTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NT
+AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
+NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC
+0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0x
+MDMyNDk0MTMyXX0=
 -->
