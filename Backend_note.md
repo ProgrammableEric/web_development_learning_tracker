@@ -197,16 +197,25 @@ We invoked the `.readFile()` method with three arguments:
 3.  The third argument is the callback function to be invoked when the asynchronous task of reading from the file system is complete. Node will pass the contents of  **file.txt**  into the provided callback as its second argument.
 
 #### Readable Streams
-Read files line b
-
+Read files line-by-line: 
+~~~javascript
+const  readline  =  require('readline');  
+const  fs  =  require('fs');  
+const  myInterface  =  readline.createInterface({  
+	input:  fs.createReadStream('text.txt')
+});  
+myInterface.on('line', (fileLine)  =>  {  
+	console.log(`The line read: ${fileLine}`);
+});
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM1MDEyODcsLTE0ODY1Njg3MjMsLT
-E0MDE2MTE0NzEsNDMzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3ODEx
-OTczLDEwNzkzMTM5NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2LD
-c5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4
-NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMT
-U4NTk4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0
-NTQzODhdfQ==
+eyJoaXN0b3J5IjpbMzk5MDEzNzIyLC0xNDg2NTY4NzIzLC0xND
+AxNjExNDcxLDQzMzIwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3
+MywxMDc5MzEzOTc5LC0yMDIyNDMwMTUsLTk1MzMxNDYxNiw3OT
+Y0MjE0MTQsMTAzNDc1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUw
+MywyMDA0NjQ2NDcxLDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1OD
+U5ODk1OTMsLTExMTA3MTgyODgsLTg1MDM0ODkzOCwxNjMwNDU0
+Mzg4XX0=
 -->
