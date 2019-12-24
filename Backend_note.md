@@ -31,7 +31,7 @@ The Node environment contains a number of Node-specific global elements in addit
 There's not `Window` object in Node.js since only the broswer holds the DOM. Here we don't. 
 
 #### Process object 
-
+In computer science, a _process_ is the instance of a computer program that is being executed.
 
 环境变量们 `process.env` property is an object which stores and controls information about the environment in which the process is currently running. Common usage: 
 ```javascript
@@ -142,7 +142,7 @@ Here, we were able to use `.on()` because under the hood `process.stdin` is an i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTMwODk2NCwtOTUzMzE0NjE2LDc5Nj
+eyJoaXN0b3J5IjpbMjEyMDYzOTg3MiwtOTUzMzE0NjE2LDc5Nj
 QyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4NTAz
 LDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NT
 k4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQz
