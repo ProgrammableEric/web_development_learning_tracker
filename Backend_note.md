@@ -201,9 +201,11 @@ Read files line-by-line:
 ~~~javascript
 const  readline  =  require('readline');  
 const  fs  =  require('fs');  
+
 const  myInterface  =  readline.createInterface({  
 	input:  fs.createReadStream('text.txt')
 });  
+
 myInterface.on('line', (fileLine)  =>  {  
 	console.log(`The line read: ${fileLine}`);
 });
@@ -211,7 +213,7 @@ myInterface.on('line', (fileLine)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5MDEzNzIyLC0xNDg2NTY4NzIzLC0xND
+eyJoaXN0b3J5IjpbOTA3MTUxMDY2LC0xNDg2NTY4NzIzLC0xND
 AxNjExNDcxLDQzMzIwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3
 MywxMDc5MzEzOTc5LC0yMDIyNDMwMTUsLTk1MzMxNDYxNiw3OT
 Y0MjE0MTQsMTAzNDc1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUw
