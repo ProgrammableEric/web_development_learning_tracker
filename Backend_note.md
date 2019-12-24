@@ -88,7 +88,9 @@ let  events  =  require('events');
 // Create an instance of the EventEmitter class  
 let  myEmitter  =  new  events.EventEmitter();
 ```
-- `.on()`, `.emit()`
+- `.on()` The `.on()` method takes as its first argument the name of the event as a string and, as its second argument, the listener callback function.
+- `.emit()` The `.emit()` method takes as its first argument the name of the event as a string and, as its second argument, the data that should be passed into the listener callback function.
+
 ```javascript
 let  newUserListener  =  (data)  =>  {  
 	console.log(`We have a new user: ${data}.`);  
@@ -104,7 +106,7 @@ myEmitter.emit('new user',  'Lily Pad')
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDU0MDIxLC00Nzc1ODg1MDMsMjAwND
+eyJoaXN0b3J5IjpbNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwND
 Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
 LC0xMTEwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtND
 k5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEz
