@@ -7,9 +7,11 @@ wearing burkas
 you're gifted 
 curtail 
 pool cue
+plunger 
+sequal 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDU3Mzc5OCwtMTc0Njc3MTg2NSwtMT
-kyODU0MzM4MywtNDg0MjU2MTcyLC0zOTYwMjIyOTFdfQ==
+eyJoaXN0b3J5IjpbNjIxNDE2Njg0LC0xNzQ2NzcxODY1LC0xOT
+I4NTQzMzgzLC00ODQyNTYxNzIsLTM5NjAyMjI5MV19
 -->
