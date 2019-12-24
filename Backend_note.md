@@ -103,16 +103,19 @@ myEmitter.emit('new user',  'Lily Pad')
 //newUserListener will be invoked with 'Lily Pad'
 ```
 
+#### Asynchronous JS with Node.js 
+**How it works ?** Node provides a number of APIs for performing asynchronous tasks which expect callback functions to be passed in as arguments. Under the hood, these APIs trigger the subscription to and emitting of events to signal the completion of the operation. When the operation completes, the callback function is added to a queue, or line, of tasks waiting for their turn to be executed. When the current stack, or list, or synchronous tasks finish executing, the operations on the queue will be performed.
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDc1ODY1Miw1ODU3MjQxOTIsLTQ3Nz
-U4ODUwMywyMDA0NjQ2NDcxLDU2NTI2MDY2NiwxNzk5NTg3NDA0
-LDE1ODU5ODk1OTMsLTExMTA3MTgyODgsLTg1MDM0ODkzOCwxNj
-MwNDU0Mzg4LC00OTk4OTMyODgsLTI1ODE3NzU3NiwtMTkzMjM1
-ODE0MCwtNzkxMTMwNjMsLTExNjg2Nzc1ODksLTE0NTMxNDU2MD
-gsLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIsLTEwMzI0OTQxMzIs
-MTE0ODI1MDYwNF19
+eyJoaXN0b3J5IjpbLTIwMTA0MzMxMzYsMTAzNDc1ODY1Miw1OD
+U3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NTI2MDY2
+NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgyODgsLT
+g1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMyODgsLTI1ODE3
+NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMwNjMsLTExNjg2Nzc1OD
+ksLTE0NTMxNDU2MDgsLTIwODk1OTAxNzQsLTE1OTM1NjI1MDIs
+LTEwMzI0OTQxMzJdfQ==
 -->
