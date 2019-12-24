@@ -79,7 +79,7 @@ console.log(tadpole.praise());
 
 #### Node Package Manager [NPM](https://www.npmjs.com/) 
 
-#### Event-driven Architecture 
+#### Event-driven Architecture  
 It is needed because, when we write web applications, we often need to write logic to handle situations without knowing exactly when they’ll occur. For example, when programming a website, we might provide functionality for a click event without knowing when a user will trigger it.
 
 `EventEmitter` access by requiring in the `events` core module. 
@@ -254,11 +254,11 @@ server.listen(3000);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNjY3NzIwLC0xMTIwNTQ5NzYzLC0yOD
-YxMDYzMjgsMjk4Nzc1MTQ1LDkwNzE1MTA2NiwtMTQ4NjU2ODcy
-MywtMTQwMTYxMTQ3MSw0MzMyMDcxMzAsODc3ODcxODg4LC01MT
-c4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2
-MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nz
-c1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQw
-NF19
+eyJoaXN0b3J5IjpbLTE3NzYyMTA0NTYsODYyNjY3NzIwLC0xMT
+IwNTQ5NzYzLC0yODYxMDYzMjgsMjk4Nzc1MTQ1LDkwNzE1MTA2
+NiwtMTQ4NjU2ODcyMywtMTQwMTYxMTQ3MSw0MzMyMDcxMzAsOD
+c3ODcxODg4LC01MTc4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQz
+MDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNT
+g1NzI0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2
+NjZdfQ==
 -->
