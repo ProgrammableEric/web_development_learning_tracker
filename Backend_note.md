@@ -230,16 +230,20 @@ myInterface.on('line', transformData);
 ~~~
 
 #### Create an HTTP server (the `http` module)
-
+~~~javascript
+const  http  =  require('http');  
+let  requestListener  =  (request,  response)  =>  { 
+	response.writeHead(200,  {'Content-Type':  'text/plain'  });  response.write('Hello World!\n');  response.end();  };  const  server  =  http.createServer(requestListener);  server.listen(3000);
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjEwNjMyOCwyOTg3NzUxNDUsOTA3MT
-UxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjExNDcxLDQzMzIwNzEz
-MCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMDc5MzEzOTc5LC0yMD
-IyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzNDc1ODY1
-Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NT
-I2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgy
-ODhdfQ==
+eyJoaXN0b3J5IjpbNDg2NDExOTU5LC0yODYxMDYzMjgsMjk4Nz
+c1MTQ1LDkwNzE1MTA2NiwtMTQ4NjU2ODcyMywtMTQwMTYxMTQ3
+MSw0MzMyMDcxMzAsODc3ODcxODg4LC01MTc4MTE5NzMsMTA3OT
+MxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2MTYsNzk2NDIxNDE0
+LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwND
+Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
+XX0=
 -->
