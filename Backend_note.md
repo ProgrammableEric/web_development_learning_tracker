@@ -80,12 +80,20 @@ console.log(tadpole.praise());
 #### Event-driven Architecture 
 It is needed because, when we write web applications, we often need to write logic to handle situations without knowing exactly when they’ll occur. For example, when programming a website, we might provide functionality for a click event without knowing when a user will trigger it.
 
-d
+`EventEmitter` access by requiring in the `events` core module. 
+```javascript
+// Require in the 'events' core module  
+let  events  =  require('events');  
+// Create an instance of the EventEmitter class  
+let  myEmitter  =  new  events.EventEmitter();
+```
+- `.on()`
+- `.emit()`
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTczNDI3NywtNDc3NTg4NTAzLDIwMD
+eyJoaXN0b3J5IjpbLTM3NzgzNDAzMCwtNDc3NTg4NTAzLDIwMD
 Q2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NTk4OTU5
 MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQzODgsLT
 Q5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4MTQwLC03OTEx
