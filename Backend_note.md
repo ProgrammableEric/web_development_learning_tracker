@@ -80,16 +80,16 @@ console.log(tadpole.praise());
 #### Event-driven Architecture 
 It is needed because, when we write web applications, we often need to write logic to handle situations without knowing exactly when they’ll occur. For example, when programming a website, we might provide functionality for a click event without knowing when a user will trigger it.
 
-
+d
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NT
-I2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgy
-ODgsLTg1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMyODgsLT
-I1ODE3NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMwNjMsLTExNjg2
-Nzc1ODksLTE0NTMxNDU2MDgsLTIwODk1OTAxNzQsLTE1OTM1Nj
-I1MDIsLTEwMzI0OTQxMzIsMTE0ODI1MDYwNCwtMTYxNDI0OTEz
-NywxOTIxNzkxODddfQ==
+eyJoaXN0b3J5IjpbLTI2MTczNDI3NywtNDc3NTg4NTAzLDIwMD
+Q2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NTk4OTU5
+MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQzODgsLT
+Q5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4MTQwLC03OTEx
+MzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0NTYwOCwtMjA4OTU5MD
+E3NCwtMTU5MzU2MjUwMiwtMTAzMjQ5NDEzMiwxMTQ4MjUwNjA0
+LC0xNjE0MjQ5MTM3XX0=
 -->
