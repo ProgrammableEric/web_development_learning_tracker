@@ -114,19 +114,21 @@ let callback = () => {
 
 setTimeout(callback, 1000); // Run callback after 1000ms
 
-// The while loop will run forever cuz it comes before the // callback function up on the stack. The callback function will never be called. 
+// The while loop will run forever cuz it comes before the 
+// callback function up on the stack. The callback function will never be called. 
 while(keepGoing === true) {
   console.log(`This is the song that never ends.`)
 };
 
 This while-loop will continue forever! Even though the callback changing the  `keepGoing`  variable to  `fa`
 ```
+For that reason, we could replace the while-loop with an asynchronous function
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ5Njg3MzA4LDEwMzQ3NTg2NTIsNTg1Nz
+eyJoaXN0b3J5IjpbOTUwMjE5MTAzLDEwMzQ3NTg2NTIsNTg1Nz
 I0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYs
 MTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NT
 AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
