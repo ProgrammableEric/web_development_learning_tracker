@@ -14,7 +14,14 @@
 ## Comedians
 - Louis C.K
 - Dave Chapelle
-- Ronny Chiueng
+- Ronny Chieng
+- Phil Wang
+- Ali Wong 
+- Joe Wang 
+- Bill Bur 
+- 李诞
+- Russel Peters 
+- G
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjExODgyMTddfQ==
+eyJoaXN0b3J5IjpbLTExODU4MDExNzNdfQ==
 -->
