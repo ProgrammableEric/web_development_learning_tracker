@@ -190,15 +190,20 @@ let  readDataCallback  =  (err,  data)  =>  {
 };  
 fs.readFile('./file.txt',  'utf-8',  readDataCallback);
 ~~~
+We invoked the `.readFile()` method with three arguments:
+
+1.  The first argument is a string that contains a path to the file  **file.txt**.
+2.  The second argument is a string specifying the file’s  [character encoding](https://en.wikipedia.org/wiki/Character_encoding)  (usually ‘utf-8’ for text files).
+3.  The third argument is the callback function to be invoked when the asynchronous task of reading from the file system is complete. Node will pass the contents of  **file.txt**  into the provided callback as its second argument.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDE2MTE0NzEsNDMzMjA3MTMwLDg3Nz
-g3MTg4OCwtNTE3ODExOTczLDEwNzkzMTM5NzksLTIwMjI0MzAx
-NSwtOTUzMzE0NjE2LDc5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NT
-cyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2
-LDE3OTk1ODc0MDQsMTU4NTk4OTU5MywtMTExMDcxODI4OCwtOD
-UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
-NTc2XX0=
+eyJoaXN0b3J5IjpbMjgzOTc4Mzg1LC0xNDAxNjExNDcxLDQzMz
+IwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMDc5MzEzOTc5
+LC0yMDIyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzND
+c1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcx
+LDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMT
+A3MTgyODgsLTg1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMy
+ODhdfQ==
 -->
