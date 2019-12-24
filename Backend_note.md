@@ -167,7 +167,7 @@ const  errorFirstCallback  =  (err,  data)  =>  {
 		console.log(`There WAS an error: ${err}`);  
 	}  else  {  
 	// err was falsy  
-	console.log(`There was NO error. Event data: ${data}`);  
+		console.log(`There was NO error. Event data: ${data}`);  
 	}  
 }
 
@@ -193,11 +193,11 @@ fs.readFile('./file.txt',  'utf-8',  readDataCallback);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjE3NDA3NTAsODc3ODcxODg4LC01MT
-c4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2
-MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nz
-c1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQw
-NCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5MzgsMT
-YzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIz
-NTgxNDBdfQ==
+eyJoaXN0b3J5IjpbNDMzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3OD
+ExOTczLDEwNzkzMTM5NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2
+LDc5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NT
+g4NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQs
+MTU4NTk4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2Mz
+A0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4
+MTQwXX0=
 -->
