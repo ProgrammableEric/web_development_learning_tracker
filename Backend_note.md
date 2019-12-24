@@ -84,20 +84,31 @@ It is needed because, when we write web applications, we often need to write log
 ```javascript
 // Require in the 'events' core module  
 let  events  =  require('events');  
+
 // Create an instance of the EventEmitter class  
 let  myEmitter  =  new  events.EventEmitter();
 ```
-- `.on()`
-- `.emit()`
+- `.on()`, `.emit()`
+```javascript
+let  newUserListener  =  (data)  =>  {  
+	console.log(`We have a new user: ${data}.`);  
+};  // Assign the newUserListener function as the listener callback for 'new user' events  
+
+myEmitter.on('new user',  newUserListener)  
+// Emit a 'new user' event  
+
+myEmitter.emit('new user',  'Lily Pad')  
+//newUserListener will be invoked with 'Lily Pad'
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzgzNDAzMCwtNDc3NTg4NTAzLDIwMD
-Q2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NTk4OTU5
-MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQzODgsLT
-Q5OTg5MzI4OCwtMjU4MTc3NTc2LC0xOTMyMzU4MTQwLC03OTEx
-MzA2MywtMTE2ODY3NzU4OSwtMTQ1MzE0NTYwOCwtMjA4OTU5MD
-E3NCwtMTU5MzU2MjUwMiwtMTAzMjQ5NDEzMiwxMTQ4MjUwNjA0
-LC0xNjE0MjQ5MTM3XX0=
+eyJoaXN0b3J5IjpbMTMxNDU0MDIxLC00Nzc1ODg1MDMsMjAwND
+Y0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkz
+LC0xMTEwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtND
+k5ODkzMjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEz
+MDYzLC0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5NTkwMT
+c0LC0xNTkzNTYyNTAyLC0xMDMyNDk0MTMyLDExNDgyNTA2MDQs
+LTE2MTQyNDkxMzddfQ==
 -->
