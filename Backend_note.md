@@ -196,16 +196,17 @@ We invoked the `.readFile()` method with three arguments:
 2.  The second argument is a string specifying the file’s  [character encoding](https://en.wikipedia.org/wiki/Character_encoding)  (usually ‘utf-8’ for text files).
 3.  The third argument is the callback function to be invoked when the asynchronous task of reading from the file system is complete. Node will pass the contents of  **file.txt**  into the provided callback as its second argument.
 
-
+#### Readable Streams
+Read files line b
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODY1Njg3MjMsLTE0MDE2MTE0NzEsND
-MzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3ODExOTczLDEwNzkzMTM5
-NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2LDc5NjQyMTQxNCwxMD
-M0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0
-NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMTU4NTk4OTU5MywtMT
-ExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5
-MzI4OF19
+eyJoaXN0b3J5IjpbLTEyMTM1MDEyODcsLTE0ODY1Njg3MjMsLT
+E0MDE2MTE0NzEsNDMzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3ODEx
+OTczLDEwNzkzMTM5NzksLTIwMjI0MzAxNSwtOTUzMzE0NjE2LD
+c5NjQyMTQxNCwxMDM0NzU4NjUyLDU4NTcyNDE5MiwtNDc3NTg4
+NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2LDE3OTk1ODc0MDQsMT
+U4NTk4OTU5MywtMTExMDcxODI4OCwtODUwMzQ4OTM4LDE2MzA0
+NTQzODhdfQ==
 -->
