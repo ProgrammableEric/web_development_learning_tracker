@@ -24,8 +24,9 @@
 - George Carlin 
 - Yumi Nagashima
 - Ron White 
-- chris
+- Chris Rock 
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjI2NTIzOSwtMjEzMTkzMDkzOCwtMT
+eyJoaXN0b3J5IjpbMTU1NjUzOTgzMSwtMjEzMTkzMDkzOCwtMT
 k5MDg0NTgxOCw5NDU0ODA3ODUsNzQ5ODgwNjgxXX0=
 -->
