@@ -253,6 +253,7 @@ server.listen(3000);
 #### 回调函数 [call back function 讲解](https://juejin.im/post/5dc1474df265da4d1518ee76)
 回调函数是一个函数，将会在另一个函数完成执行后立即执行。回调函数是一个作为参数传给另一个 JavaScript 函数的函数。这个回调函数会在传给的函数内部执行。
 ~~~javascript
+// 回调函数处理异步进程
 // 对比1: getMessage 若涉及等待服务器响应，则结果未知
 function getMessage() {
 	console.log('Got message');
@@ -270,15 +271,26 @@ function getMessage(msg, callback) {
 	setTimeout(function() {
 		console.log(msg);
 		callback();
-	})	
+	}, 2000);	
 }
+
+function displayMessage() {
+	console.log('Displayed message');
+}
+
+getMessage('Hi there', displayMessage);
+
+// prints out: 'Hi there'
+//             'Displayed message'
 ~~~
 
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MjUyNDUyOSwtMTgxODE3OTc1Miw4Nj
+eyJoaXN0b3J5IjpbLTY1ODc3NzQxNCwtMTgxODE3OTc1Miw4Nj
 I2Njc3MjAsLTExMjA1NDk3NjMsLTI4NjEwNjMyOCwyOTg3NzUx
 NDUsOTA3MTUxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjExNDcxLD
 QzMzIwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMDc5MzEz
