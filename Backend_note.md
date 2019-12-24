@@ -284,14 +284,29 @@ getMessage('Hi there', displayMessage);
 //             'Displayed message'
 ~~~
 - `displayMessage` 引用传递 / `displayMessage()` 函数调用
--  hui'tiao'd
+-  回调地狱: 回调函数的套用使得代码难以理解，修改和维护
+~~~javascript
+http.get('https://api.github.com/users',  function(users) {  
+/* Display all users */  
+	console.log(users); http.get('https://api.github.com/repos/javascript/contributors?q=contributions&order=desc',  function(contributors) {  
+	/* Display all top contributors */  
+	console.log(contributors); 
+	http.get('https://api.github.com/users/Jhon',  function(userData) {
+	/* Display user with username 'Jhon' */  
+	console.log(userData); }); 
+	}); 
+});
+
+作者：前端先锋  
+链接：https://juejin.im/post/5dc1474df265da4d1518ee76  
+~~~
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDM5NDg2NCwtNjU4Nzc3NDE0LC0xOD
+eyJoaXN0b3J5IjpbLTQyMzUwMjEzNiwtNjU4Nzc3NDE0LC0xOD
 E4MTc5NzUyLDg2MjY2NzcyMCwtMTEyMDU0OTc2MywtMjg2MTA2
 MzI4LDI5ODc3NTE0NSw5MDcxNTEwNjYsLTE0ODY1Njg3MjMsLT
 E0MDE2MTE0NzEsNDMzMjA3MTMwLDg3Nzg3MTg4OCwtNTE3ODEx
