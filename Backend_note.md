@@ -133,18 +133,18 @@ process.stdin.on('data', (userInput) => {
 	console.log(input)  
 });
 ```
-
+Here, we were able to use `.on()` because under the hood `process.stdin` is an instance of `EventEmitter`. When a user enters text into the terminal and hits enter, a `'data'` event will be fired and our anonymous listener callback will be invoked. The `userInput` we receive is an instance of [the Node  `Buffer`  class](https://nodejs.org/api/buffer.html#buffer_buffer), so we convert it to a string before printing.
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQwMTU2MTIsNzk2NDIxNDE0LDEwMz
-Q3NTg2NTIsNTg1NzI0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3
-MSw1NjUyNjA2NjYsMTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMT
-EwNzE4Mjg4LC04NTAzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkz
-Mjg4LC0yNTgxNzc1NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC
-0xMTY4Njc3NTg5LC0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0x
-NTkzNTYyNTAyXX0=
+eyJoaXN0b3J5IjpbLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzND
+c1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcx
+LDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMT
+A3MTgyODgsLTg1MDM0ODkzOCwxNjMwNDU0Mzg4LC00OTk4OTMy
+ODgsLTI1ODE3NzU3NiwtMTkzMjM1ODE0MCwtNzkxMTMwNjMsLT
+ExNjg2Nzc1ODksLTE0NTMxNDU2MDgsLTIwODk1OTAxNzQsLTE1
+OTM1NjI1MDJdfQ==
 -->
