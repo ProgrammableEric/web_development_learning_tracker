@@ -137,7 +137,7 @@ process.stdin.on('data', (userInput) => {
 ```
 Here, we were able to use `.on()` because under the hood `process.stdin` is an instance of `EventEmitter`. When a user enters text into the terminal and hits enter, a `'data'` event will be fired and our anonymous listener callback will be invoked. The `userInput` we receive is an instance of [the Node  `Buffer`  class](https://nodejs.org/api/buffer.html#buffer_buffer), so we convert it to a string before printing.
 
-#### Errors
+#### Errors 
 The usual `try...catch` statements do not always work since it is synchronous. e.g., 
 ```javascript
 // the usual callback function 
@@ -175,7 +175,7 @@ const  errorFirstCallback  =  (err,  data)  =>  {
 api.errorProneAsyncApi('problematic input', errorFirstCallback);
 ```
 
-#### Filesystem 
+#### Filesystem (`fs` module)
 In the back-end, however, less restricted interaction with the filesystem is essential. The Node `fs` core module is an API for interacting with the **f**ile **s**ystem. It was modeled after the [POSIX](https://en.wikipedia.org/wiki/POSIX) standard for interacting with the filesystem.
 
 Each method available through the `fs` module has a synchronous version and an asynchronous version. One method available on the `fs` core module is the `.readFile()` method which **read**s data from a provided **file**:
@@ -196,7 +196,7 @@ We invoked the `.readFile()` method with three arguments:
 2.  The second argument is a string specifying the file’s  [character encoding](https://en.wikipedia.org/wiki/Character_encoding)  (usually ‘utf-8’ for text files).
 3.  The third argument is the callback function to be invoked when the asynchronous task of reading from the file system is complete. Node will pass the contents of  **file.txt**  into the provided callback as its second argument.
 
-#### Readable Streams 
+#### Readable Streams (`readline` module)
 Read files line-by-line: 
 ~~~javascript
 const  readline  =  require('readline');  
@@ -210,7 +210,7 @@ myInterface.on('line', (fileLine)  =>  {
 	console.log(`The line read: ${fileLine}`);
 });
 ~~~
-#### Writable Streams 
+#### Writable Streams (`fs.createWriteStream()`)
 Combine reading and writing file streams: 
 ~~~javascript
 const readline = require('readline');
@@ -235,11 +235,11 @@ myInterface.on('line', transformData);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDg4OTY5NSwyOTg3NzUxNDUsOTA3MT
-UxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjExNDcxLDQzMzIwNzEz
-MCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMDc5MzEzOTc5LC0yMD
-IyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0MTQsMTAzNDc1ODY1
-Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMDA0NjQ2NDcxLDU2NT
-I2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1OTMsLTExMTA3MTgy
-ODhdfQ==
+eyJoaXN0b3J5IjpbMTE5MDQyODMyLDI5ODc3NTE0NSw5MDcxNT
+EwNjYsLTE0ODY1Njg3MjMsLTE0MDE2MTE0NzEsNDMzMjA3MTMw
+LDg3Nzg3MTg4OCwtNTE3ODExOTczLDEwNzkzMTM5NzksLTIwMj
+I0MzAxNSwtOTUzMzE0NjE2LDc5NjQyMTQxNCwxMDM0NzU4NjUy
+LDU4NTcyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0NzEsNTY1Mj
+YwNjY2LDE3OTk1ODc0MDQsMTU4NTk4OTU5MywtMTExMDcxODI4
+OF19
 -->
