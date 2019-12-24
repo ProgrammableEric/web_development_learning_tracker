@@ -57,13 +57,22 @@ let  events  =  require('events');
 ```
 - We can use the same `require()` function to require modules of our own creation.
  To handle these different tasks, the `require()` function includes some interesting logic “under the hood.” The `require()` function will first check to see if its argument is a core module, if not, it will move on to different attempts to locate it.
+Below, in the **dog.js** file, we assign the `Dog` class as the value of `module.exports`. Each JavaScript file in the Node environment has a special JavaScript object called `module.exports`. It holds everything in that file, or module, that’s available to be required into a different file.
 ```javascript
 // export your own local module 
-module.exports  =  class  Dog  {  constructor(name)  {  this.name  =  name;  }  praise()  {  return  `Good dog, ${this.name}!`;  }  };
-
+module.exports  =  class Dog {  
+	constructor(name)  { 
+	 this.name  =  name;  
+	}  
+	praise()  {  
+		return  `Good dog, ${this.name}!`;  
+	}  
+};
 
 // app.js, require a local Dog module 
-let  Dog  =  require('./dog.js');  const  tadpole  =  new  Dog('Tadpole');  console.log(tadpole.praise());
+let  Dog  =  require('./dog.js');  
+const  tadpole  =  new  Dog('Tadpole');  
+console.log(tadpole.praise());
 ```
 
 
@@ -71,7 +80,7 @@ let  Dog  =  require('./dog.js');  const  tadpole  =  new  Dog('Tadpole');  cons
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTQ4NzI1MCw1NjUyNjA2NjYsMTc5OT
+eyJoaXN0b3J5IjpbMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OT
 U4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NTAzNDg5
 MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1NzYsLT
 E5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC0xNDUz
