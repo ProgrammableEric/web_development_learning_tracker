@@ -75,7 +75,7 @@ const  tadpole  =  new  Dog('Tadpole');
 console.log(tadpole.praise());
 ```
 
-#### Node Package Manager [NPM]([https://www.npmjs.com/](https://www.npmjs.com/) 
+#### Node Package Manager [NPM](https://www.npmjs.com/) 
 
 #### Event-driven Architecture 
 It is needed because, when we write web applications, we often need to write logic to handle situations without knowing exactly when they’ll occur. For example, when programming a website, we might provide functionality for a click event without knowing when a user will trigger it.
@@ -132,11 +132,11 @@ For that reason, we could replace the while-loop with an asynchronous function. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNDc2NDU4NCwxMDM0NzU4NjUyLDU4NT
-cyNDE5MiwtNDc3NTg4NTAzLDIwMDQ2NDY0NzEsNTY1MjYwNjY2
-LDE3OTk1ODc0MDQsMTU4NTk4OTU5MywtMTExMDcxODI4OCwtOD
-UwMzQ4OTM4LDE2MzA0NTQzODgsLTQ5OTg5MzI4OCwtMjU4MTc3
-NTc2LC0xOTMyMzU4MTQwLC03OTExMzA2MywtMTE2ODY3NzU4OS
-wtMTQ1MzE0NTYwOCwtMjA4OTU5MDE3NCwtMTU5MzU2MjUwMiwt
-MTAzMjQ5NDEzMl19
+eyJoaXN0b3J5IjpbNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1Nz
+I0MTkyLC00Nzc1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYs
+MTc5OTU4NzQwNCwxNTg1OTg5NTkzLC0xMTEwNzE4Mjg4LC04NT
+AzNDg5MzgsMTYzMDQ1NDM4OCwtNDk5ODkzMjg4LC0yNTgxNzc1
+NzYsLTE5MzIzNTgxNDAsLTc5MTEzMDYzLC0xMTY4Njc3NTg5LC
+0xNDUzMTQ1NjA4LC0yMDg5NTkwMTc0LC0xNTkzNTYyNTAyLC0x
+MDMyNDk0MTMyXX0=
 -->
