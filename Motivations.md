@@ -23,7 +23,9 @@
 - Russel Peters 
 - George Carlin 
 - Yumi Nagashima
+- Dan White 
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1NDgwNzg1LDc0OTg4MDY4MV19
+eyJoaXN0b3J5IjpbLTE5OTA4NDU4MTgsOTQ1NDgwNzg1LDc0OT
+g4MDY4MV19
 -->
