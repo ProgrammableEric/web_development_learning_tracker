@@ -230,6 +230,15 @@ myInterface.on('line', transformData);
 ~~~
 
 #### Create an HTTP server (the `http` module)
+The  `http.createServer()`  method returns an instance of an  `http.server`. An  `http.server`  has a method  `.listen()`  which causes the server to “listen” for incoming connections. When we run  `http.createServer()`  we pass in a custom callback function (often referred to as the  `requestListener`). This callback function will be triggered once the server is listening and receives a request.
+
+Let’s break down how the  `requestListener`  callback function works:
+
+-   The function expects two arguments: a request object and a response object.
+-   Each time a request to the server is made, Node will invoke the provided  `requestListener`  callback function, passing in the request and response objects of the incoming request.
+-   Request and response objects come with a number of properties and methods of their own, and within the  `requestListener`  function, we can access information about the request via the request object passed in.
+-   The  `requestListener`  is responsible for setting the response header and body.
+-   The  `requestListener`  must signal that the interaction is complete by calling the  `response.end()`  method.
 ~~~javascript
 const  http  =  require('http');  
 let  requestListener  =  (request,  response)  =>  { 
@@ -240,22 +249,16 @@ let  requestListener  =  (request,  response)  =>  {
 const  server  =  http.createServer(requestListener);  
 server.listen(3000);
 ~~~
-Let’s walk through the above code:
 
--   We required in the  `http`  core module.
--   We created a  `server`  variable assigned to the return value of the  `http.createServer()`  method.
--   We invoked  `http.createServer()`  with our  `requestListener`  callback. This is similar to running the  `.on()`  of an  `EventEmitter`: the  `requestListener`  will execute whenever an HTTP request is sent to the server on the correct port.
--   Within the  `requestListener`  callback, we make changes to the response object,  `response`, so that it can send the appropriate information to the client sending the request. The status code 200 means that no errors were encountered. The header communicates that the file type is text, rather than something like audio or compressed data.
--   The last line starts the server with the port 3000. Every server on a given machine specifies a unique port so that traffic can be correctly routed.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjA1NDk3NjMsLTI4NjEwNjMyOCwyOT
-g3NzUxNDUsOTA3MTUxMDY2LC0xNDg2NTY4NzIzLC0xNDAxNjEx
-NDcxLDQzMzIwNzEzMCw4Nzc4NzE4ODgsLTUxNzgxMTk3MywxMD
-c5MzEzOTc5LC0yMDIyNDMwMTUsLTk1MzMxNDYxNiw3OTY0MjE0
-MTQsMTAzNDc1ODY1Miw1ODU3MjQxOTIsLTQ3NzU4ODUwMywyMD
-A0NjQ2NDcxLDU2NTI2MDY2NiwxNzk5NTg3NDA0LDE1ODU5ODk1
-OTNdfQ==
+eyJoaXN0b3J5IjpbODYyNjY3NzIwLC0xMTIwNTQ5NzYzLC0yOD
+YxMDYzMjgsMjk4Nzc1MTQ1LDkwNzE1MTA2NiwtMTQ4NjU2ODcy
+MywtMTQwMTYxMTQ3MSw0MzMyMDcxMzAsODc3ODcxODg4LC01MT
+c4MTE5NzMsMTA3OTMxMzk3OSwtMjAyMjQzMDE1LC05NTMzMTQ2
+MTYsNzk2NDIxNDE0LDEwMzQ3NTg2NTIsNTg1NzI0MTkyLC00Nz
+c1ODg1MDMsMjAwNDY0NjQ3MSw1NjUyNjA2NjYsMTc5OTU4NzQw
+NF19
 -->
