@@ -104,13 +104,13 @@ Express is a powerful but flexible Javascript framework for creating web servers
 
 Express is a node module. Import frist when using it. 
 ```javascript
-const  express  =  require('express');  
-const  app  =  express();
+const  express  =  require('express');  // library import 
+const  app  =  express();  // an instance of an Express application
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzc2NDA3LDE1NzYyNzU1NzQsLTY1MT
-A4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3
-MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbLTE5ODE4MTU1NjcsMTU3NjI3NTU3NCwtNj
+UxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMTQyNjUx
+ODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
 -->
