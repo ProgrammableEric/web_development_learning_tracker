@@ -52,14 +52,19 @@ There are 4 basic HTTP verbs we use in requests to interact with resources in a 
 
 [read more](https://www.codecademy.com/articles/what-is-crud)
 
-#### Headers and Accept parameters
+#### [Headers and Accept parameters]
 `Accept` field: type of content that it is able to reveive from the server. Consisting of `type` and `subtype`. e.g., `text/html, text/css, img/png` etc. 
 
  Available options see [this doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). 
 
-#### Path
+#### [Path]
+A path like `fashionboutique.com/customers/223/orders/12` is clear in what it points to. We can see that we are accessing the order with `id` 12 for the customer with `id` 223.
+
+Paths should contain the information necessary to locate a resource with the degree of specificity needed. When referring to a list or collection of resources, it is unnecessary to add an `id` to a POST request to a `fashionboutique.com/customers` path would not need an extra identifier, as the server will generate an `id` for the new object.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMD
-UxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbLTU3NTU4OTkwLDkzNjUwNDk0NywtMTQyNj
+UxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
 -->
