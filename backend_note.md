@@ -18,7 +18,9 @@ _Authorization_ controls which users have access to which resources and actions.
 ### Backend Frameworks: [see](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Web_frameworks#A_few_good_web_frameworks)
 
 ## REST [link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest)
-
+REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. - _RESTful systems_
+- seperation of client and server 
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTU3MTgzOCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbMzMwMzI3Mjc3LDk0NDcyOTczOV19
 -->
