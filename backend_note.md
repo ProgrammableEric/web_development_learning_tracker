@@ -22,7 +22,9 @@ REST, or REpresentational State Transfer, is an architectural style for providin
 - **seperation of client and server** 
 Separating the user interface concerns from the data storage concerns, we improve the flexibility of the interface across platforms and improve scalability by simplifying the server components. Additionally, the separation allows each component the ability to evolve independently.
 - **statelessness**
-The server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages. This constraint of statelessness is enforced through the use of _resources_, rather than _commands_. Resources are the nouns of the Web - they describe any object, document, or _thing_ that you may need to store or send to other services.
+The server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages. This constraint of statelessness is enforced through the use of _resources_, rather than _commands_. Resources are the nouns of the Web - they describe any object, document, or _thing_ that you may need to store or send to other services. 
+- **Communication between client and server** 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Mjg1MDM2MCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbMTM5NTk3ODY0NCw5NDQ3Mjk3MzldfQ==
 -->
