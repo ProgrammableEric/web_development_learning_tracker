@@ -102,11 +102,15 @@ Expected response for each HTTP verb:
 ## Express 
 Express is a powerful but flexible Javascript framework for creating web servers and [APIs](https://en.wikipedia.org/wiki/Web_API). It can be used for everything from simple static file servers to JSON APIs to full production servers. 
 
-Express is a node module. 
+Express is a node module. Import frist when using it. 
+```javascript
+const  express  =  require('express');  
+const  app  =  express();
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTQ5NjY0NCwxNTc2Mjc1NTc0LC02NT
-EwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4
-NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbLTMwMzc2NDA3LDE1NzYyNzU1NzQsLTY1MT
+A4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3
+MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
