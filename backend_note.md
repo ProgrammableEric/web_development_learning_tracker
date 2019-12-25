@@ -93,8 +93,16 @@ Status code [look up](https://www.restapitutorial.com/httpstatuscodes.html)
 
 - 500 (INTERNAL SERVER ERROR) The generic answer for an unexpected failure if there is no more sp
 
+Expected response for each HTTP verb: 
+-   GET — return 200 (OK)
+-   POST — return 201 (CREATED)
+-   PUT — return 200 (OK)
+-   DELETE — return 204 (NO CONTENT) If the operation fails, return the most specific status code possible corresponding to the problem that was encountered.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTMxOTUyMzcsLTIwNzYyMDU3NzcsOT
-M2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5
-NzM5XX0=
+eyJoaXN0b3J5IjpbLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5Mz
+Y1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3
+MzldfQ==
 -->
