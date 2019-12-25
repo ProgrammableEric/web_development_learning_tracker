@@ -100,11 +100,13 @@ Expected response for each HTTP verb:
 -   DELETE — return 204 (NO CONTENT) If the operation fails, return the most specific status code possible corresponding to the problem that was encountered.
 
 ## Express 
+Express is a powerful but flexible Javascript framework for creating web servers and [APIs](https://en.wikipedia.org/wiki/Web_API). It can be used for everything from simple static file servers to JSON APIs to full production servers. 
 
+Express is a node module. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMD
-c2MjA1Nzc3LDkzNjUwNDk0NywtMTQyNjUxODcxNSwxMDA1MTQz
-MTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbMTI3OTQ5NjY0NCwxNTc2Mjc1NTc0LC02NT
+EwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4
+NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
 -->
