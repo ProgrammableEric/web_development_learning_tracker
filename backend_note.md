@@ -77,9 +77,7 @@ Content-Type: text/html
 
 #### [Response Code]
 Responses from the server contain status codes to alert the client to information about the success of the operation. 
-Status code
-
-Meaning
+Status code [look up](https://www.restapitutorial.com/httpstatuscodes.html)
 
 - 200 (OK) This is the standard response for successful HTTP requests.
 
@@ -89,20 +87,14 @@ Meaning
 
 - 400 (BAD REQUEST) The request cannot be processed because of bad request syntax, excessive size, or another client error.
 
-403 (FORBIDDEN)
+- 403 (FORBIDDEN) The client does not have permission to access this resource.
 
-The client does not have permission to access this resource.
+- 404 (NOT FOUND) The resource could not be found at this time. It is possible it was deleted, or does not exist yet.
 
-404 (NOT FOUND)
-
-The resource could not be found at this time. It is possible it was deleted, or does not exist yet.
-
-500 (INTERNAL SERVER ERROR)
-
-The generic answer for an unexpected failure if there is no more sp
+- 500 (INTERNAL SERVER ERROR) The generic answer for an unexpected failure if there is no more sp
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg2MzEzNTEsLTIwNzYyMDU3NzcsOT
+eyJoaXN0b3J5IjpbLTEzNTMxOTUyMzcsLTIwNzYyMDU3NzcsOT
 M2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5
 NzM5XX0=
 -->
