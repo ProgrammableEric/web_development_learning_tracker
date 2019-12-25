@@ -24,20 +24,37 @@ REST, or REpresentational State Transfer, is an architectural style for providin
 
 Separating the user interface concerns from the data storage concerns, we improve the flexibility of the interface across platforms and improve scalability by simplifying the server components. Additionally, the separation allows each component the ability to evolve independently.
 
-### statelessness**
+### Statelessness
 
 The server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages. This constraint of statelessness is enforced through the use of _resources_, rather than _commands_. Resources are the nouns of the Web - they describe any object, document, or _thing_ that you may need to store or send to other services. 
 
-**Communication between client and server** 
+### Communication between client and server
 
 In the REST architecture, clients send requests to retrieve or modify resources, and servers send responses to these requests.
 
 see [this link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest) for details. 
 
-**[making request]**
+#### [making request]
+REST requires that a client make a request to the server in order to retrieve or modify data on the server. A request generally consists of:
 
+-   an HTTP verb, which defines what kind of operation to perform
+-   a  _header_, which allows the client to pass along information about the request
+-   a path to a resource
+-   an optional message body containing data
+
+#### [HTTP Verbs]
+There are 4 basic HTTP verbs we use in requests to interact with resources in a REST system:
+
+-   GET — retrieve a specific resource (by id) or a collection of resources
+-   POST — create a new resource
+-   PUT — update a specific resource (by id)
+-   DELETE — remove a specific resource by id
+
+[read more](https://www.codecademy.com/articles/what-is-crud)
+
+#### 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMzExMDI4LC0xNDI2NTE4NzE1LDEwMD
-UxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbLTE4ODM3NzY3NTEsLTE0MjY1MTg3MTUsMT
+AwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
