@@ -64,10 +64,18 @@ Paths should contain the information necessary to locate a resource with the deg
 
 ### Sending Responses 
 #### [Content Type]
-
+In cases where the server is sending a data payload to the client, the server must include a `content-type` in the header of the response. This `content-type` header field alerts the client to the type of data it is sending in the response body. These content types are MIME Types, just as they are in the `accept` field of the request header. The `content-type` that the server sends back in the response should be one of the options that the client specified in the `accept` field of the request. e.g.
+~~~
+// GET Request
+GET /articles/23 HTTP/1.1  
+Accept: text/html, application/xhtml
+// Server Response
+HTTP/1.1 200 (OK)  
+Content-Type: text/html
+~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjM1MDc1MDYsLTIwNzYyMDU3NzcsOT
+eyJoaXN0b3J5IjpbLTEzODQ2MDYwMDcsLTIwNzYyMDU3NzcsOT
 M2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5
 NzM5XX0=
 -->
