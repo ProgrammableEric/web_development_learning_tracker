@@ -62,9 +62,10 @@ A path like `fashionboutique.com/customers/223/orders/12` is clear in what it po
 
 Paths should contain the information necessary to locate a resource with the degree of specificity needed. When referring to a list or collection of resources, it is unnecessary to add an `id` to a POST request to a `fashionboutique.com/customers` path would not need an extra identifier, as the server will generate an `id` for the new object.
 
+### Sending Responses 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTU4OTkwLDkzNjUwNDk0NywtMTQyNj
-UxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xND
+I2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
 -->
