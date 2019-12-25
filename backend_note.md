@@ -114,12 +114,13 @@ app.listen(PORT,  ()  =>  {
 	console.log(`Server is listening on port ${PORT}`); 
 });
 ```
-- `Route` 
+- `Route` Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3Nj
-I3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0
-NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMj
+ExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMDU3
+NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOT
+Q0NzI5NzM5XX0=
 -->
