@@ -32,8 +32,12 @@ The server does not need to know anything about what state the client is in and 
 
 In the REST architecture, clients send requests to retrieve or modify resources, and servers send responses to these requests.
 
+see [this link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest) for details. 
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5ND
-Q3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbLTM1NTgxMDUwMiwtMTQyNjUxODcxNSwxMD
+A1MTQzMTQ4LDk0NDcyOTczOV19
 -->
