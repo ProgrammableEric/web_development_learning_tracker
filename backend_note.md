@@ -53,10 +53,13 @@ There are 4 basic HTTP verbs we use in requests to interact with resources in a 
 [read more](https://www.codecademy.com/articles/what-is-crud)
 
 #### Headers and Accept parameters
-`Accept` field: type of content that it is able to reveive from the server. Available options see [this doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). 
+`Accept` field: type of content that it is able to reveive from the server. Consisting of `type` and `subtype`. e.g., `text/html, text/css, img/png` etc. 
 
+ Available options see [this doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). 
+
+#### Path
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDI3NjkxNTQsLTE0MjY1MTg3MTUsMT
-AwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMD
+UxNDMxNDgsOTQ0NzI5NzM5XX0=
 -->
