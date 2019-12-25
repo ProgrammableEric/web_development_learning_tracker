@@ -52,9 +52,11 @@ There are 4 basic HTTP verbs we use in requests to interact with resources in a 
 
 [read more](https://www.codecademy.com/articles/what-is-crud)
 
-#### 
+#### Headers and Accept parameters
+`Accept` field: type of content that it is able to reveive from the server. Available options see [this doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODM3NzY3NTEsLTE0MjY1MTg3MTUsMT
+eyJoaXN0b3J5IjpbLTEzMDI3NjkxNTQsLTE0MjY1MTg3MTUsMT
 AwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
