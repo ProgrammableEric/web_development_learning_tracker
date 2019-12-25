@@ -19,12 +19,19 @@ _Authorization_ controls which users have access to which resources and actions.
 
 ## REST [link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest)
 REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. - _RESTful systems_
-- **seperation of client and server** 
+
+**seperation of client and server** 
+
 Separating the user interface concerns from the data storage concerns, we improve the flexibility of the interface across platforms and improve scalability by simplifying the server components. Additionally, the separation allows each component the ability to evolve independently.
-- **statelessness**
+
+**statelessness**
+
 The server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages. This constraint of statelessness is enforced through the use of _resources_, rather than _commands_. Resources are the nouns of the Web - they describe any object, document, or _thing_ that you may need to store or send to other services. 
-- **Communication between client and server** 
+
+**Communication between client and server** 
+
+In the REST architecture, clients send requests to retrieve or modify resources, and servers send responses to these requests.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTk3ODY0NCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
