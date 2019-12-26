@@ -162,15 +162,27 @@ res.send(monsters[req.params.name]);  });
 ~~~
 
 #### [Setting Status Code]
+~~~javascript
+const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  
+									jerseyDevils:  4,  krakens:  3  };  
 
+app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {  
+	const  monsterInventory  =  	monsterStoreInventory[req.params.name];  
+	if  (monsterInventory)  {  
+		res.send(monsterInventory);  }  
+	else  {  
+		res.status(404).send('Monster not found');  
+	}  
+});
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4MzE1MTgyLC0xOTY0NDYxODg5LC0yMD
-cwMjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2
-MDQsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNT
-c2Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0
-OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX
-0=
+eyJoaXN0b3J5IjpbLTUyNjI1MTMwOCwtMTk2NDQ2MTg4OSwtMj
+A3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3MywtNDE5NTgz
+NjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMT
+U3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUw
+NDk0NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV
+19
 -->
