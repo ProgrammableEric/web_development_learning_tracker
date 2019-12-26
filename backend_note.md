@@ -115,12 +115,17 @@ app.listen(PORT,  ()  =>  {
 });
 ```
 - `Route` Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
-
+~~~javascript
+const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
+app.get('/moods',  (req,  res,  next)  =>  {  
+	// Here we would send back the moods array in response  
+});
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAwOTMyNzEsMTMyMzc0Nzc3MSwtMj
+eyJoaXN0b3J5IjpbLTE0Njc4OTA4NzEsMTMyMzc0Nzc3MSwtMj
 cwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcw
 OTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LD
 EwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
