@@ -299,7 +299,7 @@ const  app  =  express();
 const  monsters  =  {  '1':  {  name:  'godzilla',  age:  250000000  },  '2':  {  Name:  'manticore',  age:  21  }  }  
 
 const  monstersRouter  =  express.Router();  
-app.use('/monsters',  monstersRouter);  
+app.use('/monsters',  monstersRouter);  // ke
 monstersRouter.get('/:id',  (req,  res,  next)  =>  {  
 	const  monster  =  monsters[req.params.id];  
 	If  (monster)  {  res.send(monster);  
@@ -316,11 +316,11 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTc4MzcwNCwxNjY1NTYxMiwtNzI3Nz
-U0MDQzLC0xMjQxODUwMzA0LDEwMDgxOTI1NDcsODQxODk2NTE2
-LC0xNTMzOTk5NDQ1LC0xMTE5NDcwMzU0LDIwMjUxNTYzMDAsMT
-gyMDk3Mjc2MCwtMTk2NDQ2MTg4OSwtMjA3MDI1OTc0NiwyMDcz
-NjkxODIsMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMjM3NDc3Nz
-EsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3NCwtNjUx
-MDg3MDk4XX0=
+eyJoaXN0b3J5IjpbMzUzNjY0MTQwLDIwMTE3ODM3MDQsMTY2NT
+U2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMDA4MTkyNTQ3
+LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3MDM1NCwyMD
+I1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4ODksLTIwNzAy
+NTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNC
+wxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYy
+NzU1NzRdfQ==
 -->
