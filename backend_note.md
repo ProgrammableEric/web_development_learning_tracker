@@ -198,14 +198,16 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 #### [`POST`]
 `POST` is the HTTP method verb used for creating new resources. Because `POST` routes create new data, their paths do not end with a route parameter, but instead end with the type of resource to be created. 
 
+
+
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMjM3NTIzLC0xNTMzOTk5NDQ1LC0xMT
-E5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mjc2MCwtMTk2NDQ2
-MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3My
-wtNDE5NTgzNjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIx
-MTQzNTcsMTU3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nz
-c3LDkzNjUwNDk0NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0
-NDcyOTczOV19
+eyJoaXN0b3J5IjpbLTIwNTM3ODUwMzMsLTE1MzM5OTk0NDUsLT
+ExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0
+NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OT
+czLC00MTk1ODM2MDQsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkx
+MjExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMD
+U3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgs
+OTQ0NzI5NzM5XX0=
 -->
