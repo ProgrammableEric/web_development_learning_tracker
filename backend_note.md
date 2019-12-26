@@ -211,17 +211,96 @@ app.post('/expressions', (req, res, next) => {
 
 #### [`DELETE`] - 204 (No Content)
 `DELETE` is the HTTP method verb used to delete resources. Because `DELETE` routes delete currently existing data, their paths should usually end with a route parameter to indicate which resource to delete.
+~~~javascript
+app.delete('/expressions/:id', (req, res, next) => {
+  const index = getIndexById(req.params.id, expressions);
+  if (index !== -1){
+    expressions.splice(index, 1);
+    res.status(204).send();
+  } else {
+    res.status(404).send();
+  }
+})
+~~~
+
+~~~javascript
+// Complete code of the CRUD server 
+const express = require('express');
+const app = express();
+
+// Serves Express Yourself website
+app.use(express.static('public'));
+
+const { getElementById, getIndexById, updateElement,
+        seedElements, createElement } = require('./utils');
+
+const expressions = [];
+seedElements(expressions, 'expressions');
+
+const PORT = process.env.PORT || 4001;
+// Use static server to serve the Express Yourself Website
+app.use(express.static('public'));
+
+app.get('/expressions', (req, res, next) => {
+  res.send(expressions);
+});
+
+app.get('/expressions/:id', (req, res, next) => {
+  const foundExpression = getElementById(req.params.id, expressions);
+  if (foundExpression) {
+    res.send(foundExpression);
+  } else {
+    res.status(404).send();
+  }
+});
+
+app.put('/expressions/:id', (req, res, next) => {
+  const expressionIndex = getIndexById(req.params.id, expressions);
+  if (expressionIndex !== -1) {
+    updateElement(req.params.id, req.query, expressions);
+    res.send(expressions[expressionIndex]);
+  } else {
+    res.status(404).send();
+  }
+});
+
+app.post('/expressions', (req, res, next) => {
+  const receivedExpression = createElement('expressions', req.query);
+  if (receivedExpression) {
+    expressions.push(receivedExpression);
+    res.status(201).send(receivedExpression);
+  } else {
+    res.status(400).send();
+  }
+});
+
+// Add your DELETE handler below:
+app.delete('/expressions/:id', (req, res, next) => {
+  const index = getIndexById(req.params.id, expressions);
+  if (index !== -1){
+    expressions.splice(index, 1);
+    res.status(204).send();
+  } else {
+    res.status(404).send();
+  }
+})
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
+~~~
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwODE5MjU0Nyw4NDE4OTY1MTYsLTE1Mz
-M5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcy
-NzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4Mi
-wxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMyMzc0Nzc3MSwtMjcw
-MDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcwOT
-gsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEw
-MDUxNDMxNDhdfQ==
+eyJoaXN0b3J5IjpbLTEyNDE4NTAzMDQsMTAwODE5MjU0Nyw4ND
+E4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1
+NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5Nz
+Q2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMy
+Mzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NT
+c0LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0x
+NDI2NTE4NzE1XX0=
 -->
