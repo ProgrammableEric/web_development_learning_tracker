@@ -129,12 +129,17 @@ The path is is part of the request that specifies where to locate the resources.
 
 HTTP follows a one request-one response cycle. Each client expects exactly one response per request, and each server should only send a single response back to the client per request.
 
-- `send()` to send responses by 
-
+- `send()` to send responses by the Express server. 
+~~~javascript
+const  monsters  =  [{  type:  'werewolf'  },  {  type:  'hydra'  },  {  type:  'chupacabra'  }];  
+app.get('/monsters',  (req,  res,  next)  =>  {  
+	res.send(monsters);  
+});
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTUyMDIwNywtNDE5NTgzNjA0LDEzMj
+eyJoaXN0b3J5IjpbMjE0NDcyOTU5NCwtNDE5NTgzNjA0LDEzMj
 M3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3
 NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMT
 QyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
