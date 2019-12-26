@@ -144,7 +144,7 @@ app.get('/monsters',  (req,  res,  next)  =>  {
 #### [Matching Route Paths]
 Express tries to match requests by route, meaning that if we send a request to  `<server address>:<port number>/api-endpoint`, the Express server will search through any registered routes in order and try to match  `/api-endpoint`.
 
-Express searches through routes in the order that they are registered in your code. The first one that is matched will be used, and its callback will be called.
+Express searches through routes **in the order that they are registered in your code**. The first one that is matched will be used, and its callback will be called.
 
 If there are no matching routes registered, or the Express server has not sent a response at the end of all matched routes, it will automatically send back a 404 Not Found response, meaning that no routes were matched or no response was ultimately sent by the registered routes.
 
@@ -153,9 +153,9 @@ If there are no matching routes registered, or the Express server has not sent a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOT
-U4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3
-LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5Mz
-Y1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3
-MzldfQ==
+eyJoaXN0b3J5IjpbLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMz
+kxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMx
+NzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMj
+A3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0
+MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
