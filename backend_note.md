@@ -179,17 +179,19 @@ app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {
 
 #### [ `PUT` ]
 Updating existing resources. 
-u
+- Use of query string: A web server can handle a [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") request either by reading a file from its [file system](https://en.wikipedia.org/wiki/File_system "File system") based on the [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") path or by handling the request using logic that is specific to the type of resource. In cases where special logic is invoked, the query string will be available to that logic for use in its processing, along with the path component of the URL. 
+
+
 
 #### [`POST`]
 
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzcxMDY5OSwyMDI1MTU2MzAwLDE4Mj
-A5NzI3NjAsLTE5NjQ0NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5
-MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC
-0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4
-NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MT
-UsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxOD
+IwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2
+OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMyMzc0Nzc3MS
+wtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEw
+ODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4Nz
+E1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
 -->
