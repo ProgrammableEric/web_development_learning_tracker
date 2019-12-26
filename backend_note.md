@@ -122,14 +122,16 @@ app.get('/moods',  (req,  res,  next)  =>  {
 });
 ~~~
 `localhost:4001/monsters` = host name + port number + path. 
+
 The path is is part of the request that specifies where to locate the resources. 
+
 HTTP follows a one request-one response cycle. Each client expects exactly one response per request, and each server should only send a single response back to the client per request.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5NTUzODc5LC00MTk1ODM2MDQsMTMyMz
-c0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0
-LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xND
-I2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbMTUwNjQ3NTU0MywtNDE5NTgzNjA0LDEzMj
+M3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3
+NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMT
+QyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
 -->
