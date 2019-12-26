@@ -114,9 +114,11 @@ app.listen(PORT,  ()  =>  {
 	console.log(`Server is listening on port ${PORT}`); 
 });
 ```
-#### `Route`
+### `Route`
 Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
-- `app.get()` to register routes to match `GET` requests. 
+
+#### `app.get()` 
+app.get()` to register routes to match `GET` requests. 
 ~~~javascript
 const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
 app.get('/moods',  (req,  res,  next)  =>  {  
@@ -129,7 +131,8 @@ The path is is part of the request that specifies where to locate the resources.
 
 HTTP follows a one request-one response cycle. Each client expects exactly one response per request, and each server should only send a single response back to the client per request.
 
-- `send()` to send responses by the Express server. 
+#### `res.send()`
+`send()` to send responses by the Express server. 
 ~~~javascript
 const  monsters  =  [{  type:  'werewolf'  },  {  type:  'hydra'  },  {  type:  'chupacabra'  }];  
 app.get('/monsters',  (req,  res,  next)  =>  {  
@@ -138,11 +141,15 @@ app.get('/monsters',  (req,  res,  next)  =>  {
 ~~~
 `.json()` can be used to explicitly send JSON-formatted responses. `.json()` sends any JavaScript object passed into it.
 
+#### Matching Route Paths 
+Express tries to match requests by route, meaning that if we send a request to  `<server address>:<port number>/api-endpoint`, the Express server will search through any registered routes in order and try to match  `/api-endpoint`.
 
+Express searches through routes in the order that they are registered in your code. The first one that is matched will be used, and its callback will be called.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMj
-M3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3
-NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMT
-QyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbMTY3NTk5NDU1NiwxMjM5MTE0OTczLC00MT
+k1ODM2MDQsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1
+NywxNTc2Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOT
+M2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5
+NzM5XX0=
 -->
