@@ -161,7 +161,7 @@ res.send(monsters[req.params.name]);  });
 ~~~
 
 #### [ Matching with HTTP verbs ]
-Express also matches request with routes that have the correct http verbs. A `GET` and a `app.put()` does not match and express w
+Express also matches request with routes that have the correct http verbs. A `GET` and a `app.put()` does not match and express will stop comparing the rest of the route path. d
 
 #### [Setting Status Code]
 Default is 200(OK). 
@@ -196,15 +196,16 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 ```
 
 #### [`POST`]
+`POST` is the HTTP method verb used for creating new resources. Because `POST` routes create new data, their paths do not end with a route parameter, but instead end with the type of resource to be created. 
 
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODM4ODIxNCwtMTUzMzk5OTQ0NSwtMT
-ExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0
-NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5Nz
-MsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEy
-MTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNT
-c3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5
-NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbMTYzMjM3NTIzLC0xNTMzOTk5NDQ1LC0xMT
+E5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mjc2MCwtMTk2NDQ2
+MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3My
+wtNDE5NTgzNjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIx
+MTQzNTcsMTU3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nz
+c3LDkzNjUwNDk0NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0
+NDcyOTczOV19
 -->
