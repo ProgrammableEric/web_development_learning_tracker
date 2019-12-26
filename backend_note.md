@@ -179,7 +179,7 @@ app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {
 
 #### [ `PUT` ]
 Updating existing resources. 
-- Use of query string: A web server can handle a [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") request either by reading a file from its [file system](https://en.wikipedia.org/wiki/File_system "File system") based on the [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") path or by handling the request using logic that is specific to the type of resource. In cases where special logic is invoked, the query string will be available to that logic for use in its processing, along with the path component of the URL. 
+- Use of [query string]([https://en.wikipedia.org/wiki/Query_string](https://en.wikipedia.org/wiki/Query_string): A web server can handle a [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol") request either by reading a file from its [file system](https://en.wikipedia.org/wiki/File_system "File system") based on the [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator "Uniform Resource Locator") path or by handling the request using logic that is specific to the type of resource. In cases where special logic is invoked, the query string will be available to that logic for use in its processing, along with the path component of the URL. 
 
 
 
@@ -188,10 +188,11 @@ Updating existing resources.
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxOD
-IwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2
-OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMyMzc0Nzc3MS
-wtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEw
-ODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4Nz
-E1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbLTg3NjY0NDE4NywtMTExOTQ3MDM1NCwyMD
+I1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4ODksLTIwNzAy
+NTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNC
+wxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYy
+NzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5ND
+csLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
+
 -->
