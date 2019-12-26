@@ -291,17 +291,19 @@ app.listen(PORT, () => {
 ~~~
 
 ### Routers
+An Express router provides a subset of Express methods. To create an instance of one, we invoke the `.Router()` method on the top-level Express import.
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMD
-A4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3
-MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4OD
-ksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQx
-OTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0Mz
-U3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5
-MzY1MDQ5NDddfQ==
+eyJoaXN0b3J5IjpbMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MT
+g1MDMwNCwxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0
+NSwtMTExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLT
+E5NjQ0NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkx
+MTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNz
+IsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3
+NjIwNTc3N119
 -->
