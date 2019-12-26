@@ -160,6 +160,9 @@ app.get('/monsters/:name',  (req,  res,  next)  =>  {
 res.send(monsters[req.params.name]);  });
 ~~~
 
+#### [ Matching with HTTP verbs ]
+Express also matches request with routes that have the correct http verbs. A `GET` and a `app.put()` does not match and express w
+
 #### [Setting Status Code]
 Default is 200(OK). 
 ~~~javascript
@@ -192,18 +195,12 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 });
 ```
 
-
-
-
-
-
-
 #### [`POST`]
 
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ2MDgzMywtMTUzMzk5OTQ0NSwtMT
+eyJoaXN0b3J5IjpbLTI4ODM4ODIxNCwtMTUzMzk5OTQ0NSwtMT
 ExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0
 NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5Nz
 MsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEy
