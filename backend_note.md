@@ -197,17 +197,29 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 
 #### [`POST`] - 201(Created)
 `POST` is the HTTP method verb used for creating new resources. Because `POST` routes create new data, their paths do not end with a route parameter, but instead end with the type of resource to be created. 
+~~~javascript
+app.post('/expressions', (req, res, next) => {
+  const receivedExpression = createElement('expressions', req.query);
+  if (receivedExpression) {
+    expressions.push(receivedExpression);
+    res.status(201).send(receivedExpression);
+  } else {
+    res.status(400).send();
+  }
+});
+~~~
+
+#### [`DELETE`] - 204 No Content
+`DELETE` is the HTTP method verb used to delete resources. Because `DELETE` routes delete currently existing data, their paths should usually end with a route parameter to indicate which resource to delete.
 
 
-
-#### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxODk2NTE2LC0xNTMzOTk5NDQ1LC0xMT
-E5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mjc2MCwtMTk2NDQ2
-MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3My
-wtNDE5NTgzNjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIx
-MTQzNTcsMTU3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nz
-c3LDkzNjUwNDk0NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0
-NDcyOTczOV19
+eyJoaXN0b3J5IjpbLTE2Mjg0MDQ2MCw4NDE4OTY1MTYsLTE1Mz
+M5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcy
+NzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4Mi
+wxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMyMzc0Nzc3MSwtMjcw
+MDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcwOT
+gsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LDEw
+MDUxNDMxNDhdfQ==
 -->
