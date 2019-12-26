@@ -117,7 +117,7 @@ app.listen(PORT,  ()  =>  {
 ### `Route`
 Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
 
-#### `app.get()` 
+#### `[app.get()]` 
 app.get()` to register routes to match `GET` requests. 
 ~~~javascript
 const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
@@ -131,7 +131,7 @@ The path is is part of the request that specifies where to locate the resources.
 
 HTTP follows a one request-one response cycle. Each client expects exactly one response per request, and each server should only send a single response back to the client per request.
 
-#### `res.send()`
+#### `[res.send()]`
 `send()` to send responses by the Express server. 
 ~~~javascript
 const  monsters  =  [{  type:  'werewolf'  },  {  type:  'hydra'  },  {  type:  'chupacabra'  }];  
@@ -141,15 +141,21 @@ app.get('/monsters',  (req,  res,  next)  =>  {
 ~~~
 `.json()` can be used to explicitly send JSON-formatted responses. `.json()` sends any JavaScript object passed into it.
 
-#### Matching Route Paths 
+#### [Matching Route Paths]
 Express tries to match requests by route, meaning that if we send a request to  `<server address>:<port number>/api-endpoint`, the Express server will search through any registered routes in order and try to match  `/api-endpoint`.
 
 Express searches through routes in the order that they are registered in your code. The first one that is matched will be used, and its callback will be called.
 
+If there are no matching routes registered, or the Express server has not sent a response at the end of all matched routes, it will automatically send back a 404 Not Found response, meaning that no routes were matched or no response was ultimately sent by the registered routes.
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTk5NDU1NiwxMjM5MTE0OTczLC00MT
-k1ODM2MDQsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1
-NywxNTc2Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOT
-M2NTA0OTQ3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5
-NzM5XX0=
+eyJoaXN0b3J5IjpbMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOT
+U4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3
+LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5Mz
+Y1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3
+MzldfQ==
 -->
