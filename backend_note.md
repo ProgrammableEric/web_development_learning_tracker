@@ -114,7 +114,8 @@ app.listen(PORT,  ()  =>  {
 	console.log(`Server is listening on port ${PORT}`); 
 });
 ```
-- `Route` Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
+#### `Route`
+Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
 ~~~javascript
 const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
 app.get('/moods',  (req,  res,  next)  =>  {  
@@ -130,8 +131,8 @@ HTTP follows a one request-one response cycle. Each client expects exactly one r
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjQ3NTU0MywtNDE5NTgzNjA0LDEzMj
-M3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3
-NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMT
-QyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbLTIwNzAyMDcxMjYsLTQxOTU4MzYwNCwxMz
+IzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1
+NzQsLTY1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLT
+E0MjY1MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
