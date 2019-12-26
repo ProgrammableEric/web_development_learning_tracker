@@ -313,15 +313,16 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 
 #### [ Refactored Router compared to previous section]
 ~~~javascript
+// In expressions.js
 const express = require('express');
 const { seedElements, getElementById, createElement, updateElement, getIndexById } = require('./utils');
 
 let expressions = [];
 seedElements(expressions, 'expressions');
 
-const expressionsRouter = express.Router();
+const expressionsRouter = express.Router();  // Create
 
-module.exports = expressionsRouter;
+module.exports = expressionsRouter;  // Export 
 
 // Get all expressions
 expressionsRouter.get('/', (req, res, next) => {
@@ -373,8 +374,11 @@ expressionsRouter.delete('/:id', (req, res, next) => {
 // in app.js 
 const express = require('express');
 const app = express();
-
-app.use('/expressions', expressionsRouter);
+const expressionsRouter = require('./expressions.js');
+...
+...
+app.use('/expressions', expressionsRouter); 
+// Everything is detail is now in expressions.js, seperate of concerns. 
 ~~~
 
 
@@ -383,7 +387,7 @@ app.use('/expressions', expressionsRouter);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDc4MjE4ODQsLTMwMTM3NjA4MywyMD
+eyJoaXN0b3J5IjpbLTExODc3MTgzMjcsLTMwMTM3NjA4MywyMD
 ExNzgzNzA0LDE2NjU1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAz
 MDQsMTAwODE5MjU0Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLT
 ExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0
