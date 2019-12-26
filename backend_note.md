@@ -121,12 +121,14 @@ app.get('/moods',  (req,  res,  next)  =>  {
 	// Here we would send back the moods array in response  
 });
 ~~~
+`localhost:4001/monsters` = host name + port number + path. 
+The path is is part of the request that specifies where to locate the resources. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc4OTA4NzEsMTMyMzc0Nzc3MSwtMj
-cwMDUzMTcyLDkxMjExNDM1NywxNTc2Mjc1NTc0LC02NTEwODcw
-OTgsLTIwNzYyMDU3NzcsOTM2NTA0OTQ3LC0xNDI2NTE4NzE1LD
-EwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
+eyJoaXN0b3J5IjpbLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNz
+AwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5
+OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMT
+AwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
