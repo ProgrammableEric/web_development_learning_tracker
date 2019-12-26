@@ -117,7 +117,7 @@ app.listen(PORT,  ()  =>  {
 ### `Route`
 Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
 
-#### `[app.get()]` 
+#### [ `app.get()` ] 
 app.get()` to register routes to match `GET` requests. 
 ~~~javascript
 const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
@@ -131,7 +131,7 @@ The path is is part of the request that specifies where to locate the resources.
 
 HTTP follows a one request-one response cycle. Each client expects exactly one response per request, and each server should only send a single response back to the client per request.
 
-#### `[res.send()]`
+#### [ `res.send()` ]
 `send()` to send responses by the Express server. 
 ~~~javascript
 const  monsters  =  [{  type:  'werewolf'  },  {  type:  'hydra'  },  {  type:  'chupacabra'  }];  
@@ -141,20 +141,21 @@ app.get('/monsters',  (req,  res,  next)  =>  {
 ~~~
 `.json()` can be used to explicitly send JSON-formatted responses. `.json()` sends any JavaScript object passed into it.
 
-#### [Matching Route Paths]
+#### [ Matching Route Paths ]
 Express tries to match requests by route, meaning that if we send a request to  `<server address>:<port number>/api-endpoint`, the Express server will search through any registered routes in order and try to match  `/api-endpoint`.
 
 Express searches through routes **in the order that they are registered in your code**. The first one that is matched will be used, and its callback will be called.
 
 If there are no matching routes registered, or the Express server has not sent a response at the end of all matched routes, it will automatically send back a 404 Not Found response, meaning that no routes were matched or no response was ultimately sent by the registered routes.
 
-#### Route parameters 
+#### [ Route parameters ]
 Parameters are route path segments that begin with `:` in their Express route definitions. `/monsters/:id` will match both`/monsters/1` and `/monsters/45`. They will match any tex at that path segment. 
 
 Express parses any parameters, extracts their actual values, and attaches them as an object to the request object: `req.params`. This object’s keys are any parameter names in the route, and each key’s value is the actual value of that field per request. 
 ~~~javascript
 const  monsters  =  {  hydra:  {  height:  3,  age:  4  },  
-					   dragon:  {  height:  200,  age:  350  }  };  // GET /monsters/hydra  
+					   dragon:  {  height:  200,  age:  350  }  };  
+// GET /monsters/hydra  
 app.get('/monsters/:name',  (req,  res,  next)  =>  {  
 	console.log(req.params)  // { name: 'hydra' };  
 res.send(monsters[req.params.name]);  });
@@ -162,10 +163,11 @@ res.send(monsters[req.params.name]);  });
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTgwODE0MSwtMjA3MDI1OTc0NiwyMD
-czNjkxODIsMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMjM3NDc3
-NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3NCwtNj
-UxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMTQyNjUx
-ODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
+eyJoaXN0b3J5IjpbLTE5NjQ0NjE4ODksLTIwNzAyNTk3NDYsMj
+A3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3
+NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLT
+Y1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1
+MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
