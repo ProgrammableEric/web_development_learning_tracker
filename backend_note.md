@@ -294,7 +294,7 @@ app.listen(PORT, () => {
 An Express router provides a subset of Express methods. To create an instance of one, we invoke the `.Router()` method on the top-level Express import.
 ~~~javascript
 // example code 
-// reu
+// require can be used anywhere within Node environment, as it is a Node method. 
 const  express  =  require('express');  
 const  app  =  express();  
 const  monsters  =  {  '1':  {  name:  'godzilla',  age:  250000000  },  '2':  {  Name:  'manticore',  age:  21  }  }  
@@ -388,7 +388,7 @@ app.use('/expressions', expressionsRouter);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjY4MDI2MDMsLTExODc3MTgzMjcsLT
+eyJoaXN0b3J5IjpbLTEzMjE5NjExNTgsLTExODc3MTgzMjcsLT
 MwMTM3NjA4MywyMDExNzgzNzA0LDE2NjU1NjEyLC03Mjc3NTQw
 NDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0Nyw4NDE4OTY1MTYsLT
 E1MzM5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIw
