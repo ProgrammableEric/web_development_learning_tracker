@@ -162,6 +162,7 @@ res.send(monsters[req.params.name]);  });
 ~~~
 
 #### [Setting Status Code]
+Default is 200(OK). 
 ~~~javascript
 const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  
 									jerseyDevils:  4,  krakens:  3  };  
@@ -179,7 +180,7 @@ app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjI1MTMwOCwtMTk2NDQ2MTg4OSwtMj
+eyJoaXN0b3J5IjpbMTgyMDk3Mjc2MCwtMTk2NDQ2MTg4OSwtMj
 A3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3MywtNDE5NTgz
 NjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMT
 U3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUw
