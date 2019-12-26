@@ -153,8 +153,7 @@ Parameters are route path segments that begin with `:` in their Express route de
 
 Express parses any parameters, extracts their actual values, and attaches them as an object to the request object: `req.params`. This object’s keys are any parameter names in the route, and each key’s value is the actual value of that field per request. 
 ~~~javascript
-const  monsters  =  {  hydra:  {  height:  3,  age:  4  },  
-					   dragon:  {  height:  200,  age:  350  }  };  
+const  monsters  =  {  hydra:  {  height:  3,  age:  4  },  dragon:  {  height:  200,  age:  350  }  };  
 // GET /monsters/hydra  
 app.get('/monsters/:name',  (req,  res,  next)  =>  {  
 	console.log(req.params)  // { name: 'hydra' };  
@@ -164,8 +163,7 @@ res.send(monsters[req.params.name]);  });
 #### [Setting Status Code]
 Default is 200(OK). 
 ~~~javascript
-const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  
-jerseyDevils:  4,  krakens:  3  };  
+const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  jerseyDevils:  4,  krakens:  3  };  
 
 app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {  
 	const  monsterInventory  =  	monsterStoreInventory[req.params.name];  
@@ -199,12 +197,13 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 
 
 
+
 #### [`POST`]
 
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODEzMTk2NSwtMTUzMzk5OTQ0NSwtMT
+eyJoaXN0b3J5IjpbLTExMTQ2MDgzMywtMTUzMzk5OTQ0NSwtMT
 ExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0
 NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5Nz
 MsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEy
