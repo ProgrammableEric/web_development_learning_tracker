@@ -209,13 +209,15 @@ app.post('/expressions', (req, res, next) => {
 });
 ~~~
 
-#### [`DELETE`] - 204 No Content
+#### [`DELETE`] - 204 (No Content)
 `DELETE` is the HTTP method verb used to delete resources. Because `DELETE` routes delete currently existing data, their paths should usually end with a route parameter to indicate which resource to delete.
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg0MDQ2MCw4NDE4OTY1MTYsLTE1Mz
+eyJoaXN0b3J5IjpbMTAwODE5MjU0Nyw4NDE4OTY1MTYsLTE1Mz
 M5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcy
 NzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4Mi
 wxMjM5MTE0OTczLC00MTk1ODM2MDQsMTMyMzc0Nzc3MSwtMjcw
