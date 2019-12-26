@@ -165,7 +165,7 @@ res.send(monsters[req.params.name]);  });
 Default is 200(OK). 
 ~~~javascript
 const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  
-									jerseyDevils:  4,  krakens:  3  };  
+jerseyDevils:  4,  krakens:  3  };  
 
 app.get('/monsters-inventory/:name',  (req,  res,  next)  =>  {  
 	const  monsterInventory  =  	monsterStoreInventory[req.params.name];  
@@ -204,11 +204,11 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMj
-AyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcw
-MjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MD
-QsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2
-Mjc1NTc0LC02NTEwODcwOTgsLTIwNzYyMDU3NzcsOTM2NTA0OT
-Q3LC0xNDI2NTE4NzE1LDEwMDUxNDMxNDgsOTQ0NzI5NzM5XX0=
-
+eyJoaXN0b3J5IjpbLTQyODEzMTk2NSwtMTUzMzk5OTQ0NSwtMT
+ExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0
+NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5Nz
+MsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEy
+MTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNT
+c3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5
+NDQ3Mjk3MzldfQ==
 -->
