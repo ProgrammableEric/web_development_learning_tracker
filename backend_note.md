@@ -148,14 +148,15 @@ Express searches through routes **in the order that they are registered in your 
 
 If there are no matching routes registered, or the Express server has not sent a response at the end of all matched routes, it will automatically send back a 404 Not Found response, meaning that no routes were matched or no response was ultimately sent by the registered routes.
 
-
+#### Route parameters 
+Parameters are route path segments that begin with `:` in their Express route definitions. `/monsters/:id` will match both`/monsters/1` and `/monsters/45`. They will match the first 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMz
-kxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMx
-NzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMj
-A3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0
-MzE0OCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbLTEzMDQ3MDkyOTYsLTIwNzAyNTk3NDYsMj
+A3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3
+NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLT
+Y1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1
+MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
 -->
