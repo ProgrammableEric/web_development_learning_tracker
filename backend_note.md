@@ -17,7 +17,7 @@ _Authorization_ controls which users have access to which resources and actions.
 
 ### Backend Frameworks: [see](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Web_frameworks#A_few_good_web_frameworks)
 
-## REST System [link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest)
+# REST System [link](https://www.codecademy.com/paths/web-development/tracks/javascript-back-end-development/modules/learn-express-create-a-server/articles/what-is-rest)
 REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. - _RESTful systems_
 
 ### Seperation of client and server
@@ -99,7 +99,7 @@ Expected response for each HTTP verb:
 -   PUT — return 200 (OK)
 -   DELETE — return 204 (NO CONTENT) If the operation fails, return the most specific status code possible corresponding to the problem that was encountered.
 
-## Express 
+# Express 
 Express is a powerful but flexible Javascript framework for creating web servers and [APIs](https://en.wikipedia.org/wiki/Web_API). It can be used for everything from simple static file servers to JSON APIs to full production servers. 
 
 - Express is a node module. Import frist when using it. 
@@ -117,8 +117,8 @@ app.listen(PORT,  ()  =>  {
 ### `Route`
 Routes define the control flow for requests based on the request’s _path_ and HTTP verb. 
 
-#### [ `app.get()` ] 
-app.get()` to register routes to match `GET` requests. 
+#### [ `GET` ] 
+`app.get()` to register routes to match `GET` requests. 
 ~~~javascript
 const  moods  =  [{  mood:  'excited about express!'},  {  mood:  'route-tastic!'  }];  
 app.get('/moods',  (req,  res,  next)  =>  {  
@@ -163,8 +163,8 @@ res.send(monsters[req.params.name]);  });
 #### [ Matching with HTTP verbs ]
 Express also matches request with routes that have the correct http verbs. A `GET` and a `app.put()` does not match and express will stop comparing the rest of the route path. d
 
-#### [Setting Status Code] - 200(OK)
-
+#### [Setting Status Code]
+Default is 200(OK). 
 ~~~javascript
 const  monsterStoreInventory  =  {  fenrirs:  4,  banshees:  1,  jerseyDevils:  4,  krakens:  3  };  
 
@@ -203,11 +203,11 @@ app.put('/monsters/:id',  (req,  res,  next)  =>  {
 #### [`DELETE`]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTc5OTQ5NCwtMTUzMzk5OTQ0NSwtMT
-ExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0
-NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5Nz
-MsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEy
-MTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3NjIwNT
-c3Nyw5MzY1MDQ5NDcsLTE0MjY1MTg3MTUsMTAwNTE0MzE0OCw5
-NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbODQxODk2NTE2LC0xNTMzOTk5NDQ1LC0xMT
+E5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mjc2MCwtMTk2NDQ2
+MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3My
+wtNDE5NTgzNjA0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIx
+MTQzNTcsMTU3NjI3NTU3NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nz
+c3LDkzNjUwNDk0NywtMTQyNjUxODcxNSwxMDA1MTQzMTQ4LDk0
+NDcyOTczOV19
 -->
