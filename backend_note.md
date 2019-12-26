@@ -149,14 +149,23 @@ Express searches through routes **in the order that they are registered in your 
 If there are no matching routes registered, or the Express server has not sent a response at the end of all matched routes, it will automatically send back a 404 Not Found response, meaning that no routes were matched or no response was ultimately sent by the registered routes.
 
 #### Route parameters 
-Parameters are route path segments that begin with `:` in their Express route definitions. `/monsters/:id` will match both`/monsters/1` and `/monsters/45`. They will match the first 
+Parameters are route path segments that begin with `:` in their Express route definitions. `/monsters/:id` will match both`/monsters/1` and `/monsters/45`. They will match any tex at that path segment. 
+
+Express parses any parameters, extracts their actual values, and attaches them as an object to the request object: `req.params`. This object’s keys are any parameter names in the route, and each key’s value is the actual value of that field per request. 
+~~~javascript
+const  monsters  =  {  hydra:  {  height:  3,  age:  4  },  
+					   dragon:  {  height:  200,  age:  350  }  };  // GET /monsters/hydra  
+app.get('/monsters/:name',  (req,  res,  next)  =>  {  
+	console.log(req.params)  // { name: 'hydra' };  
+res.send(monsters[req.params.name]);  });
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQ3MDkyOTYsLTIwNzAyNTk3NDYsMj
-A3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3
-NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLT
-Y1MTA4NzA5OCwtMjA3NjIwNTc3Nyw5MzY1MDQ5NDcsLTE0MjY1
-MTg3MTUsMTAwNTE0MzE0OCw5NDQ3Mjk3MzldfQ==
+eyJoaXN0b3J5IjpbMTI4NTgwODE0MSwtMjA3MDI1OTc0NiwyMD
+czNjkxODIsMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMjM3NDc3
+NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3NCwtNj
+UxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMTQyNjUx
+ODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
 -->
