@@ -311,8 +311,71 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 #### [ Path Matching in Nested Routers ]
 <img src='https://github.com/ProgrammableEric/web_development_learning_tracker/blob/master/notes_material/back_2.png' />
 
+#### [ Refactored Router compared to previous section]
+~~~javascript
+const express = require('express');
+const { seedElements, getElementById, createElement, updateElement, getIndexById } = require('./utils');
 
+let expressions = [];
+seedElements(expressions, 'expressions');
 
+const expressionsRouter = express.Router();
+
+module.exports = expressionsRouter;
+
+// Get all expressions
+expressionsRouter.get('/', (req, res, next) => {
+  res.send(expressions);
+});
+
+expressionsRouter.get('/:id', (req, res, next) => {
+  const foundExpression = getElementById(req.params.id, expressions);
+  if (foundExpression) {
+    res.send(foundExpression);
+  } else {
+    res.status(404).send();
+  }
+});
+
+// Update an expression
+expressionsRouter.put('/:id', (req, res, next) => {
+  const expressionIndex = getIndexById(req.params.id, expressions);
+  if (expressionIndex !== -1) {
+    updateElement(req.params.id, req.query, expressions);
+    res.send(expressions[expressionIndex]);
+  } else {
+    res.status(404).send();
+  }
+});
+
+// Create an expression
+expressionsRouter.post('/', (req, res, next) => {
+  const receivedExpression = createElement('expressions', req.query);
+  if (receivedExpression) {
+    expressions.push(receivedExpression);
+    res.status(201).send(receivedExpression);
+  } else {
+    res.status(400).send();
+  }
+});
+
+// Delete an expression
+expressionsRouter.delete('/:id', (req, res, next) => {
+  const expressionIndex = getIndexById(req.params.id, expressions);
+  if (expressionIndex !== -1) {
+    expressions.splice(expressionIndex, 1);
+    res.status(204).send();
+  } else {
+    res.status(404).send();
+  }
+});
+
+// in app.js 
+const express = require('express');
+const app = express();
+
+app.use('/expressions', expressionsRouter);
+~~~
 
 
 
@@ -320,11 +383,11 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2Nj
-U1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0
-Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMj
-AyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcw
-MjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MD
-QsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2
-Mjc1NTc0XX0=
+eyJoaXN0b3J5IjpbLTE4NDc4MjE4ODQsLTMwMTM3NjA4MywyMD
+ExNzgzNzA0LDE2NjU1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAz
+MDQsMTAwODE5MjU0Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLT
+ExMTk0NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0
+NDYxODg5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OT
+czLC00MTk1ODM2MDQsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkx
+MjExNDM1N119
 -->
