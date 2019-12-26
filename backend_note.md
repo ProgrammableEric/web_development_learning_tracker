@@ -299,7 +299,7 @@ const  app  =  express();
 const  monsters  =  {  '1':  {  name:  'godzilla',  age:  250000000  },  '2':  {  Name:  'manticore',  age:  21  }  }  
 
 const  monstersRouter  =  express.Router();  
-app.use('/monsters',  monstersRouter);  // ke
+app.use('/monsters',  monstersRouter);  // KEY LINE HERE !!!
 monstersRouter.get('/:id',  (req,  res,  next)  =>  {  
 	const  monster  =  monsters[req.params.id];  
 	If  (monster)  {  res.send(monster);  
@@ -316,11 +316,11 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzNjY0MTQwLDIwMTE3ODM3MDQsMTY2NT
-U2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMDA4MTkyNTQ3
-LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3MDM1NCwyMD
-I1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4ODksLTIwNzAy
-NTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMsLTQxOTU4MzYwNC
-wxMzIzNzQ3NzcxLC0yNzAwNTMxNzIsOTEyMTE0MzU3LDE1NzYy
-NzU1NzRdfQ==
+eyJoaXN0b3J5IjpbMjAwMTU2MjAzNiwyMDExNzgzNzA0LDE2Nj
+U1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0
+Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMj
+AyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcw
+MjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MD
+QsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2
+Mjc1NTc0XX0=
 -->
