@@ -292,6 +292,23 @@ app.listen(PORT, () => {
 
 ### Routers
 An Express router provides a subset of Express methods. To create an instance of one, we invoke the `.Router()` method on the top-level Express import.
+~~~javascript
+// example code 
+const  express  =  require('express');  
+const  app  =  express();  
+const  monsters  =  {  '1':  {  name:  'godzilla',  age:  250000000  },  '2':  {  Name:  'manticore',  age:  21  }  }  
+
+const  monstersRouter  =  express.Router();  
+app.use('/monsters',  monstersRouter);  
+monstersRouter.get('/:id',  (req,  res,  next)  =>  {  
+	const  monster  =  monsters[req.params.id];  
+	If  (monster)  {  res.send(monster);  
+	}  else  {  
+		res.status(404).send();  
+	}  
+})
+~~~
+
 
 
 
@@ -299,11 +316,11 @@ An Express router provides a subset of Express methods. To create an instance of
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MT
-g1MDMwNCwxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0
-NSwtMTExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLT
-E5NjQ0NjE4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkx
-MTQ5NzMsLTQxOTU4MzYwNCwxMzIzNzQ3NzcxLC0yNzAwNTMxNz
-IsOTEyMTE0MzU3LDE1NzYyNzU1NzQsLTY1MTA4NzA5OCwtMjA3
-NjIwNTc3N119
+eyJoaXN0b3J5IjpbMjAxMTc4MzcwNCwxNjY1NTYxMiwtNzI3Nz
+U0MDQzLC0xMjQxODUwMzA0LDEwMDgxOTI1NDcsODQxODk2NTE2
+LC0xNTMzOTk5NDQ1LC0xMTE5NDcwMzU0LDIwMjUxNTYzMDAsMT
+gyMDk3Mjc2MCwtMTk2NDQ2MTg4OSwtMjA3MDI1OTc0NiwyMDcz
+NjkxODIsMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMjM3NDc3Nz
+EsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3NCwtNjUx
+MDg3MDk4XX0=
 -->
