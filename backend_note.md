@@ -309,7 +309,7 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 })
 ~~~
 #### [ Path Matching in Nested Routers ]
-
+<img src='https://github.com/ProgrammableEric/web_development_learning_tracker/blob/master/notes_material/back_2.png' />
 
 
 
@@ -318,11 +318,11 @@ monstersRouter.get('/:id',  (req,  res,  next)  =>  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTM1NzcyNzYsMjAxMTc4MzcwNCwxNj
-Y1NTYxMiwtNzI3NzU0MDQzLC0xMjQxODUwMzA0LDEwMDgxOTI1
-NDcsODQxODk2NTE2LC0xNTMzOTk5NDQ1LC0xMTE5NDcwMzU0LD
-IwMjUxNTYzMDAsMTgyMDk3Mjc2MCwtMTk2NDQ2MTg4OSwtMjA3
-MDI1OTc0NiwyMDczNjkxODIsMTIzOTExNDk3MywtNDE5NTgzNj
-A0LDEzMjM3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3
-NjI3NTU3NF19
+eyJoaXN0b3J5IjpbLTI0MjQwODExMSwyMDExNzgzNzA0LDE2Nj
+U1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0
+Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMj
+AyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcw
+MjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00MTk1ODM2MD
+QsMTMyMzc0Nzc3MSwtMjcwMDUzMTcyLDkxMjExNDM1NywxNTc2
+Mjc1NTc0XX0=
 -->
