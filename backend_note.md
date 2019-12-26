@@ -136,10 +136,12 @@ app.get('/monsters',  (req,  res,  next)  =>  {
 	res.send(monsters);  
 });
 ~~~
+`.json()` can be used to explicitly send JSON-formatted responses. `.json()` sends any JavaScript object passed into it.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDcyOTU5NCwtNDE5NTgzNjA0LDEzMj
+eyJoaXN0b3J5IjpbMTIzOTExNDk3MywtNDE5NTgzNjA0LDEzMj
 M3NDc3NzEsLTI3MDA1MzE3Miw5MTIxMTQzNTcsMTU3NjI3NTU3
 NCwtNjUxMDg3MDk4LC0yMDc2MjA1Nzc3LDkzNjUwNDk0NywtMT
 QyNjUxODcxNSwxMDA1MTQzMTQ4LDk0NDcyOTczOV19
