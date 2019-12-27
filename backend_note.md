@@ -386,7 +386,9 @@ app.use('/expressions', expressionsRouter);
 #### On code quality 
 **All code is read many, many more times than it is written.** 
 
-**Code duplication is an invitation for bugs. Don’t Repeat Yourself” (DRY)** If incorrect code is copy-and-pasted in multiple places, a developer might remedy the flaws in only a few of those places and fail to fix the buggy code everywhere.
+**Code duplication is an invitation for bugs. Don’t Repeat Yourself” (DRY)** If incorrect code is copy-and-pasted in multiple places, a developer might remedy the flaws in only a few of those places and fail to fix the buggy code everywhere. 
+
+
 
 #### 
 
@@ -395,11 +397,11 @@ app.use('/expressions', expressionsRouter);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5OTQ3NzU4LDEwNDgyMjYzMzEsLTEzMj
-E5NjExNTgsLTExODc3MTgzMjcsLTMwMTM3NjA4MywyMDExNzgz
-NzA0LDE2NjU1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMT
-AwODE5MjU0Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0
-NzAzNTQsMjAyNTE1NjMwMCwxODIwOTcyNzYwLC0xOTY0NDYxOD
-g5LC0yMDcwMjU5NzQ2LDIwNzM2OTE4MiwxMjM5MTE0OTczLC00
-MTk1ODM2MDRdfQ==
+eyJoaXN0b3J5IjpbLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMT
+MyMTk2MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3
+ODM3MDQsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNC
+wxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTEx
+OTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0Nj
+E4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMs
+LTQxOTU4MzYwNF19
 -->
