@@ -399,18 +399,19 @@ An Express middleware is a function with three parameters: `(req, res, next)`. T
 
 All Express middleware functions have access to the request, the response, and the next middleware in the stack. 
 
-##
+#### Middleware stacks 
+Middleware is just a function with a specific signature, namely `(req, res, next)`. 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjQzMDEzMCwtMTU5MzcwMjIyNiwtOD
-E4NDkyNjUwLDIwMTkwODQwMzIsLTk4MzA5MDkxNCwtMTMxMjYy
-MDU0NiwxMDQ4MjI2MzMxLC0xMzIxOTYxMTU4LC0xMTg3NzE4Mz
-I3LC0zMDEzNzYwODMsMjAxMTc4MzcwNCwxNjY1NTYxMiwtNzI3
-NzU0MDQzLC0xMjQxODUwMzA0LDEwMDgxOTI1NDcsODQxODk2NT
-E2LC0xNTMzOTk5NDQ1LC0xMTE5NDcwMzU0LDIwMjUxNTYzMDAs
-MTgyMDk3Mjc2MF19
+eyJoaXN0b3J5IjpbOTAxNDIzNzE3LC0xNTkzNzAyMjI2LC04MT
+g0OTI2NTAsMjAxOTA4NDAzMiwtOTgzMDkwOTE0LC0xMzEyNjIw
+NTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNTgsLTExODc3MTgzMj
+csLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2NjU1NjEyLC03Mjc3
+NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0Nyw4NDE4OTY1MT
+YsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1NjMwMCwx
+ODIwOTcyNzYwXX0=
 -->
