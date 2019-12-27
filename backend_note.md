@@ -390,6 +390,12 @@ app.use('/expressions', expressionsRouter);
 
 **Middleware** is code that executes between a server receiving a request and sending a response. It operates on the boundary, so to speak, between those two HTTP actions.
 
+_An Express application is essentially a series of middleware function calls._
+
+It is precisely this service that we leverage Express for. In addition to performing the routing that allows us to communicate appropriate data for each separate endpoint, we can perform application logic we need by implementing the necessary middleware.
+
+
+
 #### 
 
 
@@ -397,11 +403,11 @@ app.use('/expressions', expressionsRouter);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzA5MDkxNCwtMTMxMjYyMDU0NiwxMD
-Q4MjI2MzMxLC0xMzIxOTYxMTU4LC0xMTg3NzE4MzI3LC0zMDEz
-NzYwODMsMjAxMTc4MzcwNCwxNjY1NTYxMiwtNzI3NzU0MDQzLC
-0xMjQxODUwMzA0LDEwMDgxOTI1NDcsODQxODk2NTE2LC0xNTMz
-OTk5NDQ1LC0xMTE5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mj
-c2MCwtMTk2NDQ2MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIs
-MTIzOTExNDk3M119
+eyJoaXN0b3J5IjpbMjAxOTA4NDAzMiwtOTgzMDkwOTE0LC0xMz
+EyNjIwNTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNTgsLTExODc3
+MTgzMjcsLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2NjU1NjEyLC
+03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0Nyw4NDE4
+OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1Nj
+MwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2
+LDIwNzM2OTE4Ml19
 -->
