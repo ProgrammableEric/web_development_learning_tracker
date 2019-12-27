@@ -422,13 +422,16 @@ app.put('/spells/:id',  authenticate,  validateData,  updateSpell);
 ~~~
 
 #### Error Handling 
-
+At the end of th
+~~~javascript 
+app.use((req,  res,  next)  =>  {  const  newValue  =  possiblyProblematicOperation();  if  (newValue  ===  undefined)  {  let  undefinedError  =  new  Error('newValue was not defined!');  return  next(undefinedError);  }  next();  });  app.use((err,  req,  res,  next)  =>  {  const  status  =  err.status  ||  500;  res.status(status).send(err.message);  });
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTIxODcxOCwyNDM5MjczNDcsLTE1OT
+eyJoaXN0b3J5IjpbMTU5ODQ3MTU3OCwyNDM5MjczNDcsLTE1OT
 M3MDIyMjYsLTgxODQ5MjY1MCwyMDE5MDg0MDMyLC05ODMwOTA5
 MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMTMyMTk2MTE1OC
 wtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3ODM3MDQsMTY2
