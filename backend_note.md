@@ -388,7 +388,7 @@ app.use('/expressions', expressionsRouter);
 
 **Code duplication is an invitation for bugs. Don’t Repeat Yourself” (DRY)** If incorrect code is copy-and-pasted in multiple places, a developer might remedy the flaws in only a few of those places and fail to fix the buggy code everywhere. 
 
-
+**Middleware** is code that executes between a server receiving a request and sending a response. It operates on the boundary, so to speak, between those two HTTP actions.
 
 #### 
 
@@ -397,11 +397,11 @@ app.use('/expressions', expressionsRouter);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMT
-MyMTk2MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3
-ODM3MDQsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNC
-wxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTEx
-OTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0Nj
-E4ODksLTIwNzAyNTk3NDYsMjA3MzY5MTgyLDEyMzkxMTQ5NzMs
-LTQxOTU4MzYwNF19
+eyJoaXN0b3J5IjpbLTk4MzA5MDkxNCwtMTMxMjYyMDU0NiwxMD
+Q4MjI2MzMxLC0xMzIxOTYxMTU4LC0xMTg3NzE4MzI3LC0zMDEz
+NzYwODMsMjAxMTc4MzcwNCwxNjY1NTYxMiwtNzI3NzU0MDQzLC
+0xMjQxODUwMzA0LDEwMDgxOTI1NDcsODQxODk2NTE2LC0xNTMz
+OTk5NDQ1LC0xMTE5NDcwMzU0LDIwMjUxNTYzMDAsMTgyMDk3Mj
+c2MCwtMTk2NDQ2MTg4OSwtMjA3MDI1OTc0NiwyMDczNjkxODIs
+MTIzOTExNDk3M119
 -->
