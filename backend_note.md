@@ -422,7 +422,9 @@ app.put('/spells/:id',  authenticate,  validateData,  updateSpell);
 ~~~
 
 #### Error Handling 
-At the end of th
+At the end of the file. 
+
+If we anticipate an operation might fail, we can invoke our error-handling middleware. We do this by passing an error object as an argument to `next()`. Usually, `next()` is called without arguments and will proceed through the middleware stack as expected. When called with an error as the first argument, however, it will call any applicable error-handling middleware.
 ~~~javascript 
 app.use((req,  res,  next)  =>  {  const  newValue  =  possiblyProblematicOperation();  if  (newValue  ===  undefined)  {  let  undefinedError  =  new  Error('newValue was not defined!');  return  next(undefinedError);  }  next();  });  app.use((err,  req,  res,  next)  =>  {  const  status  =  err.status  ||  500;  res.status(status).send(err.message);  });
 ~~~
@@ -430,12 +432,14 @@ app.use((req,  res,  next)  =>  {  const  newValue  =  possiblyProblematicOperat
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODQ3MTU3OCwyNDM5MjczNDcsLTE1OT
-M3MDIyMjYsLTgxODQ5MjY1MCwyMDE5MDg0MDMyLC05ODMwOTA5
-MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMTMyMTk2MTE1OC
-wtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3ODM3MDQsMTY2
-NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMDA4MTkyNT
-Q3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3MDM1NCwy
-MDI1MTU2MzAwXX0=
+eyJoaXN0b3J5IjpbLTEyMTA5MTk5MDYsMjQzOTI3MzQ3LC0xNT
+kzNzAyMjI2LC04MTg0OTI2NTAsMjAxOTA4NDAzMiwtOTgzMDkw
+OTE0LC0xMzEyNjIwNTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNT
+gsLTExODc3MTgzMjcsLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2
+NjU1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5Mj
+U0Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQs
+MjAyNTE1NjMwMF19
 -->
