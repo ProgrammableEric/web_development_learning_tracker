@@ -394,20 +394,21 @@ _An Express application is essentially a series of middleware function calls._
 
 It is precisely this service that we leverage Express for. In addition to performing the routing that allows us to communicate appropriate data for each separate endpoint, we can perform application logic we need by implementing the necessary middleware.
 
+#### `next()`
+An Express middleware is a function with three parameters: `(req, res, next)`. The sequence is expressed by a set of callback functions invoked progressively after each middleware performs its purpose. The third argument to a middleware function, `next`, should get explicitly called as the last part of the middleware’s body. This will hand off the processing of the request and the construction of the response to the next middleware in the stack.
 
-
-#### 
+ 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTA4NDAzMiwtOTgzMDkwOTE0LC0xMz
-EyNjIwNTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNTgsLTExODc3
-MTgzMjcsLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2NjU1NjEyLC
-03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5MjU0Nyw4NDE4
-OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQsMjAyNTE1Nj
-MwMCwxODIwOTcyNzYwLC0xOTY0NDYxODg5LC0yMDcwMjU5NzQ2
-LDIwNzM2OTE4Ml19
+eyJoaXN0b3J5IjpbLTgxODQ5MjY1MCwyMDE5MDg0MDMyLC05OD
+MwOTA5MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMTMyMTk2
+MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3ODM3MD
+QsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMDA4
+MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3MD
+M1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4ODks
+LTIwNzAyNTk3NDZdfQ==
 -->
