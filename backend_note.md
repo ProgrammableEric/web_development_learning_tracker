@@ -402,12 +402,24 @@ All Express middleware functions have access to the request, the response, and t
 #### Middleware stacks 
 Middleware is just a function with a specific signature, namely `(req, res, next)`. 
 
+Middleware functions can take multiple callbacks as additional parameters. e.g., 
+~~~javascript
+const  authenticate  =  (req,  res,  next)  =>  {  ...  };
+const  validateData  =  (req,  res,  next)  =>  {  ...  };  
+const  getSpell  =  (req,  res,  next)  =>  {  
+res.status(200).send(getSpellById(req.params.id));  };  
+const  createSpell  =  (req,  res,  next)  =>  {  		
+	createSpellFromRequest(req);  res.status(201).send();  
+};  
+const  updateSpell  =  (req,  res,  next)  =>  {  updateSpellFromRequest(req);  res.status(204).send();  }  app.get('/spells/:id',  authenticate,  getSpell);  app.post('/spells',  authenticate,  validateData,  createSpell);  app.put('/spells/:id',  authenticate,  validateData,  updateSpell);
+~~~
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAxNDIzNzE3LC0xNTkzNzAyMjI2LC04MT
+eyJoaXN0b3J5IjpbODU1MjM5MDE1LC0xNTkzNzAyMjI2LC04MT
 g0OTI2NTAsMjAxOTA4NDAzMiwtOTgzMDkwOTE0LC0xMzEyNjIw
 NTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNTgsLTExODc3MTgzMj
 csLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2NjU1NjEyLC03Mjc3
