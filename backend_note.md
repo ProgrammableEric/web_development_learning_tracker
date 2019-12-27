@@ -397,18 +397,20 @@ It is precisely this service that we leverage Express for. In addition to perfor
 #### `next()`
 An Express middleware is a function with three parameters: `(req, res, next)`. The sequence is expressed by a set of callback functions invoked progressively after each middleware performs its purpose. The third argument to a middleware function, `next`, should get explicitly called as the last part of the middleware’s body. This will hand off the processing of the request and the construction of the response to the next middleware in the stack.
 
- 
+All Express middleware functions have access to the request, the response, and the next middleware in the stack. 
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODQ5MjY1MCwyMDE5MDg0MDMyLC05OD
-MwOTA5MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMSwtMTMyMTk2
-MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIwMTE3ODM3MD
-QsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MDMwNCwxMDA4
-MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwtMTExOTQ3MD
-M1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAsLTE5NjQ0NjE4ODks
-LTIwNzAyNTk3NDZdfQ==
+eyJoaXN0b3J5IjpbLTE1OTM3MDIyMjYsLTgxODQ5MjY1MCwyMD
+E5MDg0MDMyLC05ODMwOTA5MTQsLTEzMTI2MjA1NDYsMTA0ODIy
+NjMzMSwtMTMyMTk2MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MD
+gzLDIwMTE3ODM3MDQsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0
+MTg1MDMwNCwxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OT
+Q0NSwtMTExOTQ3MDM1NCwyMDI1MTU2MzAwLDE4MjA5NzI3NjAs
+LTE5NjQ0NjE4ODldfQ==
 -->
