@@ -431,14 +431,26 @@ app.use((req,  res,  next)  =>  {  const  newValue  =  possiblyProblematicOperat
 
 #### `router.param()`
 ~~~javascript
-
+app.param('spellId',  (req,  res,  next,  id)  =>  {  
+	let  spellId  =  Number(id);  
+try  {  
+	const  found  =  SpellBook.find((spell)  =>  {  
+		return  spellId  ===  spell.id;  })  
+	if  (found)  {  
+		req.spell  =  found;  next();  
+	}  else  {  
+		next(new  Error('Your magic spell was not found in any of our tomes'));  
+	};  }  catch  (err)  {  
+		next(err)  
+		}  
+	});
 ~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTQxMDg2MiwtMTIxMDkxOTkwNiwyND
+eyJoaXN0b3J5IjpbLTcyOTEyOTU4OSwtMTIxMDkxOTkwNiwyND
 M5MjczNDcsLTE1OTM3MDIyMjYsLTgxODQ5MjY1MCwyMDE5MDg0
 MDMyLC05ODMwOTA5MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMS
 wtMTMyMTk2MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIw
