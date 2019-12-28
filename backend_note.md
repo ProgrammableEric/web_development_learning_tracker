@@ -429,17 +429,20 @@ If we anticipate an operation might fail, we can invoke our error-handling middl
 app.use((req,  res,  next)  =>  {  const  newValue  =  possiblyProblematicOperation();  if  (newValue  ===  undefined)  {  let  undefinedError  =  new  Error('newValue was not defined!');  return  next(undefinedError);  }  next();  });  app.use((err,  req,  res,  next)  =>  {  const  status  =  err.status  ||  500;  res.status(status).send(err.message);  });
 ~~~
 
+#### `router.param()`
+~~~javascript
 
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA5MTk5MDYsMjQzOTI3MzQ3LC0xNT
-kzNzAyMjI2LC04MTg0OTI2NTAsMjAxOTA4NDAzMiwtOTgzMDkw
-OTE0LC0xMzEyNjIwNTQ2LDEwNDgyMjYzMzEsLTEzMjE5NjExNT
-gsLTExODc3MTgzMjcsLTMwMTM3NjA4MywyMDExNzgzNzA0LDE2
-NjU1NjEyLC03Mjc3NTQwNDMsLTEyNDE4NTAzMDQsMTAwODE5Mj
-U0Nyw4NDE4OTY1MTYsLTE1MzM5OTk0NDUsLTExMTk0NzAzNTQs
-MjAyNTE1NjMwMF19
+eyJoaXN0b3J5IjpbMTAxNTQxMDg2MiwtMTIxMDkxOTkwNiwyND
+M5MjczNDcsLTE1OTM3MDIyMjYsLTgxODQ5MjY1MCwyMDE5MDg0
+MDMyLC05ODMwOTA5MTQsLTEzMTI2MjA1NDYsMTA0ODIyNjMzMS
+wtMTMyMTk2MTE1OCwtMTE4NzcxODMyNywtMzAxMzc2MDgzLDIw
+MTE3ODM3MDQsMTY2NTU2MTIsLTcyNzc1NDA0MywtMTI0MTg1MD
+MwNCwxMDA4MTkyNTQ3LDg0MTg5NjUxNiwtMTUzMzk5OTQ0NSwt
+MTExOTQ3MDM1NF19
 -->
