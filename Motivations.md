@@ -25,7 +25,7 @@
 - Yumi Nagashima
 - Ron White 
 - Chris Rock 
-- 
+- Joe Rogan
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTU1NjUzOTgzMSwtMjEzMTkzMDkzOCwtMT
 k5MDg0NTgxOCw5NDU0ODA3ODUsNzQ5ODgwNjgxXX0=
