@@ -6,7 +6,7 @@ The complete log that tracks my self-studying process of web development related
 | Course        | Tutor/Platform|    Status     | Time | Exercise Code |
 | ------------- | --------------| ------------- | ---- | ---- |
 | Ajax 入门与实战 | [阿里云开发者社区](developer.aliyun.com/learning/roadmap/frontend) | Ongoing | Dec, 2019 | 
-| [Web-development Career Path](https://www.codecademy.com/learn/paths/web-development) <ul><li> - [x] Learn HTML </li><li> - [x] Styling a website</li><li> - [x] Getting started with JavaScript </li><li> - [x] Getting more advanced with Design</li><li> - [x] JavaScript: Arrays, Loops and Objects</li><li> - [x] Building Interactive JavaScript Websites</li><li> - [x] Intermediate JavaScript</li><li> - [x] Learn the Command Line</li><li> - [x] Learn Git</li><li> - [x] Building Front-end Applications with React</li><li> - [x] Javascript Back-End Development</li><li> - [x] SQL and Database for Web Development</li><li> - [ ] Building a Persistent API</li><li> - [ ] Test-Driven Development with JavaScript</li></ul>|[CodeAcademy](https://www.codecademy.com/learn)| ongoing |DEC, 2019  | None|
+| [Web-development Career Path](https://www.codecademy.com/learn/paths/web-development) <ul><li> - [x] Learn HTML </li><li> - [x] Styling a website</li><li> - [x] Getting started with JavaScript </li><li> - [x] Getting more advanced with Design</li><li> - [x] JavaScript: Arrays, Loops and Objects</li><li> - [x] Building Interactive JavaScript Websites</li><li> - [x] Intermediate JavaScript</li><li> - [x] Learn the Command Line</li><li> - [x] Learn Git</li><li> - [x] Building Front-end Applications with React</li><li> - [x] Javascript Back-End Development</li><li> - [] SQL and Database for Web Development</li><li> - [ ] Building a Persistent API</li><li> - [ ] Test-Driven Development with JavaScript</li></ul>|[CodeAcademy](https://www.codecademy.com/learn)| ongoing |DEC, 2019  | None|
 | [Computer Organisation & Program Execution](https://cs.anu.edu.au/courses/comp2300/) |[ANU](https://www.anu.edu.au)| ongoing |Nov, 2019  | None|
 | [Software Engineering](https://programsandcourses.anu.edu.au/2020/course/COMP2120) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  | None|
 | [Algorithms](https://cs.anu.edu.au/courses/comp3600/) |[ANU](https://www.anu.edu.au)| complete |Nov, 2019  |None|
@@ -22,5 +22,5 @@ The complete log that tracks my self-studying process of web development related
 ## Acknowledgement 
 This repo is inspired by [Syknapse](https://github.com/Syknapse/My-Learning-Tracker)'s and [Shovanch](https://github.com/shovanch/fullstack-web-developer-path)'s learning log project. Thank you all for sharing the journey.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNDMwODg0Ml19
+eyJoaXN0b3J5IjpbMTMyNjEzMjQxMSwxMTA0MzA4ODQyXX0=
 -->
