@@ -18,9 +18,12 @@
 - 数据库：MySql, Oracle etc. 
 
 #### 网络相关
-DNS 服务器：域名解析。 提供域名与ip 地址的映射关系。（过程：客户端首先查找Hosts文件夹，查询该域名配置信息是否被保存，若否，则访问DNS服务器查找域名对应IP地址，之后通过路由器访问该地址）
+**DNS 服务器**：域名解析。 提供域名与ip 地址的映射关系。（过程：客户端首先查找Hosts文件夹，查询该域名配置信息是否被保存，若否，则访问DNS服务器查找域名对应IP地址，之后通过路由器访问该地址）
+
+**端口：** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODkxMDU3NywtMTY0OTc1NjYwOCwtMz
-E0OTQ3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbLTgyNjc0MTMyNSwxNDk4OTEwNTc3LC0xNj
+Q5NzU2NjA4LC0zMTQ5NDcwMiw2ODE3NjgxODUsMTUwOTkwMjQ1
+OF19
 -->
