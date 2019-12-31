@@ -9,8 +9,12 @@
 服务器：能提供某种服务的电脑。硬件配置较高。（卡片机，刀片机）
 客户端：能使用服务器所提供服务的电脑。个人电脑，手机，平板... 
 
+服务器软件：更多选择Linux OS. 服务软件：
+- HTTP: Apache, Tomcat, IIS ...
+- 上传下载: VsFtp etc. 
+- 邮箱：SendMail
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDk0NzAyLDY4MTc2ODE4NSwxNTA5OT
-AyNDU4XX0=
+eyJoaXN0b3J5IjpbMTI3NjU4Mzk0NywtMzE0OTQ3MDIsNjgxNz
+Y4MTg1LDE1MDk5MDI0NThdfQ==
 -->
