@@ -12,9 +12,13 @@
 服务器软件：更多选择Linux OS. 服务软件：
 - HTTP: Apache, Tomcat, IIS ...
 - 上传下载: VsFtp etc. 
-- 邮箱：SendMail
+- 邮箱：SendMail etc. 
+- 数据库：MySql, Oracle etc. 
+
+**网络相关**
+IP 地址： 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjU4Mzk0NywtMzE0OTQ3MDIsNjgxNz
+eyJoaXN0b3J5IjpbMTYxMTE3NDk3OCwtMzE0OTQ3MDIsNjgxNz
 Y4MTg1LDE1MDk5MDI0NThdfQ==
 -->
