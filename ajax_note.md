@@ -5,7 +5,8 @@
 - 实例：评论异步加载（单词只加载若干评论，“加载更多”按钮）/ 用户名的验证（服务器通过对比数据库判断用户名是否可用
 
 ### 相关概念
-**服务器与客户端** 
+#### 服务器与客户端
+
 服务器：能提供某种服务的电脑。硬件配置较高。（卡片机，刀片机）
 客户端：能使用服务器所提供服务的电脑。个人电脑，手机，平板... 
 
@@ -15,10 +16,10 @@
 - 邮箱：SendMail etc. 
 - 数据库：MySql, Oracle etc. 
 
-**网络相关**
+#### 网络相关
 IP 地址： 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMTE3NDk3OCwtMzE0OTQ3MDIsNjgxNz
-Y4MTg1LDE1MDk5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbNDQxNjA4NTk0LC0zMTQ5NDcwMiw2ODE3Nj
+gxODUsMTUwOTkwMjQ1OF19
 -->
