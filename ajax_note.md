@@ -5,8 +5,10 @@
 - 实例：评论异步加载（单词只加载若干评论，“加载更多”按钮）/ 用户名的验证（服务器通过对比数据库判断用户名是否可用
 
 ### 相关概念
-- 
+**服务器与客户端** 
+服务器：能提供某种服务的电脑。
+客户端：能使用服务器
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzgxNTg1NTIsNjgxNzY4MTg1LDE1MD
-k5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbNzkzMTkyMDg2LDY4MTc2ODE4NSwxNTA5OT
+AyNDU4XX0=
 -->
