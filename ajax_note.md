@@ -18,9 +18,9 @@
 - 数据库：MySql, Oracle etc. 
 
 #### 网络相关
-IP 地址： 
+DNS 服务器：域名解析。 提供域名与
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk3NTY2MDgsLTMxNDk0NzAyLDY4MT
-c2ODE4NSwxNTA5OTAyNDU4XX0=
+eyJoaXN0b3J5IjpbMTc2MjE2Nzk4NCwtMTY0OTc1NjYwOCwtMz
+E0OTQ3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NThdfQ==
 -->
