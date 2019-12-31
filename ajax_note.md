@@ -6,9 +6,11 @@
 
 ### 相关概念
 **服务器与客户端** 
-服务器：能提供某种服务的电脑。
-客户端：能使用服务器
+服务器：能提供某种服务的电脑。硬件配置较高。（卡片机，刀片机）
+客户端：能使用服务器所提供服务的电脑。个人电脑，手机，平板... 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzMTkyMDg2LDY4MTc2ODE4NSwxNTA5OT
+eyJoaXN0b3J5IjpbLTMxNDk0NzAyLDY4MTc2ODE4NSwxNTA5OT
 AyNDU4XX0=
 -->
