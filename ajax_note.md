@@ -8,6 +8,7 @@
 #### 服务器与客户端
 
 服务器：能提供某种服务的电脑。硬件配置较高。（卡片机，刀片机）
+
 客户端：能使用服务器所提供服务的电脑。个人电脑，手机，平板... 
 
 服务器软件：更多选择Linux OS. 服务软件：
@@ -20,6 +21,6 @@
 IP 地址： 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxNjA4NTk0LC0zMTQ5NDcwMiw2ODE3Nj
-gxODUsMTUwOTkwMjQ1OF19
+eyJoaXN0b3J5IjpbLTE2NDk3NTY2MDgsLTMxNDk0NzAyLDY4MT
+c2ODE4NSwxNTA5OTAyNDU4XX0=
 -->
