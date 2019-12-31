@@ -1,5 +1,6 @@
-## AJAX （Asynchronous Javascript and XML ）
-### Preview 
+
+## Preview 
+- AJAX （Asynchronous Javascript and XML ）
 - Ajax 的作用： 使用JS 代码，获取服务器的数据
 - Ajax 的效果： 在不刷新整个页面的情况下，通过一个url 地址获取服务器的数据，然后进行页面的**局部刷新** **异步刷新**
 - 实例：评论异步加载（单词只加载若干评论，“加载更多”按钮）/ 用户名的验证（服务器通过对比数据库判断用户名是否可用
@@ -25,10 +26,14 @@
 #### 通信协议
  常见协议：HTTP,HTTPS - 超文本， FTP - 文件传输，SMTP - 简单邮件传输
 
+## PHP 
+
+## AJAX （Asynchronous Javascript and XML ）
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTA1MDA5NTMsLTE3MTA1MDA5NTMsMT
-kxNTc2Mjg2MSwxNDk4OTEwNTc3LC0xNjQ5NzU2NjA4LC0zMTQ5
-NDcwMiw2ODE3NjgxODUsMTUwOTkwMjQ1OF19
+eyJoaXN0b3J5IjpbLTIwNjIxMjAyNTEsLTE3MTA1MDA5NTMsLT
+E3MTA1MDA5NTMsMTkxNTc2Mjg2MSwxNDk4OTEwNTc3LC0xNjQ5
+NzU2NjA4LC0zMTQ5NDcwMiw2ODE3NjgxODUsMTUwOTkwMjQ1OF
+19
 -->
