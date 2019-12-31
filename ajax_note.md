@@ -20,10 +20,13 @@
 #### 网络相关
 **DNS 服务器**：域名解析。 提供域名与ip 地址的映射关系。（过程：客户端首先查找Hosts文件夹，查询该域名配置信息是否被保存，若否，则访问DNS服务器查找域名对应IP地址，之后通过路由器访问该地址）
 
-**端口：** e.g., www.baidu.com:80 (百度服务器的80端口提供的网页服务) 
+**端口：** 端口用来区分一台服务器上提供的不同服务。e.g., www.baidu.com:80 (百度服务器的80端口提供的网页服务) 
+
+#### 通信协议
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTc2MTkyLDE0OTg5MTA1NzcsLTE2ND
-k3NTY2MDgsLTMxNDk0NzAyLDY4MTc2ODE4NSwxNTA5OTAyNDU4
-XX0=
+eyJoaXN0b3J5IjpbMTk2Mzc1NjQxOSwxNDk4OTEwNTc3LC0xNj
+Q5NzU2NjA4LC0zMTQ5NDcwMiw2ODE3NjgxODUsMTUwOTkwMjQ1
+OF19
 -->
