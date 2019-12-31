@@ -23,10 +23,12 @@
 **端口：** 端口用来区分一台服务器上提供的不同服务。e.g., www.baidu.com:80 (百度服务器的80端口提供的网页服务) 
 
 #### 通信协议
- 
+ 常见协议：HTTP,HTTPS - 超文本， FTP - 文件传输，SMTP - 简单邮件传输
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNTc2Mjg2MSwxNDk4OTEwNTc3LC0xNj
-Q5NzU2NjA4LC0zMTQ5NDcwMiw2ODE3NjgxODUsMTUwOTkwMjQ1
-OF19
+eyJoaXN0b3J5IjpbLTE3MTA1MDA5NTMsMTkxNTc2Mjg2MSwxND
+k4OTEwNTc3LC0xNjQ5NzU2NjA4LC0zMTQ5NDcwMiw2ODE3Njgx
+ODUsMTUwOTkwMjQ1OF19
 -->
