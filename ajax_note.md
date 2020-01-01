@@ -38,13 +38,13 @@
 - 代码在<?php ... ?> 内
 - 变量定义，声明，使用要加`$`
 - 字符串拼接 `.` `$str3 = $str1 . $str2; `
-- **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 自定义下表索引
-- 
+- **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 自定义下表索引，遍历 `for loop` `foreach`
+- **系统函数** 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzc0MzcxMiwtMTM2NTAzNzUzMSwtMj
+eyJoaXN0b3J5IjpbMTMxOTIyNjI5MywtMTM2NTAzNzUzMSwtMj
 AwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAsODcxOTg5
 NDY5LC0xMjY3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOTM0MDA5Ni
 wtMTAxMzEzNTQyMSwzMzQxNTUzOTMsLTEzOTQyMjMzNDEsLTE3
