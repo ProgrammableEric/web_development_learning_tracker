@@ -35,16 +35,16 @@
 - 代码在<?php ... ?> 内
 - 变量声明`$`
 - 字符串拼接 `.`
-- 执行原理：客户端  <->  Apache 模块（网页） <->  php 模块（解析）
+- 执行原理：客户端  <->  Apache 模块（网页相关，调用php） <->  php 模块（语法解析）
 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2NTE1MTI1LDg3MTk4OTQ2OSwtMTI2Nz
-EyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0
-MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0xNzEwNTAwOTUzLC
-0xNzEwNTAwOTUzLDE5MTU3NjI4NjEsMTQ5ODkxMDU3NywtMTY0
-OTc1NjYwOCwtMzE0OTQ3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NT
-hdfQ==
+eyJoaXN0b3J5IjpbLTYyMzgxNDAxNyw4NzE5ODk0NjksLTEyNj
+cxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQwMDk2LC0xMDEzMTM1
+NDIxLDMzNDE1NTM5MywtMTM5NDIyMzM0MSwtMTcxMDUwMDk1My
+wtMTcxMDUwMDk1MywxOTE1NzYyODYxLDE0OTg5MTA1NzcsLTE2
+NDk3NTY2MDgsLTMxNDk0NzAyLDY4MTc2ODE4NSwxNTA5OTAyND
+U4XX0=
 -->
