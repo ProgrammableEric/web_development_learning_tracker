@@ -40,11 +40,12 @@
 - 字符串拼接 `.` `$str3 = $str1 . $str2; `
 - **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 自定义下表索引，遍历 `for loop` `foreach`
 - **函数** 系统函数 / 自定义函数 `function` 关键字 
+- **`get` 请求参数的获取** 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODM1MDU1MDEsLTEzNjUwMzc1MzEsLT
+eyJoaXN0b3J5IjpbLTEyNzUzMzUwODYsLTEzNjUwMzc1MzEsLT
 IwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MTk4
 OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOT
 YsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0x
