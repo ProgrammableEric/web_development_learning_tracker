@@ -28,21 +28,22 @@
  常见协议：HTTP,HTTPS - 超文本， FTP - 文件传输，SMTP - 简单邮件传输
 
 ## PHP 
-### 基础语法
-#### 执行原理
+
+### 执行原理
 - PHP 只能在服务器打开
 - 可以和html 结合使用
 - 执行原理：客户端   <->   Apache 模块（网页相关，调用php） <->  php 模块（语法解析）
 
-#### 语法
+### 基础语法
 - 代码在<?php ... ?> 内
 - 变量声明`$`
-- 字符串拼接 `.`
+- 字符串拼接 `.` `$str3 = $str1 . $str2; `
+- **数组** 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDAwNTY2NSw4NzE5ODk0NjksLTEyNj
+eyJoaXN0b3J5IjpbMTQ0NzgwOTQ4MCw4NzE5ODk0NjksLTEyNj
 cxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQwMDk2LC0xMDEzMTM1
 NDIxLDMzNDE1NTM5MywtMTM5NDIyMzM0MSwtMTcxMDUwMDk1My
 wtMTcxMDUwMDk1MywxOTE1NzYyODYxLDE0OTg5MTA1NzcsLTE2
