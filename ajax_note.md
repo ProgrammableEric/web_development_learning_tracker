@@ -40,16 +40,16 @@
 - 字符串拼接 `.` `$str3 = $str1 . $str2; `
 - **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 自定义下表索引，遍历 `for loop` `foreach`
 - **函数** 系统函数 / 自定义函数 `function` 关键字 
-- **`get` 请求参数的获取** 
+- **`get` 请求参数的获取** `$_GET["classname"], $_POST["classname"]` 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzUzMzUwODYsLTEzNjUwMzc1MzEsLT
-IwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MTk4
-OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOT
-YsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0x
-NzEwNTAwOTUzLC0xNzEwNTAwOTUzLDE5MTU3NjI4NjEsMTQ5OD
-kxMDU3NywtMTY0OTc1NjYwOCwtMzE0OTQ3MDIsNjgxNzY4MTg1
-LDE1MDk5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLT
+EzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3
+ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NT
+AwOCw0MjkzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0x
+Mzk0MjIzMzQxLC0xNzEwNTAwOTUzLC0xNzEwNTAwOTUzLDE5MT
+U3NjI4NjEsMTQ5ODkxMDU3NywtMTY0OTc1NjYwOCwtMzE0OTQ3
+MDIsNjgxNzY4MTg1XX0=
 -->
