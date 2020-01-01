@@ -36,17 +36,18 @@
 
 ### 基础语法
 - 代码在<?php ... ?> 内
-- 变量声明`$`
+- 变量定义，声明，使用要加`$`
 - 字符串拼接 `.` `$str3 = $str1 . $str2; `
 - **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 自定义下表索引
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxND
-Q3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1
-NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC
-0xMzk0MjIzMzQxLC0xNzEwNTAwOTUzLC0xNzEwNTAwOTUzLDE5
-MTU3NjI4NjEsMTQ5ODkxMDU3NywtMTY0OTc1NjYwOCwtMzE0OT
-Q3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbLTEzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLT
+cwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEy
+NDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0Mj
+EsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0xNzEwNTAwOTUzLC0x
+NzEwNTAwOTUzLDE5MTU3NjI4NjEsMTQ5ODkxMDU3NywtMTY0OT
+c1NjYwOCwtMzE0OTQ3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NThd
+fQ==
 -->
