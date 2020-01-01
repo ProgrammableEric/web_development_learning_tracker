@@ -38,15 +38,15 @@
 - 代码在<?php ... ?> 内
 - 变量声明`$`
 - 字符串拼接 `.` `$str3 = $str1 . $str2; `
-- **数组** `echo` `print_r()` `var_dump()` `json_encode()` 
+- **数组** `echo` `print_r()` `var_dump()` `json_encode()` , 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MT
-k4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAw
-OTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC
-0xNzEwNTAwOTUzLC0xNzEwNTAwOTUzLDE5MTU3NjI4NjEsMTQ5
-ODkxMDU3NywtMTY0OTc1NjYwOCwtMzE0OTQ3MDIsNjgxNzY4MT
-g1LDE1MDk5MDI0NThdfQ==
+eyJoaXN0b3J5IjpbMTQwMTUzMTIzMSwtNzA0Mzc4NjA1LDE0ND
+c4MDk0ODAsODcxOTg5NDY5LC0xMjY3MTI0NTI0LC0xNjE1MjU1
+MDA4LDQyOTM0MDA5NiwtMTAxMzEzNTQyMSwzMzQxNTUzOTMsLT
+EzOTQyMjMzNDEsLTE3MTA1MDA5NTMsLTE3MTA1MDA5NTMsMTkx
+NTc2Mjg2MSwxNDk4OTEwNTc3LC0xNjQ5NzU2NjA4LC0zMTQ5ND
+cwMiw2ODE3NjgxODUsMTUwOTkwMjQ1OF19
 -->
