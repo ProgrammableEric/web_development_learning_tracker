@@ -17,6 +17,7 @@
 - 上传下载: VsFtp etc. 
 - 邮箱：SendMail etc. 
 - 数据库：MySql, Oracle etc. 
+- MAMP: Mac, Apache, MySql, PHP 
 
 #### 网络相关
 **DNS 服务器**：域名解析。 提供域名与ip 地址的映射关系。（过程：客户端首先查找Hosts文件夹，查询该域名配置信息是否被保存，若否，则访问DNS服务器查找域名对应IP地址，之后通过路由器访问该地址）
@@ -34,16 +35,16 @@
 - 代码在<?php ... ?> 内
 - 变量声明`$`
 - 字符串拼接 `.`
-- 执行原理：
+- 执行原理：客户端  <->  Apache 模块（网页） <->  php 模块（解析）
 
 
 ## AJAX 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDk1OTAxNTEsODcxOTg5NDY5LC0xMj
-Y3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOTM0MDA5NiwtMTAxMzEz
-NTQyMSwzMzQxNTUzOTMsLTEzOTQyMjMzNDEsLTE3MTA1MDA5NT
-MsLTE3MTA1MDA5NTMsMTkxNTc2Mjg2MSwxNDk4OTEwNTc3LC0x
-NjQ5NzU2NjA4LC0zMTQ5NDcwMiw2ODE3NjgxODUsMTUwOTkwMj
-Q1OF19
+eyJoaXN0b3J5IjpbNjc2NTE1MTI1LDg3MTk4OTQ2OSwtMTI2Nz
+EyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0
+MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0xNzEwNTAwOTUzLC
+0xNzEwNTAwOTUzLDE5MTU3NjI4NjEsMTQ5ODkxMDU3NywtMTY0
+OTc1NjYwOCwtMzE0OTQ3MDIsNjgxNzY4MTg1LDE1MDk5MDI0NT
+hdfQ==
 -->
