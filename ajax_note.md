@@ -53,16 +53,89 @@
  4. 指定回调函数
 
 具体
+~~~javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<script>
+		
+		// 触发点击事件
+		window.onload = function(){
+			var btn = document.getElementById("btn");
+			btn.onclick = function() {
+				var username = document.getElementById("username").value; 
+				// 访问checkUsername.php 而不是 访问另一个页面，将username 传递给这个文件
+				
+				// ***! AJAX !***  1, 2, 3 ,4步
+
+				// 1. 创建XMLHttprequest 对象
+				var xhr = null; 
+				if (window.XMLHttpRequest) {    // 兼容性处理
+					xhr = new XMLHttpRequest();
+				} else {
+					// IE6 浏览器
+					xhr = new ActiveXObject("Mircorsoft。XMLHTTP"); 
+				}
+
+
+				// 2. 准备发送，get 或者 post 取决于后台接口
+				xhr.open("get", "./checkUsername.php?username=" + username, true);  // true 同步， false 异步， default 为 false 异步
+				// xhr.open("post", "checkUsername.php", true); 
+
+
+				// 3. 执行发送
+				xhr.send(null);  
+				// var param = "username" + username; 
+				// xhr.send(param)  // Post 请求 参数应该以key=value的格式放到请求体中
+				// xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");   // 设置xhr 请求头信息，仅针对post请求
+
+
+				// 4. 设置回调函数
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4){   // 判断当前状态是否正确
+						if (xhr.status == 200){    // 服务器响应正常
+							// 得到数据的写法 或者 xhr.responseXML 
+							var result = xhr.responseText;   // 得到服务器echo的字符串
+							console.log(result);
+							document.getElementById("result").innerText = result; 
+						}
+					}
+				}
+				console.log(username);
+			}; 
+		};
+
+	</script>
+</head>
+<body>
+
+	<h1>登录界面</h1>
+	<form action="checkUsername.php" method="get">
+		
+		用户名：<input type="text" name="username" id="username">
+		<input type="button" value="验证用户名" id="btn">
+		<span id="result"> </span>
+		<br>
+		密码：  <input type="password" name="password"><br>
+		<input type="submit" value="提交">
+		
+	 </form>
+
+</body>
+</html>
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMT
-M1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAw
-OTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAsODcxOTg5ND
-Y5LC0xMjY3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOTM0MDA5Niwt
-MTAxMzEzNTQyMSwzMzQxNTUzOTMsLTEzOTQyMjMzNDEsLTE3MT
-A1MDA5NTMsLTE3MTA1MDA5NTMsMTkxNTc2Mjg2MSwxNDk4OTEw
-NTc3LC0xNjQ5NzU2NjA4XX0=
+eyJoaXN0b3J5IjpbMTM0MDkwMTE2MiwtMTg4NjQxNTg3MCwtND
+EzNTg2NDE2LC0xMzU0OTYzMDk4LC0xMjc1MzM1MDg2LC0xMzY1
+MDM3NTMxLC0yMDA5MTIwMTkyLC03MDQzNzg2MDUsMTQ0NzgwOT
+Q4MCw4NzE5ODk0NjksLTEyNjcxMjQ1MjQsLTE2MTUyNTUwMDgs
+NDI5MzQwMDk2LC0xMDEzMTM1NDIxLDMzNDE1NTM5MywtMTM5ND
+IyMzM0MSwtMTcxMDUwMDk1MywtMTcxMDUwMDk1MywxOTE1NzYy
+ODYxLDE0OTg5MTA1NzddfQ==
 -->
