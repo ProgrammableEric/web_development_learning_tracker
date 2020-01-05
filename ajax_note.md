@@ -134,14 +134,21 @@
 - 灵活性： 
 ~~~javascript
 querySelector('div img .test') 
-//找到div下面的img下面类名为test的元素,
+//找到div下面的img下面类名为test的元素
+//对比 GEBI和GEBC 只能选择固定id或者固定类名
+~~~
+- 动态性
+~~~javascript
+<!DOCTYPE html>  <html  lang="en">  <head>  <meta  charset="UTF-8">  <meta  name="viewport"content="width=device-width, initial-scale=1.0">  <meta  http-equiv="X-UA-Compatible"  content="ie=edge"><title>Document</title>  </head>  <body>  <script> a =  document.querySelectorAll('img') b =  document.getElementsByTagName('img')  document.body.appendChild(new  Image())  console.log(a.length)  // 0console.log(b.length)  // 1 </script>  </body>  </html>
+
+ 
 ~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NDU1NTc5MywtMTg3MDE1NDM0NywxNT
+eyJoaXN0b3J5IjpbMTc3OTEyMjI2NCwtMTg3MDE1NDM0NywxNT
 Y0OTAzMDExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4
 NjQxNiwtMTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNz
 UzMSwtMjAwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAs
