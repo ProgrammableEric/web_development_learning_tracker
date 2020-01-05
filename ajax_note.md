@@ -128,7 +128,7 @@
 </html>
 ~~~
 
-#### `querySelector()` vs. `getElementById() `
+#### `querySelector()` vs. `getElementById() ` [link](https://juejin.im/post/5a7d8f325188257a6c690065)
 - 兼容性：相似
 - 效率： `querySelector()` 低于 `getElementById()`
 - 灵活性： 
@@ -138,21 +138,37 @@ querySelector('div img .test')
 //对比 GEBI和GEBC 只能选择固定id或者固定类名
 ~~~
 - 动态性
+通过QSA选择的不受后来DOM变化的影响，但是通过GEBC会受DOM的影响。
 ~~~javascript
-<!DOCTYPE html>  <html  lang="en">  <head>  <meta  charset="UTF-8">  <meta  name="viewport"content="width=device-width, initial-scale=1.0">  <meta  http-equiv="X-UA-Compatible"  content="ie=edge"><title>Document</title>  </head>  <body>  <script> a =  document.querySelectorAll('img') b =  document.getElementsByTagName('img')  document.body.appendChild(new  Image())  console.log(a.length)  // 0console.log(b.length)  // 1 </script>  </body>  </html>
-
- 
+<!DOCTYPE html>  
+<html  lang="en">  
+<head>  
+	<meta  charset="UTF-8">  
+	<meta  name="viewport"content="width=device-width, initial-scale=1.0">  
+	<meta  http-equiv="X-UA-Compatible"  content="ie=edge">		
+	<title>Document</title>  
+</head>  
+<body>  
+	<script> 
+		a =  document.querySelectorAll('img') 
+		b =  document.getElementsByTagName('img')  
+		document.body.appendChild(new  Image())  
+		console.log(a.length)  // 0
+		console.log(b.length)  // 1 
+	</script>  
+</body>  
+</html>
 ~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTEyMjI2NCwtMTg3MDE1NDM0NywxNT
-Y0OTAzMDExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4
-NjQxNiwtMTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNz
-UzMSwtMjAwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAs
-ODcxOTg5NDY5LC0xMjY3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOT
-M0MDA5NiwtMTAxMzEzNTQyMSwzMzQxNTUzOTMsLTEzOTQyMjMz
-NDEsLTE3MTA1MDA5NTNdfQ==
+eyJoaXN0b3J5IjpbLTE5MDUyMjQzOTQsLTE4NzAxNTQzNDcsMT
+U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
+ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMz
+c1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgw
+LDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0Mj
+kzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIz
+MzQxLC0xNzEwNTAwOTUzXX0=
 -->
