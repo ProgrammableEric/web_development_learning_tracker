@@ -160,13 +160,14 @@ querySelector('div img .test')
 </html>
 ~~~
 
+#### `onblur` 事件 [link](https://www.w3school.com.cn/jsref/event_onblur.asp)
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzYwMjAyMDYsLTE4NzAxNTQzNDcsMT
+eyJoaXN0b3J5IjpbLTE2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMT
 U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
 ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMz
 c1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgw
