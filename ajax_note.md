@@ -128,17 +128,19 @@
 </html>
 ~~~
 
-#### `querySelector()` vs. `onblur()`
-
+#### `querySelector()` vs. `getElementById() `
+- 兼容性：相似
+- 效率： `querySelector()` 低于 `getElementById()`
+- 灵活性： querySelector('div img .test') //找到div下面的img下面类名为test的元素
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMz
-QwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5
-NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMzc1MzEsLTIwMDkxMj
-AxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MTk4OTQ2OSwt
-MTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMT
-MxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIzMzQxLC0xNzEwNTAw
-OTUzLC0xNzEwNTAwOTUzXX0=
+eyJoaXN0b3J5IjpbLTIwNTE2ODAzNDYsLTE4NzAxNTQzNDcsMT
+U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
+ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMz
+c1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgw
+LDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0Mj
+kzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIz
+MzQxLC0xNzEwNTAwOTUzXX0=
 -->
