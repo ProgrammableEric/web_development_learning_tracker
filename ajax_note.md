@@ -131,16 +131,21 @@
 #### `querySelector()` vs. `getElementById() `
 - 兼容性：相似
 - 效率： `querySelector()` 低于 `getElementById()`
-- 灵活性： querySelector('div img .test') //找到div下面的img下面类名为test的元素
+- 灵活性： 
+~~~javascript
+querySelector('div img .test') 
+//找到div下面的img下面类名为test的元素,
+~~~
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTE2ODAzNDYsLTE4NzAxNTQzNDcsMT
-U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
-ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMz
-c1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgw
-LDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0Mj
-kzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIz
-MzQxLC0xNzEwNTAwOTUzXX0=
+eyJoaXN0b3J5IjpbMTY0NDU1NTc5MywtMTg3MDE1NDM0NywxNT
+Y0OTAzMDExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4
+NjQxNiwtMTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNz
+UzMSwtMjAwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAs
+ODcxOTg5NDY5LC0xMjY3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOT
+M0MDA5NiwtMTAxMzEzNTQyMSwzMzQxNTUzOTMsLTEzOTQyMjMz
+NDEsLTE3MTA1MDA5NTNdfQ==
 -->
