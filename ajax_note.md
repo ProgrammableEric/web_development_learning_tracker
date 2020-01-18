@@ -162,16 +162,21 @@ querySelector('div img .test')
 
 #### `onblur` 事件 [link](https://www.w3school.com.cn/jsref/event_onblur.asp)
 
+#### 同步与异步
+- 使用回调函数是针对于异步操作的处理。若同步则`readyState = 4` 发生在请求send 之后。
+- 同步网页会卡死，异步不影响继续其他操作
+- 使用异步，网络访问的延迟是普遍现象
+- **JS 异步实现的底层原理** 单线程+事件队列 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMT
-U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
-ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMz
-c1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgw
-LDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0Mj
-kzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1MzkzLC0xMzk0MjIz
-MzQxLC0xNzEwNTAwOTUzXX0=
+eyJoaXN0b3J5IjpbLTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLT
+E4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2
+NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMz
+UwODYsLTEzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYw
+NSwxNDQ3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMT
+YxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1
+MzkzLC0xMzk0MjIzMzQxXX0=
 -->
