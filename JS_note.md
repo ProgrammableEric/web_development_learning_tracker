@@ -1,7 +1,7 @@
 <h2>JS NOTE</h2> 
 
-### Basic Syntax 
-- `===` vs. `==` 简单来说： `==` 代表相同， `===`代表严格相同. 
+### Basic yntax 
+- `===` vs. `==` 简单来说： `==` 代表相同， `===`代表严格相同. ma
 
 这么理解： 当进行双等号比较时候： 先检查两个操作数数据类型，如果相同， 则进行`===`比较， 如果不同， 则愿意为你进行一次类型转换， 转换成相同类型后再进行比较， 而`===`比较时， 如果类型不同，直接就是false. [link](https://www.cnblogs.com/nelson-hu/p/7922731.html)
 
@@ -170,5 +170,6 @@ getNumber()
 <b> async POST diagram </b>
 <img src="./notes_material/c_model7.png">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzIxOTM2MSwyMTAxODAzMzIwXX0=
+eyJoaXN0b3J5IjpbNzc5MTAzOTI2LDE4MDcyMTkzNjEsMjEwMT
+gwMzMyMF19
 -->
