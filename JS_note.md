@@ -1,5 +1,10 @@
 <h2>JS NOTE</h2> 
 
+### basic syntax 
+- `===` vs. `==` 简单来说： `==` 代表相同， `===`代表严格相同. 
+
+这么理解： 当进行双等号比较时候： 先检查两个操作数数据类型，如果相同， 则进行`===`比较， 如果不同， 则愿意为你进行一次类型转换， 转换成相同类型后再进行比较， 而`===`比较时， 如果类型不同，直接就是false. [link](https://www.cnblogs.com/nelson-hu/p/7922731.html)
+
 <h3> Passing by value vs. passing by reference</h3>
 In Javascript, The only elements that are not objects are the Primitive Data Types : 
 <b>string, number, boolean, null and undefined. </b>Primitive Data Types are passed <i>By Value</i> 
@@ -164,5 +169,5 @@ getNumber()
 <b> async POST diagram </b>
 <img src="./notes_material/c_model7.png">
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTAwNDA1NiwyMTAxODAzMzIwXX0=
+eyJoaXN0b3J5IjpbMTgwNzIxOTM2MSwyMTAxODAzMzIwXX0=
 -->
