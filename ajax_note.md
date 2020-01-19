@@ -324,14 +324,40 @@ function myAjax(type, url, params, dataType, callback, async) {
 6.  解析和执行css，也会产生阻塞。
 7.  对于来自同一个域名的资源，比如脚本文件、样式表文件、图片文件等，浏览器一般有限制，同时最多下载6~20个资源，但是不同域名的资源，没有这个限制。所以通常把静态文件放在不同的域名下，以加快下载速度。
 
+### 进一步封装 - 对输入参数的格式优化
+~~~javascript
+obj = {
+	url: "xxx"
+	type: "get"
+	dataType: "json"
+}
+
+// 解决参数设置默认值，参数顺序可调换的问题
+// 将多个参数变为一个对象传入
+function myAjax2(obj) {
+	var defaults = {
+		type: "get",
+		url: "#",
+		dataType: "json",
+		data:{}
+	}
+	// obj 中的属性覆盖defaults 中的属性
+	// 1. obj 中属性不存在与defaults, 则创建新属性
+	// 2. obj 中属性已经存在，则覆盖defaults 中设置
+	// 3. 属性只在defaults 存在，则保留预定义的默认值
+	for (var key in obj){
+		defaults[key] = obj[key]; 
+	}
+}
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU4ODYzMDAsMzAyMjk1MDc2LC0xNz
-c1NTU2NzI3LC0xNjUwOTA3ODk3LC0xODcwMTU0MzQ3LDE1NjQ5
-MDMwMTEsMTM0MDkwMTE2MiwtMTg4NjQxNTg3MCwtNDEzNTg2ND
-E2LC0xMzU0OTYzMDk4LC0xMjc1MzM1MDg2LC0xMzY1MDM3NTMx
-LC0yMDA5MTIwMTkyLC03MDQzNzg2MDUsMTQ0NzgwOTQ4MCw4Nz
-E5ODk0NjksLTEyNjcxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQw
-MDk2LC0xMDEzMTM1NDIxXX0=
+eyJoaXN0b3J5IjpbMjExOTk5OTY5NiwtMTk2NTg4NjMwMCwzMD
+IyOTUwNzYsLTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLTE4NzAx
+NTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1OD
+cwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYs
+LTEzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxND
+Q3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1
+NTAwOCw0MjkzNDAwOTZdfQ==
 -->
