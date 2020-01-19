@@ -315,15 +315,23 @@ function myAjax(type, url, params, dataType, callback, async) {
 		}
 ~~~
 
+#### `script`的工作原理
+1.  浏览器一边下载HTML网页，一边开始解析。也就是说，不等下载完，就开始解析。
+2.  解析过程中，发现<script>元素，就暂停解析，把网页渲染的控制权转交给JavaScript引擎
+3.  如果<script>元素引用了外部脚本，就下载该脚本再执行，否则就直接执行代码（因为js可以修改DOM）；如果脚本加载时间过长，造成‘阻塞效应’，所以最好将<script>标签放在页面底部。如果某些代码一定要放在头部，最好直接将代码写入页面，而不是链接外部脚本。
+4.  Javascript引擎执行完毕，控制权交还渲染引擎，恢复往下解析HTML网页。
+5.  多个<script>外链标签，浏览器会同时下载，但是，会从上到下执行相应的js文件，即使后者先下载完成。（为保证脚本的依赖关系不会受到破坏）。
+6.  解析和执行css，也会产生阻塞。
+7.  对于来自同一个域名的资源，比如脚本文件、样式表文件、图片文件等，浏览器一般有限制，同时最多下载6~20个资源，但是不同域名的资源，没有这个限制。所以通常把静态文件放在不同的域名下，以加快下载速度。
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyMjk1MDc2LC0xNzc1NTU2NzI3LC0xNj
-UwOTA3ODk3LC0xODcwMTU0MzQ3LDE1NjQ5MDMwMTEsMTM0MDkw
-MTE2MiwtMTg4NjQxNTg3MCwtNDEzNTg2NDE2LC0xMzU0OTYzMD
-k4LC0xMjc1MzM1MDg2LC0xMzY1MDM3NTMxLC0yMDA5MTIwMTky
-LC03MDQzNzg2MDUsMTQ0NzgwOTQ4MCw4NzE5ODk0NjksLTEyNj
-cxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQwMDk2LC0xMDEzMTM1
-NDIxLDMzNDE1NTM5M119
+eyJoaXN0b3J5IjpbMTk4NzA0MjU5NiwzMDIyOTUwNzYsLTE3Nz
+U1NTY3MjcsLTE2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMTU2NDkw
+MzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1ODY0MT
+YsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYsLTEzNjUwMzc1MzEs
+LTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MT
+k4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAw
+OTYsLTEwMTMxMzU0MjFdfQ==
 -->
