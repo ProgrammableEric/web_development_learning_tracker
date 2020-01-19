@@ -241,7 +241,8 @@ querySelector('div img .test')
 
 ### AJAX 初步封装
 ~~~javascript
-function myAjax(type, url, params, callback) { // 注意传入callback 函数！！
+// 注意传入callback 函数作为参数,考虑各种情况
+function myAjax(type, url, params, dataType, callback, async) {
 			var xhr = null; 
 			if (window.XMLHttpRequest) {    // 兼容性处理
 				xhr = new XMLHttpRequest();
@@ -249,39 +250,68 @@ function myAjax(type, url, params, callback) { // 注意传入callback 函数！
 				// IE6 浏览器
 				xhr = new ActiveXObject("Mircorsoft.XMLHTTP"); 
 			}
+
 			//2 
 			if (type == "get"){
-				url += "?" + params; 
-				xhr.open(type, url, true); // default async 
-			} else {
-				xhr.open(type, url, true); // default async 
+				if (params && params != ""){
+					url += "?" + params; 
+				} 
 			}
+
+			xhr.open(type, url, async); // default async 
+
 			//3
 			if (type=="get"){
 				xhr.send(null);
 			} else if (type == "post"){
 				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-				xhr.send(param);
+				xhr.send(params);
 			}
 			
-			xhr.onreadystatechange = function(){
+			// 4 
+			if (async){
+				xhr.onreadystatechange = function(){
+
 				if (xhr.readyState == 4){
 					if (xhr.status == 200){
 
 						var result = null;
-						if (type == "json"){
+						if (dataType == "json"){
 							result = xhr.responseText;
 							result = JSON.parse(result);
-						} else if (type == "xml"){
+						} else if (dataType == "xml"){
 							result = xhr.responseXML;
 						} else {
 							result = xhr.responseText;
 						}
+
+						if (callback) {
+							callback(result); 
+						}
 					}
 				}
-			}; 
 
-			callback(result); 
+			}} else {
+				if (xhr.readyState == 4){
+					if (xhr.status == 200){
+
+						var result = null;
+						if (dataType == "json"){
+							result = xhr.responseText;
+							result = JSON.parse(result);
+						} else if (dataType == "xml"){
+							result = xhr.responseXML;
+						} else {
+							result = xhr.responseText;
+						}
+
+						if (callback) {
+							callback(result); 
+						}
+					}
+				}
+			}
+			 
 		}
 ~~~
 
@@ -289,11 +319,11 @@ function myAjax(type, url, params, callback) { // 注意传入callback 函数！
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA5NTE4OTAsLTE3NzU1NTY3MjcsLT
-E2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMzQw
-OTAxMTYyLC0xODg2NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5Nj
-MwOTgsLTEyNzUzMzUwODYsLTEzNjUwMzc1MzEsLTIwMDkxMjAx
-OTIsLTcwNDM3ODYwNSwxNDQ3ODA5NDgwLDg3MTk4OTQ2OSwtMT
-I2NzEyNDUyNCwtMTYxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMx
-MzU0MjEsMzM0MTU1MzkzXX0=
+eyJoaXN0b3J5IjpbLTkxMjY1MjU4OCwtMTc3NTU1NjcyNywtMT
+Y1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzNDA5
+MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMTM1NDk2Mz
+A5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAwOTEyMDE5
+MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAsODcxOTg5NDY5LC0xMj
+Y3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOTM0MDA5NiwtMTAxMzEz
+NTQyMSwzMzQxNTUzOTNdfQ==
 -->
