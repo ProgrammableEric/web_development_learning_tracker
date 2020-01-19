@@ -185,6 +185,43 @@ querySelector('div img .test')
 </students>
 ```
 缺点：元数据(描述数据的数据)太多，导致占用内存太大，传输效率低，解析缓慢。
+数据解析：
+~~~javascript
+<script type="text/javascript">
+		window.onload = function(){
+			var xhr = new XMLHttpRequest();
+			xhr.open("get", "./server/getbooks.php", true);
+			xhr.send(null);
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4){
+					if (xhr.status == 200){
+						var result = xhr.responseXML;
+						var books = result.getElementsByTagName('booklist')[0].getElementsByTagName('book'); 
+
+						var newHtml = document.getElementById('bookContainer').innerHTML;
+						
+						for (var i=0; i<books.length; i++){
+							var itemBook = books[i];
+
+							var name= itemBook.getElementsByTagName('name')[0].textContent;
+					
+							var author= itemBook.getElementsByTagName('author')[0].textContent;
+							
+							var desc= itemBook.getElementsByTagName('desc')[0].textContent;
+
+							var tempHtml = "<tr><td>"+name+"</td><td>"+author+"</td><td>"+desc+"</td></tr>";
+
+							newHtml += tempHtml;
+						}
+
+						document.getElementById('bookContainer').innerHTML = newHtml;
+
+					}
+				}
+			}; 
+		}
+</script>
+~~~
 
 #### JSON - 类似js 中的对象，key-value 形式
 ~~~json
@@ -200,15 +237,20 @@ querySelector('div img .test')
 }
 ~~~
 优势：数据体积小，传输, 解析效率高
+数据解析： `JSON.parse(result)` 编程对象数组
+
+### AJAX 初步封装
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxNTMyOTg0LC0xNzc1NTU2NzI3LC0xNj
-UwOTA3ODk3LC0xODcwMTU0MzQ3LDE1NjQ5MDMwMTEsMTM0MDkw
-MTE2MiwtMTg4NjQxNTg3MCwtNDEzNTg2NDE2LC0xMzU0OTYzMD
-k4LC0xMjc1MzM1MDg2LC0xMzY1MDM3NTMxLC0yMDA5MTIwMTky
-LC03MDQzNzg2MDUsMTQ0NzgwOTQ4MCw4NzE5ODk0NjksLTEyNj
-cxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQwMDk2LC0xMDEzMTM1
-NDIxLDMzNDE1NTM5M119
+eyJoaXN0b3J5IjpbMjA2OTY4MDUwMSwtMTc3NTU1NjcyNywtMT
+Y1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzNDA5
+MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMTM1NDk2Mz
+A5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAwOTEyMDE5
+MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAsODcxOTg5NDY5LC0xMj
+Y3MTI0NTI0LC0xNjE1MjU1MDA4LDQyOTM0MDA5NiwtMTAxMzEz
+NTQyMSwzMzQxNTUzOTNdfQ==
 -->
