@@ -243,74 +243,74 @@ querySelector('div img .test')
 ~~~javascript
 // 注意传入callback 函数作为参数,考虑各种情况
 function myAjax(type, url, params, dataType, callback, async) {
-			var xhr = null; 
-			if (window.XMLHttpRequest) {    // 兼容性处理
-				xhr = new XMLHttpRequest();
-			} else {
-				// IE6 浏览器
-				xhr = new ActiveXObject("Mircorsoft.XMLHTTP"); 
-			}
+	var xhr = null; 
+	if (window.XMLHttpRequest) {    // 兼容性处理
+		xhr = new XMLHttpRequest();
+	} else {
+		// IE6 浏览器
+		xhr = new ActiveXObject("Mircorsoft.XMLHTTP"); 
+	}
 
-			//2 
-			if (type == "get"){
-				if (params && params != ""){
-					url += "?" + params; 
-				} 
-			}
+	//2 
+	if (type == "get"){
+		if (params && params != ""){
+			url += "?" + params; 
+		} 
+	}
 
-			xhr.open(type, url, async); // default async 
+	xhr.open(type, url, async); // default async 
 
-			//3
-			if (type=="get"){
-				xhr.send(null);
-			} else if (type == "post"){
-				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-				xhr.send(params);
-			}
-			
-			// 4 
-			if (async){
-				xhr.onreadystatechange = function(){
+	//3
+	if (type=="get"){
+		xhr.send(null);
+	} else if (type == "post"){
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send(params);
+	}
+	
+	// 4 
+	if (async){
+		xhr.onreadystatechange = function(){
 
-				if (xhr.readyState == 4){
-					if (xhr.status == 200){
+		if (xhr.readyState == 4){
+			if (xhr.status == 200){
 
-						var result = null;
-						if (dataType == "json"){
-							result = xhr.responseText;
-							result = JSON.parse(result);
-						} else if (dataType == "xml"){
-							result = xhr.responseXML;
-						} else {
-							result = xhr.responseText;
-						}
-
-						if (callback) {
-							callback(result); 
-						}
-					}
+				var result = null;
+				if (dataType == "json"){
+					result = xhr.responseText;
+					result = JSON.parse(result);
+				} else if (dataType == "xml"){
+					result = xhr.responseXML;
+				} else {
+					result = xhr.responseText;
 				}
 
-			}} else {
-				if (xhr.readyState == 4){
-					if (xhr.status == 200){
-
-						var result = null;
-						if (dataType == "json"){
-							result = xhr.responseText;
-							result = JSON.parse(result);
-						} else if (dataType == "xml"){
-							result = xhr.responseXML;
-						} else {
-							result = xhr.responseText;
-						}
-
-						if (callback) {
-							callback(result); 
-						}
-					}
+				if (callback) {
+					callback(result); 
 				}
 			}
+		}
+
+	}} else {
+		if (xhr.readyState == 4){
+			if (xhr.status == 200){
+
+				var result = null;
+				if (dataType == "json"){
+					result = xhr.responseText;
+					result = JSON.parse(result);
+				} else if (dataType == "xml"){
+					result = xhr.responseXML;
+				} else {
+					result = xhr.responseText;
+				}
+
+				if (callback) {
+					callback(result); 
+				}
+			}
+		}
+	}
 			 
 		}
 ~~~
@@ -319,7 +319,7 @@ function myAjax(type, url, params, dataType, callback, async) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjY1MjU4OCwtMTc3NTU1NjcyNywtMT
+eyJoaXN0b3J5IjpbLTI4MDg3NTQ1MiwtMTc3NTU1NjcyNywtMT
 Y1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzNDA5
 MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMTM1NDk2Mz
 A5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAwOTEyMDE5
