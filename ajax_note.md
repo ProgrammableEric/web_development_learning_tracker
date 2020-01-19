@@ -162,21 +162,53 @@ querySelector('div img .test')
 
 #### `onblur` 事件 [link](https://www.w3school.com.cn/jsref/event_onblur.asp)
 
-#### 同步与异步
+### 同步与异步
 - 使用回调函数是针对于异步操作的处理。若同步则`readyState = 4` 发生在请求send 之后。
 - 同步网页会卡死，异步不影响继续其他操作
 - 使用异步，网络访问的延迟是普遍现象
-- **JS 异步实现的底层原理** 单线程+事件队列 
+- **JS 异步实现的底层原理** _单线程+事件队列_ 
+-- 单线程： 代码从上往下依次执行
+-- 事件队列：一个容器，存储一些回调函数，只有在js同步代码全部执行完才会可能被调用。其他例子： `window.onload`, `btn.onclick`, `input.onblur`.  `window.onload = function(){}` 相当于讲回调函数丢到事件队列当中。
+- `xhr.send()` 发送请求，请求浏览器进行网络数据的请求。注意浏览器不是单线程 ，本步骤只是将请求发送给浏览器内核，由浏览器负责服务器的访问。
 
+### 数据格式
+#### XML - 标签方式组织的数据
+```xml
+<? xml version="1.0" encoding="utf-8" ?>
+<students>
+	<student>
+		<name>eric</name>
+		<age>24</age>
+		...
+	</student>
+	...
+</students>
+```
+缺点：元数据(描述数据的数据)太多，导致占用内存太大，传输效率低，解析缓慢。
+
+#### JSON - 类似js 中的对象，key-value 形式
+~~~json
+{ 
+	students: {
+		{
+			"name": eric 
+			"age": 24
+			...
+		},
+		...
+	}
+}
+~~~
+优势：数据体积小，传输, 解析效率高
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLT
-E4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2
-NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMz
-UwODYsLTEzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYw
-NSwxNDQ3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMT
-YxNTI1NTAwOCw0MjkzNDAwOTYsLTEwMTMxMzU0MjEsMzM0MTU1
-MzkzLC0xMzk0MjIzMzQxXX0=
+eyJoaXN0b3J5IjpbODIxNTMyOTg0LC0xNzc1NTU2NzI3LC0xNj
+UwOTA3ODk3LC0xODcwMTU0MzQ3LDE1NjQ5MDMwMTEsMTM0MDkw
+MTE2MiwtMTg4NjQxNTg3MCwtNDEzNTg2NDE2LC0xMzU0OTYzMD
+k4LC0xMjc1MzM1MDg2LC0xMzY1MDM3NTMxLC0yMDA5MTIwMTky
+LC03MDQzNzg2MDUsMTQ0NzgwOTQ4MCw4NzE5ODk0NjksLTEyNj
+cxMjQ1MjQsLTE2MTUyNTUwMDgsNDI5MzQwMDk2LC0xMDEzMTM1
+NDIxLDMzNDE1NTM5M119
 -->
