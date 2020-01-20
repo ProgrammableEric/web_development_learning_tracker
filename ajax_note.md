@@ -350,10 +350,100 @@ function myAjax2(obj) {
 	}
 }
 ~~~
+完整代码：
+~~~javascript
+function myAjax2(obj) {
+	
+	var defaults = {
+		type: "get",
+		url: "#",
+		dataType: "json",
+		data: {
+			uname: "eric",
+			age: 25
+		},    // 请求参数
+		async: true,
+		success: function(result){console.log(result);}
+	}
+
+	// obj 中的属性覆盖defaults 中的属性
+	// 1. obj 中属性不存在与defaults, 则创建新属性
+	// 2. obj 中属性已经存在，则覆盖defaults 中设置
+	// 3. 属性只在defaults 存在，则保留预定义的默认值
+	for (var key in obj){
+		defaults[key] = obj[key]; 
+	}
+
+	var xhr=null; 
+	if (window.XMLHttpRequest){
+		xhr = new XMLHttpRequest();
+	} else {
+		xhr= new ActiveXObject("Mircorsoft.XMLHTTP");
+	}
+
+	var params = "";
+	for (var attr in defaults.data){
+		params += attr + "=" + defaults.data[attr] + "&";
+	}
+	if (params){
+		params = params.substring(0, params.length-1);
+	}
+
+	if (defaults.type == "get"){
+		defaults.url += "?" + params;
+	}
+	xhr.open(defaults.type, defaults.url, defaults.async); 
+
+	if (defaults.type == "get"){
+		xhr.send();
+	} else if (defaults.type == "post"){
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr.send(params); 
+	}
+
+
+	if (defaults.async) {
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4){
+				if (xhr.status == 200){
+					var result = null; 
+					if (defaults.dataType == "json"){
+						result = xhr.responseText;
+						result = JSON.parse(result);
+					} else if (defaults.dataType == "xml"){
+						result = xhr.responseXML;
+					} else {
+						result = xhr.responseText;
+					}
+
+					defaults.success(result);
+				}
+			}
+		}
+	} else {
+		if (xhr.readyState == 4){
+				if (xhr.status == 200){
+					var result = null; 
+					if (defaults.dataType == "json"){
+						result = xhr.responseText;
+						result = JSON.parse(result);
+					} else if (defaults.dataType == "xml"){
+						result = xhr.responseXML;
+					} else {
+						result = xhr.responseText;
+					}
+
+					defaults.success(result);
+				}
+			}
+	}
+
+}
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTk5OTY5NiwtMTk2NTg4NjMwMCwzMD
+eyJoaXN0b3J5IjpbMTEzNzMyMjk0OCwtMTk2NTg4NjMwMCwzMD
 IyOTUwNzYsLTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLTE4NzAx
 NTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1OD
 cwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYs
