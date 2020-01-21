@@ -441,13 +441,33 @@ function myAjax2(obj) {
 }
 ~~~
 
+### jQuery 中使用ajax [link](https://www.w3school.com.cn/jquery/ajax_ajax.asp)
+~~~javascript
+// jQuery 中使用ajax 
+$.ajax({
+	url: url,
+	type: type,
+	data:{uname: usernameValue},
+	async: true;
+	dataType: "text",
+	success: function(result) {
+		var username_result = document.getElementById("username_result");
+		if (result == "ok") {
+			username_result.innerText = "用户名可以使用";
+		} else {
+			username_result.innerText = "用户名已经被注册";
+		}	 
+	}
+})
+~~~
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzMyMjk0OCwtMTk2NTg4NjMwMCwzMD
-IyOTUwNzYsLTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLTE4NzAx
-NTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1OD
-cwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgsLTEyNzUzMzUwODYs
-LTEzNjUwMzc1MzEsLTIwMDkxMjAxOTIsLTcwNDM3ODYwNSwxND
-Q3ODA5NDgwLDg3MTk4OTQ2OSwtMTI2NzEyNDUyNCwtMTYxNTI1
-NTAwOCw0MjkzNDAwOTZdfQ==
+eyJoaXN0b3J5IjpbLTE2NDE1ODU5NzUsLTE5NjU4ODYzMDAsMz
+AyMjk1MDc2LC0xNzc1NTU2NzI3LC0xNjUwOTA3ODk3LC0xODcw
+MTU0MzQ3LDE1NjQ5MDMwMTEsMTM0MDkwMTE2MiwtMTg4NjQxNT
+g3MCwtNDEzNTg2NDE2LC0xMzU0OTYzMDk4LC0xMjc1MzM1MDg2
+LC0xMzY1MDM3NTMxLC0yMDA5MTIwMTkyLC03MDQzNzg2MDUsMT
+Q0NzgwOTQ4MCw4NzE5ODk0NjksLTEyNjcxMjQ1MjQsLTE2MTUy
+NTUwMDgsNDI5MzQwMDk2XX0=
 -->
