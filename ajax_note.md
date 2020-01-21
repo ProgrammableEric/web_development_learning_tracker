@@ -472,12 +472,13 @@ $.ajax({
 #### 跨域的必要性
 获取非同源服务器下的数据。
 
-
+#### 跨域的实现
+本质：借助html 的 script 标签 src 属性
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTMxNjE4NCwtMTY0MTU4NTk3NSwtMT
+eyJoaXN0b3J5IjpbMTYwNTc0ODQyMSwtMTY0MTU4NTk3NSwtMT
 k2NTg4NjMwMCwzMDIyOTUwNzYsLTE3NzU1NTY3MjcsLTE2NTA5
 MDc4OTcsLTE4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMzQwOTAxMT
 YyLC0xODg2NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5NjMwOTgs
