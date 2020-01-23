@@ -505,13 +505,34 @@ $.ajax({
 </html>
 ~~~
 
-引入wai
+跨域引入外部php， 为方便传参
+~~~javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function foo(data){
+			console.log(data);
+		}
+	</script>
+	<script type="text/javascript" src="./PHP/data.php?city=beijing"></script>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+~~~ 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTA5NTczMiwxNjA1NzQ4NDIxLC0xNj
+eyJoaXN0b3J5IjpbLTM0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNj
 QxNTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1
 NjcyNywtMTY1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMD
 ExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwt
