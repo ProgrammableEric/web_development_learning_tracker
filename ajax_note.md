@@ -528,15 +528,48 @@ $.ajax({
 </html>
 ~~~ 
 
+动态script标签的生成
+~~~javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script type="text/javascript" src="./PHP/data.php"></script> -->
+	<script type="text/javascript">
+		window.onload = function(){
+			var btn = document.querySelector("#btn");
+			btn.onclick = function(){
+				var cityName = document.querySelector("#city").value;
+				// 动态创建script标签，指定src 的值
+				var script = document.createElement("script");
+				script.src = "./PHP/data.php?city="+cityName;
+
+				var head = document.querySelector("head");
+				head.appendChild(script);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<h1>天气信息查询</h1>
+	<input type="text" id="city" placeholder="请输入城市名称">
+	<input type="button" id="btn" value="search">
+	
+</body>
+</html>
+~~~
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNj
-QxNTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1
-NjcyNywtMTY1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMD
-ExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwt
-MTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMj
-AwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4MDk0ODAsODcxOTg5
-NDY5LC0xMjY3MTI0NTI0XX0=
+eyJoaXN0b3J5IjpbLTE3Nzg5ODY1NzQsLTM0ODQ2MTQ5NywxNj
+A1NzQ4NDIxLC0xNjQxNTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5
+NTA3NiwtMTc3NTU1NjcyNywtMTY1MDkwNzg5NywtMTg3MDE1ND
+M0NywxNTY0OTAzMDExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAs
+LTQxMzU4NjQxNiwtMTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMT
+M2NTAzNzUzMSwtMjAwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4
+MDk0ODAsODcxOTg5NDY5XX0=
 -->
