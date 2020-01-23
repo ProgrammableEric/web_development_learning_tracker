@@ -473,12 +473,45 @@ $.ajax({
 获取非同源服务器下的数据。
 
 #### 跨域的实现
-本质：借助html 的 script 标签 src 属性完成。
+本质：借助html 的 script 标签 src 属性完成。即服务器返回了一个方法调用，这个方法是我们事先定义好的，返回的参数使我们想要的数据。
+~~~javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function foo(data){
+			console.log(data + "!!!!");
+		}
+	</script>
+	// 假设这里是跨域访问
+	<script type="text/javascript" src="./JS/test.js"></script>
+	<script type="text/javascript">
+		console.log(str);
+		console.log(str2);
+		test();
+		
+		// window.onload = function(){
+		// 	console.log(str);
+		// 	console.log(str2);
+		// 	test();
+		// }
+	</script>
+</head>
+<body>
+	<h1>This is nice!</h1>
+</body>
+</html>
+~~~
+
+引入wai
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTk5OTk5NSwxNjA1NzQ4NDIxLC0xNj
+eyJoaXN0b3J5IjpbMTgzMTA5NTczMiwxNjA1NzQ4NDIxLC0xNj
 QxNTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1
 NjcyNywtMTY1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMD
 ExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwt
