@@ -561,15 +561,54 @@ $.ajax({
 </html>
 ~~~
 
+#### 动态指定回调函数名称
+~~~javascript
+<script type="text/javascript">
+	window.onload = function(){
+		var btn = document.querySelector("#btn");
+		btn.onclick = function(){
+			var cityName = document.querySelector("#city").value;
+			// 动态创建script标签，指定src 的值
+			var script = document.createElement("script");
+			script.src = "./PHP/data.php?city="+cityName+"&callback=foo2";
+
+			window["foo2"] = function(data){
+				console.log(data);
+			};
+
+			var head = document.querySelector("head");
+			head.appendChild(script);
+		}
+		
+	}
+</script>
+~~~
+~~~php
+<?php 
+
+	//echo "var str = 'yo!'"; 
+	$cbName = $_GET["callback"];
+	$city = $_GET["city"];
+
+	if ($city == "beijing"){
+		echo $cbName."('yeh!')";
+	} else {
+		echo $cbName."('nuh!')"; 
+	}
+	
+ ?>
+~~~
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzg5ODY1NzQsLTM0ODQ2MTQ5NywxNj
-A1NzQ4NDIxLC0xNjQxNTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5
-NTA3NiwtMTc3NTU1NjcyNywtMTY1MDkwNzg5NywtMTg3MDE1ND
-M0NywxNTY0OTAzMDExLDEzNDA5MDExNjIsLTE4ODY0MTU4NzAs
-LTQxMzU4NjQxNiwtMTM1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMT
-M2NTAzNzUzMSwtMjAwOTEyMDE5MiwtNzA0Mzc4NjA1LDE0NDc4
-MDk0ODAsODcxOTg5NDY5XX0=
+eyJoaXN0b3J5IjpbLTE1ODA4OTIwNjAsLTE3Nzg5ODY1NzQsLT
+M0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNjQxNTg1OTc1LC0xOTY1
+ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1NjcyNywtMTY1MDkwNz
+g5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzNDA5MDExNjIs
+LTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMTM1NDk2MzA5OCwtMT
+I3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAwOTEyMDE5MiwtNzA0
+Mzc4NjA1LDE0NDc4MDk0ODBdfQ==
 -->
