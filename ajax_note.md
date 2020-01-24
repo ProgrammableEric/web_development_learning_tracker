@@ -598,13 +598,58 @@ $.ajax({
 	
  ?>
 ~~~
+百度提示词案例代码
+~~~javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度联想</title>
+	<script type="text/javascript">
+		window.onload = function() {
+			var btn = document.querySelector("#btn");
+			btn.onclick = function() {
+				var keywordValue = document.querySelector("#keyword").value;
+				console.log(keywordValue);
+				
+				var script = document.createElement("script");
+				script.src = "https://suggestion.baidu.com/su?wd="+keywordValue+"&cb=wtf";
 
+				window["wtf"] = function(data) {
+
+					var liTag = "";
+					for (var i=0;i<data.s.length; i++){
+						var temp = data.s[i];
+						liTag += "<li>"+ temp + "</li>";
+					}
+
+					var ulTag = document.querySelector("ul");
+					ulTag.innerHTML = liTag;
+				}
+
+				var head = document.querySelector("head");
+				head.appendChild(script);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="keyword" placeholder="请输入关键字">
+	<input type="button" id="btn" value="search">
+	<ul>
+		<li>1</li>
+		<li>2</li>
+	</ul>
+</body>
+</html>
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA4OTIwNjAsLTE3Nzg5ODY1NzQsLT
+eyJoaXN0b3J5IjpbLTEwOTkzODMzOTIsLTE3Nzg5ODY1NzQsLT
 M0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNjQxNTg1OTc1LC0xOTY1
 ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1NjcyNywtMTY1MDkwNz
 g5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzNDA5MDExNjIs
