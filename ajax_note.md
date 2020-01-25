@@ -694,43 +694,43 @@ function myAjax(obj) {
 
 jQuery 使用跨域
 ~~~javascript
-	<script type="text/javascript">
-		
-		window.onload = function(){
-			var btn = document.querySelector("#btn");
-			btn.onclick = function(){
-				 var keywardValue = document.querySelector("#keyword").value;
-				 console.log(keywardValue);
-				 // 使用jQuery 获取跨域的数据
-				 // dataType: "jsonp" 表示跨域
-				 // key 默认值是callback - jsonp 
-				 // value 的值是以jQuery开头的字符串，即为调用函数的名称
-				 // jsonpCallback - 修改callback 函数名
+<script type="text/javascript">
+	
+	window.onload = function(){
+		var btn = document.querySelector("#btn");
+		btn.onclick = function(){
+			 var keywardValue = document.querySelector("#keyword").value;
+			 console.log(keywardValue);
+			 // 使用jQuery 获取跨域的数据
+			 // dataType: "jsonp" 表示跨域
+			 // key 默认值是callback - jsonp 
+			 // value 的值是以jQuery开头的字符串，即为调用函数的名称
+			 // jsonpCallback - 修改callback 函数名
 
-				 $.ajax({
-				 	url:"https://suggest.taobao.com/sug",
-				 	data:{q:keywardValue}, 
-				 	success:function(data){
-				 		console.log(data);
-				 		var liTag = "";
-						for(var i = 0; i < data.result.length; i++){
-							var temp = data.result[i];
-							var tempSug = temp[0];
-							liTag += "<li>"+tempSug+"</li>";
-						}
+			 $.ajax({
+			 	url:"https://suggest.taobao.com/sug",
+			 	data:{q:keywardValue}, 
+			 	success:function(data){
+			 		console.log(data);
+			 		var liTag = "";
+					for(var i = 0; i < data.result.length; i++){
+						var temp = data.result[i];
+						var tempSug = temp[0];
+						liTag += "<li>"+tempSug+"</li>";
+					}
 
-						var ulTag = document.querySelector("ul");
-						ulTag.innerHTML = liTag;
-				 	},
-				 	dataType: "jsonp",// 自动创建script标签，而不是使用ajax 获取数据
-				 	jsonpCallback: "wtf"
-				 })
-		}; }
-	</script>
+					var ulTag = document.querySelector("ul");
+					ulTag.innerHTML = liTag;
+			 	},
+			 	dataType: "jsonp",// 自动创建script标签，而不是使用ajax 获取数据
+			 	jsonpCallback: "wtf"
+			 })
+	}; }
+</script>
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc0NzkyNywtMTU2NjQ3Mjc0MCwtMT
+eyJoaXN0b3J5IjpbMjAwODI5MDI3MywtMTU2NjQ3Mjc0MCwtMT
 I5NTE0OTYwNSwtMTA5OTM4MzM5MiwtMTc3ODk4NjU3NCwtMzQ4
 NDYxNDk3LDE2MDU3NDg0MjEsLTE2NDE1ODU5NzUsLTE5NjU4OD
 YzMDAsMzAyMjk1MDc2LC0xNzc1NTU2NzI3LC0xNjUwOTA3ODk3
