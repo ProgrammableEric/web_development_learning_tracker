@@ -701,6 +701,7 @@ jQuery 使用跨域
 		btn.onclick = function(){
 			 var keywardValue = document.querySelector("#keyword").value;
 			 console.log(keywardValue);
+			 
 			 // 使用jQuery 获取跨域的数据
 			 // dataType: "jsonp" 表示跨域
 			 // key 默认值是callback - jsonp 
@@ -730,7 +731,7 @@ jQuery 使用跨域
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwODI5MDI3MywtMTU2NjQ3Mjc0MCwtMT
+eyJoaXN0b3J5IjpbLTk1MjEwOTIzNSwtMTU2NjQ3Mjc0MCwtMT
 I5NTE0OTYwNSwtMTA5OTM4MzM5MiwtMTc3ODk4NjU3NCwtMzQ4
 NDYxNDk3LDE2MDU3NDg0MjEsLTE2NDE1ODU5NzUsLTE5NjU4OD
 YzMDAsMzAyMjk1MDc2LC0xNzc1NTU2NzI3LC0xNjUwOTA3ODk3
