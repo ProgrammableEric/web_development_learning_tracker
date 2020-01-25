@@ -652,15 +652,57 @@ $.ajax({
 3. 通知调用者调用业务逻辑 - 传递callback 方法
 4. 调用方便：运用obj 传参
 
+~~~javascript
+function myAjax(obj) {
+	var defaults = {
+		type: "get",
+		url: "#",
+		data: {},
+		success: function(data){},
+		jsonp: "callback",
+		jsonpCallback: "wtf"
+	}
 
+	for (var key in obj){
+		defaults[key] = obj[key];
+	}
 
+	var params = "";
+	for (var attr in defaults.data){
+		params += attr + "=" + defaults.data[attr] + "&";
+	}
+	if (params) {
+		params = params.substring(0, params.length-1);
+		defaults.url += '?' + params;
+	}
+
+	defaults.url += "&" + defaults.jsonp + '=' + defaults.jsonpCallback;
+	console.log(defaults.url);
+
+	var script = document.createElement("script");
+	script.src = defaults.url;
+
+	window[defaults.jsonpCallback] = function(data) {
+		defaults.success(data);
+	}
+
+	var head = document.querySelector("head");
+	head.appendChild(script);
+
+}
+~~~
+
+jQuery 使用跨域
+~~~javascript
+
+~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUxNDk2MDUsLTEwOTkzODMzOTIsLT
-E3Nzg5ODY1NzQsLTM0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNjQx
-NTg1OTc1LC0xOTY1ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1Nj
-cyNywtMTY1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMDEx
-LDEzNDA5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMT
-M1NDk2MzA5OCwtMTI3NTMzNTA4NiwtMTM2NTAzNzUzMSwtMjAw
-OTEyMDE5MiwtNzA0Mzc4NjA1XX0=
+eyJoaXN0b3J5IjpbMTU2NjY1NTg3OSwtMTI5NTE0OTYwNSwtMT
+A5OTM4MzM5MiwtMTc3ODk4NjU3NCwtMzQ4NDYxNDk3LDE2MDU3
+NDg0MjEsLTE2NDE1ODU5NzUsLTE5NjU4ODYzMDAsMzAyMjk1MD
+c2LC0xNzc1NTU2NzI3LC0xNjUwOTA3ODk3LC0xODcwMTU0MzQ3
+LDE1NjQ5MDMwMTEsMTM0MDkwMTE2MiwtMTg4NjQxNTg3MCwtND
+EzNTg2NDE2LC0xMzU0OTYzMDk4LC0xMjc1MzM1MDg2LC0xMzY1
+MDM3NTMxLC0yMDA5MTIwMTkyXX0=
 -->
