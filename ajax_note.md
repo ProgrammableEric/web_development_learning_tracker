@@ -753,6 +753,11 @@ jQuery 使用跨域
 // {{if ...}}
 // {{/if}}
 
+// <script type="text/html" id="result">
+//		<p>不转义：{{#value}}</p>
+//		<p>转义后：{{value}}</p>
+//	</script>
+
 // 使用html 变量构造数据和模板的结合
 <script type="text/javascript">
 	window.onload = function() {
@@ -784,11 +789,11 @@ jQuery 使用跨域
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mjc5NjE4MywtOTUyMTA5MjM1LC0xNT
-Y2NDcyNzQwLC0xMjk1MTQ5NjA1LC0xMDk5MzgzMzkyLC0xNzc4
-OTg2NTc0LC0zNDg0NjE0OTcsMTYwNTc0ODQyMSwtMTY0MTU4NT
-k3NSwtMTk2NTg4NjMwMCwzMDIyOTUwNzYsLTE3NzU1NTY3Mjcs
-LTE2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMTU2NDkwMzAxMSwxMz
-QwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1ODY0MTYsLTEzNTQ5
-NjMwOTgsLTEyNzUzMzUwODZdfQ==
+eyJoaXN0b3J5IjpbLTIxMzQ3NzU5NDcsMTE3Mjc5NjE4MywtOT
+UyMTA5MjM1LC0xNTY2NDcyNzQwLC0xMjk1MTQ5NjA1LC0xMDk5
+MzgzMzkyLC0xNzc4OTg2NTc0LC0zNDg0NjE0OTcsMTYwNTc0OD
+QyMSwtMTY0MTU4NTk3NSwtMTk2NTg4NjMwMCwzMDIyOTUwNzYs
+LTE3NzU1NTY3MjcsLTE2NTA5MDc4OTcsLTE4NzAxNTQzNDcsMT
+U2NDkwMzAxMSwxMzQwOTAxMTYyLC0xODg2NDE1ODcwLC00MTM1
+ODY0MTYsLTEzNTQ5NjMwOThdfQ==
 -->
