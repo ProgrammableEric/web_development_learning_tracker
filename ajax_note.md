@@ -737,8 +737,10 @@ jQuery 使用跨域
 4. 将html 片段渲染到界面中
 ~~~javascript
 // artTemplate 的用法
+
 <script type="text/html" id="result_template">
 	<ul>
+	<!-- each: 针对data下的属性/字段 ！ -->
 	{{each s as value i}}  
 	<li>
 		<div>
@@ -789,7 +791,7 @@ jQuery 使用跨域
 ~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQ3NzU5NDcsMTE3Mjc5NjE4MywtOT
+eyJoaXN0b3J5IjpbLTEwNjUyNDY1MTYsMTE3Mjc5NjE4MywtOT
 UyMTA5MjM1LC0xNTY2NDcyNzQwLC0xMjk1MTQ5NjA1LC0xMDk5
 MzgzMzkyLC0xNzc4OTg2NTc0LC0zNDg0NjE0OTcsMTYwNTc0OD
 QyMSwtMTY0MTU4NTk3NSwtMTk2NTg4NjMwMCwzMDIyOTUwNzYs
