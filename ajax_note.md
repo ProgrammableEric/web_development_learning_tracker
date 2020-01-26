@@ -730,14 +730,64 @@ jQuery 使用跨域
 </script>
 ~~~
 
-####
+#### 模板引擎进行前端界面的渲染 (artTemplate)
+1. 引入模板js文件
+2. 定义模板
+3. 将数据和模板结合起来生成html片段
+4. 将html 片段渲染到界面中
+~~~javascript
+// artTemplate 的用法
+<script type="text/html" id="result_template">
+	<ul>
+	{{each s as value i}}  
+	<li>
+		<div>
+			<span>结果{{i+1}}:</span>
+			<span>{{value}}</span>
+		</div>
+	</li>
+	{{/each}}
+	</ul>
+</script>
+
+// 
+
+// 使用html 变量构造数据和模板的结合
+<script type="text/javascript">
+	window.onload = function() {
+		var btn = document.querySelector("#btn");
+		btn.onclick = function() {
+			var keywordValue = document.querySelector("#keyword").value;
+			console.log(keywordValue);
+
+			$.ajax({
+			 	url:"https://suggestion.baidu.com/su",
+			 	data:{wd: keywordValue}, 
+			 	success:function(data){
+
+			 		//template 将数据和模板结合起来生成html片段
+			 		var html = template("result_template", data);
+			 		console.log(html);
+
+			 		var div_result = document.querySelector("#result_div");
+					div_result.innerHTML = html;
+			 },
+
+			  	dataType: "jsonp",// 自动创建script标签，而不是使用ajax 获取数据
+			  	jsonp: "cb",
+			  	jsonpCallback: "wtf"
+			 })
+		}
+	}
+</script>
+~~~
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTgwMDAyNzksLTk1MjEwOTIzNSwtMT
-U2NjQ3Mjc0MCwtMTI5NTE0OTYwNSwtMTA5OTM4MzM5MiwtMTc3
-ODk4NjU3NCwtMzQ4NDYxNDk3LDE2MDU3NDg0MjEsLTE2NDE1OD
-U5NzUsLTE5NjU4ODYzMDAsMzAyMjk1MDc2LC0xNzc1NTU2NzI3
-LC0xNjUwOTA3ODk3LC0xODcwMTU0MzQ3LDE1NjQ5MDMwMTEsMT
-M0MDkwMTE2MiwtMTg4NjQxNTg3MCwtNDEzNTg2NDE2LC0xMzU0
-OTYzMDk4LC0xMjc1MzM1MDg2XX0=
+eyJoaXN0b3J5IjpbNjA4NTcwMTEyLC05NTIxMDkyMzUsLTE1Nj
+Y0NzI3NDAsLTEyOTUxNDk2MDUsLTEwOTkzODMzOTIsLTE3Nzg5
+ODY1NzQsLTM0ODQ2MTQ5NywxNjA1NzQ4NDIxLC0xNjQxNTg1OT
+c1LC0xOTY1ODg2MzAwLDMwMjI5NTA3NiwtMTc3NTU1NjcyNywt
+MTY1MDkwNzg5NywtMTg3MDE1NDM0NywxNTY0OTAzMDExLDEzND
+A5MDExNjIsLTE4ODY0MTU4NzAsLTQxMzU4NjQxNiwtMTM1NDk2
+MzA5OCwtMTI3NTMzNTA4Nl19
 -->
