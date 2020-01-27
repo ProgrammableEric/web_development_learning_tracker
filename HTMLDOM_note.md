@@ -30,7 +30,7 @@ HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的�
 
 ## HTML DOM  节点
 
-在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML。
+在 HTML DOM 中，**所有事物都是节点**。DOM 是被视为节点树的 HTML。
 
 ### DOM 节点 ( Nodes)
 
@@ -110,7 +110,7 @@ setAttribute() - 把指定属性设置或修改为指定的值。
 
 ## HTML DOM  属性
 
-属性是节点（HTML 元素）的值，您能够获取或设置。
+属性是节点（HTML 元素）的值，您能够获取或设置。属性本身也是节点。
 
 ### nodeName 与 nodeValue
 nodeName 属性规定节点的名称。
@@ -143,5 +143,5 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 文档节点 - 9
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMDc5NDg3OCwtMzA1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
 -->
