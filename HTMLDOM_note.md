@@ -133,15 +133,15 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 比较重要的节点类型有：
 
-元素 - 1
+元素节点 - 1
 
-属性 - 2
+属性节点 - 2
 
-文本 - 3
+文本节点 - 3
 
-注释 - 8
+注释节点 - 8
 
-文档 - 9
+文档节点 - 9
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbMTIxMDc5NDg3OCwtMzA1NTMwODk1XX0=
 -->
