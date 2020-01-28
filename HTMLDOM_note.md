@@ -203,7 +203,20 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 </script>
 ~~~
 - 替换 HTML 元素
-- 
+~~~html
+<div  id="div1">  
+	<p  id="p1">这是一个段落。</p>  
+	<p  id="p2">这是另外一个段落。</p>  
+</div>  
+<script> 
+	var parent=document.getElementById("div1"); 
+	var child=document.getElementById("p1"); 
+	var para=document.createElement("p"); 
+	var node=document.createTextNode("这是一个新的段落。"); 
+	para.appendChild(node); 
+	parent.replaceChild(para,child); 
+</script>
+~~~
 -   使用 / 改变事件（处理程序）
 ~~~html
 <p  id="p1">Hello world!</p>  
@@ -219,7 +232,7 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjEwNTMzNiwxOTYwMTgxODUsLTQ1MT
+eyJoaXN0b3J5IjpbMjEyMzgxODc3MywxOTYwMTgxODUsLTQ1MT
 QzNjYyMiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUs
 NzU4MzgyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwOD
 I2NywyMTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMs
