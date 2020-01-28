@@ -252,9 +252,12 @@ onload 和 onunload 事件可用于处理 cookies。 - `<body  onload="checkCook
 
 -   当图片已加载时
 -   当鼠标移动到元素上时
+onmouseover 和 onmouseout 事件可用于在鼠标指针移动到或离开元素时触发函数。
 -   当输入字段被改变时
+onchange 事件常用于输入字段的验证。 `<input  type="text"  id="fname"  onchange="upperCase()">`
 -   当 HTML 表单被提交时
 -   当用户触发按键时
+onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。首先当某个鼠标按钮被点击时，触发 onmousedown 事件，然后，当鼠标按钮被松开时，会触发 onmouseup 事件，最后，当鼠标点击完成时，触发 onclick 事件。
 
 
 
@@ -263,9 +266,9 @@ onload 和 onunload 事件可用于处理 cookies。 - `<body  onload="checkCook
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI2NzM3NDQxLDEwNDkxMjg0OTAsMTUxND
-cxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYyMiwxMDM0MjU1NjMs
-NDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNT
-E2LDEzNDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5MjcxLC0x
-NzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbLTE2MDI4NDc1NjAsMTA0OTEyODQ5MCwxNT
+E0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2NjIyLDEwMzQyNTU2
+Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NTgzODIwMTcsNDAxMj
+M1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEs
+LTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
 -->
