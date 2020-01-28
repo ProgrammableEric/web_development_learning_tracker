@@ -190,13 +190,20 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 </script>
 ~~~
 -   删除已有的 HTML 元素
--   shi'yong改变事件（处理程序）
+-   使用 / 改变事件（处理程序）
+~~~html
+<p  id="p1">Hello world!</p>  
+<script> function ChangeText() { 
+	document.getElementById("p1").innerHTML="Hello Runoob!"; } 
+</script>  
+<input  type="button"  onclick="ChangeText()"  value="修改文本"  />
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MjgzOTM5OSwxMDM0MjU1NjMsNDY5Nj
+eyJoaXN0b3J5IjpbLTY1MTIxODQ3NCwxMDM0MjU1NjMsNDY5Nj
 Q4MjgzLC01ODk1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNTE2LDEz
 NDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5MjcxLC0xNzQwMz
 U0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
