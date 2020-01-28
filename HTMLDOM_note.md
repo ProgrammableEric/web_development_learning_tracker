@@ -260,8 +260,9 @@ onchange 事件常用于输入字段的验证。 `<input  type="text"  id="fname
 onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。首先当某个鼠标按钮被点击时，触发 onmousedown 事件，然后，当鼠标按钮被松开时，会触发 onmouseup 事件，最后，当鼠标点击完成时，触发 onclick 事件。
 
 ## HTML DOM 导航
-
-
+#### HTML 节点列表
+getElementsByTagName() 方法返回_节点列表_。节点列表是一个节点数组。
+``
 
 
 
@@ -269,9 +270,10 @@ onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTc0NDY0OTUsMTA0OTEyODQ5MCwxNT
-E0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2NjIyLDEwMzQyNTU2
-Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NTgzODIwMTcsNDAxMj
-M1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEs
-LTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbLTIwMjk3NTYzNzgsLTEyMTc0NDY0OTUsMT
+A0OTEyODQ5MCwxNTE0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2
+NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NT
+gzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3
+LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
+A1NTMwODk1XX0=
 -->
