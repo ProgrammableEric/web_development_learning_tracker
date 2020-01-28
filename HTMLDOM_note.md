@@ -151,9 +151,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 -   通过使用 getElementById() 方法
 -   通过使用 getElementsByTagName() 方法
 -   通过使用 getElementsByClassName() 方法
-
-
+**注意：**getElementsByClassName() 在 Internet Explorer 5,6,7,8 中无效。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtND
-M2MDA2NjczLC0zMDU1MzA4OTVdfQ==
+eyJoaXN0b3J5IjpbMTUxNDkwODI2NywyMTI2MTA5MjcxLC0xNz
+QwMzU0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
 -->
