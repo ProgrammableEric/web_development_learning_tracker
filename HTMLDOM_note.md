@@ -143,8 +143,17 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 文档节点 - 9
 
+## HTML DOM 访问
+访问 HTML 元素等同于访问节点
+
+您能够以不同的方式来访问 HTML 元素：
+
+-   通过使用 getElementById() 方法
+-   通过使用 getElementsByTagName() 方法
+-   通过使用 getElementsByClassName() 方法
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
-A1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbMjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtND
+M2MDA2NjczLC0zMDU1MzA4OTVdfQ==
 -->
