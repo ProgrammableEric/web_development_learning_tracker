@@ -167,8 +167,12 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 ~~~
 首先记住优先级顺序：id>name>class,什么是优先级呢？说白了就是精确定位的准确度，[CSS选择器](https://wenwen.sogou.com/s/?w=CSS%E9%80%89%E6%8B%A9%E5%99%A8&ch=ww.xqy.chain)选择的先后顺序。
 再说说用法，getElementById()返回固定id的对象，HTML文档中id对象一般是唯一的；getElementsByName()和getElementsByClassName()返回的是一个数组，HTML文档中name属性和class属性不是唯一的. class 往往定义一类css样式，然后在多处使用。
+
+## HTML DOM 修改
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM5MTY2NjcsNzU4MzgyMDE3LDQwMT
-IzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5Mjcx
-LC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbLTU4OTU1NjA2NSw3NTgzODIwMTcsNDAxMj
+M1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEs
+LTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
 -->
