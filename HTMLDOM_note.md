@@ -226,13 +226,15 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 <input  type="button"  onclick="ChangeText()"  value="修改文本"  />
 ~~~
 
+## HTML DOM 事件
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzgxODc3MywxOTYwMTgxODUsLTQ1MT
+eyJoaXN0b3J5IjpbMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MT
 QzNjYyMiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUs
 NzU4MzgyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwOD
 I2NywyMTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMs
