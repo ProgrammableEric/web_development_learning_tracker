@@ -172,9 +172,10 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 修改 HTML DOM 意味着许多不同的方面：
 
--   改变 HTML 内容
--   改变 CSS 样式
--   改变 HTML 属性
+-   改变 HTML 内容 - `.innerHTML`
+-   改变 CSS 样式 - `.style`
+-   改变 HTML 属性 - 首先必须创建该元素（元素节点），然后把它追加到已有的元素上。
+e.g., 
 -   创建新的 HTML 元素
 -   删除已有的 HTML 元素
 -   改变事件（处理程序）
@@ -183,8 +184,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzOTQzOTI3LDQ2OTY0ODI4MywtNTg5NT
-U2MDY1LDc1ODM4MjAxNyw0MDEyMzUxNiwxMzQxNTUxNTgyLDE1
-MTQ5MDgyNjcsMjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtNDM2MD
-A2NjczLC0zMDU1MzA4OTVdfQ==
+eyJoaXN0b3J5IjpbLTk5MTk1MjQ3NCw0Njk2NDgyODMsLTU4OT
+U1NjA2NSw3NTgzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4Miwx
+NTE0OTA4MjY3LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNj
+AwNjY3MywtMzA1NTMwODk1XX0=
 -->
