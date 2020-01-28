@@ -227,6 +227,31 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 ~~~
 
 ## HTML DOM 事件
+当事件发生时，可以执行 JavaScript，比如当用户点击一个 HTML 元素时。
+
+如需在用户点击某个元素时执行代码，请把 JavaScript 代码添加到 HTML 事件属性中。
+
+HTML 事件的例子：
+
+-   当用户点击鼠标时
+~~~html
+<script> 
+	function changetext(id){ 
+		id.innerHTML="Ooops!"; 
+	} 
+</script>  
+</head>  
+	<body>  
+		<h1  onclick="changetext(this)">点击文本!</h1>
+	...
+~~~
+-   当网页已加载时
+-   当图片已加载时
+-   当鼠标移动到元素上时
+-   当输入字段被改变时
+-   当 HTML 表单被提交时
+-   当用户触发按键时
+
 
 
 
@@ -234,9 +259,9 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MT
-QzNjYyMiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUs
-NzU4MzgyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwOD
-I2NywyMTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMs
-LTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbMTA0OTEyODQ5MCwxNTE0NzE2MTc5LDE5Nj
+AxODE4NSwtNDUxNDM2NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMs
+LTU4OTU1NjA2NSw3NTgzODIwMTcsNDAxMjM1MTYsMTM0MTU1MT
+U4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcs
+LTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
 -->
