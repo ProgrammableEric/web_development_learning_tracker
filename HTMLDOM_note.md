@@ -190,6 +190,18 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 </script>
 ~~~
 -   删除已有的 HTML 元素
+如需删除 HTML 元素，您必须清楚该元素的父元素：
+~~~html
+<div  id="div1">  
+	<p  id="p1">这是一个段落。</p>  
+	<p  id="p2">这是另一个段落。</p>  
+</div>  
+<script> 
+	var parent=document.getElementById("div1"); 
+	var child=document.getElementById("p1"); 
+	parent.removeChild(child); 
+</script>
+~~~
 -   使用 / 改变事件（处理程序）
 ~~~html
 <p  id="p1">Hello world!</p>  
@@ -205,8 +217,9 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTQzNjYyMiwxMDM0MjU1NjMsNDY5Nj
-Q4MjgzLC01ODk1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNTE2LDEz
-NDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5MjcxLC0xNzQwMz
-U0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbMTk2MDE4MTg1LC00NTE0MzY2MjIsMTAzND
+I1NTYzLDQ2OTY0ODI4MywtNTg5NTU2MDY1LDc1ODM4MjAxNyw0
+MDEyMzUxNiwxMzQxNTUxNTgyLDE1MTQ5MDgyNjcsMjEyNjEwOT
+I3MSwtMTc0MDM1NDk5NywtNDM2MDA2NjczLC0zMDU1MzA4OTVd
+fQ==
 -->
