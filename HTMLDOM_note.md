@@ -298,11 +298,14 @@ for  (i=0;i<x.length;i++)  {
 -   document.documentElement - 全部文档
 -   document.body - 文档的主体
 
+#### childNodes 和 nodeValue
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1NzIwNjI5LC0xMjE3NDQ2NDk1LDEwND
+eyJoaXN0b3J5IjpbMjIzMjY0ODQ5LC0xMjE3NDQ2NDk1LDEwND
 kxMjg0OTAsMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYy
 MiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
 gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
