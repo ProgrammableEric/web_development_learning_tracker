@@ -273,14 +273,20 @@ for  (i=0;i<x.length;i++)  {
 }
 ~~~
 
-
+#### 导航节点关系
+~~~html
+<html>  
+	<head>  
+		<meta  charset="utf-8">  
+	</head>  <body>  <p>Hello World!</p>  <div>  <p>DOM 是非常有用的!</p>  <p>这个实例演示了节点的关系。</p>  </div>  </body>  </html>
+~~~
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2MTE4ODQ4LC0xMjE3NDQ2NDk1LDEwND
-kxMjg0OTAsMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYy
-MiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
-gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
-MTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNT
-UzMDg5NV19
+eyJoaXN0b3J5IjpbMTk3Njg2Nzg3MiwtMTIxNzQ0NjQ5NSwxMD
+Q5MTI4NDkwLDE1MTQ3MTYxNzksMTk2MDE4MTg1LC00NTE0MzY2
+MjIsMTAzNDI1NTYzLDQ2OTY0ODI4MywtNTg5NTU2MDY1LDc1OD
+M4MjAxNyw0MDEyMzUxNiwxMzQxNTUxNTgyLDE1MTQ5MDgyNjcs
+MjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtNDM2MDA2NjczLC0zMD
+U1MzA4OTVdfQ==
 -->
