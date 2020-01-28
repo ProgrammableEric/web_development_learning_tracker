@@ -154,9 +154,10 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 **注意：**getElementsByClassName() 在 Internet Explorer 5,6,7,8 中无效。
 
 #### id 与 name 的区别
-
+#### id 与 class 的区别
+Class 是用于指定元素样式的类。id是先找到结构/内容，再给它定义样式；class是先定义好一种样式，再套给多个结构/内容
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MTU1MTU4MiwxNTE0OTA4MjY3LDIxMj
-YxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMzA1NTMw
-ODk1XX0=
+eyJoaXN0b3J5IjpbNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OT
+A4MjY3LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3
+MywtMzA1NTMwODk1XX0=
 -->
