@@ -190,14 +190,14 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 </script>
 ~~~
 -   删除已有的 HTML 元素
--   改变事件（处理程序）
+-   shi'yong改变事件（处理程序）
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDI1NTYzLDQ2OTY0ODI4MywtNTg5NT
-U2MDY1LDc1ODM4MjAxNyw0MDEyMzUxNiwxMzQxNTUxNTgyLDE1
-MTQ5MDgyNjcsMjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtNDM2MD
-A2NjczLC0zMDU1MzA4OTVdfQ==
+eyJoaXN0b3J5IjpbLTI1MjgzOTM5OSwxMDM0MjU1NjMsNDY5Nj
+Q4MjgzLC01ODk1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNTE2LDEz
+NDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5MjcxLC0xNzQwMz
+U0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
 -->
