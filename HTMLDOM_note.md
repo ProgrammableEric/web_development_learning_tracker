@@ -262,18 +262,25 @@ onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。�
 ## HTML DOM 导航
 #### HTML 节点列表
 getElementsByTagName() 方法返回_节点列表_。节点列表是一个节点数组。
-``
+`var  x=document.getElementsByTagName("p"); y=x[1];` - 访问第二个`<p>`.
 
-
+`length` 获取节点列表的长度
+~~~javascript
+x=document.getElementsByTagName("p"); 
+for  (i=0;i<x.length;i++)  {  
+	document.write(x[i].innerHTML); 
+	document.write("<br>"); 
+}
+~~~
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk3NTYzNzgsLTEyMTc0NDY0OTUsMT
-A0OTEyODQ5MCwxNTE0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2
-NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NT
-gzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3
-LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
-A1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbNTA2MTE4ODQ4LC0xMjE3NDQ2NDk1LDEwND
+kxMjg0OTAsMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYy
+MiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
+gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
+MTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNT
+UzMDg5NV19
 -->
