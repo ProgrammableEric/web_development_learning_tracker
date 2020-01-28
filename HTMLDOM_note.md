@@ -174,7 +174,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 -   改变 HTML 内容 - `.innerHTML`
 -   改变 CSS 样式 - `.style`
--   改变 HTML 属性 - 首先必须创建该元素（元素节点），然后把它追加到已有的元素上。e.g.
+-   改变 HTML 属性 -  
+-   创建新的 HTML 元素 - 首先必须创建该元素（元素节点），然后把它追加到已有的元素上。e.g.
 ~~~html
 <div  id="div1">  
 	<p  id="p1">这是一个段落。</p>  
@@ -187,8 +188,7 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 	var element=document.getElementById("div1"); 	
 	element.appendChild(para); 
 </script>
-~~~ 
--   创建新的 HTML 元素
+~~~
 -   删除已有的 HTML 元素
 -   改变事件（处理程序）
 
@@ -196,8 +196,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU2NTA1MzYsNDY5NjQ4MjgzLC01OD
-k1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIs
-MTUxNDkwODI2NywyMTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00Mz
-YwMDY2NzMsLTMwNTUzMDg5NV19
+eyJoaXN0b3J5IjpbMTk2MzMwMDU4OSw0Njk2NDgyODMsLTU4OT
+U1NjA2NSw3NTgzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4Miwx
+NTE0OTA4MjY3LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNj
+AwNjY3MywtMzA1NTMwODk1XX0=
 -->
