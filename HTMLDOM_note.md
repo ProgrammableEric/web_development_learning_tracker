@@ -154,7 +154,7 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 **注意：**getElementsByClassName() 在 Internet Explorer 5,6,7,8 中无效。
 
 #### id , class 与 name 的区别 ([参考](https://www.cnblogs.com/polk6/archive/2013/05/28/3101571.html))
-1. name ：指定标签的名称。在form表单中作为传递给服务器单列表的变量名。 e.g. `<input type="text" name="username" />` 传到服务器为：`username='text的值'`。
+1. name ：指定标签的名称。在form表单中作为传递给服务器单列表的变量名。 e.g. `<input type="text" name="username" />` 传到服务器为：`username='text的值'`。也可用name 合并选择多个标签，统一操作。
 2. id ：指定标签的唯一标识。
 3. class ：指定标签的类名。CSS操作，把一些特定样式放到一个class类中，需要此样式的标签，可以在添加此类。**注意** 可以把多个类，放在一个class属性里，但必须用空格隔开；如：class='btnsubmit btnopen'
 
@@ -181,8 +181,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjc1Njc0ODUsLTU4OTU1NjA2NSw3NT
-gzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3
-LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
-A1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
+gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
+MTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNT
+UzMDg5NV19
 -->
