@@ -299,16 +299,23 @@ for  (i=0;i<x.length;i++)  {
 -   document.body - 文档的主体
 
 #### childNodes 和 nodeValue
-
+~~~html
+<p  id="intro">Hello World!</p>  
+<script> 
+	txt=document.getElementById("intro").childNodes[0].nodeValue; 
+	document.write(txt); 
+</script>
+~~~
+**注意： ** 在上面的例子中，getElementById 是一个方法，而 childNodes 和 nodeValue 是属性。
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMjY0ODQ5LC0xMjE3NDQ2NDk1LDEwND
-kxMjg0OTAsMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYy
-MiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
-gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
-MTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNT
-UzMDg5NV19
+eyJoaXN0b3J5IjpbLTE3ODIzNTU0MjMsLTEyMTc0NDY0OTUsMT
+A0OTEyODQ5MCwxNTE0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2
+NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NT
+gzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3
+LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
+A1NTMwODk1XX0=
 -->
