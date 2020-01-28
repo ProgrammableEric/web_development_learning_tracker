@@ -156,8 +156,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 #### id , class 与 name 的区别 ([参考](https://www.cnblogs.com/polk6/archive/2013/05/28/3101571.html))
 1. name ：指定标签的名称。在form表单中作为传递给服务器单列表的变量名。 e.g. `<input type="text" name="username" />` 传到服务器为：`username='text的值'`。
 2. id ：指定标签的唯一标识。
-3. class ：指定标签的类名。
-用法举例
+3. class ：指定标签的类名。CSS操作，把一些特定样式放到一个class类中，需要此样式的标签，可以在添加此类。**注意** 可以把多个类，放在一个class属性里，但必须用空格隔开；如：class='btnsubmit btnopen'
+##### 用法举例
 ~~~html
 <input type="radio" name='sex'/>男
 <input type="radio" name='sex'/>女
@@ -167,7 +167,7 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 首先记住优先级顺序：id>name>class,什么是优先级呢？说白了就是精确定位的准确度，[CSS选择器](https://wenwen.sogou.com/s/?w=CSS%E9%80%89%E6%8B%A9%E5%99%A8&ch=ww.xqy.chain)选择的先后顺序。
 再说说用法，getElementById()返回固定id的对象，HTML文档中id对象一般是唯一的；getElementsByName()和getElementsByClassName()返回的是一个数组，HTML文档中name属性和class属性不是唯一的. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTM5MjE1Myw3NTgzODIwMTcsNDAxMj
-M1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEs
-LTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbMTcxNzE4MDczLDc1ODM4MjAxNyw0MDEyMz
+UxNiwxMzQxNTUxNTgyLDE1MTQ5MDgyNjcsMjEyNjEwOTI3MSwt
+MTc0MDM1NDk5NywtNDM2MDA2NjczLC0zMDU1MzA4OTVdfQ==
 -->
