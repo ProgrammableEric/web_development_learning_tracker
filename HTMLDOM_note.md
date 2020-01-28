@@ -278,15 +278,34 @@ for  (i=0;i<x.length;i++)  {
 <html>  
 	<head>  
 		<meta  charset="utf-8">  
-	</head>  <body>  <p>Hello World!</p>  <div>  <p>DOM 是非常有用的!</p>  <p>这个实例演示了节点的关系。</p>  </div>  </body>  </html>
+	</head>  
+	<body>  
+		<p>Hello World!</p>  
+		<div>  
+			<p>DOM 是非常有用的!</p>  
+			<p>这个实例演示了节点的关系。</p>  
+		</div>  
+	</body>  
+</html>
 ~~~
+-   首个 `<p>` 元素是 `<body>` 元素的首个子元素（firstChild）
+-   `<div>` 元素是 `<body>` 元素的最后一个子元素（lastChild）
+-  ` <body>` 元素是首个 `<p>` 元素和 `<div>` 元素的父节点（parentNode）
+
+#### DOM 根节点
+这里有两个特殊的属性，可以访问全部文档：
+
+-   document.documentElement - 全部文档
+-   document.body - 文档的主体
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Njg2Nzg3MiwtMTIxNzQ0NjQ5NSwxMD
-Q5MTI4NDkwLDE1MTQ3MTYxNzksMTk2MDE4MTg1LC00NTE0MzY2
-MjIsMTAzNDI1NTYzLDQ2OTY0ODI4MywtNTg5NTU2MDY1LDc1OD
-M4MjAxNyw0MDEyMzUxNiwxMzQxNTUxNTgyLDE1MTQ5MDgyNjcs
-MjEyNjEwOTI3MSwtMTc0MDM1NDk5NywtNDM2MDA2NjczLC0zMD
-U1MzA4OTVdfQ==
+eyJoaXN0b3J5IjpbOTE1NzIwNjI5LC0xMjE3NDQ2NDk1LDEwND
+kxMjg0OTAsMTUxNDcxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYy
+MiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4Mz
+gyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwODI2Nywy
+MTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNT
+UzMDg5NV19
 -->
