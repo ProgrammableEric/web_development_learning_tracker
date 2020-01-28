@@ -246,6 +246,10 @@ HTML 事件的例子：
 	...
 ~~~
 -   当网页已加载时
+当用户进入或离开页面时，会触发 onload 和 onunload 事件。
+onload 事件可用于检查访客的浏览器类型和版本，以便基于这些信息来加载不同版本的网页。
+onload 和 onunload 事件可用于处理 cookies。 - `<body  onload="checkCookies()">`
+
 -   当图片已加载时
 -   当鼠标移动到元素上时
 -   当输入字段被改变时
@@ -259,9 +263,9 @@ HTML 事件的例子：
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTEyODQ5MCwxNTE0NzE2MTc5LDE5Nj
-AxODE4NSwtNDUxNDM2NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMs
-LTU4OTU1NjA2NSw3NTgzODIwMTcsNDAxMjM1MTYsMTM0MTU1MT
-U4MiwxNTE0OTA4MjY3LDIxMjYxMDkyNzEsLTE3NDAzNTQ5OTcs
-LTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbMjI2NzM3NDQxLDEwNDkxMjg0OTAsMTUxND
+cxNjE3OSwxOTYwMTgxODUsLTQ1MTQzNjYyMiwxMDM0MjU1NjMs
+NDY5NjQ4MjgzLC01ODk1NTYwNjUsNzU4MzgyMDE3LDQwMTIzNT
+E2LDEzNDE1NTE1ODIsMTUxNDkwODI2NywyMTI2MTA5MjcxLC0x
+NzQwMzU0OTk3LC00MzYwMDY2NzMsLTMwNTUzMDg5NV19
 -->
