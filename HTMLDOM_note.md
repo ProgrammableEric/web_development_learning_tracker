@@ -296,7 +296,7 @@ for  (i=0;i<x.length;i++)  {
 这里有两个特殊的属性，可以访问全部文档：
 
 -   document.documentElement - 全部文档
--   document.body - 文档的主体
+-   document.body - 文档的主体S
 
 #### childNodes 和 nodeValue
 ~~~html
@@ -312,7 +312,7 @@ for  (i=0;i<x.length;i++)  {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODIzNTU0MjMsLTEyMTc0NDY0OTUsMT
+eyJoaXN0b3J5IjpbLTIwNjA0MjExNDQsLTEyMTc0NDY0OTUsMT
 A0OTEyODQ5MCwxNTE0NzE2MTc5LDE5NjAxODE4NSwtNDUxNDM2
 NjIyLDEwMzQyNTU2Myw0Njk2NDgyODMsLTU4OTU1NjA2NSw3NT
 gzODIwMTcsNDAxMjM1MTYsMTM0MTU1MTU4MiwxNTE0OTA4MjY3
