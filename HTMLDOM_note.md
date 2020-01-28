@@ -202,6 +202,8 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 	parent.removeChild(child); 
 </script>
 ~~~
+- 替换 HTML 元素
+- 
 -   使用 / 改变事件（处理程序）
 ~~~html
 <p  id="p1">Hello world!</p>  
@@ -217,9 +219,9 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDE4MTg1LC00NTE0MzY2MjIsMTAzND
-I1NTYzLDQ2OTY0ODI4MywtNTg5NTU2MDY1LDc1ODM4MjAxNyw0
-MDEyMzUxNiwxMzQxNTUxNTgyLDE1MTQ5MDgyNjcsMjEyNjEwOT
-I3MSwtMTc0MDM1NDk5NywtNDM2MDA2NjczLC0zMDU1MzA4OTVd
-fQ==
+eyJoaXN0b3J5IjpbLTk2NjEwNTMzNiwxOTYwMTgxODUsLTQ1MT
+QzNjYyMiwxMDM0MjU1NjMsNDY5NjQ4MjgzLC01ODk1NTYwNjUs
+NzU4MzgyMDE3LDQwMTIzNTE2LDEzNDE1NTE1ODIsMTUxNDkwOD
+I2NywyMTI2MTA5MjcxLC0xNzQwMzU0OTk3LC00MzYwMDY2NzMs
+LTMwNTUzMDg5NV19
 -->
