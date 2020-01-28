@@ -142,6 +142,9 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 注释节点 - 8
 
 文档节点 - 9
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNjAwNjY3MywtMzA1NTMwODk1XX0=
+eyJoaXN0b3J5IjpbLTE3NDAzNTQ5OTcsLTQzNjAwNjY3MywtMz
+A1NTMwODk1XX0=
 -->
