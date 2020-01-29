@@ -162,12 +162,18 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 -   获取 JSON 字符串
 -   JSON.Parse 解析 JSON 字符串
 
+## JSONP 
+Jsonp(JSON with Padding) 是 json 的一种"使用模式"，可以让网页从别的域名（网站）那获取资料，即跨域读取数据。
+
+为什么我们从不同的域（网站）访问数据需要一个特殊的技术( JSONP )呢？这是因为**同源策略**。它是由 Netscape 提出的一个著名的安全策略，现在所有支持 JavaScript 的浏览器都会使用这个策略。
+
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxNjk2NTYsMTU3MTI1MTYwMywxNTE3Mz
-g3MjU5LDE0Njk1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1MTQz
-NV19
+eyJoaXN0b3J5IjpbMjEwMTcwMDU4MCwxNTcxMjUxNjAzLDE1MT
+czODcyNTksMTQ2OTU4MzA0NSwxMDU0MzEwNjQwLC0xMzk5NjUx
+NDM1XX0=
 -->
