@@ -140,6 +140,7 @@ eval() 函数使用的是 JavaScript 编译器，可解析 JSON 文本，然后�
 var  txt = '{ "sites" : [' + '{ "name":"菜鸟教程" , "url":"www.runoob.com" },' + '{ "name":"google" , "url":"www.google.com" },' + '{ "name":"微博" , "url":"www.weibo.com" } ]}';
 
 var  obj = eval  ("(" + txt + ")"); document.getElementById("name").innerHTML=obj.sites[0].name  
+
 document.getElementById("url").innerHTML=obj.sites[0].url
 ~~~
 
@@ -166,7 +167,7 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ5MTc3ODYsMTU3MTI1MTYwMywxNT
-E3Mzg3MjU5LDE0Njk1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1
-MTQzNV19
+eyJoaXN0b3J5IjpbMjIxNjk2NTYsMTU3MTI1MTYwMywxNTE3Mz
+g3MjU5LDE0Njk1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1MTQz
+NV19
 -->
