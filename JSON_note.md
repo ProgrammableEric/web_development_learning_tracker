@@ -90,7 +90,7 @@ xmlhttp.send();
 
 **对于Date 对象**
 ~~~javascript
-// JSON 不能直接存储解析Date 对象，需先转换
+// JSON 不能直接存储解析Date 对象，需先转换为字符串再将字符串转换为Date对象
 var  text = '{ "name":"Runoob", "initDate":"2013-12-14", "site":"www.runoob.com"}'; 
 var  obj = JSON.parse(text, function  (key, value)  {  
 	if  (key == "initDate")  {  
@@ -125,6 +125,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE2MzgzMzgsMTA1NDMxMDY0MCwtMT
-M5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbMTQ2OTU4MzA0NSwxMDU0MzEwNjQwLC0xMz
+k5NjUxNDM1XX0=
 -->
