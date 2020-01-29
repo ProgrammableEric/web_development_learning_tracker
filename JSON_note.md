@@ -89,7 +89,17 @@ xmlhttp.send();
 ~~~
 
 **对于Date 对象**
-
+~~~javascript
+// JSON 不能直接解析Date 对象，需先转换
+var  text = '{ "name":"Runoob", "initDate":"2013-12-14", "site":"www.runoob.com"}'; 
+var  obj = JSON.parse(text, function  (key, value)  {  
+	if  (key == "initDate")  {  
+		return  new  Date(value); 
+	}  else  {  return  value; }
+	}
+); 
+document.getElementById("demo").innerHTML = obj.name + "创建日期：" + obj.initDate;
+~~~
 
 #### JSON.stringify()
 ## JSON 对比 XML 
@@ -115,6 +125,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjkxNjQ4ODYsMTA1NDMxMDY0MCwtMT
+eyJoaXN0b3J5IjpbLTE0MjU3MTAxOTQsMTA1NDMxMDY0MCwtMT
 M5OTY1MTQzNV19
 -->
