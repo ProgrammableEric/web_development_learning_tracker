@@ -64,7 +64,11 @@ x = myObj.sites["site1"];
 #### 删除
 ~~~javascript
 delete  myObj.sites.site1;
+// or
+delete  myObj.sites["site1"];
 ~~~
+
+
 ~~~
 
 ## JSON 对比 XML 
@@ -88,6 +92,5 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY0MTQwNzQsLTEzOTk2NTE0MzVdfQ
-==
+eyJoaXN0b3J5IjpbMTYwNzI2NTI1OCwtMTM5OTY1MTQzNV19
 -->
