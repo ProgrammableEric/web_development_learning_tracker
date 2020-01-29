@@ -167,13 +167,29 @@ Jsonp(JSON with Padding) 是 json 的一种"使用模式"，可以让网页从�
 
 为什么我们从不同的域（网站）访问数据需要一个特殊的技术( JSONP )呢？这是因为**同源策略**。它是由 Netscape 提出的一个著名的安全策略，现在所有支持 JavaScript 的浏览器都会使用这个策略。
 
+#### 服务端
+如客户想访问 :  **https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction**。
 
+假设客户期望返回数据：["customername1","customername2"]。
 
+真正返回到客户端的数据显示为: callbackFunction(["customername1","customername2"])。- 参加ajaxnote. 
+
+~~~php
+<?php  header('Content-type: application/json'); //获取回调函数名  
+$jsoncallback = htmlspecialchars($_REQUEST  ['jsoncallback']); //json数据  
+$json_data = '["customername1","customername2"]'; //输出jsonp格式的数据  
+echo  $jsoncallback . "(" . $json_data . ")"; ?>
+~~~
+
+#### 客户端实现callbackFunction 函数
+~~~javascript
+<script  type="text/javascript"> function  callbackFunction(result, methodName)  {  var  html = '<ul>'; for(var  i = 0; i < result.length; i++)  {  html += '<li>' + result[i] + '</li>'; }  html += '</ul>'; document.getElementById('divCustomers').innerHTML = html; } </script>
+~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTcwMDU4MCwxNTcxMjUxNjAzLDE1MT
-czODcyNTksMTQ2OTU4MzA0NSwxMDU0MzEwNjQwLC0xMzk5NjUx
-NDM1XX0=
+eyJoaXN0b3J5IjpbLTEwNjA1MTk0MDcsMjEwMTcwMDU4MCwxNT
+cxMjUxNjAzLDE1MTczODcyNTksMTQ2OTU4MzA0NSwxMDU0MzEw
+NjQwLC0xMzk5NjUxNDM1XX0=
 -->
