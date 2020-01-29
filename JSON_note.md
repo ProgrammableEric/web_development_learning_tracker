@@ -119,6 +119,14 @@ document.getElementById("demo").innerHTML = obj.name + "创建日期：" + obj.i
 -   **space:**
     
     可选，文本添加缩进、空格和换行符，如果 space 是一个数字，则返回值文本在每个级别缩进指定数目的空格，如果 space 大于 10，则文本缩进 10 个空格。space 也可以使用非数字，如：\t
+
+**注意**
+- JSON 不能存储 Date 对象。JSON.stringify() 会将所有日期转换为字符串。
+- JSON 不允许包含函数，JSON.stringify() 会删除 JavaScript 对象的函数，包括 key 和 value。我们可以在执行 JSON.stringify() 函数前将函数转换为字符串来避免以上问题的发生：
+~~~javascript
+var  obj = {  "name":"Runoob", "alexa":function  ()  {return  10000;}, "site":"www.runoob.com"}; obj.alexa = obj.alexa.toString(); var  myJSON = JSON.stringify(obj); document.getElementById("demo").innerHTML = myJSON;
+~~~
+- 
 ## JSON 对比 XML 
 XML 比 JSON 更难解析。
 
@@ -142,6 +150,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzM4NzI1OSwxNDY5NTgzMDQ1LDEwNT
-QzMTA2NDAsLTEzOTk2NTE0MzVdfQ==
+eyJoaXN0b3J5IjpbODMxNjg2MTUxLDE1MTczODcyNTksMTQ2OT
+U4MzA0NSwxMDU0MzEwNjQwLC0xMzk5NjUxNDM1XX0=
 -->
