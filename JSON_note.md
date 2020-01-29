@@ -1,6 +1,13 @@
 # JSON Note 
 
-## she
+## 什么是JSON ?
+
+-   JSON 指的是 JavaScript 对象表示法（**J**ava**S**cript  **O**bject  **N**otation）
+-   JSON 是轻量级的文本数据交换格式，比 XML 更小、更快，更易解析。
+-   JSON 独立于语言：JSON 使用 Javascript语法来描述数据对象，但是 JSON 仍然独立于语言和平台。JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。
+-   JSON 具有自我描述性，更易理解
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzMyMjkwNywtMTM5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbMTAwNjAxNTIzNywtMTM5OTY1MTQzNV19
 -->
