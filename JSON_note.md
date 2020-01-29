@@ -30,8 +30,14 @@
 
 {  "sites": [  {  "name":"菜鸟教程" , "url":"www.runoob.com"  }, {  "name":"google" , "url":"www.google.com"  }, {  "name":"微博" , "url":"www.weibo.com"  }  ]  } // 数组
 
+{  "flag":true  } // bool 
 
+{  "runoob":null  } // Null 
+
+中括号数组，大括号对象
 ~~~
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDgyMDY1OCwtMTM5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbMTI4NTU2MjQ3OSwtMTM5OTY1MTQzNV19
 -->
