@@ -37,6 +37,14 @@
 中括号数组，大括号对象
 ~~~
 
+#### 循环
+~~~javascript
+var  myObj = {  "name":"runoob", "alexa":10000, "site":null  }; 
+for  (x  in  myObj)  {  
+	document.getElementById("demo").innerHTML += myObj[x] + "<br>"; 
+}
+~~~
+
 ## JSON 对比 XML 
 XML 比 JSON 更难解析。
 
@@ -58,6 +66,5 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzIxMTkzODMsLTEzOTk2NTE0MzVdfQ
-==
+eyJoaXN0b3J5IjpbMzQ4MTY0MDI0LC0xMzk5NjUxNDM1XX0=
 -->
