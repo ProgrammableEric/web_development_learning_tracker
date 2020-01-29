@@ -22,6 +22,16 @@
 
 -   读取 JSON 字符串
 -   用 eval() 处理 JSON 字符串
+
+## JSON 语法
+一些例子：
+~~~javascript
+{  "name":"菜鸟教程" , "url":"www.runoob.com"  } // 多个
+
+{  "sites": [  {  "name":"菜鸟教程" , "url":"www.runoob.com"  }, {  "name":"google" , "url":"www.google.com"  }, {  "name":"微博" , "url":"www.weibo.com"  }  ]  } // 数组
+
+
+~~~
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTY2MDQ3NywtMTM5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbLTM2NDgyMDY1OCwtMTM5OTY1MTQzNV19
 -->
