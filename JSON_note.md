@@ -75,7 +75,11 @@ JSON 通常用于与服务端交换数据。在接收服务器数据时一般是
 -   **text:** 必需， 一个有效的 JSON 字符串。
 -   **reviver:**  可选，一个转换结果的函数， 将为对象的每个成员调用此函数。
 
-
+~~~javascript
+// JSON used in AJAX 
+var  xmlhttp = new  XMLHttpRequest();
+xmlhttp.onreadystatechange = function()  {  if  (this.readyState == 4 && this.status == 200)  {  myObj = JSON.parse(this.responseText); document.getElementById("demo").innerHTML = myObj.name; }  }; xmlhttp.open("GET", "/try/ajax/json_demo.txt", true); xmlhttp.send();
+~~~
 
 #### JSON.stringify()
 ## JSON 对比 XML 
@@ -101,6 +105,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzA4NzMsMTA1NDMxMDY0MCwtMTM5OT
-Y1MTQzNV19
+eyJoaXN0b3J5IjpbMTM0OTk0NTMyNSwxMDU0MzEwNjQwLC0xMz
+k5NjUxNDM1XX0=
 -->
