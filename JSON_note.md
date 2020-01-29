@@ -37,7 +37,27 @@
 中括号数组，大括号对象
 ~~~
 
+## JSON 对比 XML 
+XML 比 JSON 更难解析。
+
+JSON 可以直接使用现有的 JavaScript 对象解析。
+
+针对 AJAX 应用，JSON 比 XML 数据加载更快，而且更简单：
+
+使用 XML
+
+-   获取 XML 文档
+-   使用 XML DOM 迭代循环文档
+-   接数据解析出来复制给变量
+
+使用 JSON
+
+-   获取 JSON 字符串
+-   JSON.Parse 解析 JSON 字符串
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTU2MjQ3OSwtMTM5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbLTE5NzIxMTkzODMsLTEzOTk2NTE0MzVdfQ
+==
 -->
