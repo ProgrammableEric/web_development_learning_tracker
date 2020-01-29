@@ -102,6 +102,9 @@ document.getElementById("demo").innerHTML = obj.name + "创建日期：" + obj.i
 ~~~
 
 #### JSON.stringify()
+反向过程：将JS对象转化为字符串。JSON 通常用于与服务端交换数据。在向服务器发送数据时一般是字符串。
+`JSON.stringify(value[, replacer[, space]])`
+
 ## JSON 对比 XML 
 XML 比 JSON 更难解析。
 
@@ -125,6 +128,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTU4MzA0NSwxMDU0MzEwNjQwLC0xMz
-k5NjUxNDM1XX0=
+eyJoaXN0b3J5IjpbLTExMzQ5MDQwMjYsMTQ2OTU4MzA0NSwxMD
+U0MzEwNjQwLC0xMzk5NjUxNDM1XX0=
 -->
