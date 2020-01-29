@@ -183,13 +183,22 @@ echo  $jsoncallback . "(" . $json_data . ")"; ?>
 
 #### 客户端实现callbackFunction 函数
 ~~~javascript
-<script  type="text/javascript"> function  callbackFunction(result, methodName)  {  var  html = '<ul>'; for(var  i = 0; i < result.length; i++)  {  html += '<li>' + result[i] + '</li>'; }  html += '</ul>'; document.getElementById('divCustomers').innerHTML = html; } </script>
+<script  type="text/javascript"> 
+	function  callbackFunction(result, methodName)  {  
+		var  html = '<ul>'; 
+		for(var  i = 0; i < result.length; i++)  {  
+			html += '<li>' + result[i] + '</li>'; 
+		}  
+		html += '</ul>';
+		document.getElementById('divCustomers').innerHTML = html; 
+		} 
+</script>
 ~~~
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA1MTk0MDcsMjEwMTcwMDU4MCwxNT
-cxMjUxNjAzLDE1MTczODcyNTksMTQ2OTU4MzA0NSwxMDU0MzEw
-NjQwLC0xMzk5NjUxNDM1XX0=
+eyJoaXN0b3J5IjpbNzU3ODE5MjIzLDIxMDE3MDA1ODAsMTU3MT
+I1MTYwMywxNTE3Mzg3MjU5LDE0Njk1ODMwNDUsMTA1NDMxMDY0
+MCwtMTM5OTY1MTQzNV19
 -->
