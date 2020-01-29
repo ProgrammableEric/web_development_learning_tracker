@@ -124,7 +124,11 @@ document.getElementById("demo").innerHTML = obj.name + "创建日期：" + obj.i
 - JSON 不能存储 Date 对象。JSON.stringify() 会将所有日期转换为字符串。
 - JSON 不允许包含函数，JSON.stringify() 会删除 JavaScript 对象的函数，包括 key 和 value。我们可以在执行 JSON.stringify() 函数前将函数转换为字符串来避免以上问题的发生：
 ~~~javascript
-var  obj = {  "name":"Runoob", "alexa":function  ()  {return  10000;}, "site":"www.runoob.com"}; obj.alexa = obj.alexa.toString(); var  myJSON = JSON.stringify(obj); document.getElementById("demo").innerHTML = myJSON;
+var  obj = {  "name":"Runoob", "alexa":function  ()  {return  10000;}, "site":"www.runoob.com"}; 
+obj.alexa = obj.alexa.toString(); 
+var  myJSON = JSON.stringify(obj);
+
+document.getElementById("demo").innerHTML = myJSON;
 ~~~
 - 
 ## JSON 对比 XML 
@@ -150,6 +154,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMxNjg2MTUxLDE1MTczODcyNTksMTQ2OT
-U4MzA0NSwxMDU0MzEwNjQwLC0xMzk5NjUxNDM1XX0=
+eyJoaXN0b3J5IjpbMTU3MTI1MTYwMywxNTE3Mzg3MjU5LDE0Nj
+k1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1MTQzNV19
 -->
