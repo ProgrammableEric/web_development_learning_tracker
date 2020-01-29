@@ -130,7 +130,19 @@ var  myJSON = JSON.stringify(obj);
 
 document.getElementById("demo").innerHTML = myJSON;
 ~~~
-- 
+
+#### eval()
+由于 JSON 语法是 JavaScript 语法的子集，JavaScript 函数 eval() 可用于将 JSON 文本转换为 JavaScript 对象。
+
+eval() 函数使用的是 JavaScript 编译器，可解析 JSON 文本，然后生成 JavaScript 对象。必须把文本包围在括号中，这样才能避免语法错误：
+
+~~~javascript
+var  txt = '{ "sites" : [' + '{ "name":"菜鸟教程" , "url":"www.runoob.com" },' + '{ "name":"google" , "url":"www.google.com" },' + '{ "name":"微博" , "url":"www.weibo.com" } ]}';
+
+var  obj = eval  ("(" + txt + ")"); document.getElementById("name").innerHTML=obj.sites[0].name  
+document.getElementById("url").innerHTML=obj.sites[0].url
+~~~
+
 ## JSON 对比 XML 
 XML 比 JSON 更难解析。
 
@@ -154,6 +166,7 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTI1MTYwMywxNTE3Mzg3MjU5LDE0Nj
-k1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1MTQzNV19
+eyJoaXN0b3J5IjpbLTE2NzQ5MTc3ODYsMTU3MTI1MTYwMywxNT
+E3Mzg3MjU5LDE0Njk1ODMwNDUsMTA1NDMxMDY0MCwtMTM5OTY1
+MTQzNV19
 -->
