@@ -69,6 +69,12 @@ delete  myObj.sites["site1"];
 ~~~
 
 #### JSON.parse() 
+JSON 通常用于与服务端交换数据。在接收服务器数据时一般是字符串。我们可以使用 JSON.parse() 方法将数据转换为 JavaScript 对象。
+
+`JSON.parse(text[, reviver])`
+-   **text:** 必需， 一个有效的 JSON 字符串。
+-   **reviver:**  可选，一个转换结果的函数， 将为对象的每个成员调用此函数。
+
 
 
 #### JSON.stringify()
@@ -95,6 +101,6 @@ JSON 可以直接使用现有的 JavaScript 对象解析。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzUwNjI3OCwxMDU0MzEwNjQwLC0xMz
-k5NjUxNDM1XX0=
+eyJoaXN0b3J5IjpbLTQwMzA4NzMsMTA1NDMxMDY0MCwtMTM5OT
+Y1MTQzNV19
 -->
