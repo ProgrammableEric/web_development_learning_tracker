@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 列表 + 表格 + 盒子模型</title>
+	<style>
+		ul.style01 {
+			list-style-type: upper-roman; 
+			padding: 20px;
+			margin: 20px;
+		}
+
+		ul.style02 {
+			list-style-position: inside; 
+			/*outside, inherit */
+			list-style-image: url('./dot.jpg');
+		}
+
+		ul.style03 {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		ul.style03 li{
+			background-image: url('./dot.jpg');
+			background-repeat: none;
+			background-position: 0px 5px; 
+			padding-left: 34px; 
+
+			font-size: 3em;
+		}
+		
+		/*table 和th, td元素具有独立的边界*/
+		/*border-collapes 折叠边框*/
+		table {
+			border-collapse: collapse;
+			width: 50%;
+		}
+
+		table, th, td { 
+			border: 1px solid black;
+		}
+
+		th{
+			height: 50px; 
+			background-color: DarkGray;
+		}
+
+		td {
+			text-align: center;
+			vertical-align: bottom;
+			height: 25px;
+			padding: 10px;
+		}
+		
+		div {
+			/*width 是内容区域的宽度和高度*/
+			/*总元素的宽度=宽度+左填充+右填充+左边框+右边框+左边距+右边距*/
+			width: 300px;
+			border: 5px solid AliceBlue ;
+			padding: 25px;
+			margin: 25px;
+		}
+
+		div.test_border {
+			border-style: solid;
+			border-left-width:  5px; 
+			border-color: #98bf21;
+			/*border-color: transparent;*/
+			
+			/*border-top-style: dotted*/
+			/*顺时针转一圈*/
+			border-style: dotted solid double dashed; 
+
+			/*仅定义上下 + 左右*/
+			border-style: dotted solid;
+
+			/*简写属性*/
+			border: 5px solid red;
+		}
+
+		div.test_outline {
+			/*outline 在border外margin 里，不包含Margin在内*/
+			width: 400px;
+			border: 10px solid green;
+			padding: 20px 50px;
+			margin: 50px;
+			outline-color: Chocolate;
+			outline-style: dotted;
+			outline-width: thin; 
+		}
+
+		div.test_margin {
+			width: 400px;
+			border: 10px solid green;
+			padding: 20px 50px;
+			margin-top: 100px;
+			margin-left: 70px;
+			outline-color: Chocolate;
+			outline-style: dotted;
+			outline-width: thin;
+		}
+
+		div.test_padding {
+			border: 10px solid green;
+			padding-top: 5px;
+			padding: 15px 20px;
+		}
+	</style>
+
+</head>
+<body>
+	<ul class="style01">
+		<li>Mamba forever</li>
+		<li>Gianna R.I.P!</li>
+	</ul>
+
+	<ul class="style02">
+		<li>Mamba lives inside me !</li>
+		<li>He's not gone.</li>
+	</ul>
+
+	<ul class="style03">
+		<li>Style 03</li>
+		<li>Is here !</li>
+	</ul>
+
+	<table>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Griffin</td>
+		</tr>
+		<tr>
+			<td>Lois</td>
+			<td>Griffin</td>
+		</tr>
+	</table>
+
+	<div>这里是盒子内的实际内容。有 25px 内间距，25px 外间距、25px 绿色边框。</div>
+
+	<div class="test_border">测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框测试边框</div>
+
+	<div class="test_outline"> 测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓测试轮廓</div>
+
+	<div class="test_margin">
+		123
+	</div>
+
+	<div class="test_padding">
+		123
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+	  // 当引用了JS的时候，浏览器发送1个js request就会一直等待该request的返回。因为浏览器需要1个稳定的DOM树结构，而JS中很有可能有代码直接改变了DOM树结构，比如使用 document.write 或 appendChild,甚至是直接使用的location.href进行跳转，浏览器为了防止出现JS修改DOM树，需要重新构建DOM树的情况，所以 就会阻塞其他的下载和呈现. 
+
+		var temp = "";
+		for (var i = 0; i < 15; i++){
+			temp += "测试外边距";
+		}
+		var target_html = document.getElementsByClassName("test_margin");
+
+		target_html[0].innerHTML = temp;
+
+
+		var temp2 = "";
+		for (var i = 0; i < 15; i++){
+			temp2 += "测试填充";
+		}
+		var target_html = document.getElementsByClassName("test_padding");
+
+		target_html[0].innerHTML = temp2;
+	</script>
+</html>

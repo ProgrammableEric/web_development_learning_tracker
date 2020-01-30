@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分组嵌套 + 尺寸 + 显示&可见性 </title>
+	<style>
+		h1, h2, h4{
+			color: DarkMagenta;
+		}
+		.normal {
+			height: 10%;
+			width: 10%;
+		}
+
+		.bigSmall {
+			max-height: 30px;
+		}
+
+		#para {
+			max-width: 900px;
+			min-width: 300px;
+		}
+
+		#camel {
+			height: auto;
+			width: auto;
+			/*display: none; 不占用空间*/
+			/*要占用空间：仅仅是隐藏起来*/
+			visibility: none;
+		}
+
+		.navbar {
+			list-style-type: none;
+			list-style-position: center;
+		}
+		.navbar li {
+			display: inline-block;
+			padding: 0 5px;
+			border-style: solid;
+			border-color: Coral;
+			border-width: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>This is H1 </h1>
+	<h2>This is H2 </h2>
+	<h4>This is not H3</h4>
+	<img class="normal" src="./dot.jpg" /> <br><br><br>
+	<img class="bigSmall" src="./dot.jpg" />	
+	<p id="para"> something</p>
+	<img src="./ref_img03.jpeg" id="camel" />
+
+	<ul class="navbar">
+		<li>Kobe</li>
+		<li>James</li>
+		<li>D.WADE</li>
+	</ul>
+</body>
+
+<script type="text/javascript">
+	var temp = "";
+	for (var i = 0; i < 20; i++){
+		temp += 'Rio' + ' and Kishi' + '!!!'; 
+	}
+	var place = document.getElementById('para');
+	place.innerHTML = temp; 
+</script>
+</html>

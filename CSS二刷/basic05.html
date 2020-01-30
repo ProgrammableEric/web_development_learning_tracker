@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 定位 + 内容溢出</title>
+	<style>
+		/*
+		HTML元素的默认值，即没有定位，遵循正常的文档流对象。 静态定位的元素不会受到 top, bottom, left, right影响。*/
+		div.static {
+			position: static;
+			border: 3px solid #73AD21;
+		}
+		/*
+		元素的位置相对于浏览器窗口是固定位置。
+		即使窗口是滚动的它也不会移动：*/
+		div.fixed {
+			position: fixed;
+			top: 30px;
+			right: 30px;
+			border: 3px solid DarkCyan;
+			background-color: DarkCyan;
+			z-index: 1;
+			/*如果两个定位元素重叠，没有指定z - index，最后定位在HTML代码中的元素将被显示在最前面。*/
+		}
+		/*相对定位元素的定位是相对其正常位置。*/
+		div.relative {
+			position: relative;
+			border: 3px solid DarkCyan;
+			top: 300px;
+		}
+		/*绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html>:*/
+		div.absolute {
+			position: absolute;
+			border: 3px solid GoldenRod;
+			right: 200px;
+		}
+		
+		/*它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。
+		元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。*/
+		div.sticky {
+			
+			position: sticky;
+			border: 2px solid #4CAF50;
+			top: 15px;
+		}
+
+		.overflow {
+			width: 150px;
+			height: 100px; 
+			margin: 50px 0;
+		}
+
+		#visible {
+			background-color: Gainsboro;
+			overflow: visible;
+		}
+
+		#hidden {
+			background-color: Gold;
+			overflow: hidden;
+		}
+
+		#scroll {
+			background-color: Khaki;
+			overflow: scroll;
+		}
+
+		#auto {
+			background-color: LightBlue;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="static">Static 定位</div>
+	<div class="fixed">Fixed 定位</div>
+	<div class="relative">Relative 定位</div>
+	<div class="absolute">Absolute 定位</div>
+	<div class="sticky">Sticky 定位</div>
+
+
+	<div class = "overflow" id="visible"></div><br>
+	<div class = "overflow" id="hidden"></div><br>
+	<div class = "overflow" id="scroll"></div><br>
+	<div class = "overflow" id="auto"></div><br>
+
+
+
+</body>
+<script type="text/javascript">
+	var temp = "";
+	for (var i = 0; i < 30; i++) {
+		temp += "Rio! " + "Aino !   "; 
+	}
+	var ele = document.getElementsByClassName("overflow");
+	for (var j = 0; j<ele.length; j++){
+		ele[j].innerHTML = temp;
+	}
+	
+</script>
+
+
+
+
+
+
+
+
+</html>

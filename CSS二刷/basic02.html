@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- 三种引入CSS 代码的方法 + background + text + 字体 + 链接 -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三种引入CSS 代码的方法 + background + text + 字体 + 链接</title>
+	<!-- 1. external style sheet 可被重复使用 -->
+	<link rel="stylesheet" type="text/css" href="./ref_style.css">
+	<!-- 2. Internal style sheet  -->
+	<style>
+		p {
+			margin-left: 20px;
+			text-align: justify; 
+			/*text-align: left; */
+			text-decoration: underline; 
+			text-transform: uppercase; 
+			/*text-transform: capitalize; 
+			text-transform: lowercase;*/
+			text-indent: 50px; 
+
+			/*设置后备机制*/
+			font-family: Georgia, Times, serif;
+			/*font-style: normal; */
+			font-style: italic; 
+			
+			/*字体大小的相对表示法, 1em 默认大小16px*/
+			font-size: 1em;  
+			/*
+				绝对大小：
+				设置一个指定大小的文本
+				不允许用户在所有浏览器中改变文本大小
+				确定了输出的物理尺寸时绝对大小很有用
+				相对大小：
+				相对于周围的元素来设置大小
+				允许用户在浏览器中改变文字大小 
+			*/
+
+		}
+		body {
+			/*background-color: green; */
+			/*color: 十六进制 - 如："#ff0000"
+								RGB - 如："rgb(255,0,0)"
+								颜色名称 - 如："red" */
+			background-image: url('./ref_img03.jpeg');
+			background-repeat: no-repeat; 
+			/*background-repeat: repeat-x; 
+			background-repeat: repeat-y;*/
+			background-position: left top; 
+
+			/* 一句简写版本： background:#ffffff url('img_tree.png') no-repeat right top;*/
+		}
+
+		/* L(link)OV(visited)E  and  H(hover)A(active)TE */
+		a:link {color: red;} 
+		a:visited {color: purple;}
+		a:hover {color: #FF704D;}
+		a:active {color: green;}
+	
+	</style>
+	
+</head>
+<body>
+	<!-- 3. Inline style 谨慎使用 -->
+	<p style="color:sienna; margin-left:20px">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.</p>
+	<ul>
+		<li>list 1</li>
+		<li>list 2</li>
+	</ul>
+
+	<a href="/ref_style.css" target="_blank">This is a link</a>
+
+	<!-- 属性会从更具体的样式中首先继承，
+		优先级：browser default < external < internal < inline -->
+</body>
+</html>
