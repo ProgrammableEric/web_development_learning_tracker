@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动 + 布局</title>
+	<!-- CSS 的 Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。 -->
+
+	<!-- Relative 用来限制 Absolute -->
+	<style>
+		.float-right img {
+			float: right; 
+		}
+		.images img {
+			margin: 30px 50px;
+			float: left;
+		}
+		/*clear 属性指定元素两侧不能出现浮动元素。*/
+		.clear {
+			clear: both;
+		}
+		span {
+			float: left;
+			width: 1.2em;
+			font-size: 400%;
+			line-height: 80%;
+		}
+		/*居中对齐，图片加上display: block*/
+		.align img {
+			display: block;
+			clear: both;
+			margin: auto;
+		}
+		/*对齐必须设置宽度，否则无效*/
+		.align #center {
+			border: 3px solid green;
+			width: 60%;
+			margin: auto;
+			text-align: center;
+		}
+
+		.container {
+			width: 100%;
+			position: relative;
+			display: block;
+			border: 3px solid black;
+		}
+
+		.container2 {
+			width: 100%;
+			position: relative;
+			display: block;
+			border: 3px solid black;
+		}
+
+		.right1 {
+			border: 3px solid green;
+			position: absolute;
+			right: 0;
+			width: 50%;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.right2 {
+			position: absolute;
+	    right: 0px;
+	    width: 300px;
+	    background-color: #b0e0e6;
+		}
+
+		.vertical {
+			padding: 50px 0;
+			border: 3px solid cyan; 
+			text-align: center; 
+		}
+
+		.vertical2 {
+			vertical-align: center; 
+			border: 3px solid cyan;
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<p class="float-right">      
+		<img src="./ref_img03.jpeg" style="height: 300px; width: 300px">
+		<span>这</span>是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+		这是一些文本。这是一些文本。这是一些文本。
+	</p>
+	<div class="images">
+		<img src="./ref_img03.jpeg" style="height: 300px; width: 300px; border: 3px solid black">
+		<img src="./ref_img03.jpeg" style="height: 300px; width: 300px; border: 3px solid black">
+		<p class="clear">Clearing float attribute for this line.</p>
+		<img src="./ref_img03.jpeg" style="height: 300px; width: 300px; border: 3px solid black">
+		<img src="./ref_img03.jpeg" style="height: 300px; width: 300px; border: 3px solid black">
+		<br><br><br><br>
+	</div>
+
+	<div class="align">
+		<img src="./dot.jpg" style="height: 300px; width: 50%; border: 3px solid pink">
+		<br><br>
+		<p id="center">文本居中对齐</p>
+
+		<div class="container">
+			<div class="right1">文本靠右</div>
+		</div>
+		
+		<div class="container2">
+			<div class="right2">文本靠右2</div>
+		</div>
+
+		<div class="vertical">
+			<p>水平，垂直居中</p>
+		</div>
+
+		<div class="vertical2">
+			<p>垂直居中 02</p>
+		</div>
+
+	</div>
+</body>
+</html>

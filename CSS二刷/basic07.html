@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组合选择符</title>
+	<style>
+		.descendant p {
+			border: 3px solid blue;
+		}
+
+		/* > 符号仅选取children, 直接子元素*/
+		.child>p {
+			border: 3px solid red;
+		}
+		/*相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。*/
+		.adj_sibling + p {
+			border: 3px solid yellow;
+		} 
+		/*后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。*/
+		.after_sibling ~ p {
+			border: 3px solid green;
+		}
+		
+		/*CSS伪类是用来添加一些选择器的特殊效果。
+		selector:pseudo-class {property:value;} or 
+		selector.class:pseudo-class {property:value;} 
+		*/
+		a:link {color:#000000;}      /* 未访问链接*/
+		a:visited {color:#00FF00;}  /* 已访问链接 */
+		a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+		a:active {color:#0000FF;}  /* 鼠标点击时 */
+		/*注意： 在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+		注意： 在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。*/
+
+
+	</style>
+</head>
+<body>
+	<div class="descendant">
+		<p>选取元素</p>
+		<div class="not selected">
+			<p>不选取元素</p>
+		</div>
+	</div>
+
+	<div class="child">
+		<p>选取元素</p>
+		<div class="not selected">
+			<p>不选取元素</p>
+		</div>
+	</div>
+
+	<div class="adj_sibling">
+		<h2>DIV 内部标题</h2>
+		<p>DIV 内部段落。</p>
+	</div>
+	<p>DIV 之后的第一个 P 元素。</p>
+	<p>DIV 之后的第二个 P 元素。</p>
+
+	<div class="after_sibling">
+		<h2>DIV 内部标题</h2>
+		<p>DIV 内部段落。</p>
+	</div>
+	<p>DIV 之后的第一个 P 元素。</p>
+	<p>DIV 之后的第二个 P 元素。</p>
+
+	<p><b><a href="/css/" target="_blank">这是一个链接</a></b></p>
+
+
+
+</body>
+</html>
