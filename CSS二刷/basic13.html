@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器 + 表单</title>
+	<style>
+	/* 把包含标题（title）的所有元素变为蓝色 */
+		[title] {
+			color: blue; 
+		}
+
+		[title=runoob]
+		{
+			border:5px solid green;
+		}
+
+/*		input[type="text"]
+		{
+			width:150px;
+			display:block;
+			margin-bottom:10px;
+			background-color:yellow;
+		}*/
+
+		input[type="button"]
+		{
+			width:120px;
+			margin-left:35px;
+			display:block;
+		}
+
+		input[type=text], select {
+			width: 100%;
+			padding: 6px 10px; 
+			margin-left: 8px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			width: 100%;
+			color:#4CAF50;
+			color: white;
+			padding: 7px 10px;
+			border: none;
+			border-radius: 4px; 
+			cursor: pointer; 
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.form_div {
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+		#focus:focus {
+			background-color: lightblue; 
+		}
+
+		#icon {
+			background-color: gray;
+			background-image: url('./ref_img03.jpeg');
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			padding-left: 40px;
+		}
+
+		#animate {
+			width: 40%;
+			transition: width 0.4s ease-in-out;
+		}
+
+		#animate:focus {
+			width: 100%;
+		}
+
+		.inputs select {
+			width: 100%;
+			padding: 26px 40px; 
+			border: none;
+			border-radius: 4px;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+<body>
+	<h2>Will apply to:</h2>
+	<h1 title="Hello world">Hello world</h1>
+	<a title="runoob.com" href="//www.runoob.com/">runoob.com</a>
+	<hr>
+	<h2>Will not apply to:</h2>
+	<p>Hello!</p>
+
+	<hr>	
+
+	<img title="runoob" src="./ref_img03.jpeg" width="270" height="270" />
+	<br>
+	<a title="runoob" href="//www.runoob.com/">runoob</a>
+	<hr>
+	<h2>将不适用:</h2>
+	<p title="greeting">Hi!</p>
+	<a class="runoob" href="//www.runoob.com/">runoob</a>
+
+	<hr>
+
+	<form name="input" action="demo-form.php" method="get">
+	Firstname:<input type="text" name="fname" value="Peter" size="20">
+	Lastname:<input type="text" name="lname" value="Griffin" size="20">
+	<input type="button" value="Example Button">
+
+	<hr>
+	<h2>CSS表单</h2>
+	
+	<div class="form_div">
+  <form action="/action_page.php" class="form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+
+	<hr>
+
+  <h2>输入框, 文本框，下拉菜单</h2>
+  <form class="inputs">
+  	<input type="text" id="focus" placeholder="1.">
+  	<input type="text" id="icon" placeholder="2.">
+  	<input type="text" id="animate" placeholder="3.">
+  	<select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  </form>
+</div>
+
+</body>
+</html>
