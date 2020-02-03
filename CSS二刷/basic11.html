@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片廊 + 图像透明 + 媒体类型</title>
+	<style>
+		div.img {
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: left;
+			width: 180px;
+		}
+
+		div.img:hover {
+			border: 1px solid #777;
+		}
+
+		div.img img {
+			width:100%;
+			height: auto;
+			opacity: 0.4;
+		}
+
+		div.img img:hover {
+			opacity: 1.0;
+		}
+
+		div.desc {
+			padding: 15px;
+			text-align: center;
+		}
+
+		div.background {
+			margin: 5px;
+			float: left;
+			width: 180px;
+			height: 100px;
+			background: url('https://www.runoob.com/images/klematis.jpg') repeat;
+			border: 2px solid black;
+		}
+
+		/*如果 "position" 属性的值为 "static"，那么设置 left、right、top、bottom属性不会产生任何效果。*/
+
+		/*left, right. top. bottom are w.r.t sizes of the element itself. 
+		HOWEVER, margin, width, height are w.r.t the parent element of that element. */
+		div.transbox {
+			width: 140px;
+			height: 80%;
+			margin-left: 20px;
+			margin-top: 10px;
+			border: 1px solid black;
+			opacity: 0.6;
+			background-color: #ffffff;
+			overflow: auto;
+		}
+
+		.transbox p {
+			border: 1px solid black;
+			margin-left: 4px;
+			margin-right: 4px;
+			padding: 8px;
+			/*padding 左先右后*/
+			/*padding-right: 5px;*/
+		}
+
+		@media screen {
+			p.media {
+				font-family: verdana, sans-serif; 
+				font-size: 14px;
+			}
+		}
+
+		@media print {
+			p.media {
+				font-family: times, serif; 
+				font-size: 10px;
+			}
+		}
+
+		@media screen, print {
+			p.media {
+				font-weight: bold; 
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="responsive">
+		<div class="img">
+			<a target="_blank" href="http://static.runoob.com/images/demo/demo1.jpg">
+				<img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
+			</a>
+			<div class="desc">添加文本描述</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo2.jpg">
+      <img src="//static.runoob.com/images/demo/demo2.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">添加图片文本描述</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo3.jpg">
+      <img src="//static.runoob.com/images/demo/demo3.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">添加图片文本描述</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo4.jpg">
+      <img src="//static.runoob.com/images/demo/demo4.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc">添加图片文本描述</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="background">
+  	<div class="transbox">
+  		<p>这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。这些文本在透明框里。</p>
+  	</div>
+  </div>
+</div>
+
+<p class="media" style="float: left;">测试媒体类型</p>
+
+</body>
+</html>

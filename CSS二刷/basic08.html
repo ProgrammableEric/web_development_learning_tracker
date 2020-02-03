@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类 + 伪元素 + 导航栏</title>
+	<!-- CSS introduces the concepts of pseudo-elements and pseudo-classes to permit formatting based on information that lies outside the document tree. -->
+	<style>
+		a.red:visited {color: black;}
+		/*伪类 - 看上去好像创建了虚拟的一个类*/
+		p:first-child {
+			border: 3px solid green;
+		} 
+		/*伪元素 - 看上去好像创建了虚拟的<span>元素*/
+		.pseudo-p:first-letter {
+			font-size: 5em;
+		}
+		
+		/*伪类的操作对象是文档树中已有的元素，而伪元素则创建了一个文档数外的元素。因此，伪类与伪元素的区别在于：有没有创建一个文档树之外的元素。*/
+
+		/*CSS3规范中的要求使用双冒号(::)表示伪元素，以此来区分伪元素和伪类。 然而，除了少部分伪元素，如::backdrop必须使用双冒号，大部分伪元素都支持单冒号和双冒号的写法，比如::after，写成:after也可以正确运行。*/
+
+		.smile1: before {
+			content: url('./smily.jpeg');
+		}
+		.smile2: after {
+			content: url('./smily.jpeg');
+		}
+
+		.vertical {
+			/*移除列表之前小标志，移除浏览器默认的边距和填充设置*/
+			list-style-type: none;   
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: #f1f1f1;
+			border: 1px solid #555;
+		}
+		li {
+			text-align: center;
+			border-bottom: 1px solid #555;
+		}
+		li: last-child {
+			border-bottom: none; 
+		}
+
+		li a {
+			/*让整体编程可点击的链接区域，而不仅仅是文本，允许指定宽度*/
+			display: block;
+			padding: 8px 16px;
+			color: #000;
+			text-decoration: none; 
+		}
+
+		li a:hover:not(.active) {
+			background-color: #555;  
+			/*即为 #555555 相邻两位相同可合并*/
+			color: white;
+		}
+		
+		li a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<a href="./basic05.html" class="red">This is a link</a>
+	<div class="first_c">
+		<p>First Child</p>
+		<p>Second child</p>
+	</div>
+	
+	<p class="pseudo-p">Hello world ! </p>
+
+	<h2 class="smile1">Smile !!</h2>
+	<h2 class="smile2">Smile Again !!</h2>
+
+	<ul class="vertical">
+	  <li><a href="#home" class="active">主页</a></li>
+	  <li><a href="#news">新闻</a></li>
+	  <li><a href="#contact">联系</a></li>
+	  <li><a href="#about">关于</a></li>
+	</ul>
+
+</body>
+</html>

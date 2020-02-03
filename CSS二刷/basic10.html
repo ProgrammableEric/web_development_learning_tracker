@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单 + 提示工具</title>
+
+	<!-- HTML 部分：
+	我们可以使用任何的 HTML 元素来打开下拉菜单，如：<span>, 或 a <button> 元素。
+	使用容器元素 (如： <div>) 来创建下拉菜单的内容，并放在任何你想放的位置上。
+	使用 <div> 元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。
+	CSS 部分：
+	.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。
+	.dropdown-content 类中是实际的下拉菜单。默认是隐藏的，在鼠标移动到指定元素后会显示。 注意 min-width 的值设置为 160px。你可以随意修改它。 注意: 如果你想设置下拉内容与下拉按钮的宽度一致，可设置 width 为 100% ( overflow:auto 设置可以在小尺寸屏幕上滚动)。 -->
+
+	<!-- width, height 的百分比针对包裹的父元素
+	left, right ... 的百分比针对该元素本身 -->
+	<style>
+		.dropdown1 {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.dropdown1 .dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			width: 100%;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			z-index: 1;
+		}
+
+		.dropdown1:hover .dropdown-content {
+			display: block;
+		} 
+
+		.dropbtn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+		}
+
+		.dropdown2 {
+			position: absolute;
+			left: 0px;
+			top: 100px;
+			display: inline-block;
+		}
+
+		.dropdown2 .dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+    	min-width: 160px;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		.dropdown2 .dropdown-content a{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown2 .dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown2:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown2:hover .dropbtn {
+			background-color: #3e8e41;
+		}
+
+		.tooltip {
+			position: absolute;
+			display: inline-block;
+			top: 200px;
+			left: 50px;
+			border-bottom: 1px dotted black;
+		}
+
+		.tooltip .tooltiptext {
+
+			visibility: hidden;
+			width: 120px;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -60px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			padding: 5px 0;
+			border-radius: 6px;
+
+			position: absolute;
+			z-index: 1;
+			opacity: 0;
+			transition: opacity 1s;
+		} 
+
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
+
+		}
+		
+		/*添加箭头*/
+		.tooltip .tooltiptext::after {
+			content: " ";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: black transparent transparent transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="dropdown1">
+		<span>Mouse over me</span>
+		<div class="dropdown-content">
+			<p>Hello World!!!</p>
+		</div>
+	</div>
+
+	<div class="dropdown2">
+	  <button class="dropbtn">下拉菜单</button>
+	  <div class="dropdown-content">
+	    <a href="#">菜鸟教程 1</a>
+	    <a href="#">菜鸟教程 2</a>
+	    <a href="#">菜鸟教程 3</a>
+	  </div>
+	</div>
+
+	<div class="tooltip">鼠标移动到这
+  	<span class="tooltiptext">提示文本</span>
+	</div>
+
+</body>
+</html>
