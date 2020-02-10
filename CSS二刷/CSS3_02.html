@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本效果+字体+2D转换</title>
+	<style>
+		h1 {
+			/*水平阴影，垂直阴影，模糊距离，阴影颜色*/
+			text-shadow: 5px 5px 5px #ff0000;
+		}
+		
+		/*词内自动换行，对长词进行拆分*/
+		.no-wrap {
+			width: 200px;
+			border: 1px solid black;
+		}
+
+		.word-wrap {
+			width: 200px;
+			border: 1px solid black;
+			word-wrap: break-word;
+		}
+		
+		/*CSS3 字体： 在 CSS3 之前，web 设计师必须使用已在用户计算机上安装好的字体。
+		通过 CSS3，web 设计师可以使用他们喜欢的任意字体。
+		当您您找到或购买到希望使用的字体时，可将该字体文件存放到 web 服务器上，它会在需要时被自动下载到用户的计算机上。
+		您“自己的”的字体是在 CSS3 @font-face 规则中定义的。*/
+
+		@font-face
+		{
+		font-family: myFirstFont;
+		src: url('./Sriracha/Sriracha-Regular.ttf')
+		    ,url('/example/css3/Sansation_Light.eot'); /* IE9+ */
+		}
+
+		div {
+			/*`font-style: oblique` 选择字体族的 oblique 变体。`italic` 选择字体族的 italic 变体，如果没有 italic 变体就妥协到 oblique 变体。如果字体族连 oblique 也未提供，则由浏览器合成倾斜的仿 oblique。
+
+			作者：梁海
+			链接：https://www.zhihu.com/question/21443831/answer/18243900
+			来源：知乎
+			著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。*/
+
+			font-family: myFirstFont; 
+			/*font-weight: bold; */
+		}
+
+		.rotate {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px; 
+
+
+			-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+			
+		}
+
+		.translate {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px; 
+
+
+			-webkit-transform: translate(10px, 15px); /* Safari 和 Chrome, 向右，向下移动 */
+		}
+
+		.scale {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px;
+
+
+			-webkit-transform: scale(1,2);
+		}
+
+		.skew {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px;
+
+			-webkit-transform: skew(10deg,20deg);
+
+		}
+
+		.matrix {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px;
+			
+			/**/
+			-webkit-transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Text Shadow</h1>
+	<p class="no-wrap">
+		This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+	</p>
+	<p class="word-wrap">
+		This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+	</p>
+
+	<div>
+	With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts.
+	</div>
+
+	<p><b>注释：</b>Internet Explorer 9+ 支持新的 @font-face 规则。Internet Explorer 8 以及更早的版本不支持新的 @font-face 规则。</p>
+
+	<div class="rotate">
+		Hello World !!! 
+	</div>
+
+	<div class="translate">
+		Hello World !!! 
+	</div>
+
+	<div class="scale">
+		Hello World !!!
+	</div>
+
+	<div class="skew">
+		Hello World !!!
+	</div>
+
+	<div class="matrix">
+		Hello World !!!
+	</div>
+
+</body>
+</html>

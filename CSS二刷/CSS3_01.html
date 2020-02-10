@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简介 + 边框 + 背景</title>
+	<!-- CSS3 完全向后兼容，因此您不必改变现有的设计。浏览器通常支持 CSS2。
+	CSS3 被划分为模块。其中最重要的 CSS3 模块包括：
+	选择器
+	框模型
+	背景和边框
+	文本效果
+	2D/3D 转换
+	动画
+	多列布局
+	用户界面 -->
+
+
+	<style>
+		/*CSS3 新增控制背景尺寸功能*/
+		body {
+			background: url('./ref_img03.jpeg');
+			background-size: 500px 500px; 
+			/*background-repeat: no-repeat;*/
+			padding top: 100px;
+		}
+
+		.radius {
+			text-align: center;
+			border: 2px solid #a1a1a1;
+			padding: 10px 40px; 
+			background-color: #ddd;
+			width: 350px;
+			border-radius: 25px;
+		}
+
+		.box-shadow {
+			margin-top: 100px;
+			width: 300px;
+			height: 100px;
+			background-color: #f90;
+			/*h-shadow, v-shadow, blur, spread, color, inset */
+			box-shadow: 10px 10px 5px #888;
+		}
+		
+		.img {
+			border: 15px solid transparent;
+			width: 300px;
+			-webkit-border-image: url('./border.png') 30 30 round; 
+			/*safari 写法，*/
+			/*-moz-border-image:url(/i/border.png) 30 30 stretch;	/* Old Firefox */
+			/*-webkit-border-image:url(/i/border.png) 30 30 round;	/* Safari and Chrome */
+			/* -o-border-image:url(/i/border.png) 30 30 round;		/* Opera */
+		}
+
+		.back {
+			background: url('./ref_img01.png');
+			background-size: 50% 100%;
+			background-repeat: no-repeat;
+			/*background-origin: content-box, padding-box, border-box 
+			规定了背景图可放置的区域*/
+			background-origin: content-box;
+
+			padding: 50px 50px; 
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="radius">
+		border-radius 属性允许您向元素添加圆角。
+	</div>
+	
+	<div class="box-shadow"></div>
+
+	<div class="img">
+		border-image 属性允许您规定用于边框的图片
+	</div>
+
+	<div class="back">
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+		<p>这是一个段落。</p>
+<p>这是一个段落。</p>
+	</div>
+</body>
+</html>
