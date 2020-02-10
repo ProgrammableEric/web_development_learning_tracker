@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D转换+过渡+动画</title>
+	<style>
+		@font-face
+		{
+		font-family: myFirstFont;
+		src: url('./Sriracha/Sriracha-Regular.ttf')
+		    ,url('/example/css3/Sansation_Light.eot'); /* IE9+ */
+		}
+
+		.container {
+			display: inline-block;
+			margin: 30px;
+			width: 200px;
+			height: 100px;
+			background-color: Navy;
+			color: white; 
+			font-family: myFirstFont; 
+			text-align: center;
+			line-height: 100px; 
+		}
+
+		#rotateX {
+			-webkit-transform:rotateX(50deg); /* Safari 和 Chrome */
+		}
+
+		#rotateY {
+			-webkit-transform:rotateY(50deg); /* Safari 和 Chrome */
+		}
+
+		#rotateZ {
+			-webkit-transform:rotateZ(50deg);
+		}
+
+		/*过渡： 1. 规定您希望把效果添加到哪个 CSS 属性上， 2. 规定效果的时长*/
+		
+		.transition {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background-color: Peru;
+			-webkit-transition: width 1s, height 1s; 
+			margin-left: 100px;
+			margin-right: 150px;
+		}
+
+		#first:hover {
+			width: 300px; 
+		}
+
+		#sec:hover {
+			width: 300px;
+			height: 200px;
+		}
+
+		@keyframes myfirst {
+			from {background-color: Peru;}
+			to {background-color: Navy;}
+		}
+
+		.animate: {
+			width:100px;
+			height:100px;
+			background-color: Peru;
+			-webkit-animation:myfirst 5s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container" id="rotateX">
+		Hello World !!!
+	</div>
+
+	<div class="container" id="rotateY">
+		Hello World !!!
+	</div>
+
+	<div class="container" id="rotateZ">
+		Hello World !!!
+	</div>
+
+	<div class="transition" id="first"></div>
+	<div class="transition" id="sec"></div>
+
+	<div class="animate"></div>
+</body>
+</html>
