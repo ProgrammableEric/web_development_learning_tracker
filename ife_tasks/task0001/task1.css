@@ -1,0 +1,311 @@
+h1 {
+	color: blue;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+#by {
+	font-size: 12px;
+	color: yellow;
+	background-color: black;
+}
+
+@font-face {   /*customise font*/
+	font-family: tradition;
+	src: url('./font/Zhi_Mang_Xing/ZhiMangXing-Regular.ttf');
+}
+
+#test {
+	display: inline-block;
+	font-family: tradition; 
+	font-size: 20px;
+	background-color: #87CEEB;
+	color: white;
+	height: 150px;
+	width: 50%;
+	overflow: auto;
+	/*While em is relative to the font size of its direct or nearest parent, 
+	rem is only relative to the html (root) font-size . */
+	text-indent: 2em;
+	text-transform: uppercase;
+	text-decoration: none; 
+	text-align: center;  /*overline, line-through, underline, underline overline*/
+	letter-spacing: 0.1em;   /*word-spacing for english language*/
+	/*normal, nowrap, */
+	white-space: normal;  /*多个空格合并成一个*/
+	line-height: 150%;    /* line-height 相对于文字的font-size*/
+	font-weight: lighter;  /*normal, bold, bolder, lighter */ 
+}
+
+img {
+	border: 2px solid red;
+	width: 30%;
+	height: 10%;
+	display: inline-block;
+	margin: 20px 30px;
+}
+
+.container {
+	height: 340px;
+	width: 100%;
+	margin: 20px 0; 
+}
+
+#red1 {
+	background-color: red;
+	height: 300px;
+	width: 960px;
+	border: 3px solid black;
+	margin: 20px auto;
+	
+	/*position: static, absolute, fixed, relavant*/
+}
+
+#red2 {
+	/*先向右偏移父元素的50%, 再向右偏移元素宽度的一半*/
+	background-color: red;
+	height: 300px;
+	width: 960px;
+	border: 3px solid black;
+	position: absolute;
+	left: 50%;
+	margin-left: -480px;
+}
+
+#red3 {
+	background-color: red;
+	height: 300px;
+	width: 960px;
+	border: 3px solid black;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* ---------------------------------------------------------------- */
+
+.div{
+width: 960px;
+margin:50px auto;
+overflow: hidden;
+}
+.top2, .bottom2, .top3, .bottom3{
+  height: 1px;
+  background:blue;
+  overflow: hidden;
+}
+.top1, .bottom1{
+  margin: 0px 5px;
+  border-top: solid 1px black;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+.top2, .bottom2{
+  margin: 0px 3px;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+.top3, .bottom3{
+  margin: 0px 1px;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.main{
+  height: 100%;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  background:blue;
+}
+
+/* ---------------------------------------------------------------- */
+
+.wrapper {
+	width: 100%;
+	height: 350px;
+	background-color: lightgray;
+	position: relative;
+	font-size: 0; /* 需要消除div之间的空格 */ 
+}
+
+/*float 详解： https://juejin.im/post/5a260c6d6fb9a0452a3c2c6a
+
+float 的设置使该元素脱离文档流，- 高度坍塌
+默认情况下，div元素的宽是100%，一旦让该div浮动起来，
+块级框立刻会像inline元素一样产生包裹性，宽度会跟随内容自适应。
+
+！！！ block级别的元素会认为浮动的元素不存在，但是inline级别的元素能识别到浮动的元素。！！！
+
+对于CSS的清除浮动(clear)，一定要牢记：这个规则只能影响使用清除的
+元素本身，不能影响其他元素。
+*/
+
+.l {
+	float: left;
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
+
+.r {
+	height: 300px;
+	background-color: blue; 
+	margin-left: 300px;
+}
+
+/*使用position: absolute 将元素拉出文档流 */
+
+.l2 {
+	position: absolute; 
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
+
+.r2 {
+	height: 300px;
+	background-color: blue; 
+	margin-left: 300px;
+}
+
+.l3 {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+}
+
+/* absolute 相对于第一个非static的父元素*/
+.r3 {
+	height: 300px;
+	background-color: blue; 
+	position: absolute; 
+	left: 300px;
+	top: 0;
+	right: 0; 
+}
+
+/* ---------------------------------------------------------------- */
+
+
+.left {
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+	background-color: red;
+	box-sizing: border-box;
+}
+
+.middle {
+	height: 300px;
+	background-color: blue; 
+	margin-left: 200px;
+	margin-right: 200px; 
+	box-sizing: border-box;
+}
+
+.right {
+	height: 300px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: yellow;
+  box-sizing: border-box;
+}
+
+/* 注意！！！  
+ padding + border + width= 盒子的宽度
+ padding+ border + height = 盒子的高度
+ 默认padding, border = 0. 计算时要注意！
+ CSS width, height 仅为内容区的宽高 
+
+ 用 box-sizing 调节代码所指向的宽高，content-box / border-box */
+
+.left2 {
+	height: 300px;
+  width: 200px;
+  display: inline-block; 
+	background-color: red;
+	margin-left: 0; 
+	margin-right: 0;
+	vertical-align: top;      /*inline block 有顶端对齐问题*/
+	box-sizing: border-box;
+}
+
+.middle2 {
+	display: inline-block; 
+	height: 300px;
+	width: calc(100% - 400px);
+	margin-left: 0;
+	margin-right: 0;
+	background-color: blue; 
+	vertical-align: top; 
+	box-sizing: border-box;
+}
+
+.right2 {
+	display: inline-block; 
+	height: 300px;
+  width: 200px;
+  margin-right: 0; 
+	background-color: yellow;
+	vertical-align: top; 
+	box-sizing: border-box;
+
+	/* 清楚浮动：https://juejin.im/post/59e7190bf265da4307025d91
+	1. clear : left/right/both 保证该元素左边不能有浮动元素存在 
+	2. 插入清除浮动的块级元素：clear:both 
+	3. 伪元素clearfix: 
+	.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+   4. overflow 清楚浮动，加在父元素上 */
+}
+
+
+/* -------------------------------------------------------- */
+
+.container_red {
+	background-color: red;
+	width: 100%;
+	box-sizing: content-box;
+	overflow: auto;
+}
+
+.blue_box {
+	box-sizing: border-box;
+	width: 200px;
+	height: 150px;
+	float: left; 
+	margin: 20px 20px; 
+	background-color: blue;
+}
+
+
+/*.clear_float {
+	clear: both;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
