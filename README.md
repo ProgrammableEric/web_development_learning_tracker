@@ -5,7 +5,8 @@ The complete log that tracks my self-studying process of web development related
 ## Learning 
 | Course        | Tutor/Platform|    Status     | Time | Exercise Code & Notes|
 | ------------- | --------------| ------------- | ---- | ---- |
-| CSS 二刷, CSS3 | [Runoob.com](https://www.runoob.com/css/css-float.html), [w3school](https://www.w3school.com.cn/css/index.asp) | Ongoing | Feb， 2020 | [CSS 二刷](./CSS二刷)
+| IFE 前端学院2015 练习题 | [百度前端学院](https://github.com/ProgrammableEric/ife)| ongoing | Feb, 2020 | [IFE代码](./ife_tasks) |
+| CSS 二刷, CSS3 | [Runoob.com](https://www.runoob.com/css/css-float.html), [w3school](https://www.w3school.com.cn/css/index.asp) | Finished | Feb， 2020 | [CSS 二刷](./CSS二刷)
 | HTML DOM, JSON, jQuery | [Runoob.com](https://www.runoob.com/json/json-tutorial.html) | Ongoing | Jan， 2020 | 
 | Ajax 入门与实战 | [阿里云](developer.aliyun.com/learning/roadmap/frontend) | Finished | Jan, 26 | 
 | [Web-development Career Path](https://www.codecademy.com/learn/paths/web-development) <ul><li> - [x] Learn HTML </li><li> - [x] Styling a website</li><li> - [x] Getting started with JavaScript </li><li> - [x] Getting more advanced with Design</li><li> - [x] JavaScript: Arrays, Loops and Objects</li><li> - [x] Building Interactive JavaScript Websites</li><li> - [x] Intermediate JavaScript</li><li> - [x] Learn the Command Line</li><li> - [x] Learn Git</li><li> - [x] Building Front-end Applications with React</li><li> - [x] Javascript Back-End Development</li><li> - [x] SQL and Database for Web Development</li><li> - [ ] Building a Persistent API</li><li> - [ ] Test-Driven Development with JavaScript</li></ul>|[CodeAcademy](https://www.codecademy.com/learn)| Finished |DEC, 2019  | None|
