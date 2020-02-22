@@ -1,0 +1,490 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	/* 清除 body 白边*/
+	margin: 0;
+	padding: 0;
+	background-color: lightgrey;
+	font-size: 0;   /* 清楚元素间的微小间隙 */
+}
+
+/* Header ~~~~ */
+header {
+	width: 100%;
+	height: 80px;
+	background-color: slateblue;
+	margin-top: 0;
+	position: relative;
+}
+
+.header-content {
+	width: 980px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative; 
+}
+
+#my-name {
+	font-size: 36px;
+	color: white;
+	font-family: times;
+	bottom: 5px;
+	position: absolute;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav {
+	margin: 0;
+	padding: 5px 0;
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+}
+
+nav li {
+	color: white;
+	font-size: 14px;
+	font-family: times;
+	margin-left: 28px;
+	display: inline-block;
+	font-weight: 700;
+}
+
+nav li a {
+	color: white; 
+	display: inline-block;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 980px) {
+	#git {
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	#git {
+		display: none;
+	}
+
+	body {
+		min-width: 980px;
+		width: 100%;
+	}
+}
+
+/* Main ~~~~ */
+main {
+	width: 100%;
+	overflow: hidden; /* 防止子元素Margin传递到父元素*/
+}
+
+.main-container {
+	width: 980px;
+	height: 300px;
+	margin: 20px auto;
+}
+
+.left-col {
+	width: 727px;
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+.right-col {
+	float: left;
+	width: 247px; 
+	margin: 0 0 0 3px; 
+}
+
+/* Main display */
+.float-clear {
+	clear: both;
+}
+
+.tab-menu {
+	width: 100%;
+}
+
+.tab-menu a {
+	display: inline-block;
+	background-color: white;
+	font-size: 15px;
+	padding: 15px 20px 20px;
+	color: black;
+	margin: 0;
+	font-family: arial;
+	border-right: 1px solid lightgrey;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
+.tab-menu a:hover {
+	color: gold;
+	border-bottom: 1px solid lightgrey;
+}
+
+#all {
+	border-top: 2px solid plum;
+}
+
+#js {
+	border-top: 2px solid purple;
+}
+
+#ui {
+	border-top: 2px solid black;
+}
+
+#framework {
+	border-top: 2px solid darkred;
+}
+
+#app {
+	border-top: 2px solid orange;
+}
+
+.flex-container {
+	background-color: white; 
+	height: auto;     /* 高度必须设置 */
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	position: relative;
+}
+
+/* 如果不给 flex容器显式设置高度是无法包裹项目列表的 */
+@media only screen and (min-width: 980px) {
+	.flex-container {
+		height: 900px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.flex-container {
+		height: 1000px;
+	}
+}
+
+.box {
+	box-sizing: border-box;
+	width: calc(100% / 4);
+	padding: 5px;
+	color: black;
+	margin: 0;
+}
+
+.box img {
+	width: 100%;
+	height: auto;
+}
+
+.box-banner {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+}
+
+.box-banner .letter {
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 28px;
+	border-radius: 50%;
+	border: 1px solid black;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	align-items: center;
+	margin-right: 8px;
+	vertical-align: top;
+}
+
+.box-banner .box-desc {
+	box-sizing: border-box;
+	display: inline-block;
+	width: calc(100% - 40px);
+	vertical-align: top;
+}
+
+.box-desc h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.box-desc p {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+#J1 .box-banner, #J2 .box-banner, #J3 .box-banner, #J4 .box-banner {
+	background-color: purple;
+}
+
+#A1 .box-banner, #A2 .box-banner, #A3 .box-banner {
+	background-color: gold;
+}
+
+#F1 .box-banner, #F2 .box-banner {
+	background-color: darkred;
+}
+
+#U1 .box-banner, #U2 .box-banner {
+	background-color: cyan;
+}
+
+#note {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: red;
+	font-size: 15px;
+}
+
+.content-more {
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	margin: 20px 0 100px 0;
+	background-color: white;
+}
+
+.content-more a {
+	text-decoration: none;
+	color: #444;
+	vertical-align: top;
+}
+
+.content-more span {
+	color: #888;
+	margin-right: 10px;
+	font-size: 150%;
+	vertical-align: top;
+}
+
+.search-box {
+	text-align: center;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 55px;
+	padding: 20px;
+	background-color: white;
+}
+
+.search-box input {
+	box-sizing: border-box;
+	height: 40px;
+	width: 150px;
+	border: 1px solid lightgrey;
+	color: lightgray;
+	font-size: 15px;
+	vertical-align: bottom;   /* 输入和按钮对齐, vertical-align 应用于本元素，
+																text-align 应用于父元素  */
+	padding-left: 20px;
+}
+
+.search-box button {
+	box-sizing: border-box;
+	height: 40px;
+	width: 40px;
+	border: 1px solid lightgray;
+	font-size: 20px; 
+	background-color: lightgray;
+	color: white;
+	vertical-align: bottom;
+}
+
+.leaderboard {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: white; 
+	margin-top: 10px;
+	padding: 20px;
+	width: 100%;
+}
+
+#rqb {
+	width: 100%;
+	display: block;
+	font-size: 12px;
+	color: lightgrey; 
+	margin-bottom: 20px;
+}
+
+.record {
+	margin: 5px 0;
+}
+
+.record .no {
+	display: inline-block;  /* inline 不能设置宽度 */
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	color: white;
+	border-radius: 8px;
+	background-color: purple;
+	text-align: center;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.record .bar {
+	box-sizing: border-box;
+	width: 100px;
+	border: 1px solid lightgrey;
+	display: inline-block;
+	background-color: white;
+	height: 16px;
+	vertical-align: top;
+}
+
+.record .bar-p {
+	display: inline-block;
+	height: 100%;
+	background-color: purple;
+}
+
+#first .bar-p{
+	width: 100%;
+} 
+
+#second .bar-p{
+	width: 80%;
+}
+
+#third .bar-p{
+	width: 60%;
+}
+
+#fourth .bar-p{
+	width: 50%;
+}
+
+#fifth .bar-p{
+	width: 30%
+}
+
+.record .name {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+	color: black;
+	font-family: arial;
+}
+
+
+
+/* FOOTER */
+footer {
+	z-index: -1;
+	background-color: black;
+	width: 100%;
+}
+
+.footer-nav {
+	text-align: center;
+	width: 980px;
+	margin: 0 auto;
+	border-bottom: 2px solid white;
+}
+
+.footer-nav ul {
+	list-style-type: none; 
+	display: table;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.footer-nav li {
+	color: white;
+	margin-left: 14px;
+	margin-right: 14px;
+	display: inline-block;
+	padding: 0;
+}
+
+.footer-nav li a {
+	font-family: times;
+	font-size: 14px;
+	font-weight: 700;
+	color: white; 
+	display: inline-block;
+	text-decoration: none;
+}
+
+.links {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.links-box {
+	float: left;
+	width: 150px;
+	margin: 20px 10px 40px 10px;
+	padding: 10px 10px;
+}
+
+.links-box h4 {
+	font-size: 14px;
+	color: white; 
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer-ul {
+	list-style-type: none; 
+	margin: 0;     /* 清楚<ul> 自身的 padding, margin*/
+	padding: 0;
+	text-align: center;
+}
+
+.footer-ul li {
+	font-size: 12px;
+	color: white; 
+	padding: 5px 0;
+}
+
+.but-logo {
+	text-align: center;
+	clear: both;
+	margin: 0 auto;
+}
+
+.but-logo span {
+	display: block;
+	font-size: 14px;
+	color: white; 
+	margin-bottom: 20px;
+	text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
