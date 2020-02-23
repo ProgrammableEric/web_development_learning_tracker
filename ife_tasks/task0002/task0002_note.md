@@ -1,7 +1,8 @@
 ## Miscellaneous
-#### `window.onload = ` 
-In case JS executes before the DOM fully loads.
+#### `window.onload = function() {}` 
+In case JS executes before the DOM fully loads. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDYyNzcyNTksLTIwODg3NDY2MTJdfQ
-==
+eyJoaXN0b3J5IjpbMjUwNjE2MDE0LC0yMDg4NzQ2NjEyXX0=
 -->
