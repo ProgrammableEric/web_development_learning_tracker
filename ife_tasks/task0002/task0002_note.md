@@ -32,7 +32,10 @@ __脚本数量__
 
 #### 无阻塞脚本
 `windows.onload {}` 在页面加载完成后才加载 JavaScript 代码。
-`defer` - only for IE 4 + 与 Firefox 3.5 + . 
+`<script>`的`defer` 属性 - `Defer` 属性指明本元素所含的脚本不会修改 DOM，因此代码能安全地延迟执行。 仅被 IE 4 + 与 Firefox 3.5 + 支持，不通用。 对应的 JavaScript 文件将在页面解析到`<script>`标签时开始下载，但不会执行，直到 DOM 加载完成，即`onload`事件触发前才会被执行。当一个带有 `defer` 属性的 JavaScript 文件下载时，它不会阻塞浏览器的其他进程，因此这类文件可以与其他资源文件一起并行下载。
+
+
+
 
 
 
@@ -40,7 +43,7 @@ __脚本数量__
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODA3ODQzMywtNTMzNjQ3NzM5LDk0Nz
-U4NTQzNiw4NDI4NDg1MiwxNTA4Mjk3NDA4LC03NDg1ODUyOTks
-MjUwNjE2MDE0LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTIwODI5OTEwMTIsMTgxODA3ODQzMywtNT
+MzNjQ3NzM5LDk0NzU4NTQzNiw4NDI4NDg1MiwxNTA4Mjk3NDA4
+LC03NDg1ODUyOTksMjUwNjE2MDE0LC0yMDg4NzQ2NjEyXX0=
 -->
