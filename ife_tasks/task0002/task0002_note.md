@@ -9,9 +9,9 @@ In case JS executes before the DOM fully loads.
 
 __脚本位置__
 放在`<head>`中的js文件会停止解析当前的内容而优先下载脚本并执行脚本代码。这意味着，其后的 styles.css 样式文件和`<body>`标签都无法被加载，由于`<body>`标签无法被加载，那么页面自然就无法渲染了。也会造成`getElementByID` 无法找到对应html 标签的情况。
-
+bin
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODI5NzQwOCwtNzQ4NTg1Mjk5LDI1MD
-YxNjAxNCwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNTc2NDA2MDg5LDE1MDgyOTc0MDgsLTc0OD
+U4NTI5OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJdfQ==
 -->
