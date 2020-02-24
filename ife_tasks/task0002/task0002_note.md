@@ -32,12 +32,13 @@ __脚本数量__
 
 #### 无阻塞脚本
 `windows.onload {}` 在页面加载完成后才加载 JavaScript 代码。
+`defer` - only for IE 4 + 与 Firefox 3.5 + . 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOT
-c0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJd
-fQ==
+eyJoaXN0b3J5IjpbLTUzMzY0NzczOSw5NDc1ODU0MzYsODQyOD
+Q4NTIsMTUwODI5NzQwOCwtNzQ4NTg1Mjk5LDI1MDYxNjAxNCwt
+MjA4ODc0NjYxMl19
 -->
