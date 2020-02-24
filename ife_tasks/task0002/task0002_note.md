@@ -33,6 +33,7 @@ __脚本数量__
 #### 无阻塞脚本
 `windows.onload {}` 在页面加载完成后才加载 JavaScript 代码。
 `<script>`的`defer` 属性 - `Defer` 属性指明本元素所含的脚本不会修改 DOM，因此代码能安全地延迟执行。 仅被 IE 4 + 与 Firefox 3.5 + 支持，不通用。 对应的 JavaScript 文件将在页面解析到`<script>`标签时开始下载，但不会执行，直到 DOM 加载完成，即`onload`事件触发前才会被执行。当一个带有 `defer` 属性的 JavaScript 文件下载时，它不会阻塞浏览器的其他进程，因此这类文件可以与其他资源文件一起并行下载。
+HTML 5 为`<script>`标签定义了一个新的扩展属性：`async`。它的作用和 `defer` 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 `async` 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 `async` 就很有可能出现错误。
 
 
 
@@ -43,7 +44,7 @@ __脚本数量__
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0MDEyMjQ2LDE4MTgwNzg0MzMsLTUzMz
+eyJoaXN0b3J5IjpbNjkzMTU4NTE5LDE4MTgwNzg0MzMsLTUzMz
 Y0NzczOSw5NDc1ODU0MzYsODQyODQ4NTIsMTUwODI5NzQwOCwt
 NzQ4NTg1Mjk5LDI1MDYxNjAxNCwtMjA4ODc0NjYxMl19
 -->
