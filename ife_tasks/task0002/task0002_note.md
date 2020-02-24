@@ -30,9 +30,12 @@ __脚本位置__
 __脚本数量__
 下载单个 100Kb 的文件将比下载 5 个 20Kb 的文件更快。也就是说，减少页面中外链脚本的数量将会改善性能。
 
+__无阻塞脚本__
+`windows.onload`
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzk3NzkzMDAsODQyODQ4NTIsMTUwOD
+eyJoaXN0b3J5IjpbLTE1NTM3Mzc0NzUsODQyODQ4NTIsMTUwOD
 I5NzQwOCwtNzQ4NTg1Mjk5LDI1MDYxNjAxNCwtMjA4ODc0NjYx
 Ml19
 -->
