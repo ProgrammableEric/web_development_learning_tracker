@@ -36,25 +36,26 @@ In case JS executes before the DOM fully loads.
 HTML 5 为`<script>`标签定义了一个新的扩展属性：`async`。它的作用和 `defer` 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 `async` 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 `async` 就很有可能出现错误。
 
 #### 动态脚本元素
-
+ 
 ~~~javascript
 function loadScript(url, callback){
 	var script = document.createElement ("script")
-script.type = "text/javascript";
-if (script.readyState){ //IE
-script.onreadystatechange = function(){
-if (script.readyState == "loaded" || script.readyState == "complete"){
-script.onreadystatechange = null;
-callback();
-}
-};
-} else { //Others
-script.onload = function(){
-callback();
-};
-}
-script.src = url;
-document.getElementsByTagName("head")[0].appendChild(script);
+	script.type = "text/javascript";
+	if (script.readyState){ //IE
+		script.onreadystatechange = function(){
+		if (script.readyState == "loaded" || script.readyState
+		  						== "complete"){
+			script.onreadystatechange = null;
+			callback();
+				}
+			};
+	} else { //Others
+		script.onload = function(){
+		callback();
+		};
+	}
+	script.src = url;
+	document.getElementsByTagName("head")[0].appendChild(script);
 }
 ~~~
 
@@ -67,8 +68,8 @@ document.getElementsByTagName("head")[0].appendChild(script);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODkzNDgzMiwtMTg4MDU0NjU3NSwxOD
-E4MDc4NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUy
-LDE1MDgyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE1OTA4MDUzNjgsLTE4ODA1NDY1NzUsMT
+gxODA3ODQzMywtNTMzNjQ3NzM5LDk0NzU4NTQzNiw4NDI4NDg1
+MiwxNTA4Mjk3NDA4LC03NDg1ODUyOTksMjUwNjE2MDE0LC0yMD
+g4NzQ2NjEyXX0=
 -->
