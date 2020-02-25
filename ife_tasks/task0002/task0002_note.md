@@ -2,7 +2,7 @@
 #### `window.onload = function() {}` 
 In case JS executes before the DOM fully loads. 
 
-## js 的加载 [link]([https://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html](https://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html))
+## JS 的加载 [link]([https://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html](https://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html))
 无论当前 JavaScript 代码是内嵌还是在外链文件中，页面的下载和渲染都必须停下来等待脚本执行完成。JavaScript 执行过程耗时越久，浏览器等待响应用户输入的时间就越长。
 
 浏览器在下载和执行脚本时出现阻塞的原因在于，脚本可能会改变页面或 JavaScript 的命名空间，它们对后面页面内容造成影响。此特性适用于各方法加载的javascript 文件包括 script 标签，src 属性等。
@@ -75,15 +75,16 @@ loadScript("script1.js", function(){
 #### Ajax xhr 对象
 JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载（CDN 指"内容投递网络（Content Delivery Network）"，所以大型网页通常不采用 XHR 脚本注入技术。详见Ajax Note. 
 
-
+## JS 的特性
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTA2NDA4LDE4NDc0MTA3OTEsLTIzNz
-IzMDc5NywtMTg4MDU0NjU3NSwxODE4MDc4NDMzLC01MzM2NDc3
-MzksOTQ3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOTc0MDgsLTc0OD
-U4NTI5OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE2MDI5NzI5NjMsMTY3OTA2NDA4LDE4ND
+c0MTA3OTEsLTIzNzIzMDc5NywtMTg4MDU0NjU3NSwxODE4MDc4
+NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUyLDE1MD
+gyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwODg3NDY2
+MTJdfQ==
 -->
