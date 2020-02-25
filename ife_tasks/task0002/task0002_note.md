@@ -77,19 +77,35 @@ JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载�
 
 ## JS 的特性
 
-### Prototype 原型链 
+### Prototype 原型链 [link]([https://zhuanlan.zhihu.com/p/40797690](https://zhuanlan.zhihu.com/p/40797690))
 #### 对象
 话说在Javascript中一切皆对象，对象是引用类型的一个实例，在JS中引用类型包括：Object、Array、Date、RegExp和Function，除此之外，ECMAScript还提供3个特殊的引用类型：Boolean、Number、String
 
 对象是某个特定引用类型的实例，新对象是通过new操作符后跟一个构造函数来创建的，构造函数本身就是一个函数，只不过该函数是出于创建对象的目的而出现的。
 
+~~~javascript
+console.log(typeof Object);//function
+console.log(typeof Array);//function
+console.log(typeof Date);// function
+console.log(typeof RegExp);//function
+
+var obj = new Object();
+var array = new Array();
+var date = new Date();
+var reg = new RegExp();
+
+console.log(typeof obj);//Object
+console.log(typeof array);//Object
+console.log(typeof date);//Object
+console.log(typeof reg);//Object
+~~~
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzA0NjUzNSw3MTE5NDc3MjgsLTE2MD
+eyJoaXN0b3J5IjpbLTQ4NTk1NDczMCw3MTE5NDc3MjgsLTE2MD
 I5NzI5NjMsMTY3OTA2NDA4LDE4NDc0MTA3OTEsLTIzNzIzMDc5
 NywtMTg4MDU0NjU3NSwxODE4MDc4NDMzLC01MzM2NDc3MzksOT
 Q3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOTc0MDgsLTc0ODU4NTI5
