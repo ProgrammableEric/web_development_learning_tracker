@@ -36,7 +36,7 @@ In case JS executes before the DOM fully loads.
 HTML 5 为`<script>`标签定义了一个新的扩展属性：`async`。它的作用和 `defer` 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 `async` 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 `async` 就很有可能出现错误。
 
 #### 动态脚本元素
- 动态脚本代买运行时即会被加载，之后立即执行。当为自运行脚本则无碍，当叫
+ 动态脚本代买运行时即会被加载，之后立即执行。当为自运行脚本则无碍，当脚本为其他页面提供接口，则需要跟踪脚本下载完成并是否准备妥善。以下：
 ~~~javascript
 function loadScript(url, callback){
 	var script = document.createElement ("script")
@@ -68,7 +68,7 @@ function loadScript(url, callback){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTc4MjA4MCwtMTg4MDU0NjU3NSwxOD
+eyJoaXN0b3J5IjpbMTQ1MDQ1NTc1MywtMTg4MDU0NjU3NSwxOD
 E4MDc4NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUy
 LDE1MDgyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwOD
 g3NDY2MTJdfQ==
