@@ -59,6 +59,16 @@ function loadScript(url, callback){
 }
 ~~~
 
+大多数浏览器不保证多个脚本加载运行的次序，修正：
+~~~javascript
+loadScript("script1.js", function(){
+	loadScript("script2.js", function(){
+		loadScript("script3.js", function(){
+			alert("All files are loaded!");
+		});
+	});
+});
+~~~
 
 
 
@@ -68,7 +78,7 @@ function loadScript(url, callback){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDQ1NTc1MywtMTg4MDU0NjU3NSwxOD
+eyJoaXN0b3J5IjpbLTU2ODYwMzQ2OSwtMTg4MDU0NjU3NSwxOD
 E4MDc4NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUy
 LDE1MDgyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwOD
 g3NDY2MTJdfQ==
