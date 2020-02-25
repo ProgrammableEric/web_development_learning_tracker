@@ -69,6 +69,8 @@ loadScript("script1.js", function(){
 	});
 });
 ~~~
+动态脚本加载是非阻塞 JavaScript 下载中最常用的模式，因为它可以跨浏览器，而且简单易用。
+
 
 
 
@@ -78,7 +80,7 @@ loadScript("script1.js", function(){
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODYwMzQ2OSwtMTg4MDU0NjU3NSwxOD
+eyJoaXN0b3J5IjpbLTIzNzIzMDc5NywtMTg4MDU0NjU3NSwxOD
 E4MDc4NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUy
 LDE1MDgyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwOD
 g3NDY2MTJdfQ==
