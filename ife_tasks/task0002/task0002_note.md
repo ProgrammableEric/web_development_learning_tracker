@@ -99,15 +99,23 @@ console.log(typeof array);//Object
 console.log(typeof date);//Object
 console.log(typeof reg);//Object
 ~~~
+### function 类型
+**函数实际上也是对象，可称为函数对象。**每个函数都是Function类型的实例，而且与其他引用类型一样具有属性和方法。由于函数是对象，因此函数名实际上也是一个指向函数对象的指针。
+```js
+console.log(typeof Function);//function
+console.log(typeof fn); //function
+```
 
+### 原型对象
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTk1NDczMCw3MTE5NDc3MjgsLTE2MD
-I5NzI5NjMsMTY3OTA2NDA4LDE4NDc0MTA3OTEsLTIzNzIzMDc5
-NywtMTg4MDU0NjU3NSwxODE4MDc4NDMzLC01MzM2NDc3MzksOT
-Q3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOTc0MDgsLTc0ODU4NTI5
-OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE1Mjg0MjY0NDMsLTQ4NTk1NDczMCw3MT
+E5NDc3MjgsLTE2MDI5NzI5NjMsMTY3OTA2NDA4LDE4NDc0MTA3
+OTEsLTIzNzIzMDc5NywtMTg4MDU0NjU3NSwxODE4MDc4NDMzLC
+01MzM2NDc3MzksOTQ3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOTc0
+MDgsLTc0ODU4NTI5OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJdfQ
+==
 -->
