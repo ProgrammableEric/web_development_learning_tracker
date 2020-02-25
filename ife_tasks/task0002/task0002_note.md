@@ -72,7 +72,7 @@ loadScript("script1.js", function(){
 动态脚本加载是非阻塞 JavaScript 下载中最常用的模式，因为它可以跨浏览器，而且简单易用。
 
 #### Ajax xhr 对象
-JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载（CDN 指"内容投递网络（Content Delivery Network）"，所以大型网页通常不采用 XHR 脚本注入技术。xinag
+JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载（CDN 指"内容投递网络（Content Delivery Network）"，所以大型网页通常不采用 XHR 脚本注入技术。详见Ajax Note. 
 
 
 
@@ -81,8 +81,8 @@ JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载�
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxNTQwNjEsLTIzNzIzMDc5NywtMTg4MD
-U0NjU3NSwxODE4MDc4NDMzLC01MzM2NDc3MzksOTQ3NTg1NDM2
-LDg0Mjg0ODUyLDE1MDgyOTc0MDgsLTc0ODU4NTI5OSwyNTA2MT
-YwMTQsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTg0NzQxMDc5MSwtMjM3MjMwNzk3LC0xOD
+gwNTQ2NTc1LDE4MTgwNzg0MzMsLTUzMzY0NzczOSw5NDc1ODU0
+MzYsODQyODQ4NTIsMTUwODI5NzQwOCwtNzQ4NTg1Mjk5LDI1MD
+YxNjAxNCwtMjA4ODc0NjYxMl19
 -->
