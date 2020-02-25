@@ -78,15 +78,20 @@ JavaScript 文件必须与页面放置在同一个域内，不能从 CDN 下载�
 ## JS 的特性
 
 ### Prototype 原型链 
+#### 对象
+话说在Javascript中一切皆对象，对象是引用类型的一个实例，在JS中引用类型包括：Object、Array、Date、RegExp和Function，除此之外，ECMAScript还提供3个特殊的引用类型：Boolean、Number、String
+
+对象是某个特定引用类型的实例，新对象是通过new操作符后跟一个构造函数来创建的，构造函数本身就是一个函数，只不过该函数是出于创建对象的目的而出现的。
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExOTQ3NzI4LC0xNjAyOTcyOTYzLDE2Nz
-kwNjQwOCwxODQ3NDEwNzkxLC0yMzcyMzA3OTcsLTE4ODA1NDY1
-NzUsMTgxODA3ODQzMywtNTMzNjQ3NzM5LDk0NzU4NTQzNiw4ND
-I4NDg1MiwxNTA4Mjk3NDA4LC03NDg1ODUyOTksMjUwNjE2MDE0
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTU1NzA0NjUzNSw3MTE5NDc3MjgsLTE2MD
+I5NzI5NjMsMTY3OTA2NDA4LDE4NDc0MTA3OTEsLTIzNzIzMDc5
+NywtMTg4MDU0NjU3NSwxODE4MDc4NDMzLC01MzM2NDc3MzksOT
+Q3NTg1NDM2LDg0Mjg0ODUyLDE1MDgyOTc0MDgsLTc0ODU4NTI5
+OSwyNTA2MTYwMTQsLTIwODg3NDY2MTJdfQ==
 -->
