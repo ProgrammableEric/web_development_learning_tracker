@@ -5,6 +5,7 @@ The complete log that tracks my self-studying process of web development related
 ## Learning 
 | Course        | Tutor/Platform|    Status     | Time | Exercise Code & Notes|
 | ------------- | --------------| ------------- | ---- | ---- |
+| Node.js 基础 | Rails365 | complete | April, 2020 | [Node.js基础及简单服务器搭建](./Node.js 基础及简单服务器搭建) |
 | IFE 前端学院2015 练习题 | [百度前端学院](https://github.com/ProgrammableEric/ife)| ongoing | Feb, 2020 | [IFE代码](./ife_tasks) |
 | CSS 二刷, CSS3 | [Runoob.com](https://www.runoob.com/css/css-float.html), [w3school](https://www.w3school.com.cn/css/index.asp) | Finished | Feb， 2020 | [CSS 二刷](./CSS二刷)
 | HTML DOM, JSON, jQuery | [Runoob.com](https://www.runoob.com/json/json-tutorial.html) | Finished | Jan， 2020 | 
